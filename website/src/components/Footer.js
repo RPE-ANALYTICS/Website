@@ -9,6 +9,11 @@ export default function Footer() {
     const handle= () => {
         setIsActive(!isActive);
     }
+
+    const handleClick = () => {
+        window.scrollTo(0, 0);
+      }
+
     return (
         <>
             <section className="footerWrapper section">
@@ -19,16 +24,19 @@ export default function Footer() {
                         <div className="footer-links links">
                             <ul>
                                 <li>
-                                    <Link to="/analytics">Analytics</Link>
+                                    <Link onClick={handleClick} to="/analytics">Analytics</Link>
                                 </li>
                                 <li>
-                                    <Link to="/operations">Operations</Link>
+                                    <Link onClick={handleClick} to="/operations">Operations</Link>
                                 </li>
                                 <li>
-                                    <Link to="/digital">Digital transformations</Link>
+                                    <Link onClick={handleClick} to="/digital">Digital transformations</Link>
                                 </li>
                                 <li>
-                                    <Link to="/about">About us</Link>
+                                    <Link onClick={handleClick} to="/about">About us</Link>
+                                </li>
+                                <li>
+                                    <Link onClick={handleClick} to="/career">Career</Link>
                                 </li>
                             </ul>
                         </div>

@@ -65,7 +65,7 @@ export default function About() {
             </div>
           </div>
         </div>
-        
+
         <div className="about-content-section3">
           <div className="about-content-wrapper3">
             <div className="title3">
@@ -81,10 +81,7 @@ export default function About() {
                   <h1 className="title">
                     <span>A</span>nalytics
                   </h1>
-                  <p>
-                    Lorem ipsum dole es numi ade. Lorem ipsum dole es numi
-                    ade...
-                  </p>
+                  <p>Business Intelligence, Data Management, AI & ML</p>
                 </div>
                 <div className="see-button">
                   <span></span>
@@ -101,10 +98,7 @@ export default function About() {
                   <h1 className="title">
                     <span>O</span>perations
                   </h1>
-                  <p>
-                    Lorem ipsum dole es numi ade. Lorem ipsum dole es numi
-                    ade...
-                  </p>
+                  <p>Environment Management, BI Platfrom Operations</p>
                 </div>
                 <div className="see-button">
                   <span></span>
@@ -122,8 +116,7 @@ export default function About() {
                     <span>D</span>igital <span>T</span>ransformation
                   </h1>
                   <p>
-                    Lorem ipsum dole es numi ade. Lorem ipsum dole es numi
-                    ade...
+                    Transformation Strategy & Roadmaps, Analytics Enablement
                   </p>
                 </div>
                 <div className="see-button">
@@ -136,17 +129,52 @@ export default function About() {
             </div>
           </div>
         </div>
-        <div className="about-partners-section">
-            <div className="about-partners-wrapper">
-                <h1>OUR PARTNERS</h1>
+
+        <div className="about-team-section">
+          <div className="about-team-wrapper">
+            <div className="atw-content">
+              <div className="atw-col">
+                <h1>About Our Team</h1>
+                <br />
                 <p>
-                RPE has developed technology partnerships with top software vendors that are leading the Digital Transformation. We will help you accelerate your Digital Transformation journey and maximize return on your technology investments.
+                  RPE Analytics is a boutique analytics and automation
+                  organization. We help our clients build solutions to maximize
+                  the value of their data and analytics assets, and automate key
+                  business processes.
                 </p>
-            </div>    
+                <p>
+                  We bring deep expertise in analytics, data management, and
+                  business process automation. Our team's collective experience
+                  encompasses established experience in solving complex business
+                  problems, and hands-on experience and certifications in new
+                  and emerging technologies. Our clients range from small
+                  businesses to Fortune 500 companies across all major
+                  industries.
+                </p>
+              </div>
+              <div className="atw-col">
+                <div className="atw-col-img">
+                  <img src="https://images.pexels.com/photos/3182755/pexels-photo-3182755.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"></img>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-              <section className="brandSection section">
-        <Brands />
-      </section>
+
+        <div className="about-partners-section">
+          <div className="about-partners-wrapper">
+            <h1>OUR PARTNERS</h1>
+            <p>
+              RPE has developed technology partnerships with top software
+              vendors that are leading the Digital Transformation. We will help
+              you accelerate your Digital Transformation journey and maximize
+              return on your technology investments.
+            </p>
+          </div>
+        </div>
+        <section className="brandSection section">
+          <Brands />
+        </section>
       </section>
     </>
   );

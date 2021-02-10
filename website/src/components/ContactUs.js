@@ -1,4 +1,4 @@
-import React from "react"
+import React, {Component} from "react"
 
 import ThankYou from './ThankYou';
 export default class ContactUs extends React.Component {

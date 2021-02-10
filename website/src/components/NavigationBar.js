@@ -31,7 +31,7 @@ export default function NavigationBar() {
 
   return (
     <section className="navbarWrapper section" style={{ transition: '1s ease',
-      backgroundColor: navBackground ? 'rgba(17, 40, 56, 0.8)' : 'transparent',
+      backgroundColor: navBackground ? 'rgba(17, 40, 56, 0.8)' : 'rgba(17, 40, 56, 0.9)',
       height: navBackground ? '70px' : '80px'}}>
       <Navbar variant="dark" collapseOnSelect  expand="lg">
         <Nav>
@@ -55,6 +55,7 @@ export default function NavigationBar() {
               </NavLink>
             </NavDropdown>
             <NavLink id="about" to="about"  onClick={handleClick}>About us</NavLink>
+            <NavLink id="career" to="career"  onClick={handleClick}>Career</NavLink>
             <NavLink id="contact" to="contact"  onClick={handleClick}>Contact</NavLink>
           </Nav>
         </Navbar.Collapse>

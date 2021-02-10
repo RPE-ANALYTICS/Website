@@ -195,17 +195,19 @@ body {
 
 .navbar-toggler {
   margin-right: 20px;
-  border-color: white !important;
-  border-width: 2px;
+  outline: none !important;
+  border-style: none;
 }
 
 .navbar-toggler-icon {
-  color: white !important;
+  color: red !important;
+  width: 3.2rem;
+  height: 3.2rem;
 }
 
 .brandSection {
   width: 100vw;
-  height: 13vh;
+  min-height: 13vh;
   padding: 20px 0;
   background-color: #fff;
   position: relative;
@@ -224,7 +226,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   max-width: 1400px;
-  margin: 0 auto;
+  margin: 30px auto;
   position: relative;
 }
 
@@ -245,7 +247,7 @@ body {
   content: '';
   display: inline-block;
   position: absolute;
-  top: -20px;
+  top: -40px;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -335,7 +337,7 @@ body {
 
 .about-thumbnail-section {
   width: 100%;
-  min-height: 70vh;
+  height: 70vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -476,7 +478,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-align: start;
+  text-align: justify;
 }
 
 .about-content-section .about-who-we-are h1 {
@@ -563,6 +565,7 @@ body {
   font-family: "Nunito Sans", sans-serif;
   position: relative;
   background: #f6f6f6;
+  background-color: #112838;
 }
 
 .about-content-section3 .about-content-wrapper3 {
@@ -601,6 +604,7 @@ body {
           align-items: center;
   text-align: center;
   position: relative;
+  color: white;
 }
 
 .about-content-section3 .about-content-wrapper3 .title3::before {
@@ -680,11 +684,114 @@ body {
   font-weight: bold;
 }
 
+.about-team-section {
+  width: 100%;
+  min-height: 550px;
+  background-color: white;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 150px;
+}
+
+.about-team-section .about-team-wrapper {
+  width: 100%;
+  max-width: 1300px;
+  margin: 50px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: justify;
+}
+
+.about-team-section .about-team-wrapper h1 {
+  position: relative;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 2rem;
+  font-family: "Bodoni Moda", serif;
+  color: #253c4d;
+  text-align: center;
+}
+
+.about-team-section .about-team-wrapper h1::before {
+  content: "";
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  width: 13%;
+  height: 6px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: #d42028;
+  border-radius: 10px;
+}
+
+.about-team-section .about-team-wrapper .atw-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 30px;
+}
+
+.about-team-section .about-team-wrapper .atw-content .atw-col {
+  width: 50%;
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  letter-spacing: 1.3px;
+}
+
+.about-team-section .about-team-wrapper .atw-content .atw-col .atw-col-img {
+  position: absolute;
+  width: 80%;
+  height: 100%;
+  top: -25%;
+  left: 20%;
+  background-color: white;
+  z-index: 10;
+}
+
+.about-team-section .about-team-wrapper .atw-content .atw-col .atw-col-img img {
+  width: 100%;
+  min-width: 378px;
+  max-height: 160%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-box-shadow: 0 10px 10px rgba(56, 56, 56, 0.2), 10px 10px 20px rgba(48, 48, 48, 0.2);
+          box-shadow: 0 10px 10px rgba(56, 56, 56, 0.2), 10px 10px 20px rgba(48, 48, 48, 0.2);
+}
+
 .about-partners-section {
   width: 100vw;
   min-height: 200px;
   position: relative;
-  background-color: white;
+  background-color: #f6f6f6;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -718,6 +825,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 70px 0 50px 0;
 }
 
 .about-partners-section .about-partners-wrapper h1 {
@@ -743,7 +851,7 @@ body {
 
 .about-partners-section .about-partners-wrapper p {
   width: 80%;
-  margin-top: 10px;
+  margin-top: 20px;
   letter-spacing: 1.3px;
 }
 
@@ -1600,7 +1708,7 @@ body {
   width: 100%;
   max-width: 1300px;
   height: 100%;
-  margin-top: 20px;
+  margin: 30px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1625,7 +1733,7 @@ body {
   min-width: 270px;
   margin: 10px 30px;
   border-radius: 10px;
-  padding: 2rem 2rem;
+  padding: 2rem 1.9rem;
   -webkit-box-shadow: 0 10px 10px rgba(56, 56, 56, 0.2), 10px 10px 20px rgba(48, 48, 48, 0.2);
           box-shadow: 0 10px 10px rgba(56, 56, 56, 0.2), 10px 10px 20px rgba(48, 48, 48, 0.2);
 }
@@ -1904,10 +2012,242 @@ body {
   color: #d42028;
 }
 
+.careerWrapper {
+  width: 100%;
+  height: 90vh;
+  min-height: 800px;
+  background-color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  font-family: "Roboto", sans-serif;
+}
+
+.careerWrapper:before {
+  content: '';
+  position: absolute;
+  background: rgba(163, 108, 108, 0.6);
+  background-color: rgba(17, 40, 56, 0.6);
+  height: 100%;
+  z-index: 0;
+  right: 0%;
+  top: 0;
+  width: 7%;
+  height: 100%;
+  -webkit-transform: skewX(-20deg) translateZ(0);
+          transform: skewX(-20deg) translateZ(0);
+  -webkit-transition: .8s ease;
+  transition: .8s ease;
+  z-index: 2;
+}
+
+.careerWrapper:after {
+  content: '';
+  position: absolute;
+  background: rgba(163, 108, 108, 0.6);
+  background-color: rgba(17, 40, 56, 0.6);
+  height: 100%;
+  z-index: 0;
+  right: 5%;
+  top: 0;
+  width: 10%;
+  height: 100%;
+  -webkit-transform: skewX(30deg) translateZ(0);
+          transform: skewX(30deg) translateZ(0);
+  -webkit-transition: .8s ease;
+  transition: .8s ease;
+  z-index: 2;
+}
+
+.career-content-section {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 80px;
+}
+
+.career-content-section .career-wrapper {
+  width: 100%;
+  max-width: 1300px;
+  margin: 20px 0;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: justify;
+}
+
+.career-content-section .career-wrapper h1 {
+  position: relative;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 2rem;
+  font-family: "Bodoni Moda", serif;
+  color: #253c4d;
+  text-align: center;
+}
+
+.career-content-section .career-wrapper h1::before {
+  content: "";
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  width: 13%;
+  height: 6px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: #d42028;
+  border-radius: 10px;
+}
+
+.career-content-section .career-wrapper .career-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.career-content-section .career-wrapper .career-content .career-col {
+  width: 50%;
+  height: 100%;
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  letter-spacing: 1.3px;
+}
+
+.career-content-section .career-wrapper .career-content .career-col .career-col-img {
+  position: absolute;
+  width: 80%;
+  height: calc(100% - 60px);
+  top: 0;
+  right: 20%;
+  background-color: white;
+  z-index: 10;
+}
+
+.career-content-section .career-wrapper .career-content .career-col .career-col-img img {
+  width: 100%;
+  min-width: 378px;
+  max-height: 110%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-box-shadow: 0 10px 10px rgba(56, 56, 56, 0.2), 10px 10px 20px rgba(48, 48, 48, 0.2);
+          box-shadow: 0 10px 10px rgba(56, 56, 56, 0.2), 10px 10px 20px rgba(48, 48, 48, 0.2);
+}
+
+.career-content-section .career-wrapper .career-content .left {
+  width: 60%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 100px;
+  padding-left: 50px;
+}
+
+.career-resume {
+  width: 100%;
+  height: 300px;
+  background-color: #f6f6f6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.career-resume h1 {
+  font-family: "Bodoni Moda", serif;
+}
+
+.career-resume h1 svg {
+  color: #d42028;
+  font-size: 1.6rem;
+}
+
+.career-resume button {
+  width: 210px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  border-style: none;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: bolder;
+  background-color: #112838;
+  color: white;
+  border: none;
+  margin-top: 20px;
+}
+
+.career-resume button:hover {
+  font-size: 1.5rem;
+  background-color: #112838;
+  color: white;
+  border: none;
+}
+
 .footerWrapper {
   width: 100vw;
   height: auto;
-  background-color: #2f3036;
   background-color: #112838;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -1921,6 +2261,13 @@ body {
   letter-spacing: 1.2px;
   position: relative;
   overflow-x: hidden;
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 991px) {
+  .footerWrapper {
+    height: 30vh;
+  }
 }
 
 .footer-top, .footer-bottom {
@@ -1932,6 +2279,7 @@ body {
       -ms-flex-direction: row;
           flex-direction: row;
   max-width: 1200px;
+  background-color: #112838;
 }
 
 .footer-top {

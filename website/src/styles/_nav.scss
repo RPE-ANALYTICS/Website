@@ -93,6 +93,7 @@
     background-color: rgba(0, 0, 0, 0.8);
     text-align: center;
     width: 100%;
+
     @include mq(991px) {
         background-color: transparent;
         width: 100%;
@@ -139,10 +140,12 @@
 
 .navbar-toggler {
     margin-right: 20px;
-    border-color: rgb(255, 255, 255) !important;
-    border-width: 2px;
+    outline: none !important;
+    border-style: none;
 }
 
 .navbar-toggler-icon {
-    color: white !important;
+    color: rgb(255, 0, 0) !important;
+    width: 3.2rem;
+    height: 3.2rem;
 }

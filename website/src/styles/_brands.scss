@@ -1,10 +1,11 @@
 //----------------------brand section---------------------------
 .brandSection {
     width: 100vw;
-    height: 13vh;
+    min-height: 13vh;
     padding: 20px 0;
     background-color: $BackgroundColor-second;
     position: relative;
+    
   }
   
 
@@ -16,7 +17,7 @@
     justify-content: space-evenly;
     align-items: center;
     max-width: 1400px;
-    margin: 0 auto;
+    margin: 30px auto;
     position: relative;
 
     .brand {
@@ -35,7 +36,7 @@
         content: '';
         display: inline-block;
         position: absolute;
-        top: -20px;
+        top: -40px;
         left: 50%;
         transform: translateX(-50%);
         width: 100%;

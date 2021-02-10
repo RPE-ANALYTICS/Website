@@ -187,8 +187,8 @@ export default function Home() {
                 <span>A</span>nalytics
               </h1>
               <p>
-                Lorem ipsum dole es numi ade. Lorem ipsum dole es numi ade...
-              </p>
+                    Business Intelligence, Data Management, AI & ML
+                  </p>
             </div>
             <div className="see-button">
               <span></span>
@@ -206,8 +206,8 @@ export default function Home() {
                 <span>O</span>perations
               </h1>
               <p>
-                Lorem ipsum dole es numi ade. Lorem ipsum dole es numi ade...
-              </p>
+                    Environment Management, BI Platfrom Operations
+                  </p>
             </div>
             <div className="see-button">
               <span></span>
@@ -225,8 +225,8 @@ export default function Home() {
                 <span>D</span>igital <span>T</span>ransformation
               </h1>
               <p>
-                Lorem ipsum dole es numi ade. Lorem ipsum dole es numi ade...
-              </p>
+                    Transformation Strategy & Roadmaps, Analytics Enablement
+                  </p>
             </div>
             <div className="see-button">
               <span></span>
