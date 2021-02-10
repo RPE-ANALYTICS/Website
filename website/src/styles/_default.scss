@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto:wght@300&family=Bodoni+Moda&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;1,700&display=swap');
+
+$Fontcolor-main: #d42028;
+$Fontcolor-second: #253c4d;
+$Fontcolor-navbar: #fff;
+$BackgroundColor-main: #f6f6f6;
+$BackgroundColor-second: #fff;
+$BackgroundColor-dark: rgb(17, 40, 56);
+$Fontfamily-serif: "Bodoni Moda", serif;
+$Fontfamily-sansSerif-1: "Poppins", sans-serif;
+$Fontfamily-sansSerif-2: "Roboto", sans-serif;
+$Fontfamily-sansSerif-3: "Nunito Sans", sans-serif;
+
+
+@mixin mq($size) {
+  @media only screen and (min-width: $size) {
+    @content;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden !important;
+  color: $Fontcolor-second;
+  font-family: $Fontfamily-sansSerif-2;
+  transition: all 0.9s ease;
+
+}
+
+.mainContainer {
+  width: 100vw;
+  height: 100vh;
+}
+
+.section {
+  width: 100%;
+  display: flex;
+}
+
+// a {
+//     list-style: none;
+//     text-decoration: none;
+//     color: white;
+// }

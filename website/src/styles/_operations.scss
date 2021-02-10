@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@800;900&display=swap");
+.puzzles-operations {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+
+  .c-puzzle {
+    // background-color: rgb(184, 0, 0);
+    // background-color: rgb(0, 0, 0);
+  }
+
+  .c-puzzle:first-of-type {
+    // left: -85%;
+    // top: 0;
+    // width: 100%;
+    // height: 100%;
+    // opacity: 0.5;
+    // transform: skewX(30deg) translateZ(0);
+    // transition: opacity 2.2s cubic-bezier(.23,1,.32,1) .8s;
+  }
+
+  .c-puzzle:nth-of-type(2) {
+    background-color: rgba(0, 0, 0, 0.2);
+    right: 10%;
+    top: 0;
+    width: 10%;
+    height: 100%;
+    // opacity: 0.5;
+    transform: skewX(30deg) translateZ(0);
+    transition: opacity 2.2s cubic-bezier(0.23, 1, 0.32, 1) 0.8s;
+  }
+
+  .c-puzzle:nth-of-type(3) {
+    background-color: rgba(2, 2, 2, 0.4);
+    right: 5%;
+    top: 0;
+    width: 12%;
+    height: 100%;
+    transform: skewX(-25deg) translateZ(0);
+    transition: opacity 2.2s cubic-bezier(0.23, 1, 0.32, 1) 0.8s;
+  }
+}
+
+.absolute {
+  position: absolute;
+  z-index: 1;
+}
+
+.homeWrapper-operations {
+  width: 100%;
+  height: 90vh;
+  position: relative;
+  background-color: $BackgroundColor-second;
+  overflow: hidden;
+
+  .video-container-operations {
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100vh;
+      background-color: rgba(71, 71, 71, 0.4);
+      // background-color: rgba(0, 0, 0, 0.9);
+      top: 0;
+      left: 0;
+    }
+    video {
+      object-fit: cover;
+      width: 100vw;
+      height: 100vh;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.operations-content {
+  font-family: "Bodoni Moda", serif;
+  bottom: 15%;
+  left: 10%;
+  z-index: 10;
+  color: white;
+  width: 45%;
+  font-weight: 500;
+  font-size: calc(22px + 40 * ((53vw + 53vh) - 600px) / 820);
+}
+
+.operations-bottom-line {
+  font-family: "Bodoni Moda", serif;
+  bottom: 10%;
+  left: 10%;
+  z-index: 10;
+  color: white;
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+
+  span {
+    display: block;
+    width: 100%;
+    border-top: 1px solid #ccc;
+    transform: translateY(30%);
+  }
+
+  p {
+    color: $Fontcolor-main;
+    margin-left: 50px;
+    width: 20%;
+  }
+  p:hover {
+    font-weight: bold;
+  }
+}
+
+.operations-right-line-top {
+  top: 0;
+  right: 8%;
+  z-index: 10;
+  color: white;
+  height: 100%;
+  width: 10%;
+
+  span {
+    display: block;
+    height: 43%;
+    border-right: 1px solid #ccc;
+    bottom: 0;
+  }
+}
+.operations-right-line-bottom {
+  top: 57%;
+  right: 8%;
+  z-index: 10;
+  color: white;
+  height: 100%;
+  width: 10%;
+
+  span {
+    display: block;
+    height: 50%;
+    border-right: 1px solid #ccc;
+  }
+}
+.operations-right-line-middle {
+  top: 50%;
+  right: 8%;
+  z-index: 10;
+  color: white;
+  height: auto;
+  width: auto;
+  transform: translate(50%, -50%);
+
+  span {
+    display: block;
+    height: 40%;
+    text-align: right;
+    font-size: 3rem;
+    color: #ccc;
+    color: $Fontcolor-main;
+  }
+  span:hover {
+    color: $Fontcolor-main;
+  }
+}
+

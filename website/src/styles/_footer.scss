@@ -1,0 +1,134 @@
+.footerWrapper {
+    width: 100vw;
+    height: auto;
+    background-color: rgb(47, 48, 54);
+    background-color: $BackgroundColor-dark;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+    color: grey;
+    padding: 30px 30px 10px 30px;
+    letter-spacing: 1.2px;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.footer-top, .footer-bottom {
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+}
+
+.footer-top {
+    width: 100%;
+    display: none;
+    @include mq(991px) {
+        display: flex;
+    }
+}
+
+.footer-top-col-left {
+    width: 30%;
+    height: 100%;
+    position: relative;
+
+    .content-left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+        .footer-links {
+            height: 100%;
+            width: 100%;
+            margin-top: 30px;
+        }
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 1px;
+        height: 100%;
+        background-color: rgb(197, 197, 197);
+        top: 10%;
+        right: 10%;
+    }
+}
+
+.footer-top-col-right {
+    width: 70%;
+    height: 100%;
+
+    .content-right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+        .contact-title h2 {
+            padding-left: 30px;
+        }
+    }
+}
+
+.address-columns {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    flex-wrap: wrap;
+}
+
+.contact-title h2 {
+    font-size: 2.3rem;
+    font-weight: bold;
+    color: white;
+} 
+
+.links ul li{
+    list-style: none;
+    text-decoration: none;
+    margin: 5px;
+
+    a {
+        color: rgb(197, 197, 197) !important;
+        text-decoration: none;
+
+        &:hover {
+            color: $Fontcolor-main !important;
+        }
+    }
+
+    span {
+        color: rgb(197, 197, 197);
+    }
+
+    p{
+        margin: 0;
+        font-weight: bold;
+    }
+}
+
+
+.address-country {
+    color: $Fontcolor-main;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.logo-footer {
+    width: 145px;
+    height: 40px;
+}
+
+.footer-bottom {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+    padding-bottom: 15px;
+}
