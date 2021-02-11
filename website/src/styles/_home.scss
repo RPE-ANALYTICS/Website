@@ -183,13 +183,15 @@
     // height: 300px;
     padding: 40px 0;
     background-color: $BackgroundColor-main;
-    font-family: $Fontfamily-sansSerif-1;
+    // background-color: #112838;
+    font-family: $Fontfamily-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     color: rgb(48, 49, 51);
+    // color: rgb(255, 255, 255);
 
     p:first-of-type {
         letter-spacing: 2px;
@@ -202,7 +204,7 @@
     }
 
     h3 {
-        font-weight: bold;
+        // font-weight: bold;
         font-size: 1.7rem;
         max-width: 80%;
         text-align: center;
@@ -246,6 +248,30 @@
   max-width: 1300px;
   text-align: center;
   padding: 30px 0;
+
+    
+  h1 {
+    position: relative;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 2rem;
+    font-family: $Fontfamily-serif;
+    color: $Fontcolor-second;
+    text-align: center;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -25px;
+      left: 50%;
+      width: 13%;
+      height: 6px;
+      transform: translateX(-50%);
+      background-color: $Fontcolor-main;
+      border-radius: 10px;
+    }
+  }
 }
 
 .cards-wrapper {
@@ -280,7 +306,7 @@
     max-width: 320px;
     min-width: 270px;
     margin: 10px 30px;
-    border-radius: 10px;
+    // border-radius: 10px;
     padding: 2rem 1.9rem;
     // opacity: 0;
     // display: block;
@@ -380,3 +406,78 @@
 
   }
  
+
+  //===================================================
+  .industriesSection {
+    width: 100vw;
+    min-height: 30vh;
+    position: relative;
+    background-color: $BackgroundColor-main;
+    background-color: #112838;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+  
+    .industries-wrapper {
+      width: 100%;
+      max-width: 1300px;
+      height: 100%;
+      // background-color: red;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      
+  
+      h1 {
+        position: relative;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-size: 2rem;
+        font-family: $Fontfamily-serif;
+        // color: $Fontcolor-second;
+        text-align: center;
+
+  
+        &::before {
+          content: "";
+          position: absolute;
+          bottom: -25px;
+          left: 50%;
+          width: 13%;
+          height: 6px;
+          transform: translateX(-50%);
+          background-color: $Fontcolor-main;
+          border-radius: 10px;
+        }
+      }
+  
+      .industries-cards {
+        width: 100%;
+        // background-color: green;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 20px 0;
+  
+        .industry-cards {
+          width: 30%;
+          background-color: rgb(255, 255, 255);
+          text-align: center;
+          margin: 30px 10px;
+          color:#112838;
+
+  
+          img {
+            height: 200px;
+            // width: 300px;
+            width: 100%;
+            // margin: 20px;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+  }

@@ -202,7 +202,7 @@ export default function Analytics() {
                   only your teams will gain improvement in productivity, they
                   will be able to make more informed, data driven decisions.
                 </p>
-                <p>
+                {/* <p>
                   Your team will no longer spend time on gathering data,
                   producing manual reports – instead they will be able to focus
                   on the action to make your business better.
@@ -216,7 +216,7 @@ export default function Analytics() {
                   The insights into internal long-range planning, blended with
                   the external market data will allow you to focus your business
                   growth strategy.
-                </p>
+                </p> */}
               </div>
             </div>
           </div>

@@ -173,6 +173,25 @@ export default function Home() {
         <p></p>
         {/* <p>We deliver business intelligence applications focused on improving your business.</p> */}
       </section>
+      <section className="industriesSection section">
+        <div className="industries-wrapper">
+          <h1>Key Industries We Support</h1>
+          <div className="industries-cards">
+            <div className="industry-cards">
+              <img src='https://www.medgadget.com/wp-content/uploads/2020/07/Healthcare9.jpeg'></img>
+              <h3>Automotive</h3>
+            </div>
+            <div className="industry-cards">
+            <img src='https://www.medgadget.com/wp-content/uploads/2020/07/Healthcare9.jpeg'></img>
+              <h3>Defense</h3>
+            </div>
+            <div className="industry-cards">
+            <img src='https://www.medgadget.com/wp-content/uploads/2020/07/Healthcare9.jpeg'></img>
+              <h3>Medical</h3>
+            </div>
+          </div>
+        </div>
+      </section>
       <section ref={sectionRef} className="homeCards section">
         <div className="cards-title fadeIn">
           <h1>Use our experience</h1>
@@ -237,6 +256,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+
       <section className="brandSection section">
         <Brands />
       </section>

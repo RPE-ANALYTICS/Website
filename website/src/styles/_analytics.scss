@@ -12,7 +12,7 @@
 
 .analytics-thumbnail-section {
   width: 100%;
-  height: 80vh;
+  height: 70vh;
   // background-image: url("../img/data-vizualization.jpg");
   // background-image: url("https://s7703.pcdn.co/wp-content/uploads/2013/01/banner-analytics-background.jpg");
   // background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl352QkLv2Bx3W-VqhQZKLjnBX3NN-2DcZjw&usqp=CAU");
@@ -51,7 +51,7 @@
       // object-fit: cover;
       object-fit: cover;
       width: 100vw;
-      height: 80vh;
+      height: 70vh;
       position: fixed;
       top: 0;
       left: 0;
@@ -93,18 +93,19 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  background: white;
+  background-color: #112838;
   padding-top: 20px;
+  color: white;
   
   
   .analytics-services-content {
-    background-color: $BackgroundColor-main;
-    background-color: rgba(231, 233, 233, 0.12);
-    background-color: rgba(255, 255, 255, 0.12);
+    // background-color: $BackgroundColor-main;
+    // background-color: rgba(231, 233, 233, 0.12);
+    // background-color: rgba(255, 255, 255, 0.12);
     width: 100%;
     max-width: 1300px;
     height: 20vh;
-    padding: 20px 10px;
+    padding: 20px 30px;
     letter-spacing: 1.1px;
     display: flex;
     flex-direction: column;
@@ -171,6 +172,7 @@
     justify-content: center;
     align-items: flex-start;
 
+
     img {
       width: 100px;
       // height: 100%;
@@ -178,6 +180,7 @@
       border-radius: 50%;
       padding: 10px;
       // border-radius: 50%;
+      background-color: white;
       object-fit: cover;
       box-shadow: 0 10px 10px rgba(56, 56, 56, 0.2), 10px 10px 20px rgba(48, 48, 48, 0.2);
     }
@@ -271,7 +274,7 @@
 
 .analytics-content-section {
   width: 100vw;
-  padding-top: 50px;
+  padding: 50px 0px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -285,19 +288,21 @@
     // height: 100%;
     max-width: 1600px;
 
-    background-color: palegoldenrod;
+    // background-color: palegoldenrod;
     // border: 1px solid black;
 
     
   .analytics-content-box {
     width: 100%;
-    min-height: calc(100vh - 70px);
+    // min-height: calc(100vh - 70px);
+    min-height: 40%;
     display: flex;
     background-color: $BackgroundColor-main;
+    background-color: white;
 
     .analytics-content-box-col-1 {
       width: 50%;
-      height: 100%;
+      // height: 100%;
       // background-color: green;
       margin: 20px 0;
       display: flex;
@@ -327,7 +332,8 @@
       img {
         width: 100%;
         height: 100%;
-        min-height: calc(100vh - 70px);
+        // min-height: calc(100vh - 70px);
+        min-height: 40%;
         object-fit: cover;
       }
     }
@@ -338,7 +344,7 @@
 
 .analytics-content-section2 {
   width: 100vw;
-  // height: 100px;
+  min-height: 80vh;
   padding-top: 20px;
   display: flex;
   justify-content: center;
@@ -352,7 +358,7 @@
     width: 100%;
     height: 100%;
     max-width: 1600px;
-    padding: 60px 10px;
+    padding: 40px 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -404,14 +410,16 @@
       width: 100%;
       height: 100%;
       max-width: 1300px;
+      margin-top: 30px;
 
 
       .card2 {
         width: 300px;
         height: 370px;
         margin-top: 30px;
+        // border-radius: 20px;
         // border: 1px solid black;
-        // background-color: white;
+        background-color: white;
         display: flex;
         flex-direction: column;
         align-items: center;

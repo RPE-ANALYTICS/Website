@@ -5,12 +5,12 @@
     position: fixed;
     z-index: 1000;
     margin-top: 0 !important;
-    padding: 0;
     box-shadow: 0px 5px 5px -1px rgba(0,0,0,0.5);
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: $Fontfamily-sansSerif-1;
+    transition-delay: 0s !important;
     @include mq(991px) {
        padding: 0 20px;
     }
@@ -45,12 +45,12 @@
 }
 
 .brandLogo {
-    width: 140px;
-    height: 60px;
+    width: 160px;
+    // height: 76x;
     
     @include mq(991px) {
         width: 220px;
-        height: 80px;
+        // height: 80px;
         // opacity: 0.8;
       }
 }
@@ -139,9 +139,13 @@
 }
 
 .navbar-toggler {
-    margin-right: 20px;
+    margin-right: 0px;
     outline: none !important;
     border-style: none;
+
+    @include mq(991px) {
+        margin-right: 20px;
+      }
 }
 
 .navbar-toggler-icon {

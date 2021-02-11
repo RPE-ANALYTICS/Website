@@ -10,10 +10,10 @@
     letter-spacing: 1.2px;
     position: relative;
     overflow-x: hidden;
-    overflow: hidden;
+    // overflow: hidden;
 
     @include mq(991px) {
-        height: 30vh;
+        min-height: 30vh;
     }
 }
 
