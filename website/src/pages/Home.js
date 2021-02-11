@@ -173,58 +173,6 @@ export default function Home() {
         <p></p>
         {/* <p>We deliver business intelligence applications focused on improving your business.</p> */}
       </section>
-      <section className="industriesSection section">
-        <div className="industries-wrapper">
-          <h1>Key Industries We Support</h1>
-          <div className="industry-cards">
-            {/*=====================================================*/}
-            <div className="industry-card">
-              <div className="industry-card-inner">
-                <div className="industry-card-front">
-                  <img src='https://www.medgadget.com/wp-content/uploads/2020/07/Healthcare9.jpeg'></img>
-                  <h3>Automotive</h3>
-                </div>
-                <div className="industry-card-back">
-                  <h1>About Automotive</h1> 
-                  {/* <p>Architect & Engineer</p> 
-                  <p>We love that guy</p> */}
-                </div>
-              </div>
-            </div>
-            {/*=====================================================*/}
-            {/*=====================================================*/}
-            <div className="industry-card">
-              <div className="industry-card-inner">
-                <div className="industry-card-front">
-                  <img src='https://www.medgadget.com/wp-content/uploads/2020/07/Healthcare9.jpeg'></img>
-                  <h3>Defense</h3>
-                </div>
-                <div className="industry-card-back">
-                  <h1>About Defense</h1> 
-                  {/* <p>Architect & Engineer</p> 
-                  <p>We love that guy</p> */}
-                </div>
-              </div>
-            </div>
-            {/*=====================================================*/}
-            {/*=====================================================*/}
-            <div className="industry-card">
-              <div className="industry-card-inner">
-                <div className="industry-card-front">
-                  <img src='https://www.medgadget.com/wp-content/uploads/2020/07/Healthcare9.jpeg'></img>
-                  <h3>Medical</h3>
-                </div>
-                <div className="industry-card-back">
-                  <h1>About Medical</h1> 
-                  {/* <p>Architect & Engineer</p> 
-                  <p>We love that guy</p> */}
-                </div>
-              </div>
-            </div>
-            {/*=====================================================*/}
-          </div>
-        </div>
-      </section>
       <section ref={sectionRef} className="homeCards section">
         <div className="cards-title fadeIn">
           <h1>Use our experience</h1>
