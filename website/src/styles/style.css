@@ -1646,7 +1646,6 @@ body {
   width: 100%;
   padding: 40px 0;
   background-color: #f6f6f6;
-  font-family: "Bodoni Moda", serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1930,7 +1929,7 @@ body {
   border-radius: 10px;
 }
 
-.industriesSection .industries-wrapper .industries-cards {
+.industriesSection .industries-wrapper .industry-cards {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1944,19 +1943,69 @@ body {
   margin: 20px 0;
 }
 
-.industriesSection .industries-wrapper .industries-cards .industry-cards {
+.industry-card {
+  background-color: transparent;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
   width: 30%;
-  background-color: white;
+  max-width: 320px;
   text-align: center;
   margin: 30px 10px;
   color: #112838;
 }
 
-.industriesSection .industries-wrapper .industries-cards .industry-cards img {
-  height: 200px;
+.industry-card .industry-card-inner {
+  position: relative;
+  width: 100%;
+  min-height: 350px;
+  text-align: center;
+  -webkit-transition: -webkit-transform 0.6s;
+  transition: -webkit-transform 0.6s;
+  transition: transform 0.6s;
+  transition: transform 0.6s, -webkit-transform 0.6s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.industry-card .industry-card-inner .industry-card-front, .industry-card .industry-card-inner .industry-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.industry-card .industry-card-inner .industry-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.industry-card .industry-card-inner .industry-card-front img {
+  height: 80%;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.industry-card .industry-card-inner .industry-card-front h3 {
+  background-color: white;
+  height: 20%;
+}
+
+.industry-card .industry-card-inner .industry-card-back {
+  background-color: #ffffff;
+  position: relative;
+  min-height: 350px;
+  color: white;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.industry-card:hover .industry-card-inner {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
 }
 
 .puzzles-operations {
