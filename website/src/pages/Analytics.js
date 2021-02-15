@@ -158,7 +158,7 @@ export default function Analytics() {
           </div>
         </div>
         {/* ==================================================================================== */}
-        <div className="analytics-content-section">
+        {/* <div className="analytics-content-section">
           <div className="analytics-content-wrapper">
             <div className="analytics-content-box">
               <div className="analytics-content-box-col-1">
@@ -202,6 +202,64 @@ export default function Analytics() {
                   only your teams will gain improvement in productivity, they
                   will be able to make more informed, data driven decisions.
                 </p>
+              </div>
+            </div>
+          </div>
+        </div> */}
+        {/* //======================================================================== */}
+        <div className="analytics-content-section">
+          <div className="analytics-industry-expertise">
+            <div className="wwa-content">
+              <div className="wwa-col">
+                <div className="wwa-col-img">
+                  <img src="https://images.pexels.com/photos/3182755/pexels-photo-3182755.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"></img>
+                </div>
+              </div>
+              <div className="wwa-col">
+                <h1>Industry expertise</h1>
+                <br />
+                <p>
+                  Whether you are OEM, Tier 1 supplier, defense company or a
+                  small medical office, we will deliver you data analytics
+                  solutions that will help you optimize your business.
+                </p>
+                <p>
+                  Whether you are looking for Supply Chain connectivity, to
+                  drive better cost reductions, flawless launches, supplier
+                  performance across quality, delivery, cost reduction,
+                  inventory optimization, sales or cost, we will help you
+                  accelerate to insight.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* ============================================================================= */}
+        <div className="analytics-roi-section">
+          <div className="analytics-roi-wrapper">
+            <div className="arw-content">
+              <div className="arw-col">
+                <h1>ROI</h1>
+                <br />
+                <p>
+                  We’ll help you measure the ROI on your analytical investment.
+                  You will start realizing it within the very first few weeks of
+                  engaging our team.
+                </p>
+                <p>
+                  We will enable unprecedented data visibility, which in turn
+                  will lead to significant improvement in data quality.
+                </p>
+                <p>
+                  With easy, governed access to so much of actionable data, not
+                  only your teams will gain improvement in productivity, they
+                  will be able to make more informed, data driven decisions.
+                </p>
+              </div>
+              <div className="arw-col">
+                <div className="arw-col-img">
+                  <img src="https://images.pexels.com/photos/3184433/pexels-photo-3184433.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"></img>
+                </div>
               </div>
             </div>
           </div>
