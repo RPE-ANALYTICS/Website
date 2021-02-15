@@ -28,7 +28,7 @@ export default function Career() {
               </div>
               <div className="career-col right">
                 <div className="career-col-img">
-                  <img src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"></img>
+                  <img src="https://images.pexels.com/photos/5439472/pexels-photo-5439472.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"></img>
                 </div>
               </div>
             </div>

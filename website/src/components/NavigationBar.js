@@ -32,7 +32,7 @@ export default function NavigationBar() {
   return (
     <section className="navbarWrapper section" style={{ transition: '1s ease',
       backgroundColor: navBackground ? 'rgba(17, 40, 56, 0.9)' : 'transparent',
-      height: navBackground ? '70px' : '80px'}}>
+      height: navBackground ? '70px' : '70px'}}>
       <Navbar variant="dark" collapseOnSelect  expand="lg">
         <Nav>
         <Link className="brandLogo" to="/"  onClick={handleClick}>

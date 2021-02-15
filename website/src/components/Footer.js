@@ -17,7 +17,7 @@ export default function Footer() {
     return (
         <>
             <section className="footerWrapper section">
-                <div className="footer-top">
+                {/* <div className="footer-top">
                     <div className="footer-top-col-left">
                         <div className="content-left">
                         <img className="logo-footer" src={whiteLogo} alt="RPE Analytics"></img>
@@ -85,7 +85,7 @@ export default function Footer() {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
                 <div className="footer-bottom">
                     <div className="copyright">
                         Copyright <span onClick={handle}>{isActive ? ' villagef' : `©`}</span> {year} RPE Analytics

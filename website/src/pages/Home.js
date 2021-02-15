@@ -113,12 +113,21 @@ export default function Home() {
   const handleScroll = () => {
     window.scroll({
       top:
-        document.body.offsetHeight -
-        document.querySelector(".homeBanner").getBoundingClientRect().height,
+        document.body.offsetHeight,
       left: 0,
       behavior: "smooth",
     });
   };
+
+  // const handleScroll = () => {
+  //   window.scroll({
+  //     top:
+  //       document.body.offsetHeight -
+  //       document.querySelector(".homeBanner").getBoundingClientRect().height,
+  //     left: 0,
+  //     behavior: "smooth",
+  //   });
+  // };
 
   return (
     <>
