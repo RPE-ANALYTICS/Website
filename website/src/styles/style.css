@@ -389,7 +389,7 @@ body {
      object-fit: cover;
   width: 100vw;
   height: 70vh;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   background-repeat: no-repeat;
@@ -455,7 +455,6 @@ body {
 
 .about-content-section {
   width: 100%;
-  min-height: 550px;
   background-color: white;
   position: relative;
   display: -webkit-box;
@@ -468,12 +467,13 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 60px;
 }
 
 .about-content-section .about-who-we-are {
   width: 100%;
   max-width: 1300px;
-  margin: 20px 0;
+  margin: 10px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -539,8 +539,8 @@ body {
   position: absolute;
   width: 80%;
   height: 100%;
-  top: -25%;
-  right: 20%;
+  top: -20%;
+  left: 5%;
   background-color: white;
   z-index: 10;
 }
@@ -548,7 +548,7 @@ body {
 .about-content-section .about-who-we-are .wwa-content .wwa-col .wwa-col-img img {
   width: 100%;
   min-width: 378px;
-  max-height: 140%;
+  max-height: 130%;
   -o-object-fit: cover;
      object-fit: cover;
   -webkit-box-shadow: 0 10px 10px rgba(56, 56, 56, 0.2), 10px 10px 20px rgba(48, 48, 48, 0.2);
@@ -557,7 +557,6 @@ body {
 
 .about-content-section3 {
   width: 100vw;
-  padding-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -695,7 +694,6 @@ body {
 
 .about-team-section {
   width: 100%;
-  min-height: 550px;
   background-color: white;
   position: relative;
   display: -webkit-box;
@@ -708,13 +706,14 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-bottom: 150px;
+  padding-bottom: 60px;
+  margin-top: 30px;
 }
 
 .about-team-section .about-team-wrapper {
   width: 100%;
   max-width: 1300px;
-  margin: 50px 0;
+  margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -759,7 +758,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 30px;
 }
 
 .about-team-section .about-team-wrapper .atw-content .atw-col {
@@ -780,8 +778,8 @@ body {
   position: absolute;
   width: 80%;
   height: 100%;
-  top: -25%;
-  left: 20%;
+  top: -15%;
+  left: 5%;
   background-color: white;
   z-index: 10;
 }
@@ -789,7 +787,7 @@ body {
 .about-team-section .about-team-wrapper .atw-content .atw-col .atw-col-img img {
   width: 100%;
   min-width: 378px;
-  max-height: 160%;
+  max-height: 120%;
   -o-object-fit: cover;
      object-fit: cover;
   -webkit-box-shadow: 0 10px 10px rgba(56, 56, 56, 0.2), 10px 10px 20px rgba(48, 48, 48, 0.2);
@@ -800,7 +798,7 @@ body {
   width: 100vw;
   min-height: 202px;
   position: relative;
-  background-color: #f6f6f6;
+  background-color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -834,7 +832,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 70px 0 50px 0;
+  margin: 40px 0 50px 0;
 }
 
 .about-partners-section .about-partners-wrapper h1 {
@@ -862,6 +860,142 @@ body {
   width: 80%;
   margin-top: 20px;
   letter-spacing: 1.3px;
+}
+
+.industriesSection {
+  width: 100vw;
+  position: relative;
+  background-color: #f6f6f6;
+  background-color: #112838;
+  color: white;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px 20px;
+}
+
+.industriesSection .industries-wrapper {
+  width: 100%;
+  max-width: 1300px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.industriesSection .industries-wrapper h1 {
+  position: relative;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 2rem;
+  font-family: "Fjalla One", sans-serif;
+  text-align: center;
+}
+
+.industriesSection .industries-wrapper h1::before {
+  content: "";
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  width: 13%;
+  height: 6px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: #d42028;
+  border-radius: 10px;
+}
+
+.industriesSection .industries-wrapper .industry-cards {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px 0;
+}
+
+.industry-card {
+  background-color: transparent;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+  width: 30%;
+  max-width: 320px;
+  text-align: center;
+  margin: 30px 10px;
+  color: #112838;
+}
+
+.industry-card .industry-card-inner {
+  position: relative;
+  width: 100%;
+  min-height: 350px;
+  text-align: center;
+  -webkit-transition: -webkit-transform 0.6s;
+  transition: -webkit-transform 0.6s;
+  transition: transform 0.6s;
+  transition: transform 0.6s, -webkit-transform 0.6s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.industry-card .industry-card-inner .industry-card-front, .industry-card .industry-card-inner .industry-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.industry-card .industry-card-inner .industry-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.industry-card .industry-card-inner .industry-card-front img {
+  height: 80%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.industry-card .industry-card-inner .industry-card-front h3 {
+  background-color: white;
+  height: 20%;
+}
+
+.industry-card .industry-card-inner .industry-card-back {
+  background-color: #ffffff;
+  position: relative;
+  min-height: 350px;
+  color: white;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.industry-card:hover .industry-card-inner {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
 }
 
 .analyticsWrapper {
@@ -1313,7 +1447,7 @@ body {
 
 .analytics-content-section .analytics-industry-expertise .wwa-content .wwa-col .wwa-col-img {
   position: absolute;
-  width: 100%;
+  width: 95%;
   height: 100%;
   top: 0%;
   left: 0%;
@@ -1429,6 +1563,8 @@ body {
   max-height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-box-shadow: 0 10px 10px rgba(56, 56, 56, 0.2), 10px 10px 20px rgba(48, 48, 48, 0.2);
+          box-shadow: 0 10px 10px rgba(56, 56, 56, 0.2), 10px 10px 20px rgba(48, 48, 48, 0.2);
 }
 
 .contactWrapper {
@@ -1998,143 +2134,6 @@ body {
 
 .see-button button:hover {
   font-size: 1.1rem;
-}
-
-.industriesSection {
-  width: 100vw;
-  min-height: 30vh;
-  position: relative;
-  background-color: #f6f6f6;
-  background-color: #112838;
-  color: white;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 40px 20px;
-}
-
-.industriesSection .industries-wrapper {
-  width: 100%;
-  max-width: 1300px;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.industriesSection .industries-wrapper h1 {
-  position: relative;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  font-size: 2rem;
-  font-family: "Fjalla One", sans-serif;
-  text-align: center;
-}
-
-.industriesSection .industries-wrapper h1::before {
-  content: "";
-  position: absolute;
-  bottom: -25px;
-  left: 50%;
-  width: 13%;
-  height: 6px;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  background-color: #d42028;
-  border-radius: 10px;
-}
-
-.industriesSection .industries-wrapper .industry-cards {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 20px 0;
-}
-
-.industry-card {
-  background-color: transparent;
-  -webkit-perspective: 1000px;
-          perspective: 1000px;
-  width: 30%;
-  max-width: 320px;
-  text-align: center;
-  margin: 30px 10px;
-  color: #112838;
-}
-
-.industry-card .industry-card-inner {
-  position: relative;
-  width: 100%;
-  min-height: 350px;
-  text-align: center;
-  -webkit-transition: -webkit-transform 0.6s;
-  transition: -webkit-transform 0.6s;
-  transition: transform 0.6s;
-  transition: transform 0.6s, -webkit-transform 0.6s;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-.industry-card .industry-card-inner .industry-card-front, .industry-card .industry-card-inner .industry-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
-.industry-card .industry-card-inner .industry-card-front {
-  background-color: #bbb;
-  color: black;
-}
-
-.industry-card .industry-card-inner .industry-card-front img {
-  height: 80%;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.industry-card .industry-card-inner .industry-card-front h3 {
-  background-color: white;
-  height: 20%;
-}
-
-.industry-card .industry-card-inner .industry-card-back {
-  background-color: #ffffff;
-  position: relative;
-  min-height: 350px;
-  color: white;
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
-}
-
-.industry-card:hover .industry-card-inner {
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
 }
 
 .puzzles-operations {

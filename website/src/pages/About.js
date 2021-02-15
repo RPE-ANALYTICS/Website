@@ -27,7 +27,7 @@ export default function About() {
           </div>
           <div className="about-thumbnail-content">
             <h1>
-              <span>A</span>bout
+              <span>A</span>bout us
             </h1>
             <p>
               We believe that high-quality, meaningful digital products can help

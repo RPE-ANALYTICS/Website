@@ -58,7 +58,7 @@
       object-fit: cover;
       width: 100vw;
       height: 70vh;
-      position: fixed;
+      position: absolute;
       top: 0;
       left: 0;
       background-repeat: no-repeat;
@@ -122,19 +122,103 @@
   }
 }
 //==========================section 2===========================
+// .about-content-section {
+//   width: 100%;
+//   min-height: 550px;
+//   background-color: rgb(255, 255, 255);
+//   position: relative;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+
+//   .about-who-we-are {
+//     width: 100%;
+//     max-width: 1300px;
+//     margin: 20px 0;
+//     // background-color: green;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//     text-align: justify;
+
+//     h1 {
+//       position: relative;
+//       margin-bottom: 20px;
+//       text-transform: uppercase;
+//       letter-spacing: 3px;
+//       font-size: 2rem;
+//       font-family: $Fontfamily-serif;
+//       color: $Fontcolor-second;
+//       text-align: center;
+
+//       &::before {
+//         content: "";
+//         position: absolute;
+//         bottom: -25px;
+//         left: 50%;
+//         width: 13%;
+//         height: 6px;
+//         transform: translateX(-50%);
+//         background-color: $Fontcolor-main;
+//         border-radius: 10px;
+//       }
+//     }
+
+//     p {
+//       letter-spacing: 2px;
+//     }
+
+//     .wwa-content {
+//       display: flex;
+//       margin-top: 30px;
+
+//       .wwa-col {
+//         width: 50%;
+//         padding: 30px;
+//         display: flex;
+//         flex-direction: column;
+//         position: relative;
+//         letter-spacing: 1.3px;
+
+//         .wwa-col-img {
+//           position: absolute;
+//           width: 80%;
+//           height: 100%;
+//           top: -25%;
+//           right: 20%;
+//           background-color: white;
+//           z-index: 10;
+
+//           img {
+//             width: 100%;
+//             min-width: 378px;
+//             max-height: 140%;
+//             object-fit: cover;
+//             box-shadow: 0 10px 10px rgba(56, 56, 56, 0.2),
+//               10px 10px 20px rgba(48, 48, 48, 0.2);
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+//============ section wwa =========================
+
 .about-content-section {
   width: 100%;
-  min-height: 550px;
+  // min-height: 550px;
   background-color: rgb(255, 255, 255);
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 60px;
 
   .about-who-we-are {
     width: 100%;
     max-width: 1300px;
-    margin: 20px 0;
+    margin: 10px 0;
     // background-color: green;
     display: flex;
     flex-direction: column;
@@ -181,15 +265,15 @@
           position: absolute;
           width: 80%;
           height: 100%;
-          top: -25%;
-          right: 20%;
+          top: -20%;
+          left: 5%;
           background-color: white;
           z-index: 10;
 
           img {
             width: 100%;
             min-width: 378px;
-            max-height: 140%;
+            max-height: 130%;
             object-fit: cover;
             box-shadow: 0 10px 10px rgba(56, 56, 56, 0.2),
               10px 10px 20px rgba(48, 48, 48, 0.2);
@@ -200,10 +284,12 @@
   }
 }
 
+//====================section wad========================
+
 .about-content-section3 {
   width: 100vw;
   // height: 100px;
-  padding-top: 20px;
+  // padding-top: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -309,20 +395,103 @@
 }
 
 //================section 3=======================
+// .about-team-section {
+//   width: 100%;
+//   // min-height: 550px;
+//   background-color: rgb(255, 255, 255);
+//   position: relative;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   padding-bottom: 50px;
+
+//   .about-team-wrapper {
+//     width: 100%;
+//     max-width: 1300px;
+//     margin: 50px 0;
+//     // background-color: green;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//     text-align: justify;
+
+//     h1 {
+//       position: relative;
+//       margin-bottom: 20px;
+//       text-transform: uppercase;
+//       letter-spacing: 3px;
+//       font-size: 2rem;
+//       font-family: $Fontfamily-serif;
+//       color: $Fontcolor-second;
+//       text-align: center;
+
+//       &::before {
+//         content: "";
+//         position: absolute;
+//         bottom: -25px;
+//         left: 50%;
+//         width: 13%;
+//         height: 6px;
+//         transform: translateX(-50%);
+//         background-color: $Fontcolor-main;
+//         border-radius: 10px;
+//       }
+//     }
+//     p {
+//       letter-spacing: 2px;
+//     }
+
+//     .atw-content {
+//       display: flex;
+//       margin-top: 30px;
+
+//       .atw-col {
+//         width: 50%;
+//         padding: 30px;
+//         display: flex;
+//         flex-direction: column;
+//         position: relative;
+//         letter-spacing: 1.3px;
+
+//         .atw-col-img {
+//           position: absolute;
+//           width: 80%;
+//           height: 100%;
+//           top: -25%;
+//           left: 20%;
+//           background-color: white;
+//           z-index: 10;
+
+//           img {
+//             width: 100%;
+//             min-width: 378px;
+//             max-height: 140%;
+//             object-fit: cover;
+//             box-shadow: 0 10px 10px rgba(56, 56, 56, 0.2),
+//               10px 10px 20px rgba(48, 48, 48, 0.2);
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+//================section about=======================
 .about-team-section {
   width: 100%;
-  min-height: 550px;
+  // min-height: 550px;
   background-color: rgb(255, 255, 255);
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 150px;
+  padding-bottom: 60px;
+  margin-top: 30px;
 
   .about-team-wrapper {
     width: 100%;
     max-width: 1300px;
-    margin: 50px 0;
+    margin: 0;
     // background-color: green;
     display: flex;
     flex-direction: column;
@@ -355,7 +524,7 @@
 
     .atw-content {
       display: flex;
-      margin-top: 30px;
+      // margin-top: 30px;
 
       .atw-col {
         width: 50%;
@@ -369,15 +538,15 @@
           position: absolute;
           width: 80%;
           height: 100%;
-          top: -25%;
-          left: 20%;
+          top: -15%;
+          left: 5%;
           background-color: white;
           z-index: 10;
 
           img {
             width: 100%;
             min-width: 378px;
-            max-height: 160%;
+            max-height: 120%;
             object-fit: cover;
             box-shadow: 0 10px 10px rgba(56, 56, 56, 0.2),
               10px 10px 20px rgba(48, 48, 48, 0.2);
@@ -387,15 +556,13 @@
     }
   }
 }
-//================section 4=======================
-
 
 //================section 5=======================
 .about-partners-section {
   width: 100vw;
   min-height: 202px;
   position: relative;
-  background-color: $BackgroundColor-main;
+  background-color: #fff;
   // background-color: rgb(17, 40, 56);
   // color: white;
   display: flex;
@@ -413,7 +580,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 70px 0 50px 0;
+    margin: 40px 0 50px 0;
 
     h1 {
       font-family: $Fontfamily-serif;
@@ -442,3 +609,146 @@
     }
   }
 }
+
+
+  //===================================================
+  .industriesSection {
+    width: 100vw;
+    // min-height: 30vh;
+    position: relative;
+    background-color: $BackgroundColor-main;
+    background-color: #112838;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px;
+  
+    .industries-wrapper {
+      width: 100%;
+      max-width: 1300px;
+      height: 100%;
+      // background-color: red;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      
+  
+      h1 {
+        position: relative;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-size: 2rem;
+        font-family: $Fontfamily-serif;
+        // color: $Fontcolor-second;
+        text-align: center;
+
+  
+        &::before {
+          content: "";
+          position: absolute;
+          bottom: -25px;
+          left: 50%;
+          width: 13%;
+          height: 6px;
+          transform: translateX(-50%);
+          background-color: $Fontcolor-main;
+          border-radius: 10px;
+        }
+      }
+  
+      .industry-cards {
+        width: 100%;
+        // background-color: green;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 10px 0;
+  
+        // .industry-card {
+        //   width: 30%;
+        //   background-color: rgb(255, 255, 255);
+        //   text-align: center;
+        //   margin: 30px 10px;
+        //   color:#112838;
+
+  
+        //   img {
+        //     height: 200px;
+        //     // width: 300px;
+        //     width: 100%;
+        //     // margin: 20px;
+        //     object-fit: cover;
+        //   }
+        // }
+      }
+    }
+  }
+
+
+  .industry-card {
+    background-color: transparent;
+    // width: 300px;
+    // height: 300px;
+    perspective: 1000px;
+    width: 30%;
+    max-width: 320px;
+    // background-color: rgb(255, 255, 255);
+    text-align: center;
+    margin: 30px 10px;
+    color:#112838;
+
+    // &:hover {
+    //   transform: rotateY(180deg);
+    // }
+
+    .industry-card-inner {
+      position: relative;
+      width: 100%;
+      min-height: 350px;
+      text-align: center;
+      transition: transform 0.6s;
+      transform-style: preserve-3d;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      // transform: rotateY(180deg);
+
+      .industry-card-front, .industry-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+      }
+
+      .industry-card-front {
+        background-color: #bbb;
+        color: black;
+
+        img {
+            height: 80%;
+            // width: 300px;
+            width: 100%;
+            // margin: 20px;
+            object-fit: cover;
+          }
+          h3 {
+            background-color: white;
+            height: 20%;
+          }
+      }
+
+      .industry-card-back {
+        background-color: #ffffff;
+        position: relative;
+        min-height: 350px;
+        color: white;
+        transform: rotateY(180deg);
+      }
+    }
+  }
+  
+  
+  .industry-card:hover .industry-card-inner {
+    transform: rotateY(180deg);
+  }
