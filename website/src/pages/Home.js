@@ -26,10 +26,7 @@ export default function Home() {
       // start: "top top"
     });
     let tl3 = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".homeCards",
-        start: "top bottom",
-      },
+        trigger: ".homeCards"
     });
 
     tl3.from(".banner-title", {
@@ -140,8 +137,8 @@ export default function Home() {
           <div className="c-puzzle absolute"></div>
           <div className="c-puzzle absolute"></div>
           <div className="home-content absolute">
-            {/* <h1>ACCELERATE  YOUR DIGITAL TRANSFORMATION JOURNEY</h1> */}
-            <p>Accelerate your digital transformation journey</p>
+            <p>ACCELERATE  YOUR DIGITAL TRANSFORMATION JOURNEY</p>
+            {/* <p>Accelerate your digital transformation journey</p> */}
           </div>
           <div className="home-bottom-line absolute">
             <p onClick={handleScroll}>Scroll down</p>

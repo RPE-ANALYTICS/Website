@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto:wght@300&family=Bodoni+Moda&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@800;900&display=swap");
 * {
@@ -99,7 +100,7 @@ body {
 
 @media only screen and (min-width: 991px) {
   .brandLogo {
-    width: 220px;
+    width: 210px;
   }
 }
 
@@ -120,7 +121,7 @@ body {
   color: white !important;
   font-size: 1.1rem;
   letter-spacing: 2px;
-  margin-right: 10px;
+  margin: 0px 10px;
   text-transform: uppercase;
   text-decoration: none;
   font-weight: 600;
@@ -156,6 +157,10 @@ body {
     background-color: transparent;
     width: 100%;
   }
+}
+
+#collasible-nav-dropdown {
+  margin: 0;
 }
 
 .dropdown-menu {
@@ -231,14 +236,13 @@ body {
       -ms-flex-align: center;
           align-items: center;
   max-width: 1400px;
-  margin: 30px auto;
+  margin: 5px auto;
   position: relative;
 }
 
 .brandsWrapper .brand {
-  max-height: 60px;
-  max-width: 180px;
-  margin: 10px 20px;
+  width: 160px;
+  margin: 5px 20px;
 }
 
 .brandsWrapper .brand img {
@@ -492,7 +496,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 3px;
   font-size: 2rem;
-  font-family: "Bodoni Moda", serif;
+  font-family: "Fjalla One", sans-serif;
   color: #253c4d;
   text-align: center;
 }
@@ -630,7 +634,7 @@ body {
   width: 100%;
   font-size: 2.2rem;
   letter-spacing: 2px;
-  font-family: "Bodoni Moda", serif;
+  font-family: "Fjalla One", sans-serif;
 }
 
 .about-content-section3 .about-content-wrapper3 .cards3 {
@@ -733,7 +737,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 3px;
   font-size: 2rem;
-  font-family: "Bodoni Moda", serif;
+  font-family: "Fjalla One", sans-serif;
   color: #253c4d;
   text-align: center;
 }
@@ -834,7 +838,7 @@ body {
 }
 
 .about-partners-section .about-partners-wrapper h1 {
-  font-family: "Bodoni Moda", serif;
+  font-family: "Fjalla One", sans-serif;
   font-size: 2.2rem;
   margin-bottom: 20px;
   position: relative;
@@ -1244,7 +1248,7 @@ body {
 .analytics-content-section2 .analytics-content-wrapper2 .title2 h1 {
   margin-bottom: 10px 0;
   width: 70%;
-  font-family: "Bodoni Moda", serif;
+  font-family: "Fjalla One", sans-serif;
 }
 
 .analytics-content-section2 .analytics-content-wrapper2 .cards2 {
@@ -1484,7 +1488,7 @@ body {
 
 .puzzles-home .c-puzzle:nth-of-type(2) {
   background-color: rgba(0, 0, 0, 0.2);
-  background-color: rgba(129, 109, 116, 0.2);
+  background-color: rgba(104, 92, 96, 0.2);
   left: 3%;
   top: 0;
   width: 8%;
@@ -1495,7 +1499,7 @@ body {
 
 .puzzles-home .c-puzzle:nth-of-type(3) {
   background-color: rgba(2, 2, 2, 0.4);
-  background-color: rgba(129, 109, 121, 0.2);
+  background-color: rgba(104, 92, 96, 0.2);
   left: 5%;
   top: 0;
   width: 12%;
@@ -1511,7 +1515,7 @@ body {
 
 .homeWrapper-home {
   width: 100%;
-  height: 90vh;
+  height: 85vh;
   position: relative;
   background-color: #fff;
   overflow: hidden;
@@ -1522,7 +1526,7 @@ body {
   position: absolute;
   width: 100%;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(14, 9, 9, 0.4);
   top: 0;
   left: 0;
 }
@@ -1532,25 +1536,27 @@ body {
      object-fit: cover;
   width: 100vw;
   height: 100vh;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   background-repeat: no-repeat;
 }
 
 .home-content {
-  font-family: "Bodoni Moda", serif;
+  font-family: "Fjalla One", sans-serif;
+  letter-spacing: 3px;
   bottom: 15%;
   right: 4%;
   z-index: 10;
   color: white;
-  width: 50%;
+  width: 46%;
   font-weight: 500;
-  font-size: calc(22px + 40 * ((53vw + 53vh) - 600px) / 820);
+  font-size: calc(16px + 40 * ((53vw + 53vh) - 600px) / 820);
 }
 
 .home-bottom-line {
-  font-family: "Bodoni Moda", serif;
+  font-family: "Fjalla One", sans-serif;
+  letter-spacing: 2px;
   bottom: 8%;
   right: 12%;
   z-index: 10;
@@ -1588,7 +1594,7 @@ body {
 
 .home-right-line-top {
   top: 0;
-  right: 8%;
+  right: 6%;
   z-index: 10;
   color: white;
   height: 100%;
@@ -1604,7 +1610,7 @@ body {
 
 .home-right-line-bottom {
   top: 57%;
-  right: 8%;
+  right: 6%;
   z-index: 10;
   color: white;
   height: 100%;
@@ -1619,7 +1625,7 @@ body {
 
 .home-right-line-middle {
   top: 50%;
-  right: 8%;
+  right: 6%;
   z-index: 10;
   color: white;
   height: auto;
@@ -1644,7 +1650,7 @@ body {
 .homeBanner {
   position: relative;
   width: 100%;
-  padding: 40px 0;
+  padding: 20px 0;
   background-color: #f6f6f6;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1660,7 +1666,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  color: #303133;
+  color: #0f0f0f;
 }
 
 .homeBanner p:first-of-type {
@@ -1675,13 +1681,12 @@ body {
 
 .homeBanner h3 {
   font-size: 1.7rem;
-  max-width: 80%;
+  width: 100%;
   text-align: center;
 }
 
 .homeCards {
   width: 100vw;
-  min-height: 70vh;
   background-color: white;
   padding: 10px 40px;
   -webkit-box-pack: center;
@@ -1690,6 +1695,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 20px;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1702,10 +1708,10 @@ body {
 
 .cards-title {
   width: 100vw;
-  height: 100px;
   max-width: 1300px;
   text-align: center;
-  padding: 30px 0;
+  padding: 10px 0;
+  margin-top: 20px;
 }
 
 .cards-title h1 {
@@ -1714,7 +1720,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 3px;
   font-size: 2rem;
-  font-family: "Bodoni Moda", serif;
+  font-family: "Fjalla One", sans-serif;
   color: #253c4d;
   text-align: center;
 }
@@ -1760,6 +1766,7 @@ body {
   max-width: 320px;
   min-width: 270px;
   margin: 10px 30px;
+  border-radius: 5px;
   padding: 2rem 1.9rem;
   -webkit-box-shadow: 0 10px 10px rgba(56, 56, 56, 0.2), 10px 10px 20px rgba(48, 48, 48, 0.2);
           box-shadow: 0 10px 10px rgba(56, 56, 56, 0.2), 10px 10px 20px rgba(48, 48, 48, 0.2);
@@ -1912,7 +1919,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 3px;
   font-size: 2rem;
-  font-family: "Bodoni Moda", serif;
+  font-family: "Fjalla One", sans-serif;
   text-align: center;
 }
 
@@ -2280,7 +2287,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 3px;
   font-size: 2rem;
-  font-family: "Bodoni Moda", serif;
+  font-family: "Fjalla One", sans-serif;
   color: #253c4d;
   text-align: center;
 }
@@ -2378,7 +2385,7 @@ body {
 }
 
 .career-resume h1 {
-  font-family: "Bodoni Moda", serif;
+  font-family: "Fjalla One", sans-serif;
 }
 
 .career-resume h1 svg {

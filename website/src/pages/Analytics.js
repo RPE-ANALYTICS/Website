@@ -202,68 +202,11 @@ export default function Analytics() {
                   only your teams will gain improvement in productivity, they
                   will be able to make more informed, data driven decisions.
                 </p>
-                {/* <p>
-                  Your team will no longer spend time on gathering data,
-                  producing manual reports – instead they will be able to focus
-                  on the action to make your business better.
-                </p>
-                <p>
-                  Our dashboards will enable your organization to drive savings
-                  within Supply Chain, Inventory, and will enable better cost
-                  control.
-                </p>
-                <p>
-                  The insights into internal long-range planning, blended with
-                  the external market data will allow you to focus your business
-                  growth strategy.
-                </p> */}
               </div>
             </div>
           </div>
         </div>
-        {/* ====================================================================================
-        <div className="analytics-content-section">
-          <div className='analytics-content-wrapper'>
-            <div className="analytics-content-col-1 column">
-              <div className="analytics-content-col-1-card">
-                <div className="analytics-content-col-1-card-txt">
-                  <p>Lorem impsum dolor es enum</p>
-                  <p>Lorem impsum dolor es enum</p>
-                  <p>Lorem impsum dolor es enum</p>
-                  <p>Lorem impsum dolor es enum</p>
-                  <p>Lorem impsum dolor es enum</p>
-                </div>
-                <div className="analytics-content-col-1-card-title">
-                  <h3>INDUSTRY</h3>
-                </div>
-              </div>
-            </div>
-            <div className="analytics-content-col-2 column">
-              <div className="analytics-content-col-2-card">
-              <div className="analytics-content-col-2-circle">
-              </div>
-              </div>
-            </div>
-            <div className="analytics-content-col-3 column">
-            <div className="analytics-content-col-3-card">
-                <div className="analytics-content-col-3-card-title">
-                  <h3>ROI</h3>
-                </div>
-                <div className="analytics-content-col-3-card-txt">
-                  <p>Lorem impsum dolor es enum</p>
-                  <p>Lorem impsum dolor es enum</p>
-                  <p>Lorem impsum dolor es enum</p>
-                  <p>Lorem impsum dolor es enum</p>
-                  <p>Lorem impsum dolor es enum</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> */}
       </section>
-      {/* <section className="brandSection section">
-        <Brands />
-      </section> */}
     </>
   );
 }
