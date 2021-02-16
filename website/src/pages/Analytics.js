@@ -5,7 +5,9 @@ import Data from "../img/icons/data.svg";
 import Vision from "../img/icons/vision.svg";
 import BigData from "../img/big-data.jpg";
 
-import CloudStorage from '../img/icons/cloud-storage.svg'
+import Management from '../img/icons/management.svg';
+import Business from '../img/icons/business.svg';
+import IT from '../img/icons/it.svg';
 
 import xxx from "../img/city.jpg";
 
@@ -44,24 +46,24 @@ export default function Analytics() {
             </div>
             <div className="cards2">
               <div className="card2">
-                <img src={CloudStorage}></img>
-                <h3>Data</h3>
+                <img src={Management}></img>
+                <h3>Management</h3>
                 <p>
                   Sample text. Lorem ipsum dolor es momentum estra de onio nunc
                   justo utlificatum.
                 </p>
               </div>
               <div className="card2">
-                <img src={CloudStorage}></img>
-                <h3>Discovery</h3>
+                <img src={Business}></img>
+                <h3>Business</h3>
                 <p>
                   Sample text. Lorem ipsum dolor es momentum estra de onio nunc
                   justo utlificatum.
                 </p>
               </div>
               <div className="card2">
-                <img src={CloudStorage}></img>
-                <h3>Deployment</h3>
+                <img src={IT}></img>
+                <h3>Information Technology</h3>
                 <p>
                   Sample text. Lorem ipsum dolor es momentum estra de onio nunc
                   justo utlificatum.
@@ -212,7 +214,7 @@ export default function Analytics() {
             <div className="wwa-content">
               <div className="wwa-col">
                 <div className="wwa-col-img">
-                  <img src="https://images.pexels.com/photos/3182755/pexels-photo-3182755.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"></img>
+                  <img src="https://media.istockphoto.com/photos/analysing-data-picture-id872025014?s=612x612"></img>
                 </div>
               </div>
               <div className="wwa-col">
@@ -258,7 +260,7 @@ export default function Analytics() {
               </div>
               <div className="arw-col">
                 <div className="arw-col-img">
-                  <img src="https://images.pexels.com/photos/3184433/pexels-photo-3184433.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"></img>
+                  <img src="https://media.istockphoto.com/vectors/business-people-on-chart-data-vector-id978044314?s=612x612"></img>
                 </div>
               </div>
             </div>

@@ -51,6 +51,7 @@
       height: 100vh;
       // background-color: rgba(71, 71, 71, 0.4);
       background-color: rgba(14, 9, 9, 0.4);
+      background-color: rgba(0, 0, 0, 0.4);
       top: 0;
       left: 0;
     }
@@ -236,7 +237,7 @@
       position: absolute;
       bottom: -25px;
       left: 50%;
-      width: 13%;
+      width: 5%;
       height: 6px;
       transform: translateX(-50%);
       background-color: $Fontcolor-main;
@@ -260,7 +261,7 @@
 
   .card {
     // height: 100%;
-    height: 410px;
+    height: 400px;
     // width: 30%;
     max-width: 320px;
     min-width: 270px;
