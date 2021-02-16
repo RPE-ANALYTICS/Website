@@ -1,29 +1,54 @@
-import React from 'react';
+import React from "react";
 
-import ContactUs from '../components/ContactUs';
+import ContactUs from "../components/ContactUs";
 
-import image from './../img/map.jpg'
+import image from "./../img/map-pin.png";
 
 export default function Contact() {
-    return (
-        <>
-        <section className="contactWrapper section">
-
-          <div className="contact-background">
-            {/* <img src="https://cdn4.vectorstock.com/i/1000x1000/13/63/global-network-connection-background-vector-18811363.jpg"></img> */}
-            <img src='https://vemaps.com/uploads/img/large/wrld-16.jpg'></img>
-            {/* <img src={image}></img> */}
+  const handleSend = () => {
+    window.open('mailto:email@example.com?subject=Subject&body=Body%20goes%20here')
+  }
+  return (
+    <>
+      <section className="contactWrapper section">
+        <div className="contact-background">
+          <img src={image}></img>
+        </div>
+        <div className="contact-address-wrapper">
+        <div className='address-contact-us'>
+            <h1><i className="fas fa-minus"></i> Send Your Email <i className="fas fa-minus"></i></h1>
+            <button onClick={handleSend}>Send</button>
           </div>
-          <div className="darker"></div>
-          <div className="contact-container">
-            <div className="contact-right-col">
-              <div className="form-container">
-                  {/* <ContactUs/> */}
-              </div>
+          <div className="address">
+            <div className="address-us links">
+              <ul>
+                <li className="address-country">United States</li>
+                <li>
+                  <p>RPE</p>
+                </li>
+                <li>2701 Cambridge Court</li>
+                <li>Auburn Hills, MI 48326</li>
+                <li>
+                <i class="far fa-envelope-open"></i> <span>rpe@rp-eng.com</span>
+                </li>
+              </ul>
+            </div>
+            <div className="address-pl links">
+              <ul>
+                <li className="address-country">Poland</li>
+                <li>
+                  <p>RPE</p>
+                </li>
+                <li>Legnicka 55f</li>
+                <li>54-203 Wroclaw</li>
+                <li>
+                <i class="far fa-envelope-open"></i> <span>rpe@rp-eng.com</span>
+                </li>
+              </ul>
             </div>
           </div>
-        </section>
-
-      </>
-    )
+        </div>
+      </section>
+    </>
+  );
 }

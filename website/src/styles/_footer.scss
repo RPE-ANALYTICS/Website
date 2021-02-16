@@ -3,14 +3,11 @@
     height: 5vh;
     background-color: $BackgroundColor-dark;
     flex-direction: column;
-    // justify-content: center;
     align-items: center;
     color: grey;
-    // padding: 30px 30px 10px 30px;
     letter-spacing: 1.2px;
     position: relative;
     overflow-x: hidden;
-    // overflow: hidden;
 
     @include mq(991px) {
         // min-height: 30vh;
