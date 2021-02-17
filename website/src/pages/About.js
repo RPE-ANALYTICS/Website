@@ -35,10 +35,11 @@ export default function About() {
             </p>
           </div>
         </div>
+        {/* ===================WHO WE ARE======================== */}
         <div className="about-content-section">
           <div className="about-who-we-are">
             <div className="wwa-content">
-              <div className="wwa-col">
+              <div className="wwa-col wwa-col-img-wrapper">
                 <div className="wwa-col-img">
                   <img src="https://images.pexels.com/photos/3182755/pexels-photo-3182755.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"></img>
                 </div>
@@ -65,7 +66,7 @@ export default function About() {
             </div>
           </div>
         </div>
-
+        {/* ===================WE ARE DIFFERENT======================== */}
         <div className="about-content-section3">
           <div className="about-content-wrapper3">
             <div className="title3">
@@ -129,7 +130,7 @@ export default function About() {
             </div>
           </div>
         </div>
-
+        {/* ===================ABOUT OUR TEAM======================== */}
         <div className="about-team-section">
           <div className="about-team-wrapper">
             <div className="atw-content">
@@ -152,7 +153,7 @@ export default function About() {
                   industries.
                 </p>
               </div>
-              <div className="atw-col">
+              <div className="atw-col atw-col-img-wrapper">
                 <div className="atw-col-img">
                   <img src="https://images.pexels.com/photos/3184433/pexels-photo-3184433.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"></img>
                 </div>
@@ -160,59 +161,58 @@ export default function About() {
             </div>
           </div>
         </div>
+        {/* ===================KEY INDUSTRIES======================== */}
         <section className="industriesSection section">
-        <div className="industries-wrapper">
-          <h1>Key Industries We Support</h1>
-          <div className="industry-cards">
-            {/*=====================================================*/}
-            <div className="industry-card">
-              <div className="industry-card-inner">
-                <div className="industry-card-front">
-                  <img src='https://www.medgadget.com/wp-content/uploads/2020/07/Healthcare9.jpeg'></img>
-                  <h3>Automotive</h3>
-                </div>
-                <div className="industry-card-back">
-                  <h1>About Automotive</h1> 
-                  {/* <p>Architect & Engineer</p> 
+          <div className="industries-wrapper">
+            <h1>Key Industries We Support</h1>
+            <div className="industry-cards">
+              {/*=====================================================*/}
+              <div className="industry-card">
+                <div className="industry-card-inner">
+                  <div className="industry-card-front">
+                    <img src="https://www.medgadget.com/wp-content/uploads/2020/07/Healthcare9.jpeg"></img>
+                    <h3>Automotive</h3>
+                  </div>
+                  <div className="industry-card-back">
+                    <h1>About Automotive</h1>
+                    {/* <p>Architect & Engineer</p> 
                   <p>We love that guy</p> */}
+                  </div>
                 </div>
               </div>
-            </div>
-            {/*=====================================================*/}
-            {/*=====================================================*/}
-            <div className="industry-card">
-              <div className="industry-card-inner">
-                <div className="industry-card-front">
-                  <img src='https://www.medgadget.com/wp-content/uploads/2020/07/Healthcare9.jpeg'></img>
-                  <h3>Defense</h3>
-                </div>
-                <div className="industry-card-back">
-                  <h1>About Defense</h1> 
-                  {/* <p>Architect & Engineer</p> 
+              {/*=====================================================*/}
+              <div className="industry-card">
+                <div className="industry-card-inner">
+                  <div className="industry-card-front">
+                    <img src="https://www.medgadget.com/wp-content/uploads/2020/07/Healthcare9.jpeg"></img>
+                    <h3>Defense</h3>
+                  </div>
+                  <div className="industry-card-back">
+                    <h1>About Defense</h1>
+                    {/* <p>Architect & Engineer</p> 
                   <p>We love that guy</p> */}
+                  </div>
                 </div>
               </div>
-            </div>
-            {/*=====================================================*/}
-            {/*=====================================================*/}
-            <div className="industry-card">
-              <div className="industry-card-inner">
-                <div className="industry-card-front">
-                  <img src='https://www.medgadget.com/wp-content/uploads/2020/07/Healthcare9.jpeg'></img>
-                  <h3>Medical</h3>
-                </div>
-                <div className="industry-card-back">
-                  <h1>About Medical</h1> 
-                  {/* <p>Architect & Engineer</p> 
+              {/*=====================================================*/}
+              <div className="industry-card">
+                <div className="industry-card-inner">
+                  <div className="industry-card-front">
+                    <img src="https://www.medgadget.com/wp-content/uploads/2020/07/Healthcare9.jpeg"></img>
+                    <h3>Medical</h3>
+                  </div>
+                  <div className="industry-card-back">
+                    <h1>About Medical</h1>
+                    {/* <p>Architect & Engineer</p> 
                   <p>We love that guy</p> */}
+                  </div>
                 </div>
               </div>
+              {/*=====================================================*/}
             </div>
-            {/*=====================================================*/}
           </div>
-        </div>
-      </section>
-
+        </section>
+        {/* ===================OUR PARTNERS======================== */}
         <div className="about-partners-section">
           <div className="about-partners-wrapper">
             <h1>OUR PARTNERS</h1>
@@ -224,6 +224,7 @@ export default function About() {
             </p>
           </div>
         </div>
+        {/* ===================BRANDS======================== */}
         <section className="brandSection section">
           <Brands />
         </section>
