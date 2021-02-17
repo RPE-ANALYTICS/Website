@@ -1816,15 +1816,22 @@ body {
   right: 4%;
   z-index: 10;
   color: white;
-  width: 46%;
+  width: 55%;
   font-weight: 500;
-  font-size: calc(16px + 40 * ((53vw + 53vh) - 600px) / 820);
+  font-size: calc(20px + 40 * ((53vw + 53vh) - 600px) / 820);
+}
+
+@media only screen and (min-width: 991px) {
+  .home-content {
+    font-size: calc(16px + 40 * ((53vw + 53vh) - 600px) / 820);
+    width: 46%;
+  }
 }
 
 .home-bottom-line {
   font-family: "Fjalla One", sans-serif;
   letter-spacing: 2px;
-  bottom: 8%;
+  bottom: 2%;
   right: 12%;
   z-index: 10;
   color: white;
@@ -1839,6 +1846,12 @@ body {
       flex-wrap: nowrap;
 }
 
+@media only screen and (min-width: 991px) {
+  .home-bottom-line {
+    bottom: 8%;
+  }
+}
+
 .home-bottom-line span {
   display: block;
   width: 80%;
@@ -1847,11 +1860,26 @@ body {
           transform: translateY(30%);
 }
 
+@media only screen and (min-width: 991px) {
+  .home-bottom-line span {
+    -webkit-transform: translateY(30%);
+            transform: translateY(30%);
+    width: 80%;
+  }
+}
+
 .home-bottom-line p {
   color: #ff2828;
-  margin-left: 50px;
-  width: 20%;
-  font-size: 1.2rem;
+  margin-left: 0;
+  font-size: 1rem;
+}
+
+@media only screen and (min-width: 991px) {
+  .home-bottom-line p {
+    margin-left: 50px;
+    font-size: 1.2rem;
+    width: 20%;
+  }
 }
 
 .home-bottom-line p:hover {
@@ -2013,10 +2041,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -2024,6 +2052,15 @@ body {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+}
+
+@media only screen and (min-width: 991px) {
+  .cards-wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 
 .card {

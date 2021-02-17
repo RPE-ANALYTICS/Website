@@ -14,7 +14,7 @@ export default function Brands() {
         let tl = gsap.timeline({
             scrollTrigger: {
                 trigger: '.homeCards',
-                start: "center center"
+                start: "top center"
             }
         })
     
