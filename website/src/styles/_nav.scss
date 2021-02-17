@@ -5,18 +5,19 @@
     position: fixed;
     z-index: 1000;
     margin-top: 0 !important;
-    box-shadow: 0px 5px 5px -1px rgba(0,0,0,0.5);
+    box-shadow: 0px 5px 5px -1px rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: $Fontfamily-sansSerif-1;
     transition-delay: 0s !important;
+
     @include mq(991px) {
-       padding: 0 20px;
+        padding: 0 20px;
     }
 }
 
-.navbar{
+.navbar {
     width: 100vw;
     // max-width: 1500px;
     height: 100%;
@@ -28,38 +29,41 @@
 
     a {
         display: block;
-        padding: 10px 0;
+        // padding: 10px 0;
     }
 
     @include mq(991px) {
         width: 100vw;
         // max-width: 1500px;
-        padding:0 5%;
+        padding: 0 5%;
         height: 100%;
         margin: 0 auto;
-    
+
         a {
             display: block;
         }
-      }
+    }
 }
 
 .brandLogo {
     width: 160px;
     // height: 76x;
-    
+
     @include mq(991px) {
         width: 180px;
         // height: 80px;
         // opacity: 0.8;
-      }
+    }
 }
 
 
 .navbar-nav {
     display: flex;
+    // flex-direction: row;
     justify-content: center;
     align-items: center;
+    height: 100%;
+
     a {
         display: inline-block;
         color: rgb(255, 255, 255) !important;
@@ -71,9 +75,9 @@
         text-decoration: none;
         font-weight: 600;
 
-    &:hover {
-        color: $Fontcolor-main !important;
-    }
+        &:hover {
+            color: $Fontcolor-main !important;
+        }
     }
 
     // a:nth-of-type(1) {
@@ -82,7 +86,7 @@
     // }
 
     .active {
-        color: red !important; 
+        color: red !important;
     }
 
     @include mq(991px) {
@@ -91,10 +95,10 @@
         height: auto;
         margin-right: 30px;
         align-items: left;
-      }
+    }
 }
 
-#responsive-navbar-nav{
+#responsive-navbar-nav {
     background-color: rgba(0, 0, 0, 0.8);
     text-align: center;
     width: 100%;
@@ -102,7 +106,7 @@
     @include mq(991px) {
         background-color: transparent;
         width: 100%;
-      }
+    }
 }
 
 #collasible-nav-dropdown {
@@ -123,9 +127,11 @@
         width: 100%;
         // display: block;
     }
+
     a:hover {
         background-color: rgba(0, 0, 0, .5);
     }
+
     @include mq(991px) {
         background-color: rgba(0, 0, 0, 0.3);
         text-align: left;
@@ -135,10 +141,11 @@
             color: white !important;
 
         }
+
         a:hover {
             background-color: rgba(0, 0, 0, .5);
         }
-      }
+    }
 }
 
 .logo-nav {
@@ -153,7 +160,7 @@
 
     @include mq(991px) {
         margin-right: 20px;
-      }
+    }
 }
 
 .navbar-toggler-icon {
