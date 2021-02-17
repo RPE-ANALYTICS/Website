@@ -2593,7 +2593,7 @@ body {
   text-align: justify;
 }
 
-.career-content-section .career-wrapper h1 {
+.career-content-section .career-wrapper .career-title {
   position: relative;
   margin-bottom: 20px;
   text-transform: uppercase;
@@ -2604,7 +2604,7 @@ body {
   text-align: center;
 }
 
-.career-content-section .career-wrapper h1::before {
+.career-content-section .career-wrapper .career-title::before {
   content: "";
   position: absolute;
   bottom: -25px;
@@ -2667,14 +2667,16 @@ body {
 
 .career-content-section .career-wrapper .career-content .left {
   width: 60%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-right: 100px;
-  padding-left: 50px;
+}
+
+.career-content-section .career-wrapper .career-content .left p {
+  padding: 0 10px;
 }
 
 .career-resume {
@@ -2723,6 +2725,155 @@ body {
 
 .career-resume button:hover {
   font-size: 1.5rem;
+  background-color: #112838;
+  color: white;
+  border: none;
+}
+
+.career-adverts {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 20px;
+}
+
+.career-adverts .advert {
+  width: 100%;
+  height: 33%;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 20px 0;
+}
+
+.career-adverts .advert .advert-col-left {
+  width: 0;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.career-adverts .advert .advert-col-left svg {
+  font-size: 5rem;
+}
+
+.career-adverts .advert .advert-col-right {
+  width: 100%;
+  height: 100%;
+}
+
+.career-adverts .advert .advert-col-right ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  list-style: none;
+}
+
+.career-adverts .advert .advert-col-right ul #first {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.career-adverts .advert .advert-col-right ul #first h1 {
+  font-size: 1.3rem;
+  font-weight: bolder;
+}
+
+.career-adverts .advert .advert-col-right ul #first span {
+  margin-right: 10px;
+  background-color: #112838;
+  color: white;
+  border-radius: 5px;
+  padding: 3px 5px;
+}
+
+.career-adverts .advert .advert-col-right ul #second {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 2px;
+  border-bottom: 1px solid #b6b6b6;
+}
+
+.career-adverts .advert .advert-col-right ul #second p {
+  margin: 0;
+  font-size: 0.8rem;
+  color: grey;
+  padding: 0;
+  margin: 0 14px 0 0;
+}
+
+.career-adverts .advert .advert-col-right ul #third {
+  text-align: end;
+}
+
+.career-adverts .advert .advert-col-right ul #third button {
+  width: 160px;
+  height: 30px;
+  border-radius: 10px;
+  outline: none;
+  border-style: none;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: bolder;
+  background-color: transparent;
+  border: 2px solid red;
+  color: red;
+  border: none;
+}
+
+.career-adverts .advert .advert-col-right ul #third button:hover {
   background-color: #112838;
   color: white;
   border: none;

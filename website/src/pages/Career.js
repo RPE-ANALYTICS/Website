@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
 
-import {Button} from 'react-bootstrap'
 
 // import image from 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
 
@@ -16,7 +15,7 @@ export default function Career() {
           <div className="career-wrapper">
             <div className="career-content">
               <div className="career-col left">
-                <h1>We Are Hiring !</h1>
+                <h1 className="career-title">We Are Hiring !</h1>
                 <br />
                 <p>
                     RPE is always looking to grow our team with the strong talent.
@@ -25,6 +24,50 @@ export default function Career() {
                   and top quality, and mentoring by senior solutions
                   consultants. You will work on challenging assignments.
                 </p>
+                <div className="career-adverts">
+                  <div className='advert'>
+                    <div className='advert-col-left'>
+                    {/* <i class="far fa-user"></i> */}
+                    </div>
+                    <div className='advert-col-right'>
+                      <ul>
+                        <li id="first">
+                          <h1>Junior Business Analyst</h1>
+                          <span>Full-Time</span>
+                        </li>
+                        <li id="second">
+                          <p><i class="fas fa-desktop"></i> Technologies</p>
+                          <p><i class="fas fa-map-marker-alt"></i> Wroclaw/Remote</p>
+                          <p><i class="far fa-clock"></i> 160h</p>
+                        </li>
+                        <li id="third">
+                          <button>More Details</button>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div className='advert'>
+                    <div className='advert-col-left'>
+                    {/* <i class="far fa-user"></i> */}
+                    </div>
+                    <div className='advert-col-right'>
+                      <ul>
+                        <li id="first">
+                          <h1>Mid/Senior Business Analyst</h1>
+                          <span>Full-Time</span>
+                        </li>
+                        <li id="second">
+                          <p><i class="fas fa-desktop"></i> Technologies</p>
+                          <p><i class="fas fa-map-marker-alt"></i> Wroclaw/Remote</p>
+                          <p><i class="far fa-clock"></i> 160h</p>
+                        </li>
+                        <li id="third">
+                          <button>More Details</button>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div className="career-col right">
                 <div className="career-col-img">
