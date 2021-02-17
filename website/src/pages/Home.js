@@ -26,7 +26,7 @@ export default function Home() {
       // start: "top top"
     });
     let tl3 = gsap.timeline({
-        trigger: ".homeCards"
+      trigger: ".homeCards",
     });
 
     tl3.from(".banner-title", {
@@ -112,8 +112,7 @@ export default function Home() {
 
   const handleScroll = () => {
     window.scroll({
-      top:
-        document.body.offsetHeight,
+      top: document.body.offsetHeight,
       left: 0,
       behavior: "smooth",
     });
@@ -146,7 +145,7 @@ export default function Home() {
           <div className="c-puzzle absolute"></div>
           <div className="c-puzzle absolute"></div>
           <div className="home-content absolute">
-            <p>ACCELERATE  YOUR DIGITAL TRANSFORMATION JOURNEY</p>
+            <p>ACCELERATE YOUR DIGITAL TRANSFORMATION JOURNEY</p>
             {/* <p>Accelerate your digital transformation journey</p> */}
           </div>
           <div className="home-bottom-line absolute">
@@ -192,9 +191,7 @@ export default function Home() {
               <h1 className="title">
                 <span>A</span>nalytics
               </h1>
-              <p>
-                    Business Intelligence, Data Management, AI & ML
-                  </p>
+              <p>Business Intelligence, Data Management, AI & ML</p>
             </div>
             <div className="see-button">
               <span></span>
@@ -211,9 +208,7 @@ export default function Home() {
               <h1 className="title">
                 <span>O</span>perations
               </h1>
-              <p>
-                    Environment Management, BI Platfrom Operations
-                  </p>
+              <p>Environment Management, BI Platfrom Operations</p>
             </div>
             <div className="see-button">
               <span></span>
@@ -230,9 +225,7 @@ export default function Home() {
               <h1 className="title">
                 <span>D</span>igital <span>T</span>ransformation
               </h1>
-              <p>
-                    Transformation Strategy & Roadmaps, Analytics Enablement
-                  </p>
+              <p>Transformation Strategy & Roadmaps, Analytics Enablement</p>
             </div>
             <div className="see-button">
               <span></span>

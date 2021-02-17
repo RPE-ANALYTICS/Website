@@ -5,9 +5,9 @@ import Data from "../img/icons/data.svg";
 import Vision from "../img/icons/vision.svg";
 import BigData from "../img/big-data.jpg";
 
-import Management from '../img/icons/management.svg';
-import Business from '../img/icons/business.svg';
-import IT from '../img/icons/it.svg';
+import Management from "../img/icons/management.svg";
+import Business from "../img/icons/business.svg";
+import IT from "../img/icons/it.svg";
 
 import xxx from "../img/city.jpg";
 
@@ -28,13 +28,12 @@ export default function Analytics() {
             </h1>
             {/* <span></span> */}
             <p>
-              Analytics is the systematic computational analysis of data or
-              statistics. It is used for the discovery and interpretation.
+            Evaluate the entire company data
             </p>
             {/* <button>arrow</button> */}
           </div>
         </div>
-        {/* ==================================================================================== */}
+        {/* ====================================CARDS======================================= */}
         <div className="analytics-content-section2">
           <div className="analytics-content-wrapper2">
             <div className="title2">
@@ -72,7 +71,7 @@ export default function Analytics() {
             </div>
           </div>
         </div>
-        {/* ==================================================================================== */}
+        {/* ================================OUR SERVICES================================== */}
         <div className="analytics-services-section">
           <div className="analytics-services-content">
             <h1>Our Services</h1>
@@ -159,60 +158,11 @@ export default function Analytics() {
             </div>
           </div>
         </div>
-        {/* ==================================================================================== */}
-        {/* <div className="analytics-content-section">
-          <div className="analytics-content-wrapper">
-            <div className="analytics-content-box">
-              <div className="analytics-content-box-col-1">
-                <h3>INDUSTRY EXPERTISE</h3>
-                <br />
-                <p>
-                  Whether you are OEM, Tier 1 supplier, defense company or a
-                  small medical office, we will deliver you data analytics
-                  solutions that will help you optimize your business.
-                </p>
-                <p>
-                  Whether you are looking for Supply Chain connectivity, to
-                  drive better cost reductions, flawless launches, supplier
-                  performance across quality, delivery, cost reduction,
-                  inventory optimization, sales or cost, we will help you
-                  accelerate to insight.
-                </p>
-              </div>
-              <div className="analytics-content-box-col-2">
-                <img src={xxx}></img>
-              </div>
-            </div>
-            <div className="analytics-content-box">
-              <div className="analytics-content-box-col-2">
-                <img src={xxx}></img>
-              </div>
-              <div className="analytics-content-box-col-1">
-                <h3>ROI</h3>
-                <br />
-                <p>
-                  We’ll help you measure the ROI on your analytical investment.
-                  You will start realizing it within the very first few weeks of
-                  engaging our team.
-                </p>
-                <p>
-                  We will enable unprecedented data visibility, which in turn
-                  will lead to significant improvement in data quality.
-                </p>
-                <p>
-                  With easy, governed access to so much of actionable data, not
-                  only your teams will gain improvement in productivity, they
-                  will be able to make more informed, data driven decisions.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div> */}
-        {/* //======================================================================== */}
+        {/* //==============================INDUSTRY EXPERTISE====================== */}
         <div className="analytics-content-section">
           <div className="analytics-industry-expertise">
             <div className="wwa-content">
-              <div className="wwa-col">
+              <div className="wwa-col wwa-col-img-wrapper" >
                 <div className="wwa-col-img">
                   <img src="https://media.istockphoto.com/photos/analysing-data-picture-id872025014?s=612x612"></img>
                 </div>
@@ -236,7 +186,7 @@ export default function Analytics() {
             </div>
           </div>
         </div>
-        {/* ============================================================================= */}
+        {/* ====================================ROI============================== */}
         <div className="analytics-roi-section">
           <div className="analytics-roi-wrapper">
             <div className="arw-content">
@@ -258,7 +208,7 @@ export default function Analytics() {
                   will be able to make more informed, data driven decisions.
                 </p>
               </div>
-              <div className="arw-col">
+              <div className="arw-col arw-col-img-wrapper">
                 <div className="arw-col-img">
                   <img src="https://media.istockphoto.com/vectors/business-people-on-chart-data-vector-id978044314?s=612x612"></img>
                 </div>
