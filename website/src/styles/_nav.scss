@@ -30,6 +30,9 @@
     a {
         display: block;
         // padding: 10px 0;
+        &:active {
+            background-color: transparent;
+        }
     }
 
     @include mq(991px) {
@@ -42,13 +45,13 @@
         a {
             display: block;
         }
+
     }
 }
 
 .brandLogo {
     width: 160px;
-    // height: 76x;
-
+    
     @include mq(991px) {
         width: 180px;
         // height: 80px;
@@ -70,7 +73,7 @@
         // color: rgb(122, 122, 122) !important;
         font-size: 1.1rem;
         letter-spacing: 2px;
-        margin: 0px 10px;
+        margin: 10px;
         text-transform: uppercase;
         text-decoration: none;
         font-weight: 600;
@@ -78,6 +81,8 @@
         &:hover {
             color: $Fontcolor-main !important;
         }
+
+
     }
 
     // a:nth-of-type(1) {
@@ -122,28 +127,30 @@
     // justify-content: center;
 
     a {
-        color: white !important;
-        padding: 5px 0;
-        width: 100%;
-        // display: block;
+        margin: 0;
     }
 
-    a:hover {
-        background-color: rgba(0, 0, 0, .5);
+    .link-hover {
+        color: white !important;
+        padding: 5px;
+        margin: 0;
+        width: 100%;
+        border-radius: 10px;
+        // display: block;
     }
 
     @include mq(991px) {
         background-color: rgba(0, 0, 0, 0.3);
         text-align: left;
-        padding: 0 10px;
+        // padding: 0 10px;
 
-        a {
+        .link-hover {
             color: white !important;
 
         }
 
-        a:hover {
-            background-color: rgba(0, 0, 0, .5);
+        .link-hover:hover {
+            background-color: transparent;
         }
     }
 }

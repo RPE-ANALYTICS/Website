@@ -108,6 +108,7 @@
   font-family: $Fontfamily-sansSerif-3;
   position: relative;
   background: $BackgroundColor-main;
+  background: white;
 
   .analytics-content-wrapper2 {
     width: 100%;
@@ -172,7 +173,7 @@
         margin-top: 30px;
         border-radius: 5px;
         // border: 1px solid black;
-        background-color: white;
+        // background-color: white;
         display: flex;
         flex-direction: column;
         align-items: center;

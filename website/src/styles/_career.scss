@@ -1,7 +1,7 @@
 .careerWrapper {
     width: 100vw;
     height: 95vh;
-    min-height: 800px;
+    // min-height: 800px;
     background-color: white;
     background-position: center;
     background-repeat: no-repeat;
@@ -54,19 +54,31 @@
 
 .career-content-section {
     width: 100%;
-    height: 100%;
+    height: calc(100% - 100px);
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 80px;
+
+    &:before {
+      content: '';
+      position: absolute;
+      background-color: rgba(17, 40, 56, 0.9);
+      height: 100%;
+      z-index: 0;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 80px;
+    }
 
   
     .career-wrapper {
       width: 100%;
-      max-width: 1300px;
-      margin: 20px 0;
+      max-width: 1600px;
+      // margin: 20px 0;
       height: 100%;
+      padding-top: 80px;
       // background-color: green;
       // background-color: white;
       display: flex;
@@ -119,17 +131,22 @@
           .career-col-img {
             position: absolute;
             width: 80%;
-            height: calc(100% - 60px);
-            top: 0;
+            // height: calc(100% - 60px);
+            height: 60vh;
+            min-height: 470px;
+            top: 20px;
             right: 20%;
             // background-color: white;
             z-index: 10;
+            display: flex;
+            justify-content: center;
   
             img {
-              width: 100%;
+              // width: 100%;
               min-width: 378px;
-              max-height: 110%;
+              // max-height: 0vh;
               object-fit: cover;
+              object-position: top;
               box-shadow: 0 10px 10px rgba(56, 56, 56, 0.2),
                 10px 10px 20px rgba(48, 48, 48, 0.2);
             }
@@ -141,7 +158,7 @@
             justify-content: flex-start;
             align-items: center;
             // padding-right: 100px;
-            // padding-left: 50px;
+            padding-left: 50px;
 
             p {
               padding: 0 10px;
@@ -153,7 +170,7 @@
 
   .career-resume {
       width: 100%;
-      height: 300px;
+      height: 100px;
       background-color: $BackgroundColor-main;
       display: flex;
       flex-direction: column;
@@ -162,7 +179,7 @@
 
       h1 {
           font-family: $Fontfamily-serif;
-
+          font-size: 1.8rem;
           
         svg{
             color: $Fontcolor-main;
@@ -172,22 +189,22 @@
       }
 
       button {
-          width: 210px;
-          height: 40px;
+          width: 180px;
+          height: 32px;
           border-radius: 10px;
           border: none;
           outline: none;
           border-style: none;
-          font-size: 1.4rem;
+          font-size: 1.3rem;
           text-transform: uppercase;
           font-weight: bolder;
           background-color: rgb(17, 40, 56);
           color: white;
           border: none;
-          margin-top: 20px;
+          // margin-top: 20px;
 
           &:hover {
-              font-size: 1.5rem;
+              font-size: 1.35rem;
               background-color: rgb(17, 40, 56);
               color: white;
               border: none;
@@ -205,11 +222,17 @@
     .advert {
       width: 100%;
       height: 33%;
+      max-height: 120px;
       // border: 1px solid rgba(17, 40, 56, 0.35);
       border-radius: 10px;
       display: flex;
       flex-direction: row;
-      margin: 20px 0;
+      margin: 10px 0;
+      padding: 30px 10px;
+
+      &:hover {
+        background-color: rgb(247, 247, 247);
+      }
 
       .advert-col-left {
         width: 0;
@@ -279,26 +302,20 @@
             text-align: end;
 
             button {
-              width: 160px;
+              // width: 160px;
               height: 30px;
               border-radius: 10px;
-              // margin-right: 10px;
-              // border: none;
+              margin-right: 10px;
               outline: none;
               border-style: none;
               font-size: 1rem;
               text-transform: uppercase;
               font-weight: bolder;
-              // background-color: rgb(145, 0, 0);
               background-color: transparent;
-              border: 2px solid red;
-              color: rgb(255, 0, 0);
-              border: none;
+              color: $Fontcolor-main;
     
               &:hover {
-                  background-color: rgb(17, 40, 56);
-                  color: white;
-                  border: none;
+                  color: rgb(17, 40, 56);
               }
           }
           }

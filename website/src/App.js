@@ -15,6 +15,7 @@ import './styles/style.css';
 
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
+
 // import { withRouter } from "react-router";
 // const HeaderWithRouter = withRouter(NavigationBar);
 

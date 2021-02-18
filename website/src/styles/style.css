@@ -80,6 +80,10 @@ body {
   display: block;
 }
 
+.navbar a:active {
+  background-color: transparent;
+}
+
 @media only screen and (min-width: 991px) {
   .navbar {
     width: 100vw;
@@ -120,7 +124,7 @@ body {
   color: white !important;
   font-size: 1.1rem;
   letter-spacing: 2px;
-  margin: 0px 10px;
+  margin: 10px;
   text-transform: uppercase;
   text-decoration: none;
   font-weight: 600;
@@ -168,26 +172,27 @@ body {
 }
 
 .dropdown-menu a {
-  color: white !important;
-  padding: 5px 0;
-  width: 100%;
+  margin: 0;
 }
 
-.dropdown-menu a:hover {
-  background-color: rgba(0, 0, 0, 0.5);
+.dropdown-menu .link-hover {
+  color: white !important;
+  padding: 5px;
+  margin: 0;
+  width: 100%;
+  border-radius: 10px;
 }
 
 @media only screen and (min-width: 991px) {
   .dropdown-menu {
     background-color: rgba(0, 0, 0, 0.3);
     text-align: left;
-    padding: 0 10px;
   }
-  .dropdown-menu a {
+  .dropdown-menu .link-hover {
     color: white !important;
   }
-  .dropdown-menu a:hover {
-    background-color: rgba(0, 0, 0, 0.5);
+  .dropdown-menu .link-hover:hover {
+    background-color: transparent;
   }
 }
 
@@ -1262,6 +1267,7 @@ body {
   font-family: "Nunito Sans", sans-serif;
   position: relative;
   background: #f6f6f6;
+  background: white;
 }
 
 .analytics-content-section2 .analytics-content-wrapper2 {
@@ -1360,7 +1366,6 @@ body {
   height: 390px;
   margin-top: 30px;
   border-radius: 5px;
-  background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2498,7 +2503,6 @@ body {
 .careerWrapper {
   width: 100vw;
   height: 95vh;
-  min-height: 800px;
   background-color: white;
   background-position: center;
   background-repeat: no-repeat;
@@ -2557,7 +2561,7 @@ body {
 
 .career-content-section {
   width: 100%;
-  height: 100%;
+  height: calc(100% - 100px);
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2569,14 +2573,25 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 80px;
+}
+
+.career-content-section:before {
+  content: '';
+  position: absolute;
+  background-color: rgba(17, 40, 56, 0.9);
+  height: 100%;
+  z-index: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 80px;
 }
 
 .career-content-section .career-wrapper {
   width: 100%;
-  max-width: 1300px;
-  margin: 20px 0;
+  max-width: 1600px;
   height: 100%;
+  padding-top: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2649,18 +2664,25 @@ body {
 .career-content-section .career-wrapper .career-content .career-col .career-col-img {
   position: absolute;
   width: 80%;
-  height: calc(100% - 60px);
-  top: 0;
+  height: 60vh;
+  min-height: 470px;
+  top: 20px;
   right: 20%;
   z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .career-content-section .career-wrapper .career-content .career-col .career-col-img img {
-  width: 100%;
   min-width: 378px;
-  max-height: 110%;
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
   -webkit-box-shadow: 0 10px 10px rgba(56, 56, 56, 0.2), 10px 10px 20px rgba(48, 48, 48, 0.2);
           box-shadow: 0 10px 10px rgba(56, 56, 56, 0.2), 10px 10px 20px rgba(48, 48, 48, 0.2);
 }
@@ -2673,6 +2695,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-left: 50px;
 }
 
 .career-content-section .career-wrapper .career-content .left p {
@@ -2681,7 +2704,7 @@ body {
 
 .career-resume {
   width: 100%;
-  height: 300px;
+  height: 100px;
   background-color: #f6f6f6;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2700,6 +2723,7 @@ body {
 
 .career-resume h1 {
   font-family: "Fjalla One", sans-serif;
+  font-size: 1.8rem;
 }
 
 .career-resume h1 svg {
@@ -2708,23 +2732,22 @@ body {
 }
 
 .career-resume button {
-  width: 210px;
-  height: 40px;
+  width: 180px;
+  height: 32px;
   border-radius: 10px;
   border: none;
   outline: none;
   border-style: none;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   text-transform: uppercase;
   font-weight: bolder;
   background-color: #112838;
   color: white;
   border: none;
-  margin-top: 20px;
 }
 
 .career-resume button:hover {
-  font-size: 1.5rem;
+  font-size: 1.35rem;
   background-color: #112838;
   color: white;
   border: none;
@@ -2746,6 +2769,7 @@ body {
 .career-adverts .advert {
   width: 100%;
   height: 33%;
+  max-height: 120px;
   border-radius: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2754,7 +2778,12 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin: 20px 0;
+  margin: 10px 0;
+  padding: 30px 10px;
+}
+
+.career-adverts .advert:hover {
+  background-color: #f7f7f7;
 }
 
 .career-adverts .advert .advert-col-left {
@@ -2859,24 +2888,20 @@ body {
 }
 
 .career-adverts .advert .advert-col-right ul #third button {
-  width: 160px;
   height: 30px;
   border-radius: 10px;
+  margin-right: 10px;
   outline: none;
   border-style: none;
   font-size: 1rem;
   text-transform: uppercase;
   font-weight: bolder;
   background-color: transparent;
-  border: 2px solid red;
-  color: red;
-  border: none;
+  color: #d42028;
 }
 
 .career-adverts .advert .advert-col-right ul #third button:hover {
-  background-color: #112838;
-  color: white;
-  border: none;
+  color: #112838;
 }
 
 .footerWrapper {
