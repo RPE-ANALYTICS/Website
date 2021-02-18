@@ -81,7 +81,8 @@ export default function Career() {
               </div>
               <div className="career-col right">
                 <div className="career-col-img">
-                  <img src="https://images.pexels.com/photos/5439472/pexels-photo-5439472.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"></img>
+                  <img src="https://image.freepik.com/free-photo/business-sucessful-businessman-working-with-laptop-using-computer-smiling-standing_1258-26447.jpg"></img>
+                  {/* <img src="https://image.freepik.com/free-photo/young-girl-is-standing-leaning-table-office_88135-1539.jpg"></img> */}
                 </div>
               </div>
             </div>

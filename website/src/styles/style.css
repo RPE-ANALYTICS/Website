@@ -1870,11 +1870,11 @@ body {
 .contactWrapper::after {
   content: "";
   position: absolute;
-  top: 80px;
+  top: 0;
   left: 0;
   width: 100vw;
-  height: 20px;
-  background-color: white;
+  height: 65vh;
+  background-color: rgba(68, 68, 68, 0.07);
 }
 
 .contact-content-container {
@@ -2678,7 +2678,7 @@ body {
 }
 
 .career-content-section .career-wrapper .career-content .career-col .career-col-img img {
-  min-width: 378px;
+  width: 400px;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: top;
