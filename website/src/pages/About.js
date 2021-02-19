@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import digital from "../img/icons/monitoring.svg";
-import analytics from "../img/icons/brain.svg";
-import operations from "../img/icons/cloud.svg";
+import digital from "../img/icons/digital.svg";
+import analytics from "../img/icons/monitor.svg";
+import operations from "../img/icons/operations.svg";
 import BigData from "../img/big-data.jpg";
 
 import CloudStorage from "../img/icons/cloud-storage.svg";
@@ -30,8 +30,7 @@ export default function About() {
               <span>A</span>bout us
             </h1>
             <p>
-              We believe that high-quality, meaningful digital products can help
-              transform organizations.
+              We believe in your success.
             </p>
           </div>
         </div>
@@ -171,10 +170,12 @@ export default function About() {
                 <div className="industry-card-inner">
                   <div className="industry-card-front">
                     <img src="https://www.medgadget.com/wp-content/uploads/2020/07/Healthcare9.jpeg"></img>
-                    <h3>Automotive</h3>
+                    <div>
+                      <h3>Manufacturing</h3>
+                    </div>
                   </div>
                   <div className="industry-card-back">
-                    <h1>About Automotive</h1>
+                  <h3>Manufacturing</h3>
                     {/* <p>Architect & Engineer</p> 
                   <p>We love that guy</p> */}
                   </div>
@@ -185,10 +186,12 @@ export default function About() {
                 <div className="industry-card-inner">
                   <div className="industry-card-front">
                     <img src="https://www.medgadget.com/wp-content/uploads/2020/07/Healthcare9.jpeg"></img>
-                    <h3>Defense</h3>
+                    <div>
+                      <h3>Medical</h3>
+                    </div>
                   </div>
                   <div className="industry-card-back">
-                    <h1>About Defense</h1>
+                  <h3>Medical</h3>
                     {/* <p>Architect & Engineer</p> 
                   <p>We love that guy</p> */}
                   </div>
@@ -199,10 +202,12 @@ export default function About() {
                 <div className="industry-card-inner">
                   <div className="industry-card-front">
                     <img src="https://www.medgadget.com/wp-content/uploads/2020/07/Healthcare9.jpeg"></img>
-                    <h3>Medical</h3>
+                    <div>
+                      <h3>Telecomunication</h3>
+                    </div>
                   </div>
                   <div className="industry-card-back">
-                    <h1>About Medical</h1>
+                  <h3>Telecomunication</h3>
                     {/* <p>Architect & Engineer</p> 
                   <p>We love that guy</p> */}
                   </div>

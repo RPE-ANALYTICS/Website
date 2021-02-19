@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto:wght@300&family=Bodoni+Moda&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@800;900&display=swap");
 * {
   margin: 0;
@@ -11,8 +12,8 @@
 
 body {
   overflow-x: hidden !important;
-  color: #253c4d;
-  font-family: "Roboto", sans-serif;
+  color: #1e2f3b;
+  font-family: "Montserrat", sans-serif;
   -webkit-transition: all 0.9s ease;
   transition: all 0.9s ease;
 }
@@ -46,7 +47,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
   -webkit-transition-delay: 0s !important;
           transition-delay: 0s !important;
 }
@@ -127,7 +128,7 @@ body {
   margin: 10px;
   text-transform: uppercase;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .navbar-nav a:hover {
@@ -221,10 +222,17 @@ body {
 
 .brandSection {
   width: 100vw;
-  min-height: 13vh;
-  padding: 20px 0;
+  min-height: 5vh;
+  padding: 10px 0;
   background-color: #fff;
   position: relative;
+}
+
+@media only screen and (min-width: 991px) {
+  .brandSection {
+    min-height: 13vh;
+    padding: 20px 0;
+  }
 }
 
 .brandsWrapper {
@@ -245,8 +253,15 @@ body {
 }
 
 .brandsWrapper .brand {
-  width: 160px;
-  margin: 5px 20px;
+  width: 200px;
+  margin: 5px 10px;
+}
+
+@media only screen and (min-width: 991px) {
+  .brandsWrapper .brand {
+    width: 160px;
+    margin: 5px 20px;
+  }
 }
 
 .brandsWrapper .brand img {
@@ -260,22 +275,29 @@ body {
   content: '';
   display: inline-block;
   position: absolute;
-  top: -40px;
+  top: -20px;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   width: 100%;
-  max-width: 1000px;
+  max-width: 300px;
   height: 6px;
   background-size: 100% 8px;
   background: url(https://cdn2.hubspot.net/hub/273774/file-1281286278-png/mp/themes/Act-Theme/images/bottom-shadow5.png) center bottom no-repeat;
+}
+
+@media only screen and (min-width: 991px) {
+  .brandsWrapper::after {
+    top: -30px;
+    max-width: 1000px;
+  }
 }
 
 .form-card {
   width: 450px;
   min-height: 80%;
   background-color: rgba(255, 255, 255, 0.8);
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 0.6rem !important;
   display: relative;
   top: 0;
@@ -311,7 +333,7 @@ body {
 .form-group input, .form-group textarea {
   background-color: transparent;
   border: none;
-  color: #253c4d !important;
+  color: #1e2f3b !important;
   font-weight: bolder;
   border-bottom: 1px solid #181818;
   border-radius: 0;
@@ -346,6 +368,17 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.homeWrapper-about p {
+  letter-spacing: 2px;
+  font-size: 0.8rem;
+}
+
+@media only screen and (min-width: 991px) {
+  .homeWrapper-about p {
+    font-size: 1rem;
+  }
 }
 
 .about-thumbnail-section {
@@ -420,28 +453,29 @@ body {
 }
 
 .about-thumbnail-content h1 {
-  font-size: 40px;
+  font-size: calc(30px + 40 * ((53vw + 53vh) - 600px) / 820);
 }
 
 @media only screen and (min-width: 991px) {
   .about-thumbnail-content h1 {
-    font-size: 50px;
+    font-size: calc(8px + 40 * ((53vw + 53vh) - 600px) / 820);
   }
 }
 
 .about-thumbnail-content span {
   color: #d42028;
-  font-size: 66px;
+  font-size: calc(45px + 40 * ((53vw + 53vh) - 600px) / 820);
   font-weight: bold;
 }
 
 .about-thumbnail-content p {
-  font-size: 1rem;
+  letter-spacing: 3px;
+  font-size: 0.7rem;
 }
 
 @media only screen and (min-width: 991px) {
   .about-thumbnail-content p {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 }
 
@@ -544,11 +578,17 @@ body {
   position: relative;
   margin-bottom: 20px;
   text-transform: uppercase;
-  letter-spacing: 3px;
-  font-size: 2rem;
-  font-family: "Fjalla One", sans-serif;
-  color: #253c4d;
+  letter-spacing: 1.3px;
+  font-family: "Montserrat", sans-serif;
+  color: #1e2f3b;
   text-align: center;
+  font-size: 1.8rem;
+}
+
+@media only screen and (min-width: 991px) {
+  .about-content-section .about-who-we-are h1 {
+    font-size: 2rem;
+  }
 }
 
 .about-content-section .about-who-we-are h1::before {
@@ -652,7 +692,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
   position: relative;
   background: #f6f6f6;
   background-color: #112838;
@@ -719,9 +759,15 @@ body {
 .about-content-section3 .about-content-wrapper3 .title3 h1 {
   margin-bottom: 10px 0;
   width: 100%;
-  font-size: 2.2rem;
-  letter-spacing: 2px;
-  font-family: "Fjalla One", sans-serif;
+  letter-spacing: 1.3px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem;
+}
+
+@media only screen and (min-width: 991px) {
+  .about-content-section3 .about-content-wrapper3 .title3 h1 {
+    font-size: 2rem;
+  }
 }
 
 .about-content-section3 .about-content-wrapper3 .cards3 {
@@ -774,7 +820,12 @@ body {
   transition: all 0.2s ease-out;
 }
 
-.about-content-section3 .about-content-wrapper3 .cards3 .card3 h3 {
+.about-content-section3 .about-content-wrapper3 .cards3 .card3 div {
+  width: 100%;
+  height: 100%;
+}
+
+.about-content-section3 .about-content-wrapper3 .cards3 .card3 div h3 {
   margin-bottom: 20px;
   font-size: 1.5rem;
   font-weight: bold;
@@ -829,11 +880,17 @@ body {
   position: relative;
   margin-bottom: 20px;
   text-transform: uppercase;
-  letter-spacing: 3px;
-  font-size: 2rem;
-  font-family: "Fjalla One", sans-serif;
-  color: #253c4d;
+  font-family: "Montserrat", sans-serif;
+  color: #1e2f3b;
   text-align: center;
+  letter-spacing: 1.3px;
+  font-size: 1.8rem;
+}
+
+@media only screen and (min-width: 991px) {
+  .about-team-section .about-team-wrapper h1 {
+    font-size: 2rem;
+  }
 }
 
 .about-team-section .about-team-wrapper h1::before {
@@ -953,10 +1010,16 @@ body {
   position: relative;
   margin-bottom: 20px;
   text-transform: uppercase;
-  letter-spacing: 3px;
-  font-size: 2rem;
-  font-family: "Fjalla One", sans-serif;
+  letter-spacing: 1.3px;
+  font-family: "Montserrat", sans-serif;
   text-align: center;
+  font-size: 1.8rem;
+}
+
+@media only screen and (min-width: 991px) {
+  .industriesSection .industries-wrapper h1 {
+    font-size: 2rem;
+  }
 }
 
 .industriesSection .industries-wrapper h1::before {
@@ -1052,9 +1115,20 @@ body {
      object-fit: cover;
 }
 
-.industriesSection .industries-wrapper .industry-cards .industry-card .industry-card-inner .industry-card-front h3 {
-  background-color: white;
+.industriesSection .industries-wrapper .industry-cards .industry-card .industry-card-inner .industry-card-front div {
   height: 20%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #1e2f3b;
+  background-color: white;
 }
 
 .industriesSection .industries-wrapper .industry-cards .industry-card .industry-card-inner .industry-card-back {
@@ -1109,15 +1183,21 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 40px 0 50px 0;
+  margin: 40px 0;
 }
 
 .about-partners-section .about-partners-wrapper h1 {
-  font-family: "Fjalla One", sans-serif;
-  font-size: 2.2rem;
+  font-family: "Montserrat", sans-serif;
   margin-bottom: 20px;
   position: relative;
   letter-spacing: 1.3px;
+  font-size: 1.8rem;
+}
+
+@media only screen and (min-width: 991px) {
+  .about-partners-section .about-partners-wrapper h1 {
+    font-size: 2rem;
+  }
 }
 
 .about-partners-section .about-partners-wrapper h1::before {
@@ -1155,7 +1235,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .analytics-thumbnail-section {
@@ -1234,18 +1314,28 @@ body {
 }
 
 .analytics-thumbnail-content h1 {
-  font-size: 40px;
+  font-size: calc(30px + 40 * ((53vw + 53vh) - 600px) / 820);
 }
 
 @media only screen and (min-width: 991px) {
   .analytics-thumbnail-content h1 {
-    font-size: 50px;
+    font-size: calc(8px + 40 * ((53vw + 53vh) - 600px) / 820);
+  }
+}
+
+.analytics-thumbnail-content p {
+  font-size: 0.7rem;
+}
+
+@media only screen and (min-width: 991px) {
+  .analytics-thumbnail-content p {
+    font-size: 1rem;
   }
 }
 
 .analytics-thumbnail-content span {
   color: #d42028;
-  font-size: 66px;
+  font-size: calc(45px + 40 * ((53vw + 53vh) - 600px) / 820);
   font-weight: bold;
 }
 
@@ -1264,7 +1354,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
   position: relative;
   background: #f6f6f6;
   background: white;
@@ -1323,13 +1413,29 @@ body {
 }
 
 .analytics-content-section2 .analytics-content-wrapper2 .title2 h1 {
-  margin-bottom: 10px 0;
-  width: 70%;
-  font-family: "Fjalla One", sans-serif;
+  margin-bottom: 10px;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem;
+}
+
+@media only screen and (min-width: 991px) {
+  .analytics-content-section2 .analytics-content-wrapper2 .title2 h1 {
+    width: 70%;
+    font-size: 2rem;
+  }
 }
 
 .analytics-content-section2 .analytics-content-wrapper2 .title2 p {
-  font-size: 1.3rem;
+  font-size: 1rem;
+  text-align: justify;
+  padding: 5px 20px;
+}
+
+@media only screen and (min-width: 991px) {
+  .analytics-content-section2 .analytics-content-wrapper2 .title2 p {
+    font-size: 1.3rem;
+  }
 }
 
 .analytics-content-section2 .analytics-content-wrapper2 .cards2 {
@@ -1401,6 +1507,11 @@ body {
   font-weight: bold;
 }
 
+.analytics-content-section2 .analytics-content-wrapper2 .cards2 .card2 p {
+  margin: 10px 20px;
+  text-align: justify;
+}
+
 .analytics-services-section {
   width: 100%;
   display: -webkit-box;
@@ -1418,7 +1529,6 @@ body {
           align-items: center;
   position: relative;
   background-color: #112838;
-  padding: 20px 0px;
   color: white;
 }
 
@@ -1445,7 +1555,25 @@ body {
 
 .analytics-services-section .analytics-services-content h1 {
   font-weight: bolder;
-  font-family: "Fjalla One", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem;
+}
+
+@media only screen and (min-width: 991px) {
+  .analytics-services-section .analytics-services-content h1 {
+    font-size: 2rem;
+  }
+}
+
+.analytics-services-section .analytics-services-content p {
+  font-size: 1rem;
+  margin: 0;
+}
+
+@media only screen and (min-width: 991px) {
+  .analytics-services-section .analytics-services-content p {
+    font-size: 1.15rem;
+  }
 }
 
 .analytics-services-section .analytics-services-cards-section {
@@ -1495,7 +1623,12 @@ body {
             flex-direction: row;
     width: 50%;
     min-width: 430px;
+    height: 170px;
   }
+}
+
+.analytics-services-card p {
+  margin: 0;
 }
 
 .analytics-services-card::before {
@@ -1509,7 +1642,6 @@ body {
 
 .analytics-services-card .analytics-services-card-img {
   width: 120px;
-  height: 120px;
   margin: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1591,7 +1723,6 @@ body {
 .analytics-content-section .analytics-industry-expertise {
   width: 100%;
   max-width: 1300px;
-  margin: 10px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1614,8 +1745,8 @@ body {
   text-transform: uppercase;
   letter-spacing: 3px;
   font-size: 2rem;
-  font-family: "Fjalla One", sans-serif;
-  color: #253c4d;
+  font-family: "Montserrat", sans-serif;
+  color: #1e2f3b;
   text-align: center;
 }
 
@@ -1756,8 +1887,8 @@ body {
   text-transform: uppercase;
   letter-spacing: 3px;
   font-size: 2rem;
-  font-family: "Fjalla One", sans-serif;
-  color: #253c4d;
+  font-family: "Montserrat", sans-serif;
+  color: #1e2f3b;
   text-align: center;
 }
 
@@ -1844,7 +1975,7 @@ body {
   width: 100%;
   height: 95vh;
   background-image: url("../img/world-map.png");
-  background-position: center;
+  background-position: left;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -1854,6 +1985,12 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media only screen and (min-width: 991px) {
+  .contactWrapper {
+    background-position: center;
+  }
 }
 
 .contactWrapper::before {
@@ -1873,13 +2010,13 @@ body {
   top: 0;
   left: 0;
   width: 100vw;
-  height: 65vh;
-  background-color: rgba(68, 68, 68, 0.07);
+  height: 75vh;
+  background-color: rgba(68, 68, 68, 0.1);
 }
 
 .contact-content-container {
   width: 100%;
-  height: 30vh;
+  height: 20vh;
   background-color: #f8f8f8;
   position: absolute;
   bottom: 0;
@@ -1940,12 +2077,12 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .address-content .country-name {
   color: #d42028;
-  color: #253c4d;
+  color: #1e2f3b;
   font-size: 1.3rem;
   font-weight: bold;
 }
@@ -1989,7 +2126,14 @@ body {
 }
 
 .form-container h1 {
-  font-family: "Fjalla One", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem;
+}
+
+@media only screen and (min-width: 991px) {
+  .form-container h1 {
+    font-size: 2rem;
+  }
 }
 
 .form-container button {
@@ -2096,26 +2240,26 @@ body {
 }
 
 .home-content {
-  font-family: "Fjalla One", sans-serif;
-  letter-spacing: 3px;
+  font-family: "Montserrat", sans-serif;
+  position: absolute;
   bottom: 15%;
   right: 4%;
   z-index: 10;
   color: white;
-  width: 55%;
+  width: 60%;
   font-weight: 500;
   font-size: calc(20px + 40 * ((53vw + 53vh) - 600px) / 820);
 }
 
 @media only screen and (min-width: 991px) {
   .home-content {
-    font-size: calc(16px + 40 * ((53vw + 53vh) - 600px) / 820);
-    width: 46%;
+    font-size: calc(8px + 40 * ((53vw + 53vh) - 600px) / 820);
+    width: 48%;
   }
 }
 
 .home-bottom-line {
-  font-family: "Fjalla One", sans-serif;
+  font-family: "Montserrat", sans-serif;
   letter-spacing: 2px;
   bottom: 2%;
   right: 12%;
@@ -2231,8 +2375,7 @@ body {
 .homeBanner {
   position: relative;
   width: 100%;
-  padding: 20px;
-  background-color: #f6f6f6;
+  padding: 5px 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2248,7 +2391,15 @@ body {
           align-items: center;
   text-align: center;
   color: #0f0f0f;
-  font-family: "Fjalla One", sans-serif;
+  z-index: 10;
+  -webkit-box-shadow: 0 5px 10px rgba(56, 56, 56, 0.2);
+          box-shadow: 0 5px 10px rgba(56, 56, 56, 0.2);
+}
+
+@media only screen and (min-width: 991px) {
+  .homeBanner {
+    padding: 20px;
+  }
 }
 
 .homeBanner p:first-of-type {
@@ -2262,9 +2413,15 @@ body {
 }
 
 .homeBanner h3 {
-  font-size: 1.7rem;
+  font-size: 1.25rem;
   width: 100%;
   text-align: center;
+}
+
+@media only screen and (min-width: 991px) {
+  .homeBanner h3 {
+    font-size: 1.5rem;
+  }
 }
 
 .homeCards {
@@ -2301,10 +2458,16 @@ body {
   margin-bottom: 20px;
   text-transform: uppercase;
   letter-spacing: 3px;
-  font-size: 2rem;
-  font-family: "Fjalla One", sans-serif;
-  color: #253c4d;
+  font-family: "Montserrat", sans-serif;
+  color: #1e2f3b;
   text-align: center;
+  font-size: 1.8rem;
+}
+
+@media only screen and (min-width: 991px) {
+  .cards-title h1 {
+    font-size: 2rem;
+  }
 }
 
 .cards-title h1::before {
@@ -2353,13 +2516,19 @@ body {
 
 .card {
   height: 400px;
-  max-width: 320px;
-  min-width: 270px;
+  width: 310px;
   margin: 10px 30px;
   border-radius: 5px;
-  padding: 2rem 1.9rem;
+  padding: 2rem 1.5rem;
   -webkit-box-shadow: 0 10px 10px rgba(56, 56, 56, 0.2), 10px 10px 20px rgba(48, 48, 48, 0.2);
           box-shadow: 0 10px 10px rgba(56, 56, 56, 0.2), 10px 10px 20px rgba(48, 48, 48, 0.2);
+}
+
+@media only screen and (min-width: 991px) {
+  .card {
+    width: 320px;
+    padding: 2rem 1.9rem;
+  }
 }
 
 .card:hover .card-icon img {
@@ -2400,7 +2569,7 @@ body {
 }
 
 .info h1 {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: bold;
   -webkit-transition: all 0.75s ease-out;
   transition: all 0.75s ease-out;
@@ -2415,7 +2584,6 @@ body {
   font-size: 1.2rem;
   padding: 2rem 0rem;
   color: #585858;
-  font-weight: lighter;
   -webkit-transition: all 0.75s ease-out;
   transition: all 0.75s ease-out;
 }
@@ -2491,7 +2659,7 @@ body {
           align-items: center;
   text-align: center;
   text-transform: uppercase;
-  font-family: "Fjalla One", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .homeWrapper-operations img {
@@ -2520,7 +2688,17 @@ body {
           align-items: center;
   -o-object-fit: cover;
      object-fit: cover;
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
+}
+
+.careerWrapper p {
+  font-size: 0.8rem;
+}
+
+@media only screen and (min-width: 991px) {
+  .careerWrapper p {
+    font-size: 1rem;
+  }
 }
 
 .careerWrapper:before {
@@ -2614,8 +2792,8 @@ body {
   text-transform: uppercase;
   letter-spacing: 3px;
   font-size: 2rem;
-  font-family: "Fjalla One", sans-serif;
-  color: #253c4d;
+  font-family: "Montserrat", sans-serif;
+  color: #1e2f3b;
   text-align: center;
 }
 
@@ -2722,7 +2900,7 @@ body {
 }
 
 .career-resume h1 {
-  font-family: "Fjalla One", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.8rem;
 }
 

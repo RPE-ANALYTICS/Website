@@ -76,7 +76,7 @@ export default function Analytics() {
           <div className="analytics-services-content">
             <h1>Our Services</h1>
             <p>
-              RPE team can provide expertise to help your organizations with
+              RPE team can provide expertise to help your organizations with...
             </p>
           </div>
           <div className="analytics-services-cards-section">

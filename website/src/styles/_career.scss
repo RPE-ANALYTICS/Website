@@ -12,6 +12,14 @@
     align-items: center;
     object-fit: cover;
     font-family: $Fontfamily-sansSerif-2;
+
+    p {
+      font-size: 0.8rem;
+
+      @include mq(991px) {
+        font-size: 1rem;
+      }
+    }
   
   &:before {
     content: '';

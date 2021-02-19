@@ -1,9 +1,9 @@
 import React, { useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import video from "../img/video/video3.mp4";
-import digital from "../img/icons/monitoring.svg";
-import analytics from "../img/icons/brain.svg";
-import operations from "../img/icons/cloud.svg";
+import digital from "../img/icons/digital.svg";
+import analytics from "../img/icons/monitor.svg";
+import operations from "../img/icons/operations.svg";
 
 import Brands from "../components/Brands";
 
