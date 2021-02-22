@@ -90,6 +90,7 @@ export default function Footer() {
                     <div className="copyright">
                         Copyright <span onClick={handle}>{isActive ? ' villagef' : `©`}</span> {year} RPE Analytics
                     </div>
+                    {/* <div>Icons made by <a href="https://www.flaticon.com/authors/xnimrodx" title="xnimrodx">xnimrodx</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> */}
                 </div>
             </section>
         </>

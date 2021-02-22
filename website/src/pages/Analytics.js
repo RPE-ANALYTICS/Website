@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import Dashboard from "../img/icons/dashboard.svg";
 import DataComplexity from "../img/icons/data-complexity.svg";
 import Data from "../img/icons/data.svg";
@@ -8,12 +8,26 @@ import BigData from "../img/big-data.jpg";
 import Management from "../img/icons/management.svg";
 import Business from "../img/icons/business.svg";
 import IT from "../img/icons/it.svg";
+import Strategy from '../img/icons/strategy.svg';
+import Report from '../img/icons/report.svg';
+import DataManagement from '../img/icons/data-management.svg';
 
-import xxx from "../img/city.jpg";
+import Fade from 'react-reveal/Fade';
+import Slide from 'react-reveal/Slide';
 
-import Brands from "../components/Brands";
 
 export default function Analytics() {
+  const handleClick = () => {
+    window.scrollTo(0, 0);
+  };
+
+  const handleScroll = () => {
+    window.scroll({
+      top: document.body.offsetHeight - 70,
+      left: 0,
+      behavior: "smooth",
+    });
+  };
   return (
     <>
       <section className="analyticsWrapper section">
@@ -23,19 +37,25 @@ export default function Analytics() {
             {/* <img src="https://s7703.pcdn.co/wp-content/uploads/2013/01/banner-analytics-background.jpg"></img> */}
           </div>
           <div className="analytics-thumbnail-content">
+          <Slide right>
             <h1>
-              <span>A</span>nalytics
+              <em>A</em>nalytics
             </h1>
-            {/* <span></span> */}
+            </Slide>
+            <Slide right>
             <p>
             Evaluate the entire company data
             </p>
+            </Slide>
+
+  
             {/* <button>arrow</button> */}
           </div>
         </div>
         {/* ====================================CARDS======================================= */}
         <div className="analytics-content-section2">
           <div className="analytics-content-wrapper2">
+          <Slide left cascade>
             <div className="title2">
               <h1>The smart way to transform your company</h1>
               <p>
@@ -43,46 +63,54 @@ export default function Analytics() {
                 because it's the why behind what we do
               </p>
             </div>
+            </Slide>
             <div className="cards2">
+              <Fade left>
               <div className="card2">
                 <img src={Management}></img>
                 <h3>Management</h3>
                 <p>
-                  Sample text. Lorem ipsum dolor es momentum estra de onio nunc
-                  justo utlificatum.
+                Leading a successful transformation requires a lot more than just picking the right moves.
                 </p>
               </div>
+              </Fade>
+              <Fade bottom>
               <div className="card2">
                 <img src={Business}></img>
                 <h3>Business</h3>
                 <p>
-                  Sample text. Lorem ipsum dolor es momentum estra de onio nunc
-                  justo utlificatum.
+                Think about how technology might become a part of your processes and practices going forward.
                 </p>
               </div>
+              </Fade>
+              <Fade right>
               <div className="card2">
                 <img src={IT}></img>
-                <h3>Information Technology</h3>
+                <h3>Technology</h3>
                 <p>
-                  Sample text. Lorem ipsum dolor es momentum estra de onio nunc
-                  justo utlificatum.
+                The tools you choose should offer solutions that streamline your processes for efficiency and effectiveness.
                 </p>
               </div>
+              </Fade>
             </div>
           </div>
         </div>
         {/* ================================OUR SERVICES================================== */}
         <div className="analytics-services-section">
           <div className="analytics-services-content">
+          <Fade left cascade>
             <h1>Our Services</h1>
             <p>
               RPE team can provide expertise to help your organizations with...
             </p>
+            </Fade>
           </div>
           <div className="analytics-services-cards-section">
+
+            <Fade left>
             <div className="analytics-services-card">
               <div className="analytics-services-card-img">
-                <img className="services-card-img" src={Vision}></img>
+                <img className="services-card-img" src={Strategy}></img>
               </div>
               <div className="analytics-services-card-content">
                 <h1>Strategy</h1>
@@ -92,7 +120,9 @@ export default function Analytics() {
                 </p>
               </div>
             </div>
+            </Fade>
 
+            <Fade right>
             <div className="analytics-services-card">
               <div className="analytics-services-card-img">
                 <img src={Data}></img>
@@ -105,6 +135,9 @@ export default function Analytics() {
                 </p>
               </div>
             </div>
+            </Fade>
+
+            <Fade left>
             <div className="analytics-services-card">
               <div className="analytics-services-card-img">
                 <img src={DataComplexity}></img>
@@ -117,7 +150,9 @@ export default function Analytics() {
                 </p>
               </div>
             </div>
+            </Fade>
 
+            <Fade right>
             <div className="analytics-services-card">
               <div className="analytics-services-card-img">
                 <img src={Dashboard}></img>
@@ -130,10 +165,12 @@ export default function Analytics() {
                 </p>
               </div>
             </div>
+            </Fade>
 
+            <Fade left>
             <div className="analytics-services-card">
               <div className="analytics-services-card-img">
-                <img src={Dashboard}></img>
+                <img src={Report}></img>
               </div>
               <div className="analytics-services-card-content">
                 <h1>Auto Reports</h1>
@@ -143,10 +180,12 @@ export default function Analytics() {
                 </p>
               </div>
             </div>
+            </Fade>
 
+            <Fade right>
             <div className="analytics-services-card">
               <div className="analytics-services-card-img">
-                <img src={Dashboard}></img>
+                <img src={DataManagement}></img>
               </div>
               <div className="analytics-services-card-content">
                 <h1>Data Management</h1>
@@ -156,6 +195,7 @@ export default function Analytics() {
                 </p>
               </div>
             </div>
+            </Fade>
           </div>
         </div>
         {/* //==============================INDUSTRY EXPERTISE====================== */}
@@ -164,10 +204,14 @@ export default function Analytics() {
             <div className="wwa-content">
               <div className="wwa-col wwa-col-img-wrapper" >
                 <div className="wwa-col-img">
+                  <Fade bottom>
                   <img src="https://media.istockphoto.com/photos/analysing-data-picture-id872025014?s=612x612"></img>
+                  </Fade>
                 </div>
               </div>
               <div className="wwa-col">
+                <Fade right cascade>
+                  <div>
                 <h1>Industry expertise</h1>
                 <br />
                 <p>
@@ -182,6 +226,8 @@ export default function Analytics() {
                   inventory optimization, sales or cost, we will help you
                   accelerate to insight.
                 </p>
+                </div>
+                </Fade>
               </div>
             </div>
           </div>
@@ -191,6 +237,8 @@ export default function Analytics() {
           <div className="analytics-roi-wrapper">
             <div className="arw-content">
               <div className="arw-col">
+              <Fade left cascade>
+                  <div>
                 <h1>ROI</h1>
                 <br />
                 <p>
@@ -207,10 +255,14 @@ export default function Analytics() {
                   only your teams will gain improvement in productivity, they
                   will be able to make more informed, data driven decisions.
                 </p>
+                </div>
+                </Fade>
               </div>
               <div className="arw-col arw-col-img-wrapper">
                 <div className="arw-col-img">
+                <Fade bottom>
                   <img src="https://media.istockphoto.com/vectors/business-people-on-chart-data-vector-id978044314?s=612x612"></img>
+                </Fade>
                 </div>
               </div>
             </div>

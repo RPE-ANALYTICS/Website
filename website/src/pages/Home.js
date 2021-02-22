@@ -112,7 +112,7 @@ export default function Home() {
 
   const handleScroll = () => {
     window.scroll({
-      top: document.body.offsetHeight,
+      top: document.body.offsetHeight - 70,
       left: 0,
       behavior: "smooth",
     });
