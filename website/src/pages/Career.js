@@ -5,7 +5,7 @@ import React from "react";
 export default function Career() {
   const handleSend = () => {
     window.open(
-      "mailto:email@example.com?subject=Subject&body=Body%20goes%20here"
+      "mailto:fwydra@rp-eng.com?subject=Subject&body=%20"
     );
   };
   return (

@@ -14,6 +14,7 @@ import DataManagement from "../img/icons/data-management.svg";
 
 import Fade from "react-reveal/Fade";
 import Slide from "react-reveal/Slide";
+import Jello from "react-reveal/Jello";
 
 export default function Analytics() {
   const handleClick = () => {
@@ -46,6 +47,26 @@ export default function Analytics() {
             </Slide>
 
             {/* <button>arrow</button> */}
+          </div>
+          <div className="home-right-line-top absolute">
+            <Slide top>
+              <span></span>
+            </Slide>
+          </div>
+          <div
+            className="home-right-line-middle absolute"
+            onClick={handleScroll}
+          >
+            <span>
+              <Jello>
+                <i className="fas fa-angle-double-down"></i>
+              </Jello>
+            </span>
+          </div>
+          <div className="home-right-line-bottom absolute">
+            <Slide bottom>
+              <span></span>
+            </Slide>
           </div>
         </div>
         {/* ====================================CARDS======================================= */}

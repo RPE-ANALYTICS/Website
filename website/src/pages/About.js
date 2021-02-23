@@ -16,6 +16,14 @@ import Jello from "react-reveal/Jello";
 import gsap from "gsap";
 
 export default function About() {
+  const handleScroll = () => {
+    window.scroll({
+      top: document.body.offsetHeight - 70,
+      left: 0,
+      behavior: "smooth",
+    });
+  };
+  
   const handleClick = () => {
     window.scrollTo(0, 0);
   };
@@ -57,6 +65,26 @@ export default function About() {
             </Slide>
             <Slide right>
               <p>We believe in your success.</p>
+            </Slide>
+          </div>
+          <div className="home-right-line-top absolute">
+            <Slide top>
+              <span></span>
+            </Slide>
+          </div>
+          <div
+            className="home-right-line-middle absolute"
+            onClick={handleScroll}
+          >
+            <span>
+              <Jello>
+                <i className="fas fa-angle-double-down"></i>
+              </Jello>
+            </span>
+          </div>
+          <div className="home-right-line-bottom absolute">
+            <Slide bottom>
+              <span></span>
             </Slide>
           </div>
         </div>

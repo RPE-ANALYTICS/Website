@@ -18,7 +18,7 @@
 //=================THUMBNAIL=====================
 .about-thumbnail-section {
   width: 100%;
-  height: 70vh;
+  height: 60vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -29,6 +29,7 @@
   // text-align: center;
   position: relative;
   letter-spacing: 1.1px;
+  overflow: hidden;
 
   &::before {
     content: "";
@@ -55,7 +56,7 @@
       // object-fit: cover;
       object-fit: cover;
       width: 100vw;
-      height: 70vh;
+      height: 60vh;
       position: absolute;
       top: 0;
       left: 0;
@@ -72,7 +73,7 @@
   margin-top: 70px;
   position: absolute;
   bottom: 0%;
-  right: 5%;
+  right: 6%;
   letter-spacing: 7px;
   text-align: end;
   z-index: 3;
@@ -158,17 +159,19 @@
 .about-content-section {
   width: 100%;
   // min-height: 550px;
+  // height: 45vh;
   background-color: rgb(255, 255, 255);
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 0px;
-  padding: 0 10px;
+  // padding: 0 10px;
 
   @include mq(991px) {
-    margin-bottom: 60px;
+    // margin-bottom: 60px;
     padding: 0;
+    // height: 45vh;
   }
 
   .about-who-we-are {
@@ -215,7 +218,7 @@
       margin-top: 0px;
 
       @include mq(991px) {
-        margin-top: 30px;
+        // margin-top: 30px;
       }
 
       .wwa-col {
@@ -227,7 +230,7 @@
         letter-spacing: 1.3px;
 
         @include mq(991px) {
-          width: 50%;
+          width: 70%;
         }
 
         .wwa-col-img {
@@ -247,7 +250,7 @@
           img {
             width: 100%;
             min-width: 378px;
-            max-height: 130%;
+            max-height: 100%;
             object-fit: cover;
             box-shadow: 0 10px 10px rgba(56, 56, 56, 0.2),
               10px 10px 20px rgba(48, 48, 48, 0.2);
@@ -458,13 +461,13 @@
 
           @include mq(991px) {
             display: block;
-            width: 95%;
+            width: 80%;
           }
 
           img {
             width: 100%;
             min-width: 378px;
-            max-height: 120%;
+            max-height: 110%;
             object-fit: cover;
             box-shadow: 0 10px 10px rgba(56, 56, 56, 0.2),
               10px 10px 20px rgba(48, 48, 48, 0.2);

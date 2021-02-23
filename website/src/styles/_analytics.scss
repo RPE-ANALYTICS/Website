@@ -12,7 +12,7 @@
 //=======================THUMBNAIL=========================
 .analytics-thumbnail-section {
   width: 100%;
-  height: 90vh;
+  height: 80vh;
   // background-image: url("../img/data-vizualization.jpg");
   // background-image: url("https://s7703.pcdn.co/wp-content/uploads/2013/01/banner-analytics-background.jpg");
   // background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl352QkLv2Bx3W-VqhQZKLjnBX3NN-2DcZjw&usqp=CAU");
@@ -26,6 +26,7 @@
   // text-align: center;
   position: relative;
   letter-spacing: 1.1px;
+  overflow: hidden;
 
   &::before {
     content: "";
@@ -73,7 +74,7 @@
   margin-top: 70px;
   position: absolute;
   bottom: 3%;
-  right: 5%;
+  right: 6%;
   letter-spacing: 7px;
   text-align: end;
 
