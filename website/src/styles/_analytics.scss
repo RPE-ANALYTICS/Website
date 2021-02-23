@@ -94,15 +94,15 @@
     font-size: 0.7rem;
 
     @include mq(991px) {
-      font-size: 1rem;    }
+      font-size: 1rem;
+    }
   }
 
   em {
     color: $Fontcolor-main;
-    font-size: calc(45px + 40 * ((53vw + 53vh) - 600px) / 820);    
+    font-size: calc(45px + 40 * ((53vw + 53vh) - 600px) / 820);
     font-weight: bold;
   }
-
 }
 
 //======================CARDS==========================
@@ -311,8 +311,6 @@
     margin: 0;
   }
 
-  
-
   &::before {
     content: "";
     position: absolute;
@@ -360,7 +358,7 @@
       letter-spacing: 1.3px;
       font-size: 0.9rem;
       // padding-right: 20px;
-      
+
       @include mq(991px) {
         padding-right: 20px;
       }
@@ -503,7 +501,6 @@
     margin-top: 30px;
   }
 
-
   .analytics-roi-wrapper {
     width: 100%;
     max-width: 1300px;
@@ -552,7 +549,6 @@
         @include mq(991px) {
           width: 50%;
         }
-
 
         .arw-col-img {
           position: absolute;

@@ -2141,9 +2141,8 @@ body {
   border: none;
   outline: none;
   border-style: none;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   text-transform: uppercase;
-  font-weight: bolder;
   background-color: #112838;
   color: white;
   border: none;
@@ -2151,7 +2150,7 @@ body {
 }
 
 .form-container button:hover {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   background-color: #112838;
   color: white;
   border: none;
@@ -2173,6 +2172,8 @@ body {
   top: 0;
   width: 14%;
   height: 100%;
+  -webkit-transform: skewX(-20deg) translateZ(0);
+          transform: skewX(-20deg) translateZ(0);
   -webkit-transition: opacity 2.2s cubic-bezier(0.23, 1, 0.32, 1) 0.8s;
   transition: opacity 2.2s cubic-bezier(0.23, 1, 0.32, 1) 0.8s;
 }
@@ -2190,8 +2191,8 @@ body {
   top: 0;
   width: 20%;
   height: 100%;
-  -webkit-transform: skewX(-25deg) translateZ(0);
-          transform: skewX(-25deg) translateZ(0);
+  -webkit-transform: skewX(35deg) translateZ(0);
+          transform: skewX(35deg) translateZ(0);
   -webkit-transition: opacity 2.2s cubic-bezier(0.23, 1, 0.32, 1) 0.8s;
   transition: opacity 2.2s cubic-bezier(0.23, 1, 0.32, 1) 0.8s;
 }
@@ -2246,73 +2247,78 @@ body {
 .home-content {
   font-family: "Montserrat", sans-serif;
   position: absolute;
-  bottom: 15%;
-  right: 4%;
+  padding-left: 20px;
+  bottom: 10%;
+  right: 6%;
   z-index: 10;
   color: white;
-  width: 60%;
+  width: 50%;
   font-weight: 500;
-  font-size: calc(20px + 40 * ((53vw + 53vh) - 600px) / 820);
+  font-size: calc(14px + 40 * ((53vw + 53vh) - 600px) / 820);
 }
 
 @media only screen and (min-width: 991px) {
   .home-content {
-    font-size: calc(3px + 40 * ((53vw + 53vh) - 600px) / 820);
-    width: 48%;
+    font-size: calc(8px + 40 * ((53vw + 53vh) - 600px) / 820);
+    width: 40%;
+    bottom: 15%;
   }
+}
+
+@media only screen and (min-width: 1025px) {
+  .home-content {
+    padding-left: 0px;
+    font-size: calc(3px + 40 * ((53vw + 53vh) - 600px) / 820);
+  }
+}
+
+.home-content p {
+  position: relative;
+}
+
+.home-content p::after {
+  content: "";
+  position: absolute;
+  width: 90%;
+  height: 1px;
+  bottom: -10px;
+  left: 0;
+  background-color: #ccc;
 }
 
 .home-bottom-line {
   font-family: "Montserrat", sans-serif;
   letter-spacing: 2px;
   bottom: 2%;
-  right: 12%;
+  right: 0;
   z-index: 10;
   color: white;
-  width: 46%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
 }
 
 @media only screen and (min-width: 991px) {
   .home-bottom-line {
-    bottom: 8%;
-  }
-}
-
-.home-bottom-line span {
-  display: block;
-  width: 80%;
-  border-top: 1px solid #ccc;
-  -webkit-transform: translateY(30%);
-          transform: translateY(30%);
-}
-
-@media only screen and (min-width: 991px) {
-  .home-bottom-line span {
-    -webkit-transform: translateY(30%);
-            transform: translateY(30%);
-    width: 80%;
+    bottom: 5%;
   }
 }
 
 .home-bottom-line p {
   color: #ff2828;
   margin-left: 0;
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 
 @media only screen and (min-width: 991px) {
   .home-bottom-line p {
-    margin-left: 50px;
     font-size: 1.2rem;
-    width: 20%;
   }
 }
 
@@ -2323,7 +2329,7 @@ body {
 
 .home-right-line-top {
   top: 0;
-  right: 6%;
+  right: 5%;
   z-index: 10;
   color: white;
   height: 100%;
@@ -2339,7 +2345,7 @@ body {
 
 .home-right-line-bottom {
   top: 57%;
-  right: 6%;
+  right: 5%;
   z-index: 10;
   color: white;
   height: 100%;
@@ -2354,7 +2360,7 @@ body {
 
 .home-right-line-middle {
   top: 50%;
-  right: 6%;
+  right: 5%;
   z-index: 10;
   color: white;
   height: auto;

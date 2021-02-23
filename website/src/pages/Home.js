@@ -7,6 +7,10 @@ import operations from "../img/icons/operations.svg";
 
 import Brands from "../components/Brands";
 
+import Fade from "react-reveal/Fade";
+import Slide from "react-reveal/Slide";
+import Jello from 'react-reveal/Jello';
+
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
@@ -15,91 +19,20 @@ export default function Home() {
   const sectionRef = useRef(null);
 
   useEffect(() => {
-    let tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".homeCards",
-        start: "top center",
-      },
+    let x = gsap.timeline({
+      trigger: ".homeWrapper-home "
     });
-    let tl2 = gsap.timeline({
-      trigger: ".homeWrapper-home ",
-      // start: "top top"
-    });
-    let tl3 = gsap.timeline({
-      trigger: ".homeCards",
-    });
-
-    tl3.from(".banner-title", {
-      opacity: 0,
-      x: -200,
-      duration: 1,
-    });
-    tl3.to(".banner-title", {
-      opacity: 1,
-      x: 0,
-      duration: 1,
-    });
-
-    tl.from(".card", {
-      opacity: 0,
-      y: 200,
-      duration: 0.5,
-    });
-    tl.to(".card", {
-      opacity: 1,
-      y: 0,
-      duration: 0.5,
-    });
-
-    tl.from(".card-icon", {
-      opacity: 0,
-      duration: 0.5,
-    });
-    tl.to(".card-icon", {
-      opacity: 1,
-      duration: 0.5,
-    });
-
-    tl2.from(".home-content", {
-      opacity: 0,
-      right: -500,
-      duration: 1,
-    });
-    tl2.to(".home-content ", {
-      opacity: 1,
-      right: 10,
-      duration: 1,
-    });
-
-    tl2.from(
+    x.to(
       ".c-puzzle:nth-of-type(2)",
       {
-        duration: 0.4,
-        transform: "skewX(-30deg) translateZ(0)",
-      },
-      "-=1"
-    );
-    tl2.to(
-      ".c-puzzle:nth-of-type(2)",
-      {
-        duration: 0.4,
+        duration: 1,
         transform: "skewX(20deg) translateZ(0)",
-      },
-      "-=1"
+      }
     );
-
-    tl2.from(
+    x.to(
       ".c-puzzle:nth-of-type(3)",
       {
-        duration: 0.5,
-        transform: "skewX(25deg) translateZ(0)",
-      },
-      "-=1"
-    );
-    tl2.to(
-      ".c-puzzle:nth-of-type(3)",
-      {
-        duration: 0.5,
+        duration: 1,
         transform: "skewX(-35deg) translateZ(0)",
       },
       "-=1"
@@ -145,26 +78,36 @@ export default function Home() {
           <div className="c-puzzle absolute"></div>
           <div className="c-puzzle absolute"></div>
           <div className="home-content absolute">
-            <p>ACCELERATE YOUR DIGITAL TRANSFORMATION JOURNEY</p>
+            <Fade right>
+              <p>ACCELERATE YOUR DIGITAL TRANSFORMATION JOURNEY</p>
+            </Fade>
             {/* <p>Accelerate your digital transformation journey</p> */}
           </div>
           <div className="home-bottom-line absolute">
-            <p onClick={handleScroll}>Scroll down</p>
-            <span></span>
+          <Fade bottom>
+          <p onClick={handleScroll}>Scroll down</p>
+            {/* <span></span> */}
+          </Fade>
           </div>
           <div className="home-right-line-top absolute">
+            <Slide top>
             <span></span>
+            </Slide>
           </div>
           <div
             className="home-right-line-middle absolute"
             onClick={handleScroll}
           >
             <span>
+              <Jello>
               <i className="fas fa-angle-double-down"></i>
+              </Jello>
             </span>
           </div>
           <div className="home-right-line-bottom absolute">
-            <span></span>
+          <Slide bottom>
+          <span></span>
+          </Slide>
           </div>
         </div>
       </section>
@@ -172,17 +115,23 @@ export default function Home() {
         {/* <p>OUR SOLUTIONS</p> */}
         <p></p>
         <h3 className="banner-title ">
+        <Fade left cascade>
           We deliver business intelligence applications focused on improving
           your business.
+          </Fade>
         </h3>
         <p></p>
         {/* <p>We deliver business intelligence applications focused on improving your business.</p> */}
       </section>
       <section ref={sectionRef} className="homeCards section">
         <div className="cards-title fadeIn">
-          <h1>Use our experience</h1>
+        <Fade left>
+          <h1>
+            Use our experience</h1>
+        </Fade>
         </div>
         <div className="cards-wrapper">
+        <Fade left>
           <div className="card fadeIn">
             <div className="card-icon">
               <img src={analytics}></img>
@@ -200,6 +149,8 @@ export default function Home() {
               </Link>
             </div>
           </div>
+          </Fade>
+          <Fade bottom>
           <div className="card fadeIn">
             <div className="card-icon">
               <img src={operations}></img>
@@ -217,6 +168,8 @@ export default function Home() {
               </Link>
             </div>
           </div>
+          </Fade>
+          <Fade right>
           <div className="card fadeIn">
             <div className="card-icon">
               <img src={digital}></img>
@@ -234,6 +187,7 @@ export default function Home() {
               </Link>
             </div>
           </div>
+          </Fade>
         </div>
       </section>
 
