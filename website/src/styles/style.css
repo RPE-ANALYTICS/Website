@@ -1968,24 +1968,27 @@ body {
 }
 
 .contactWrapper {
-  width: 100%;
+  width: 100vw;
   height: 95vh;
-  background-image: url("../img/world-map.png");
-  background-position: left;
-  background-repeat: no-repeat;
-  background-size: cover;
   position: relative;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  overflow-y: scroll;
+  background-color: #f6f6f6;
 }
 
 @media only screen and (min-width: 991px) {
   .contactWrapper {
     background-position: center;
+    overflow-y: hidden;
   }
 }
 
@@ -2000,22 +2003,48 @@ body {
   z-index: 1;
 }
 
-.contactWrapper::after {
+.contact-image-container {
+  width: 100%;
+  height: 0%;
+  margin-top: 80px;
+  position: relative;
+  display: none;
+}
+
+@media only screen and (min-width: 700px) {
+  .contact-image-container {
+    height: 70%;
+    margin-top: 0;
+    display: block;
+  }
+}
+
+.contact-image-container::after {
   content: "";
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
   width: 100vw;
-  height: 75vh;
+  height: calc(100% + 20px);
+  z-index: 10;
   background-color: rgba(68, 68, 68, 0.1);
+}
+
+.contact-image-container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: left;
+     object-position: left;
 }
 
 .contact-content-container {
   width: 100%;
-  height: 20vh;
+  height: calc(95vh - 80px);
   background-color: #f8f8f8;
-  position: absolute;
-  bottom: 0;
+  position: relative;
+  top: 0;
   left: 0;
   margin: 0 auto;
   display: -webkit-box;
@@ -2033,6 +2062,19 @@ body {
           align-items: center;
 }
 
+@media only screen and (min-width: 700px) {
+  .contact-content-container {
+    height: 60vh;
+  }
+}
+
+@media only screen and (min-width: 991px) {
+  .contact-content-container {
+    padding-top: 0;
+    height: 30vh;
+  }
+}
+
 .contact-content-container::before {
   content: "";
   position: absolute;
@@ -2041,6 +2083,13 @@ body {
   width: 100vw;
   height: 20px;
   background-color: white;
+  display: none;
+}
+
+@media only screen and (min-width: 700px) {
+  .contact-content-container::before {
+    display: block;
+  }
 }
 
 .contact-container {
@@ -2050,6 +2099,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -2058,6 +2111,15 @@ body {
           align-items: center;
   text-align: center;
   position: relative;
+}
+
+@media only screen and (min-width: 991px) {
+  .contact-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 
 .address-content {
@@ -2074,6 +2136,13 @@ body {
       -ms-flex-align: center;
           align-items: center;
   font-family: "Montserrat", sans-serif;
+  padding: 30px 0;
+}
+
+@media only screen and (min-width: 700px) {
+  .address-content {
+    padding: 0;
+  }
 }
 
 .address-content .country-name {
@@ -2104,8 +2173,8 @@ body {
 }
 
 .form-container {
-  width: 30%;
-  height: 90%;
+  width: 100%;
+  height: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2119,6 +2188,24 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 10px 0;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+@media only screen and (min-width: 700px) {
+  .form-container {
+    height: 60%;
+  }
+}
+
+@media only screen and (min-width: 991px) {
+  .form-container {
+    width: 30%;
+    height: 90%;
+    padding: 0;
+    border: none;
+  }
 }
 
 .form-container h1 {
@@ -2152,6 +2239,16 @@ body {
   background-color: #112838;
   color: white;
   border: none;
+}
+
+.row {
+  height: 33%;
+}
+
+@media only screen and (min-width: 700px) {
+  .row {
+    height: 90%;
+  }
 }
 
 .puzzles-home {

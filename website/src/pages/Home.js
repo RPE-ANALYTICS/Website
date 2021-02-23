@@ -82,7 +82,7 @@ export default function Home() {
           </div>
           <div className="home-bottom-line absolute">
             <Fade bottom>
-              <p onClick={handleScroll}>Scroll down</p>
+              {/* <p onClick={handleScroll}>Scroll down</p> */}
               {/* <span></span> */}
             </Fade>
           </div>

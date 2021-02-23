@@ -348,20 +348,20 @@
 // }
 
 .contactWrapper {
-  width: 100%;
+  width: 100vw;
   height: 95vh;
-  // background-color: red;
-  background-image: url("../img/world-map.png");
-  background-position: left;
-  background-repeat: no-repeat;
-  background-size: cover;
   position: relative;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-end;
   align-items: center;
+  overflow-y: scroll;
+  background-color: $BackgroundColor-main;
 
   
   @include mq(991px) {
     background-position: center;
+    // height: 95vh;
+    overflow-y: hidden;
   }
 
   &::before {
@@ -374,32 +374,67 @@
     background-color: rgba(17, 40, 56, 0.9);
     z-index: 1;
   }
+}
 
-  &::after {
+.contact-image-container {
+  width: 100%;
+  height: 0%;
+  // height: 75vh;
+  margin-top: 80px;
+  position: relative;
+  display: none;
+
+  @include mq(700px) {
+    height: 70%;
+    margin-top: 0;
+    display: block;
+  }
+
+    &::after {
     content: "";
     position: absolute;
-    top: 0;
+    bottom: 0;
     left: 0;
     width: 100vw;
-    height: 75vh;
-    // z-index: 10;
+    height: calc(100% + 20px);
+    z-index: 10;
     background-color: rgba(68, 68, 68, 0.1);
+
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left;
   }
 }
 
 .contact-content-container {
   width: 100%;
-  height: 20vh;
+  height: calc(95vh - 80px);
   background-color: rgb(248, 248, 248);
-  position: absolute;
-  bottom: 0;
+  position: relative;
+  top: 0;
   left: 0;
+  // padding-top: 80px;
   // text-align: center;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  // padding: 10px 10px;
+
+  @include mq(700px) {
+    // padding-top: 80px;
+    height: 60vh;
+  }
+
+  @include mq(991px) {
+    padding-top: 0;
+    height: 30vh;
+  }
 
   &::before {
     content: "";
@@ -410,6 +445,11 @@
     height: 20px;
     // z-index: 10;
     background-color: white;
+    display: none;
+
+    @include mq(700px) {
+      display: block;
+    }
   }
 }
 
@@ -419,10 +459,15 @@
   height: 100%;
   // background-color: green;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   position: relative;
+
+  @include mq(991px) {
+    flex-direction: row;
+  }
 }
 
 .address-content {
@@ -433,6 +478,11 @@
   justify-content: center;
   align-items: center;
   font-family: $Fontfamily-sansSerif-3;
+  padding: 30px 0;
+
+  @include mq(700px) {
+  padding: 0;
+  }
 
   .country-name {
     color: $Fontcolor-main;
@@ -463,12 +513,26 @@
 }
 
 .form-container {
-  width: 30%;
-  height: 90%;
+  width: 100%;
+  height: 60%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 10px 0;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+
+  @include mq(700px) {
+    height: 60%;
+  }
+
+  @include mq(991px) {
+    width: 30%;
+    height: 90%;
+    padding: 0;
+    border: none;
+  }
 
   h1 {
     font-family: $Fontfamily-serif;
@@ -500,5 +564,14 @@
       color: white;
       border: none;
     }
+  }
+}
+
+
+.row {
+  height: 33%;
+
+  @include mq(700px) {
+    height: 90%;
   }
 }

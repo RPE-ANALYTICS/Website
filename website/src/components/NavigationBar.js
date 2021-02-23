@@ -12,7 +12,7 @@ export default function NavigationBar() {
   navRef.current = navBackground;
   useEffect(() => {
     const handleScroll = () => {
-      let show = window.scrollY > 70;
+      let show = window.scrollY > 20;
       if (navRef.current !== show) {
         setNavBackground(show);
       }

@@ -2,7 +2,7 @@ import React from "react";
 
 import ContactUs from "../components/ContactUs";
 
-import image from "./../img/map-pin.png";
+import Image from "./../img/world-map.png";
 
 export default function Contact() {
   const handleSend = () => {
@@ -13,13 +13,16 @@ export default function Contact() {
   return (
     <>
       <section className="contactWrapper section">
+        <div className="contact-image-container">
+          <img src={Image}></img>
+        </div>
         <div className="contact-content-container">
           {/* <h1>
             <i className="fas fa-minus"></i> Contact us{" "}
             <i className="fas fa-minus"></i>
           </h1> */}
           <div className="contact-container">
-            <div className="contact-address-us">
+            <div className="contact-address-us row">
               <div className="address-content">
                 <ul>
                   <li className="country-name">United States</li>
@@ -35,14 +38,14 @@ export default function Contact() {
                 </ul>
               </div>
             </div>
-            <div className="form-container">
+            <div className="form-container row">
               <h1>
                 <i className="fas fa-minus"></i> Contact us{" "}
                 <i className="fas fa-minus"></i>
               </h1>
               <button onClick={handleSend}>Send email</button>
             </div>
-            <div className="contact-address-pl">
+            <div className="contact-address-pl row">
               <div className="address-content">
                 <ul>
                   <li className="country-name">Poland</li>
