@@ -356,7 +356,7 @@ body {
   color: #7a7d86;
 }
 
-.homeWrapper-about {
+.aboutWrapper {
   width: 100%;
   position: relative;
   background-color: #fff;
@@ -370,13 +370,13 @@ body {
           flex-direction: column;
 }
 
-.homeWrapper-about p {
+.aboutWrapper p {
   letter-spacing: 2px;
   font-size: 0.8rem;
 }
 
 @media only screen and (min-width: 991px) {
-  .homeWrapper-about p {
+  .aboutWrapper p {
     font-size: 1rem;
   }
 }
@@ -495,8 +495,8 @@ body {
   top: 0;
   width: 15%;
   height: 100%;
-  -webkit-transform: skewX(25deg) translateZ(0);
-          transform: skewX(25deg) translateZ(0);
+  -webkit-transform: skewX(-25deg) translateZ(0);
+          transform: skewX(-25deg) translateZ(0);
   -webkit-transition: opacity 2.2s cubic-bezier(0.23, 1, 0.32, 1) 0.8s;
   transition: opacity 2.2s cubic-bezier(0.23, 1, 0.32, 1) 0.8s;
 }
@@ -514,8 +514,8 @@ body {
   top: 0;
   width: 18%;
   height: 100%;
-  -webkit-transform: skewX(-25deg) translateZ(0);
-          transform: skewX(-25deg) translateZ(0);
+  -webkit-transform: skewX(25deg) translateZ(0);
+          transform: skewX(25deg) translateZ(0);
   -webkit-transition: opacity 2.2s cubic-bezier(0.23, 1, 0.32, 1) 0.8s;
   transition: opacity 2.2s cubic-bezier(0.23, 1, 0.32, 1) 0.8s;
 }
@@ -524,8 +524,8 @@ body {
   .about-puzzles-home .c-puzzle:nth-of-type(3) {
     width: 8%;
     left: 5%;
-    -webkit-transform: skewX(-33deg) translateZ(0);
-            transform: skewX(-33deg) translateZ(0);
+    -webkit-transform: skewX(33deg) translateZ(0);
+            transform: skewX(33deg) translateZ(0);
   }
 }
 
@@ -643,7 +643,6 @@ body {
   height: 100%;
   top: -20%;
   right: 5%;
-  background-color: white;
   z-index: 10;
   display: none;
 }
@@ -938,7 +937,6 @@ body {
   height: 100%;
   top: -15%;
   left: 5%;
-  background-color: white;
   z-index: 10;
   display: none;
 }

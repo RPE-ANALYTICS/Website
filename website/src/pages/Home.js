@@ -9,26 +9,23 @@ import Brands from "../components/Brands";
 
 import Fade from "react-reveal/Fade";
 import Slide from "react-reveal/Slide";
-import Jello from 'react-reveal/Jello';
+import Jello from "react-reveal/Jello";
 
 import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-gsap.registerPlugin(ScrollTrigger);
+// import { ScrollTrigger } from "gsap/ScrollTrigger";
+// gsap.registerPlugin(ScrollTrigger);
 
 export default function Home() {
   const sectionRef = useRef(null);
 
   useEffect(() => {
     let x = gsap.timeline({
-      trigger: ".homeWrapper-home "
+      trigger: ".homeWrapper-home ",
     });
-    x.to(
-      ".c-puzzle:nth-of-type(2)",
-      {
-        duration: 1,
-        transform: "skewX(20deg) translateZ(0)",
-      }
-    );
+    x.to(".c-puzzle:nth-of-type(2)", {
+      duration: 1,
+      transform: "skewX(20deg) translateZ(0)",
+    });
     x.to(
       ".c-puzzle:nth-of-type(3)",
       {
@@ -84,14 +81,14 @@ export default function Home() {
             {/* <p>Accelerate your digital transformation journey</p> */}
           </div>
           <div className="home-bottom-line absolute">
-          <Fade bottom>
-          <p onClick={handleScroll}>Scroll down</p>
-            {/* <span></span> */}
-          </Fade>
+            <Fade bottom>
+              <p onClick={handleScroll}>Scroll down</p>
+              {/* <span></span> */}
+            </Fade>
           </div>
           <div className="home-right-line-top absolute">
             <Slide top>
-            <span></span>
+              <span></span>
             </Slide>
           </div>
           <div
@@ -100,14 +97,14 @@ export default function Home() {
           >
             <span>
               <Jello>
-              <i className="fas fa-angle-double-down"></i>
+                <i className="fas fa-angle-double-down"></i>
               </Jello>
             </span>
           </div>
           <div className="home-right-line-bottom absolute">
-          <Slide bottom>
-          <span></span>
-          </Slide>
+            <Slide bottom>
+              <span></span>
+            </Slide>
           </div>
         </div>
       </section>
@@ -115,9 +112,9 @@ export default function Home() {
         {/* <p>OUR SOLUTIONS</p> */}
         <p></p>
         <h3 className="banner-title ">
-        <Fade left cascade>
-          We deliver business intelligence applications focused on improving
-          your business.
+          <Fade left cascade>
+            We deliver business intelligence applications focused on improving
+            your business.
           </Fade>
         </h3>
         <p></p>
@@ -125,68 +122,67 @@ export default function Home() {
       </section>
       <section ref={sectionRef} className="homeCards section">
         <div className="cards-title fadeIn">
-        <Fade left>
-          <h1>
-            Use our experience</h1>
-        </Fade>
+          <Fade left>
+            <h1>Use our experience</h1>
+          </Fade>
         </div>
         <div className="cards-wrapper">
-        <Fade left>
-          <div className="card fadeIn">
-            <div className="card-icon">
-              <img src={analytics}></img>
+          <Fade left>
+            <div className="card fadeIn">
+              <div className="card-icon">
+                <img src={analytics}></img>
+              </div>
+              <div className="info">
+                <h1 className="title">
+                  <span>A</span>nalytics
+                </h1>
+                <p>Business Intelligence, Data Management, AI & ML</p>
+              </div>
+              <div className="see-button">
+                <span></span>
+                <Link to="/analytics" onClick={handleClick}>
+                  <button>Learn More</button>
+                </Link>
+              </div>
             </div>
-            <div className="info">
-              <h1 className="title">
-                <span>A</span>nalytics
-              </h1>
-              <p>Business Intelligence, Data Management, AI & ML</p>
-            </div>
-            <div className="see-button">
-              <span></span>
-              <Link to="/analytics" onClick={handleClick}>
-                <button>Learn More</button>
-              </Link>
-            </div>
-          </div>
           </Fade>
           <Fade bottom>
-          <div className="card fadeIn">
-            <div className="card-icon">
-              <img src={operations}></img>
+            <div className="card fadeIn">
+              <div className="card-icon">
+                <img src={operations}></img>
+              </div>
+              <div className="info">
+                <h1 className="title">
+                  <span>O</span>perations
+                </h1>
+                <p>Environment Management, BI Platfrom Operations</p>
+              </div>
+              <div className="see-button">
+                <span></span>
+                <Link to="/operations" onClick={handleClick}>
+                  <button>Learn More</button>
+                </Link>
+              </div>
             </div>
-            <div className="info">
-              <h1 className="title">
-                <span>O</span>perations
-              </h1>
-              <p>Environment Management, BI Platfrom Operations</p>
-            </div>
-            <div className="see-button">
-              <span></span>
-              <Link to="/operations" onClick={handleClick}>
-                <button>Learn More</button>
-              </Link>
-            </div>
-          </div>
           </Fade>
           <Fade right>
-          <div className="card fadeIn">
-            <div className="card-icon">
-              <img src={digital}></img>
+            <div className="card fadeIn">
+              <div className="card-icon">
+                <img src={digital}></img>
+              </div>
+              <div className="info">
+                <h1 className="title">
+                  <span>D</span>igital <span>T</span>ransformation
+                </h1>
+                <p>Transformation Strategy & Roadmaps, Analytics Enablement</p>
+              </div>
+              <div className="see-button">
+                <span></span>
+                <Link to="/digital" onClick={handleClick}>
+                  <button>Learn More</button>
+                </Link>
+              </div>
             </div>
-            <div className="info">
-              <h1 className="title">
-                <span>D</span>igital <span>T</span>ransformation
-              </h1>
-              <p>Transformation Strategy & Roadmaps, Analytics Enablement</p>
-            </div>
-            <div className="see-button">
-              <span></span>
-              <Link to="/digital" onClick={handleClick}>
-                <button>Learn More</button>
-              </Link>
-            </div>
-          </div>
           </Fade>
         </div>
       </section>
