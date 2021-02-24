@@ -135,9 +135,7 @@ export default function Analytics() {
                 <div className="analytics-services-card-content">
                   <h1>Strategy</h1>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
+                  We will help you with building effective strategy, roadmaps and execution plans.
                   </p>
                 </div>
               </div>
@@ -151,9 +149,7 @@ export default function Analytics() {
                 <div className="analytics-services-card-content">
                   <h1>Data Extraction</h1>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
+                  We perform all ranges of data extraction, data ingestion and transformation.
                   </p>
                 </div>
               </div>
@@ -167,9 +163,7 @@ export default function Analytics() {
                 <div className="analytics-services-card-content">
                   <h1>Transformation</h1>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
+                  We design effective and proved Digital Transformation strategy, tailored for your company.
                   </p>
                 </div>
               </div>
@@ -183,9 +177,7 @@ export default function Analytics() {
                 <div className="analytics-services-card-content">
                   <h1>Vizualizations</h1>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
+                  We will  deliver the insight to help you drive the business impact.
                   </p>
                 </div>
               </div>
@@ -199,9 +191,7 @@ export default function Analytics() {
                 <div className="analytics-services-card-content">
                   <h1>Auto Reports</h1>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
+                  We will help deliver the automated insights right to your device.
                   </p>
                 </div>
               </div>
@@ -215,9 +205,7 @@ export default function Analytics() {
                 <div className="analytics-services-card-content">
                   <h1>Data Management</h1>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
+                  We will help you build effective Data Management strategy.
                   </p>
                 </div>
               </div>

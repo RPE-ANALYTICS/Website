@@ -241,9 +241,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -253,14 +253,14 @@ body {
 }
 
 .brandsWrapper .brand {
-  width: 200px;
-  margin: 5px 10px;
+  width: 150px;
+  margin: 5px 20px;
 }
 
 @media only screen and (min-width: 991px) {
   .brandsWrapper .brand {
-    width: 160px;
-    margin: 5px 20px;
+    width: 100px;
+    margin: 5px 50px;
   }
 }
 
@@ -371,7 +371,7 @@ body {
 }
 
 .aboutWrapper p {
-  letter-spacing: 2px;
+  letter-spacing: 0.8px;
   font-size: 0.8rem;
 }
 
@@ -383,7 +383,7 @@ body {
 
 .about-thumbnail-section {
   width: 100%;
-  height: 60vh;
+  height: 70vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -426,12 +426,36 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100vw;
-  height: 60vh;
+  height: 70vh;
   position: absolute;
   top: 0;
   left: 0;
   background-repeat: no-repeat;
   z-index: 0;
+}
+
+@media only screen and (min-width: 700px) {
+  .about-thumbnail-section .about-thumbnail-image img {
+    height: 75vh;
+  }
+}
+
+@media only screen and (min-width: 991px) {
+  .about-thumbnail-section .about-thumbnail-image img {
+    height: 70vh;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .about-thumbnail-section {
+    height: 75vh;
+  }
+}
+
+@media only screen and (min-width: 991px) {
+  .about-thumbnail-section {
+    height: 70vh;
+  }
 }
 
 .about-thumbnail-content {
@@ -470,7 +494,7 @@ body {
 }
 
 .about-thumbnail-content p {
-  letter-spacing: 3px;
+  letter-spacing: 5px;
   font-size: 0.7rem;
 }
 
@@ -532,6 +556,7 @@ body {
 
 .about-content-section {
   width: 100%;
+  height: 30vh;
   background-color: white;
   position: relative;
   display: -webkit-box;
@@ -547,16 +572,23 @@ body {
   margin-bottom: 0px;
 }
 
+@media only screen and (min-width: 700px) {
+  .about-content-section {
+    height: 25vh;
+  }
+}
+
 @media only screen and (min-width: 991px) {
   .about-content-section {
+    height: 30vh;
     padding: 0;
   }
 }
 
-.about-content-section .about-who-we-are {
+.about-content-section .about-who-we-are, .about-content-section .about-team-wrapper {
   width: 100%;
+  height: 100%;
   max-width: 1300px;
-  margin: 10px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -573,46 +605,85 @@ body {
   text-align: justify;
 }
 
-.about-content-section .about-who-we-are h1 {
+.about-content-section .about-who-we-are h1, .about-content-section .about-team-wrapper h1 {
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   text-transform: uppercase;
   letter-spacing: 1.3px;
   font-family: "Montserrat", sans-serif;
   color: #1e2f3b;
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
 }
 
-@media only screen and (min-width: 991px) {
-  .about-content-section .about-who-we-are h1 {
+@media only screen and (min-width: 700px) {
+  .about-content-section .about-who-we-are h1, .about-content-section .about-team-wrapper h1 {
     font-size: 2rem;
   }
 }
 
-.about-content-section .about-who-we-are h1::before {
+@media only screen and (min-width: 991px) {
+  .about-content-section .about-who-we-are h1, .about-content-section .about-team-wrapper h1 {
+    font-size: 2rem;
+    text-align: left;
+  }
+}
+
+.about-content-section .about-who-we-are h1::before, .about-content-section .about-team-wrapper h1::before {
   content: "";
   position: absolute;
-  bottom: -25px;
+  bottom: -20px;
   left: 50%;
-  width: 13%;
-  height: 6px;
+  width: 10%;
+  height: 5px;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   background-color: #d42028;
   border-radius: 10px;
 }
 
-.about-content-section .about-who-we-are .wwa-content {
+@media only screen and (min-width: 991px) {
+  .about-content-section .about-who-we-are h1::before, .about-content-section .about-team-wrapper h1::before {
+    left: 4%;
+    width: 7%;
+  }
+}
+
+.about-content-section .about-who-we-are p, .about-content-section .about-team-wrapper p {
+  padding-top: 22px;
+  font-size: 0.8rem;
+}
+
+@media only screen and (min-width: 700px) {
+  .about-content-section .about-who-we-are p, .about-content-section .about-team-wrapper p {
+    font-size: 1.1rem;
+  }
+}
+
+@media only screen and (min-width: 991px) {
+  .about-content-section .about-who-we-are p, .about-content-section .about-team-wrapper p {
+    font-size: 1.2rem;
+    text-align: left;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .about-content-section .about-who-we-are p, .about-content-section .about-team-wrapper p {
+    font-size: 1rem;
+    text-align: left;
+  }
+}
+
+.about-content-section .about-who-we-are .wwa-content, .about-content-section .about-team-wrapper .wwa-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-top: 0px;
 }
 
-.about-content-section .about-who-we-are .wwa-content .wwa-col {
+.about-content-section .about-who-we-are .wwa-content .wwa-col, .about-content-section .about-team-wrapper .wwa-content .wwa-col {
   width: 100%;
-  padding: 30px;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -625,47 +696,51 @@ body {
 }
 
 @media only screen and (min-width: 991px) {
-  .about-content-section .about-who-we-are .wwa-content .wwa-col {
-    width: 70%;
+  .about-content-section .about-who-we-are .wwa-content .wwa-col, .about-content-section .about-team-wrapper .wwa-content .wwa-col {
+    width: 80%;
+    margin-left: 50px;
   }
 }
 
-.about-content-section .about-who-we-are .wwa-content .wwa-col .wwa-col-img {
+.about-content-section .about-who-we-are .wwa-content .wwa-col .wwa-col-img, .about-content-section .about-team-wrapper .wwa-content .wwa-col .wwa-col-img {
   position: absolute;
   width: 80%;
   height: 100%;
-  top: -20%;
+  top: -30px;
   right: 5%;
   z-index: 10;
   display: none;
 }
 
 @media only screen and (min-width: 991px) {
-  .about-content-section .about-who-we-are .wwa-content .wwa-col .wwa-col-img {
+  .about-content-section .about-who-we-are .wwa-content .wwa-col .wwa-col-img, .about-content-section .about-team-wrapper .wwa-content .wwa-col .wwa-col-img {
     display: block;
     width: 95%;
   }
 }
 
-.about-content-section .about-who-we-are .wwa-content .wwa-col .wwa-col-img img {
+.about-content-section .about-who-we-are .wwa-content .wwa-col .wwa-col-img img, .about-content-section .about-team-wrapper .wwa-content .wwa-col .wwa-col-img img {
   width: 100%;
   min-width: 378px;
-  max-height: 100%;
+  max-height: 110%;
   -o-object-fit: cover;
      object-fit: cover;
   -webkit-box-shadow: 0 10px 10px rgba(56, 56, 56, 0.2), 10px 10px 20px rgba(48, 48, 48, 0.2);
           box-shadow: 0 10px 10px rgba(56, 56, 56, 0.2), 10px 10px 20px rgba(48, 48, 48, 0.2);
 }
 
-.about-content-section .about-who-we-are .wwa-content .wwa-col-img-wrapper {
+.about-content-section .about-who-we-are .wwa-content .wwa-col-content, .about-content-section .about-team-wrapper .wwa-content .wwa-col-content {
+  padding: 30px;
+}
+
+.about-content-section .about-who-we-are .wwa-content .wwa-col-img-wrapper, .about-content-section .about-team-wrapper .wwa-content .wwa-col-img-wrapper {
   width: 0;
   padding: 0;
 }
 
 @media only screen and (min-width: 991px) {
-  .about-content-section .about-who-we-are .wwa-content .wwa-col-img-wrapper {
+  .about-content-section .about-who-we-are .wwa-content .wwa-col-img-wrapper, .about-content-section .about-team-wrapper .wwa-content .wwa-col-img-wrapper {
     width: 50%;
-    padding: 30px;
   }
 }
 
@@ -686,7 +761,7 @@ body {
           flex-direction: column;
   font-family: "Montserrat", sans-serif;
   position: relative;
-  background: #f6f6f6;
+  background: #f8f8f8;
   background-color: #112838;
 }
 
@@ -738,7 +813,7 @@ body {
 .about-content-section3 .about-content-wrapper3 .title3::before {
   content: "";
   position: absolute;
-  bottom: -10px;
+  bottom: -5px;
   left: 50%;
   width: 10%;
   height: 6px;
@@ -824,149 +899,14 @@ body {
 }
 
 .about-team-section {
-  width: 100%;
-  background-color: white;
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-bottom: 0px;
-  margin-top: 0px;
-}
-
-@media only screen and (min-width: 991px) {
-  .about-team-section {
-    padding-bottom: 30px;
-    margin-top: 30px;
-  }
-}
-
-.about-team-section .about-team-wrapper {
-  width: 100%;
-  max-width: 1300px;
-  margin: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: justify;
-}
-
-.about-team-section .about-team-wrapper h1 {
-  position: relative;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-  font-family: "Montserrat", sans-serif;
-  color: #1e2f3b;
-  text-align: center;
-  letter-spacing: 1.3px;
-  font-size: 1.8rem;
-}
-
-@media only screen and (min-width: 991px) {
-  .about-team-section .about-team-wrapper h1 {
-    font-size: 2rem;
-  }
-}
-
-.about-team-section .about-team-wrapper h1::before {
-  content: "";
-  position: absolute;
-  bottom: -25px;
-  left: 50%;
-  width: 13%;
-  height: 6px;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  background-color: #d42028;
-  border-radius: 10px;
-}
-
-.about-team-section .about-team-wrapper .atw-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.about-team-section .about-team-wrapper .atw-content .atw-col {
-  width: 100%;
-  padding: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  position: relative;
-  letter-spacing: 1.3px;
-}
-
-@media only screen and (min-width: 991px) {
-  .about-team-section .about-team-wrapper .atw-content .atw-col {
-    width: 50%;
-  }
-}
-
-.about-team-section .about-team-wrapper .atw-content .atw-col .atw-col-img {
-  position: absolute;
-  width: 0;
-  height: 100%;
-  top: -15%;
-  left: 5%;
-  z-index: 10;
-  display: none;
-}
-
-@media only screen and (min-width: 991px) {
-  .about-team-section .about-team-wrapper .atw-content .atw-col .atw-col-img {
-    display: block;
-    width: 80%;
-  }
-}
-
-.about-team-section .about-team-wrapper .atw-content .atw-col .atw-col-img img {
-  width: 100%;
-  min-width: 378px;
-  max-height: 110%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -webkit-box-shadow: 0 10px 10px rgba(56, 56, 56, 0.2), 10px 10px 20px rgba(48, 48, 48, 0.2);
-          box-shadow: 0 10px 10px rgba(56, 56, 56, 0.2), 10px 10px 20px rgba(48, 48, 48, 0.2);
-}
-
-.about-team-section .about-team-wrapper .atw-content .atw-col-img-wrapper {
-  width: 0;
-  padding: 0;
-}
-
-@media only screen and (min-width: 991px) {
-  .about-team-section .about-team-wrapper .atw-content .atw-col-img-wrapper {
-    width: 50%;
-    padding: 30px;
-  }
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .industriesSection {
   width: 100vw;
   position: relative;
-  background-color: #f6f6f6;
+  background-color: #f8f8f8;
   background-color: #112838;
   color: white;
   -webkit-box-pack: center;
@@ -1016,7 +956,7 @@ body {
 .industriesSection .industries-wrapper h1::before {
   content: "";
   position: absolute;
-  bottom: -25px;
+  bottom: -20px;
   left: 50%;
   width: 13%;
   height: 6px;
@@ -1041,7 +981,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 10px 0;
 }
 
 @media only screen and (min-width: 991px) {
@@ -1060,14 +999,8 @@ body {
   -webkit-perspective: 1000px;
           perspective: 1000px;
   text-align: center;
-  margin: 10px 10px;
+  margin: 20px 10px;
   color: #112838;
-}
-
-@media only screen and (min-width: 991px) {
-  .industriesSection .industries-wrapper .industry-cards .industry-card {
-    margin: 30px 10px;
-  }
 }
 
 .industriesSection .industries-wrapper .industry-cards .industry-card .industry-card-inner {
@@ -1180,14 +1113,18 @@ body {
 .about-partners-section .about-partners-wrapper h1 {
   font-family: "Montserrat", sans-serif;
   margin-bottom: 20px;
+  width: 100%;
   position: relative;
   letter-spacing: 1.3px;
   font-size: 1.8rem;
+  text-align: center;
 }
 
 @media only screen and (min-width: 991px) {
   .about-partners-section .about-partners-wrapper h1 {
     font-size: 2rem;
+    padding: 0 30px;
+    text-align: left;
   }
 }
 
@@ -1197,11 +1134,18 @@ body {
   bottom: -20px;
   left: 50%;
   width: 10%;
-  height: 6px;
+  height: 5px;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   background-color: #d42028;
   border-radius: 10px;
+}
+
+@media only screen and (min-width: 991px) {
+  .about-partners-section .about-partners-wrapper h1::before {
+    left: 5%;
+    width: 5%;
+  }
 }
 
 .about-partners-section .about-partners-wrapper p {
@@ -1212,15 +1156,8 @@ body {
   text-align: justify;
 }
 
-@media only screen and (min-width: 991px) {
-  .about-partners-section .about-partners-wrapper p {
-    width: 80%;
-  }
-}
-
 .analyticsWrapper {
   width: 100vw;
-  background-color: #fff;
   overflow: hidden;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -1350,7 +1287,7 @@ body {
           flex-direction: column;
   font-family: "Montserrat", sans-serif;
   position: relative;
-  background: #f6f6f6;
+  background: #f8f8f8;
   background: white;
 }
 
@@ -1829,7 +1766,7 @@ body {
 
 .analytics-roi-section {
   width: 100%;
-  background-color: #f6f6f6;
+  background-color: #f8f8f8;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1976,7 +1913,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   overflow-y: scroll;
-  background-color: #f6f6f6;
+  background-color: #f8f8f8;
 }
 
 @media only screen and (min-width: 991px) {
@@ -2623,7 +2560,7 @@ body {
 .card {
   height: 400px;
   width: 320px;
-  margin: 10px;
+  margin: 15px;
   border-radius: 5px;
   padding: 2rem 1.5rem;
   -webkit-box-shadow: 0 10px 10px rgba(56, 56, 56, 0.2), 10px 10px 20px rgba(48, 48, 48, 0.2);
@@ -2641,16 +2578,15 @@ body {
 @media only screen and (min-width: 991px) {
   .card {
     width: 380px;
-    height: 450px;
+    height: 400px;
     padding: 2rem 0.7rem;
   }
 }
 
 @media only screen and (min-width: 1025px) {
   .card {
-    width: 340px;
-    margin: 10px 30px;
-    min-width: 320px;
+    width: 320px;
+    margin: 0px 30px;
     padding: 2rem 1.9rem;
   }
 }
@@ -3019,7 +2955,7 @@ body {
 .career-resume {
   width: 100%;
   height: 100px;
-  background-color: #f6f6f6;
+  background-color: #f8f8f8;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

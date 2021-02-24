@@ -335,7 +335,7 @@
   // width: 30%;
   width: 320px;
   // min-width: 270px;
-  margin: 10px;
+  margin: 15px;
   border-radius: 5px;
   padding: 2rem 1.5rem;
   box-shadow: 0 10px 10px rgba(56, 56, 56, 0.2),
@@ -349,13 +349,13 @@
 
     @include mq(991px) {
       width: 380px;
-      height: 450px;
+      height: 400px;
       padding: 2rem 0.7rem;
     }
     @include mq(1025px) {
-      width: 340px;
-      margin: 10px 30px;
-      min-width: 320px;
+      width: 320px;
+      margin: 0px 30px;
+      // min-width: 320px;
       padding: 2rem 1.9rem;
     }
 }

@@ -7,7 +7,7 @@
   flex-direction: column;
 
   p {
-    letter-spacing: 2px;
+    letter-spacing: 0.8px;
     font-size: 0.8rem;
 
     @include mq(991px) {
@@ -18,7 +18,7 @@
 //=================THUMBNAIL=====================
 .about-thumbnail-section {
   width: 100%;
-  height: 60vh;
+  height: 70vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -56,13 +56,27 @@
       // object-fit: cover;
       object-fit: cover;
       width: 100vw;
-      height: 60vh;
+      height: 70vh;
       position: absolute;
       top: 0;
       left: 0;
       background-repeat: no-repeat;
       z-index: 0;
+
+      @include mq(700px) {
+        height: 75vh;
+      }
+      @include mq(991px) {
+        height: 70vh;
+      }
     }
+  }
+
+  @include mq(700px) {
+    height: 75vh;
+  }
+  @include mq(991px) {
+    height: 70vh;
   }
 }
 
@@ -103,7 +117,7 @@
   }
 
   p {
-    letter-spacing: 3px;
+    letter-spacing: 5px;
     font-size: 0.7rem;
 
     @include mq(991px) {
@@ -159,7 +173,7 @@
 .about-content-section {
   width: 100%;
   // min-height: 550px;
-  // height: 45vh;
+  height: 30vh;
   background-color: rgb(255, 255, 255);
   position: relative;
   display: flex;
@@ -168,16 +182,25 @@
   margin-bottom: 0px;
   // padding: 0 10px;
 
+  // @include mq(991px) {
+  //   // margin-bottom: 60px;
+  //   padding: 0;
+  //   // height: 45vh;
+  // }
+
+  @include mq(700px) {
+    height: 25vh;
+  }
   @include mq(991px) {
-    // margin-bottom: 60px;
+    height: 30vh;
     padding: 0;
-    // height: 45vh;
   }
 
-  .about-who-we-are {
+  .about-who-we-are, .about-team-wrapper {
     width: 100%;
+    height: 100%;
     max-width: 1300px;
-    margin: 10px 0;
+    // margin: 10px 0;
     // background-color: green;
     display: flex;
     flex-direction: column;
@@ -187,35 +210,64 @@
 
     h1 {
       position: relative;
-      margin-bottom: 20px;
+      margin-bottom: 15px;
       text-transform: uppercase;
       letter-spacing: 1.3px;
       // font-size: 2rem;
       font-family: $Fontfamily-serif;
       color: $Fontcolor-second;
       text-align: center;
-      font-size: 1.8rem;
+      font-size: 1.5rem;
 
+      @include mq(700px) {
+        font-size: 2rem;
+      }
       @include mq(991px) {
         font-size: 2rem;
+        text-align: left;
       }
 
       &::before {
         content: "";
         position: absolute;
-        bottom: -25px;
+        bottom: -20px;
         left: 50%;
-        width: 13%;
-        height: 6px;
+        width: 10%;
+        height: 5px;
         transform: translateX(-50%);
         background-color: $Fontcolor-main;
         border-radius: 10px;
+
+        @include mq(991px) {
+          left: 4%;
+          width: 7%;
+          // height: 4px;
+        }
+      }
+    }
+
+    
+    p {
+      padding-top: 22px;
+      font-size: 0.8rem;
+
+      @include mq(700px) {
+        font-size: 1.1rem;
+      }
+      @include mq(991px) {
+        font-size: 1.2rem;
+        text-align: left;
+      }
+      @include mq(1025px) {
+        font-size: 1rem;
+        text-align: left;
       }
     }
 
     .wwa-content {
       display: flex;
       margin-top: 0px;
+      // height: 100%;
 
       @include mq(991px) {
         // margin-top: 30px;
@@ -223,21 +275,23 @@
 
       .wwa-col {
         width: 100%;
-        padding: 30px;
+        height: 100%;
+        // padding: 30px;
         display: flex;
         flex-direction: column;
         position: relative;
         letter-spacing: 1.3px;
 
         @include mq(991px) {
-          width: 70%;
+          width: 80%;
+          margin-left: 50px;
         }
 
         .wwa-col-img {
           position: absolute;
           width: 80%;
           height: 100%;
-          top: -20%;
+          top: -30px;
           right: 5%;
           z-index: 10;
           display: none;
@@ -247,15 +301,20 @@
             width: 95%;
           }
 
+
           img {
             width: 100%;
             min-width: 378px;
-            max-height: 100%;
+            max-height: 110%;
             object-fit: cover;
             box-shadow: 0 10px 10px rgba(56, 56, 56, 0.2),
               10px 10px 20px rgba(48, 48, 48, 0.2);
           }
         }
+      }
+
+      .wwa-col-content {
+        padding: 30px;
       }
 
       .wwa-col-img-wrapper {
@@ -264,7 +323,7 @@
 
         @include mq(991px) {
           width: 50%;
-          padding: 30px;
+          // padding: 30px;
         }
       }
     }
@@ -285,6 +344,7 @@
   position: relative;
   background: $BackgroundColor-main;
   background-color: rgb(17, 40, 56);
+  // background-color: #f8f8f8;
 
   .about-content-wrapper3 {
     width: 100%;
@@ -313,7 +373,7 @@
       &::before {
         content: "";
         position: absolute;
-        bottom: -10px;
+        bottom: -5px;
         left: 50%;
         width: 10%;
         height: 6px;
@@ -381,111 +441,115 @@
 }
 //================ABOUT OUR TEAM=======================
 .about-team-section {
-  width: 100%;
-  // min-height: 550px;
-  background-color: rgb(255, 255, 255);
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-bottom: 0px;
-  margin-top: 0px;
-
-  @include mq(991px) {
-    padding-bottom: 30px;
-    margin-top: 30px;
-  }
-
-  .about-team-wrapper {
-    width: 100%;
-    max-width: 1300px;
-    margin: 0;
-    // background-color: green;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: justify;
-
-    h1 {
-      position: relative;
-      margin-bottom: 20px;
-      text-transform: uppercase;
-      font-family: $Fontfamily-serif;
-      color: $Fontcolor-second;
-      text-align: center;
-      letter-spacing: 1.3px;
-      font-size: 1.8rem;
-
-      @include mq(991px) {
-        font-size: 2rem;
-      }
-
-      &::before {
-        content: "";
-        position: absolute;
-        bottom: -25px;
-        left: 50%;
-        width: 13%;
-        height: 6px;
-        transform: translateX(-50%);
-        background-color: $Fontcolor-main;
-        border-radius: 10px;
-      }
-    }
-
-    .atw-content {
-      display: flex;
-      // margin-top: 30px;
-
-      .atw-col {
-        width: 100%;
-        padding: 30px;
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        letter-spacing: 1.3px;
-
-        @include mq(991px) {
-          width: 50%;
-        }
-
-        .atw-col-img {
-          position: absolute;
-          width: 0;
-          height: 100%;
-          top: -15%;
-          left: 5%;
-          z-index: 10;
-          display: none;
-
-          @include mq(991px) {
-            display: block;
-            width: 80%;
-          }
-
-          img {
-            width: 100%;
-            min-width: 378px;
-            max-height: 110%;
-            object-fit: cover;
-            box-shadow: 0 10px 10px rgba(56, 56, 56, 0.2),
-              10px 10px 20px rgba(48, 48, 48, 0.2);
-          }
-        }
-      }
-      .atw-col-img-wrapper {
-        width: 0;
-        padding: 0;
-
-        @include mq(991px) {
-          width: 50%;
-          padding: 30px;
-        }
-      }
-    }
-  }
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
+// .about-team-section {
+//   width: 100%;
+//   // min-height: 550px;
+//   background-color: rgb(255, 255, 255);
+//   position: relative;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   padding-bottom: 0px;
+//   margin-top: 0px;
+
+//   @include mq(991px) {
+//     padding-bottom: 30px;
+//     margin-top: 30px;
+//   }
+
+//   .about-team-wrapper {
+//     width: 100%;
+//     max-width: 1300px;
+//     margin: 0;
+//     // background-color: green;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//     text-align: justify;
+
+//     h1 {
+//       position: relative;
+//       margin-bottom: 20px;
+//       text-transform: uppercase;
+//       font-family: $Fontfamily-serif;
+//       color: $Fontcolor-second;
+//       text-align: center;
+//       letter-spacing: 1.3px;
+//       font-size: 1.8rem;
+
+//       @include mq(991px) {
+//         font-size: 2rem;
+//       }
+
+//       &::before {
+//         content: "";
+//         position: absolute;
+//         bottom: -25px;
+//         left: 50%;
+//         width: 13%;
+//         height: 6px;
+//         transform: translateX(-50%);
+//         background-color: $Fontcolor-main;
+//         border-radius: 10px;
+//       }
+//     }
+
+//     .atw-content {
+//       display: flex;
+//       // margin-top: 30px;
+
+//       .atw-col {
+//         width: 100%;
+//         padding: 30px;
+//         display: flex;
+//         flex-direction: column;
+//         position: relative;
+//         letter-spacing: 1.3px;
+
+//         @include mq(991px) {
+//           width: 50%;
+//         }
+
+//         .atw-col-img {
+//           position: absolute;
+//           width: 0;
+//           height: 100%;
+//           top: -15%;
+//           left: 5%;
+//           z-index: 10;
+//           display: none;
+
+//           @include mq(991px) {
+//             display: block;
+//             width: 80%;
+//           }
+
+//           img {
+//             width: 100%;
+//             min-width: 378px;
+//             max-height: 110%;
+//             object-fit: cover;
+//             box-shadow: 0 10px 10px rgba(56, 56, 56, 0.2),
+//               10px 10px 20px rgba(48, 48, 48, 0.2);
+//           }
+//         }
+//       }
+//       .atw-col-img-wrapper {
+//         width: 0;
+//         padding: 0;
+
+//         @include mq(991px) {
+//           width: 50%;
+//           padding: 30px;
+//         }
+//       }
+//     }
+//   }
+// }
 
 //====================KEY INDUSTRIES===========================
 .industriesSection {
@@ -526,7 +590,7 @@
       &::before {
         content: "";
         position: absolute;
-        bottom: -25px;
+        bottom: -20px;
         left: 50%;
         width: 13%;
         height: 6px;
@@ -543,7 +607,7 @@
       flex-direction: column;
       justify-content: space-evenly;
       align-items: center;
-      margin: 10px 0;
+      // margin: 10px 0;
 
       @include mq(991px) {
         flex-direction: row;
@@ -558,11 +622,11 @@
         // max-width: 320px;
         // background-color: rgb(255, 255, 255);
         text-align: center;
-        margin: 10px 10px;
+        margin: 20px 10px;
         color: #112838;
 
         @include mq(991px) {
-          margin: 30px 10px;
+          // margin: 10px 10px;
         }
 
         .industry-card-inner {
@@ -655,12 +719,17 @@
     h1 {
       font-family: $Fontfamily-serif;
       margin-bottom: 20px;
+      width: 100%;
       position: relative;
       letter-spacing: 1.3px;
       font-size: 1.8rem;
+      text-align: center;
+
 
       @include mq(991px) {
         font-size: 2rem;
+        padding: 0 30px;
+        text-align: left;
       }
 
       &::before {
@@ -669,10 +738,15 @@
         bottom: -20px;
         left: 50%;
         width: 10%;
-        height: 6px;
+        height: 5px;
         transform: translateX(-50%);
         background-color: $Fontcolor-main;
         border-radius: 10px;
+
+        @include mq(991px) {
+          left: 5%;
+          width: 5%;
+        }
       }
     }
 
@@ -684,7 +758,7 @@
       text-align: justify;
 
       @include mq(991px) {
-        width: 80%;
+        // width: 80%;
       }
     }
   }

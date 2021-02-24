@@ -92,35 +92,25 @@ export default function About() {
         <div className="about-content-section">
           <div className="about-who-we-are">
             <div className="wwa-content">
-              <div className="wwa-col wwa-col-img-wrapper">
-                <div className="wwa-col-img">
-                  <Fade bottom>
-                    <img src="https://images.pexels.com/photos/3182755/pexels-photo-3182755.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"></img>
-                  </Fade>
-                </div>
-              </div>
-              <div className="wwa-col">
-                <Fade right cascade>
+              <div className="wwa-col wwa-col-content">
+                <Fade bottom cascade>
                   <div>
                     <h1>Who we are ?</h1>
-                    <br />
                     <p>
                       RPE Analytics is a boutique analytics and automation
                       organization. We help our clients build solutions to
                       maximize the value of their data and analytics assets, and
                       automate key business processes.
                     </p>
-                    <p>
-                      We bring deep expertise in analytics, data management, and
-                      business process automation. Our team's collective
-                      experience encompasses established experience in solving
-                      complex business problems, and hands-on experience and
-                      certifications in new and emerging technologies. Our
-                      clients range from small businesses to Fortune 500
-                      companies across all major industries.
-                    </p>
                   </div>
                 </Fade>
+              </div>
+              <div className="wwa-col wwa-col-img-wrapper">
+                <div className="wwa-col-img">
+                  <Fade bottom>
+                    <img src="https://images.pexels.com/photos/3182755/pexels-photo-3182755.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"></img>
+                  </Fade>
+                </div>
               </div>
             </div>
           </div>
@@ -200,20 +190,13 @@ export default function About() {
           </div>
         </div>
         {/* ===================ABOUT OUR TEAM======================== */}
-        <div className="about-team-section">
-          <div className="about-team-wrapper">
-            <div className="atw-content">
-              <div className="atw-col">
+        <div className="about-content-section about-team-section">
+          <div className="about-who-we-are">
+            <div className="wwa-content">
+              <div className="wwa-col wwa-col-content">
                 <Fade left cascade>
                   <div>
                     <h1>About Our Team</h1>
-                    <br />
-                    <p>
-                      RPE Analytics is a boutique analytics and automation
-                      organization. We help our clients build solutions to
-                      maximize the value of their data and analytics assets, and
-                      automate key business processes.
-                    </p>
                     <p>
                       We bring deep expertise in analytics, data management, and
                       business process automation. Our team's collective
@@ -226,8 +209,8 @@ export default function About() {
                   </div>
                 </Fade>
               </div>
-              <div className="atw-col atw-col-img-wrapper">
-                <div className="atw-col-img">
+              <div className="wwa-col wwa-col-img-wrapper">
+                <div className="wwa-col-img">
                   <Fade bottom>
                     <img src="https://images.pexels.com/photos/3184433/pexels-photo-3184433.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"></img>
                   </Fade>
