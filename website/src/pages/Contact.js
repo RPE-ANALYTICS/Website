@@ -13,14 +13,16 @@ export default function Contact() {
   return (
     <>
       <section className="contactWrapper section">
+
         <div className="contact-image-container">
+        <div className="puzzles-contact">
+            <div className="c-puzzle absolute"></div>
+            <div className="c-puzzle absolute"></div>
+            <div className="c-puzzle absolute"></div>
+          </div>
           <img src={Image}></img>
         </div>
         <div className="contact-content-container">
-          {/* <h1>
-            <i className="fas fa-minus"></i> Contact us{" "}
-            <i className="fas fa-minus"></i>
-          </h1> */}
           <div className="contact-container">
             <div className="contact-address-us row">
               <div className="address-content">
