@@ -230,7 +230,6 @@ body {
 
 @media only screen and (min-width: 991px) {
   .brandSection {
-    min-height: 13vh;
     padding: 20px 0;
   }
 }
@@ -1151,9 +1150,30 @@ body {
 .about-partners-section .about-partners-wrapper p {
   width: 100%;
   margin-top: 20px;
-  letter-spacing: 1.3px;
+  letter-spacing: 0.8px;
   padding: 0 30px;
   text-align: justify;
+  font-size: 1rem;
+}
+
+@media only screen and (min-width: 700px) {
+  .about-partners-section .about-partners-wrapper p {
+    font-size: 1.1rem;
+  }
+}
+
+@media only screen and (min-width: 991px) {
+  .about-partners-section .about-partners-wrapper p {
+    font-size: 1.2rem;
+    text-align: left;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .about-partners-section .about-partners-wrapper p {
+    font-size: 1rem;
+    text-align: left;
+  }
 }
 
 .analyticsWrapper {
@@ -1169,6 +1189,7 @@ body {
 .analytics-thumbnail-section {
   width: 100%;
   height: 80vh;
+  background-image: url("../img/Artboard.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1194,7 +1215,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .analytics-thumbnail-section .analytics-thumbnail-image {
@@ -1208,7 +1229,7 @@ body {
 
 .analytics-thumbnail-section .analytics-thumbnail-image img {
   width: 100vw;
-  height: 90vh;
+  height: 100%;
   position: absolute;
   top: 0;
   left: 0;
@@ -1220,8 +1241,6 @@ body {
   .analytics-thumbnail-section .analytics-thumbnail-image img {
     -o-object-fit: cover;
        object-fit: cover;
-    -o-object-position: left;
-       object-position: left;
   }
 }
 
@@ -2742,7 +2761,7 @@ body {
 
 .careerWrapper {
   width: 100vw;
-  height: 95vh;
+  min-height: 95vh;
   background-color: white;
   background-position: center;
   background-repeat: no-repeat;
@@ -2761,6 +2780,7 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
 }
 
 .careerWrapper p {
@@ -2775,43 +2795,54 @@ body {
 
 .careerWrapper:before {
   content: '';
-  position: absolute;
-  background: rgba(163, 108, 108, 0.6);
-  background-color: rgba(17, 40, 56, 0.6);
-  height: 100%;
-  z-index: 0;
-  right: 0%;
-  top: 0;
-  width: 7%;
-  height: 100%;
-  -webkit-transform: skewX(-20deg) translateZ(0);
-          transform: skewX(-20deg) translateZ(0);
-  -webkit-transition: .8s ease;
-  transition: .8s ease;
-  z-index: 2;
+}
+
+@media only screen and (min-width: 991px) {
+  .careerWrapper:before {
+    content: '';
+    position: absolute;
+    background: rgba(163, 108, 108, 0.6);
+    background-color: rgba(17, 40, 56, 0.6);
+    height: 100%;
+    z-index: 0;
+    right: 0%;
+    top: 0;
+    width: 7%;
+    height: 100%;
+    -webkit-transform: skewX(-20deg) translateZ(0);
+            transform: skewX(-20deg) translateZ(0);
+    -webkit-transition: .8s ease;
+    transition: .8s ease;
+    z-index: 2;
+  }
 }
 
 .careerWrapper:after {
   content: '';
-  position: absolute;
-  background: rgba(163, 108, 108, 0.6);
-  background-color: rgba(17, 40, 56, 0.6);
-  height: 100%;
-  z-index: 0;
-  right: 5%;
-  top: 0;
-  width: 10%;
-  height: 100%;
-  -webkit-transform: skewX(30deg) translateZ(0);
-          transform: skewX(30deg) translateZ(0);
-  -webkit-transition: .8s ease;
-  transition: .8s ease;
-  z-index: 2;
+}
+
+@media only screen and (min-width: 991px) {
+  .careerWrapper:after {
+    content: '';
+    position: absolute;
+    background: rgba(163, 108, 108, 0.6);
+    background-color: rgba(17, 40, 56, 0.6);
+    height: 100%;
+    z-index: 0;
+    right: 5%;
+    top: 0;
+    width: 10%;
+    height: 100%;
+    -webkit-transform: skewX(30deg) translateZ(0);
+            transform: skewX(30deg) translateZ(0);
+    -webkit-transition: .8s ease;
+    transition: .8s ease;
+    z-index: 2;
+  }
 }
 
 .career-content-section {
   width: 100%;
-  height: calc(100% - 100px);
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2861,12 +2892,14 @@ body {
 .career-content-section .career-wrapper .career-title {
   position: relative;
   margin-bottom: 20px;
+  width: 100%;
   text-transform: uppercase;
   letter-spacing: 3px;
   font-size: 2rem;
   font-family: "Montserrat", sans-serif;
   color: #1e2f3b;
   text-align: center;
+  padding: 0;
 }
 
 .career-content-section .career-wrapper .career-title::before {
@@ -2874,12 +2907,18 @@ body {
   position: absolute;
   bottom: -25px;
   left: 50%;
-  width: 13%;
+  width: 7%;
   height: 6px;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   background-color: #d42028;
   border-radius: 10px;
+}
+
+@media only screen and (min-width: 991px) {
+  .career-content-section .career-wrapper .career-title::before {
+    padding: 0 10px;
+  }
 }
 
 .career-content-section .career-wrapper .career-content {
@@ -2889,17 +2928,14 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   height: 100%;
   width: 100%;
 }
 
 .career-content-section .career-wrapper .career-content .career-col {
   width: 50%;
-  height: 100%;
-  padding: 30px;
+  min-height: calc(95vh - 80px);
+  padding: 30px 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2911,12 +2947,18 @@ body {
   letter-spacing: 1.3px;
 }
 
+@media only screen and (min-width: 991px) {
+  .career-content-section .career-wrapper .career-content .career-col {
+    padding: 30px;
+  }
+}
+
 .career-content-section .career-wrapper .career-content .career-col .career-col-img {
   position: absolute;
   width: 80%;
-  height: 60vh;
+  height: 60%;
   min-height: 470px;
-  top: 20px;
+  top: 10%;
   right: 20%;
   z-index: 10;
   display: -webkit-box;
@@ -2938,18 +2980,57 @@ body {
 }
 
 .career-content-section .career-wrapper .career-content .left {
-  width: 60%;
+  width: 100%;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-left: 50px;
 }
 
 .career-content-section .career-wrapper .career-content .left p {
-  padding: 0 10px;
+  padding: 0;
+}
+
+@media only screen and (min-width: 700px) {
+  .career-content-section .career-wrapper .career-content .left p {
+    font-size: 1.1rem;
+  }
+}
+
+@media only screen and (min-width: 991px) {
+  .career-content-section .career-wrapper .career-content .left p {
+    padding: 0 10px;
+    font-size: 1.2rem;
+    text-align: left;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .career-content-section .career-wrapper .career-content .left p {
+    font-size: 1rem;
+    text-align: left;
+  }
+}
+
+@media only screen and (min-width: 991px) {
+  .career-content-section .career-wrapper .career-content .left {
+    width: 60%;
+    padding-left: 50px;
+  }
+}
+
+.career-content-section .career-wrapper .career-content .right {
+  height: 0;
+  display: none;
+}
+
+@media only screen and (min-width: 991px) {
+  .career-content-section .career-wrapper .career-content .right {
+    display: block;
+    height: calc(95vh - 80px);
+  }
 }
 
 .career-resume {
@@ -2969,6 +3050,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 .career-resume h1 {
@@ -2990,7 +3072,6 @@ body {
   border-style: none;
   font-size: 1.3rem;
   text-transform: uppercase;
-  font-weight: bolder;
   background-color: #112838;
   color: white;
   border: none;
@@ -3018,7 +3099,7 @@ body {
 
 .career-adverts .advert {
   width: 100%;
-  height: 33%;
+  height: auto;
   max-height: 120px;
   border-radius: 10px;
   display: -webkit-box;
@@ -3028,8 +3109,15 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin: 10px 0;
-  padding: 30px 10px;
+  margin: 30px 0;
+}
+
+@media only screen and (min-width: 991px) {
+  .career-adverts .advert {
+    height: 33%;
+    padding: 30px 10px;
+    margin: 0;
+  }
 }
 
 .career-adverts .advert:hover {
@@ -3095,16 +3183,29 @@ body {
 }
 
 .career-adverts .advert .advert-col-right ul #first h1 {
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-weight: bolder;
 }
 
-.career-adverts .advert .advert-col-right ul #first span {
-  margin-right: 10px;
-  background-color: #112838;
-  color: white;
-  border-radius: 5px;
-  padding: 3px 5px;
+@media only screen and (min-width: 991px) {
+  .career-adverts .advert .advert-col-right ul #first h1 {
+    font-size: 1.3rem;
+  }
+}
+
+.career-adverts .advert .advert-col-right ul #first h2 {
+  margin-right: 0;
+  color: #017a01;
+  padding: 0px 5px;
+  font-weight: bolder;
+  font-size: 1rem;
+}
+
+@media only screen and (min-width: 991px) {
+  .career-adverts .advert .advert-col-right ul #first h2 {
+    margin-right: 10px;
+    padding: 3px 5px;
+  }
 }
 
 .career-adverts .advert .advert-col-right ul #second {
@@ -3130,7 +3231,13 @@ body {
   font-size: 0.8rem;
   color: grey;
   padding: 0;
-  margin: 0 14px 0 0;
+  margin-right: 4px;
+}
+
+@media only screen and (min-width: 991px) {
+  .career-adverts .advert .advert-col-right ul #second p {
+    margin: 0 14px 0 0;
+  }
 }
 
 .career-adverts .advert .advert-col-right ul #third {
@@ -3148,10 +3255,17 @@ body {
   font-weight: bolder;
   background-color: transparent;
   color: #d42028;
+  margin-top: 5px;
 }
 
 .career-adverts .advert .advert-col-right ul #third button:hover {
   color: #112838;
+}
+
+@media only screen and (min-width: 991px) {
+  .career-adverts .advert .advert-col-right ul #third button {
+    margin-top: 0px;
+  }
 }
 
 .footerWrapper {

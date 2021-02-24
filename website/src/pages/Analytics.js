@@ -4,6 +4,7 @@ import DataComplexity from "../img/icons/data-complexity.svg";
 import Data from "../img/icons/data.svg";
 import Vision from "../img/icons/vision.svg";
 import BigData from "../img/big-data.jpg";
+import Artboard from '../img/Artboard.png'
 
 import Management from "../img/icons/management.svg";
 import Business from "../img/icons/business.svg";
@@ -32,10 +33,10 @@ export default function Analytics() {
     <>
       <section className="analyticsWrapper section">
         <div className="analytics-thumbnail-section">
-          <div className="analytics-thumbnail-image">
-            <img src={BigData}></img>
+          {/* <div className="analytics-thumbnail-image"> */}
+            {/* <img src={Artboard}></img> */}
             {/* <img src="https://s7703.pcdn.co/wp-content/uploads/2013/01/banner-analytics-background.jpg"></img> */}
-          </div>
+          {/* </div> */}
           <div className="analytics-thumbnail-content">
             <Slide right>
               <h1>

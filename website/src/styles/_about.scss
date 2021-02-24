@@ -750,16 +750,40 @@
       }
     }
 
+    // p {
+    //   width: 100%;
+    //   margin-top: 20px;
+    //   letter-spacing: 0.8px;
+    //   padding: 0 30px;
+    //   text-align: justify;
+    //   font-size: 1rem;
+
+    //   @include mq(991px) {
+    //     font-size: 1rem;
+    //   }
+    // }
+
     p {
       width: 100%;
       margin-top: 20px;
-      letter-spacing: 1.3px;
+      letter-spacing: 0.8px;
       padding: 0 30px;
       text-align: justify;
+      font-size: 1rem;
 
+      @include mq(700px) {
+        font-size: 1.1rem;
+      }
       @include mq(991px) {
-        // width: 80%;
+        font-size: 1.2rem;
+        text-align: left;
+      }
+      @include mq(1025px) {
+        font-size: 1rem;
+        text-align: left;
       }
     }
+
+
   }
 }

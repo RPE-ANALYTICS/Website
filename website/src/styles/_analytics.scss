@@ -13,7 +13,7 @@
 .analytics-thumbnail-section {
   width: 100%;
   height: 80vh;
-  // background-image: url("../img/data-vizualization.jpg");
+  background-image: url("../img/Artboard.png");
   // background-image: url("https://s7703.pcdn.co/wp-content/uploads/2013/01/banner-analytics-background.jpg");
   // background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl352QkLv2Bx3W-VqhQZKLjnBX3NN-2DcZjw&usqp=CAU");
   background-position: center;
@@ -35,7 +35,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.1);
   }
 
   .analytics-thumbnail-image {
@@ -52,7 +52,7 @@
       // object-fit: cover;
       // object-fit: cover;
       width: 100vw;
-      height: 90vh;
+      height: 100%;
       position: absolute;
       top: 0;
       left: 0;
@@ -61,7 +61,7 @@
 
       @include mq(991px) {
         object-fit: cover;
-        object-position: left;
+        // object-position: left;
       }
     }
   }

@@ -32,17 +32,17 @@ export default function Career() {
                       <ul>
                         <li id="first">
                           <h1>Junior Business Analyst</h1>
-                          <span>Full-Time</span>
+                          <h2>Active</h2>
                         </li>
                         <li id="second">
+                        <p>
+                            <i className="fas fa-map-marker-alt"></i> Wroclaw
+                          </p>
                           <p>
                             <i class="fas fa-desktop"></i> Technologies
                           </p>
                           <p>
-                            <i className="fas fa-map-marker-alt"></i> Wroclaw/Remote
-                          </p>
-                          <p>
-                            <i className="far fa-clock"></i> 160h
+                            <i className="far fa-clock"></i> Full-Time
                           </p>
                         </li>
                         <li id="third">
@@ -57,18 +57,44 @@ export default function Career() {
                     <div className="advert-col-right">
                       <ul>
                         <li id="first">
-                          <h1>Mid/Senior Business Analyst</h1>
-                          <span>Full-Time</span>
+                          <h1>Senior Business Analyst</h1>
+                          <h2>Active</h2>
                         </li>
                         <li id="second">
+                        <p>
+                            <i className="fas fa-map-marker-alt"></i> Wroclaw
+                          </p>
                           <p>
                             <i className="fas fa-desktop"></i> Technologies
                           </p>
                           <p>
-                            <i className="fas fa-map-marker-alt"></i> Wroclaw/Remote
+                            <i className="far fa-clock"></i> Full-Time
+                          </p>
+                        </li>
+                        <li id="third">
+                          <button>More Details</button>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div className="advert">
+                    <div className="advert-col-left">
+                    </div>
+                    <div className="advert-col-right">
+                      <ul>
+                        <li id="first">
+                          <h1>Power BI Developer</h1>
+                          <h2>Active</h2>
+                        </li>
+                        <li id="second">
+                        <p>
+                            <i className="fas fa-map-marker-alt"></i> Wroclaw
                           </p>
                           <p>
-                            <i className="far fa-clock"></i> 160h
+                            <i className="fas fa-desktop"></i> Technologies
+                          </p>
+                          <p>
+                            <i className="far fa-clock"></i> Full-Time
                           </p>
                         </li>
                         <li id="third">
@@ -88,13 +114,13 @@ export default function Career() {
             </div>
           </div>
         </div>
-        <div className="career-resume">
+        {/* <div className="career-resume">
           <h1>
             <i className="fas fa-minus"></i> Send Your Resume{" "}
             <i className="fas fa-minus"></i>
           </h1>
           <button onClick={handleSend}>Send</button>
-        </div>
+        </div> */}
       </section>
     </>
   );
