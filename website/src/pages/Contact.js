@@ -2,7 +2,7 @@ import React from "react";
 
 import ContactUs from "../components/ContactUs";
 
-import Image from "./../img/world-map.png";
+import Image from "./../img/world-map4.png";
 
 export default function Contact() {
   const handleSend = () => {
@@ -20,7 +20,7 @@ export default function Contact() {
             <div className="c-puzzle absolute"></div>
             <div className="c-puzzle absolute"></div>
           </div>
-          <img src={Image}></img>
+          {/* <img src={Image}></img> */}
         </div>
         <div className="contact-content-container">
           <div className="contact-container">

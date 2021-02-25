@@ -33,10 +33,10 @@ export default function Analytics() {
     <>
       <section className="analyticsWrapper section">
         <div className="analytics-thumbnail-section">
-          {/* <div className="analytics-thumbnail-image"> */}
+          <div className="analytics-thumbnail-image">
             {/* <img src={Artboard}></img> */}
             {/* <img src="https://s7703.pcdn.co/wp-content/uploads/2013/01/banner-analytics-background.jpg"></img> */}
-          {/* </div> */}
+          </div>
           <div className="analytics-thumbnail-content">
             <Slide right>
               <h1>
