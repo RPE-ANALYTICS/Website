@@ -165,48 +165,60 @@
 
 .home-right-line-top {
   top: 0;
-  right: 5%;
+  right: 6%;
   z-index: 10;
   color: white;
   height: 100%;
   width: 10%;
 
+  @include mq(991px) {
+    right: 5%;
+  }
+
   span {
     display: block;
     height: 43%;
-    border-right: 1px solid #ccc;
+    border-right: 1px solid $BackgroundColor-main;
     bottom: 0;
   }
 }
 .home-right-line-bottom {
   top: 57%;
-  right: 5%;
+  right: 6%;
   z-index: 10;
   color: white;
   height: 100%;
   width: 10%;
+  
+  @include mq(991px) {
+    right: 5%;
+  }
 
   span {
     display: block;
     height: 50%;
-    border-right: 1px solid #ccc;
+    border-right: 1px solid $BackgroundColor-main;
   }
 }
 .home-right-line-middle {
   top: 50%;
-  right: 5%;
+  right: 6%;
   z-index: 10;
   color: white;
   height: auto;
   width: auto;
   transform: translate(50%, -50%);
+  
+  @include mq(991px) {
+    right: 5%;
+  }
 
   span {
     display: block;
     height: 40%;
     text-align: right;
     font-size: 3rem;
-    color: #ccc;
+    color: $BackgroundColor-main;
   }
   span:hover {
     color: $Fontcolor-main;

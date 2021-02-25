@@ -111,12 +111,12 @@ export default function Home() {
       <section className="homeBanner section fadeIn">
         {/* <p>OUR SOLUTIONS</p> */}
         <p></p>
-        <h3 className="banner-title ">
-          <Fade left cascade>
+        <Fade left>
+          <h3 className="banner-title ">
             We deliver business intelligence applications focused on improving
             your business.
-          </Fade>
-        </h3>
+          </h3>
+        </Fade>
         <p></p>
         {/* <p>We deliver business intelligence applications focused on improving your business.</p> */}
       </section>
