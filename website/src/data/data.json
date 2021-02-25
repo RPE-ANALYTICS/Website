@@ -1,0 +1,70 @@
+[
+    {
+      "id": 1,
+      "title": "Power BI Developer",
+      "location": "Wroclaw",
+      "description": "Poszukujemy osobę na stanowisko Power BI Developer, który dołączy do naszego zespołu we wrocławskim biurze. Power BI Developer będzie współpracować z zespołem określającym potrzeby raportowania i wymagania dotyczące danych oraz dostarczenia rozwiązań analitycznych.",
+      "responsibilities": [
+        "Projektowanie, budowanie i wdrażanie rozwiązań BI w oparciu o wymagania biznesowe",
+        "Utrzymywanie oraz rozwój procesów ETL",
+        "Analizowanie i wizualizowanie danych z wykorzystaniem narzędzi BI",
+        "Usprawnianie procesów biznesowych",
+        "Sporządzanie dokumentacji funkcjonalnej i technicznej"
+      ],
+      "skills": [
+        "Minimum 3 lata doświadczenia w tworzeniu oraz optymalizowaniu raportów w Power BI",
+        "Bardzo dobra znajomość DAX",
+        "Doświadczenie w pracy z bazami danych SQL / NoSQL",
+        "Znajomość hurtowni danych",
+        "Znajomość i umiejętność stosowania procesu ETL",
+        "Wykształcenie wyższe, najlepiej informatyczne lub ekonomiczne",
+        "Bardzo dobra znajomość języka angielskiego w stopniu umożliwiającym kontakt z klientem (B2/C1)"
+      ],
+      "extraSkills": [
+        "Doświadczenie z innymi narzędziami do wizualizacji danych (Qlik, Tableau itp.)",
+        "Doświadczenie we wdrażaniu Power BI w wersji Enterprise, tworzenie odpowiedniej strategii i architektury",
+        "Doświadczenie w kontakcie z klientami oraz funkcji lidera w projektach z obszaru Business Intelligence",
+        "Doświadczenie w branży medycznej"
+      ],
+      "benefits": [
+        "Mozliwość stałego rozwoju zawodowego poprzez udział w ciekawych, międzynarodowych projektach",
+        "Uznawane na całym świecie certyfikaty, cenione w obszarze BI",
+        "Praca z firmami Fortune 500"
+      ],
+      "isActive": "Active"
+    },
+    {
+      "id": 2,
+      "title": "Qlik Sense Developer",
+      "location": "Wroclaw",
+      "description": "Poszukujemy osobę na stanowisko Power BI Developer, który dołączy do naszego zespołu we wrocławskim biurze. Power BI Developer będzie współpracować z zespołem określającym potrzeby raportowania i wymagania dotyczące danych oraz dostarczenia rozwiązań analitycznych.",
+      "responsibilities": [
+        "Projektowanie, budowanie i wdrażanie rozwiązań BI w oparciu o wymagania biznesowe",
+        "Utrzymywanie oraz rozwój procesów ETL",
+        "Analizowanie i wizualizowanie danych z wykorzystaniem narzędzi BI",
+        "Usprawnianie procesów biznesowych",
+        "Sporządzanie dokumentacji funkcjonalnej i technicznej"
+      ],
+      "skills": [
+        "Minimum 3 lata doświadczenia w tworzeniu oraz optymalizowaniu raportów w Power BI",
+        "Bardzo dobra znajomość DAX",
+        "Doświadczenie w pracy z bazami danych SQL / NoSQL",
+        "Znajomość hurtowni danych",
+        "Znajomość i umiejętność stosowania procesu ETL",
+        "Wykształcenie wyższe, najlepiej informatyczne lub ekonomiczne",
+        "Bardzo dobra znajomość języka angielskiego w stopniu umożliwiającym kontakt z klientem (B2/C1)"
+      ],
+      "extraSkills": [
+        "Doświadczenie z innymi narzędziami do wizualizacji danych (Qlik, Tableau itp.)",
+        "Doświadczenie we wdrażaniu Power BI w wersji Enterprise, tworzenie odpowiedniej strategii i architektury",
+        "Doświadczenie w kontakcie z klientami oraz funkcji lidera w projektach z obszaru Business Intelligence",
+        "Doświadczenie w branży medycznej"
+      ],
+      "benefits": [
+        "Mozliwość stałego rozwoju zawodowego poprzez udział w ciekawych, międzynarodowych projektach",
+        "Uznawane na całym świecie certyfikaty, cenione w obszarze BI",
+        "Praca z firmami Fortune 500"
+      ],
+      "isActive": "Not Active"
+    }
+  ]
