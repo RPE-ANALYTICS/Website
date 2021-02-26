@@ -217,7 +217,7 @@ export default function Analytics() {
                 </div>
               </div>
               <div className="wwa-col">
-                <Fade bottom cascade>
+                <Fade bottom>
                   <div>
                     <h1>Industry expertise</h1>
                     <br />
@@ -244,7 +244,7 @@ export default function Analytics() {
           <div className="analytics-roi-wrapper">
             <div className="arw-content">
               <div className="arw-col">
-                <Fade bottom cascade>
+                <Fade bottom>
                   <div>
                     <h1>ROI</h1>
                     <br />

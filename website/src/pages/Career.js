@@ -55,7 +55,7 @@ export default function Career() {
                 </p>
                 <div className="career-adverts">
                   {data.map((d) => (
-                    <Fade bottom cascade>
+                    <Fade bottom>
                     <div className="advert" key={d.id}>
                       <div className="advert-col-left">
                         {/* <i class="far fa-user"></i> */}
