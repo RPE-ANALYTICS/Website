@@ -84,18 +84,23 @@
   position: absolute;
   // letter-spacing: 3px;
   padding-left: 20px;
-  bottom: 10%;
+  bottom: 5%;
   right: 6%;
   z-index: 10;
   color: white;
-  width: 50%;
+  width: 70%;
   font-weight: 500;
-  font-size: calc(14px + 40 * ((53vw + 53vh) - 600px) / 820);
+  font-size: calc(20px + 40 * ((53vw + 53vh) - 600px) / 820);
 
+  @include mq(700px) {
+    font-size: calc(16px + 40 * ((53vw + 53vh) - 600px) / 820);
+    width: 70%;
+    bottom: 10%;
+  }
   @include mq(991px) {
     font-size: calc(8px + 40 * ((53vw + 53vh) - 600px) / 820);
     width: 40%;
-    bottom: 10%;
+    // bottom: 10%;
   }
   @include mq(1025px) {
     padding-left: 0px;

@@ -4,6 +4,7 @@ import data from "../data/data.json";
 import Advert from "../components/Advert";
 import Popup from '../components/Popup';
 
+import Slide from "react-reveal/Slide";
 // import image from 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
 
 export default function Career() {
@@ -14,6 +15,7 @@ export default function Career() {
   const [show, setShow] = useState(false);
   const [active, setActive] = useState(false);
   const [oneAdvert, setOneAdvert] = useState();
+  const [xxx, setXXX] = useState([]);
 
   const handleClick = (id) => {
     data.map((d) => {
@@ -29,7 +31,12 @@ export default function Career() {
     });
   };
 
-  console.log(oneAdvert);
+  const dataAPI = 'https://redpointengineering.sharepoint.com/sites/255PROJECTS/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2F255PROJECTS%2FShared%20Documents%2F20%20IRAD%2F99%20RPE%20Website%2Fdata%2Ejson&parent=%2Fsites%2F255PROJECTS%2FShared%20Documents%2F20%20IRAD%2F99%20RPE%20Website'
+
+  useEffect(() => {
+    axios.get(dataAPI).then(res => console.log(res))
+  }, [])
+  console.log(xxx);
 
   return (
     <>
@@ -48,6 +55,7 @@ export default function Career() {
                 </p>
                 <div className="career-adverts">
                   {data.map((d) => (
+                    <Slide left>
                     <div className="advert" key={d.id}>
                       <div className="advert-col-left">
                         {/* <i class="far fa-user"></i> */}
@@ -78,6 +86,7 @@ export default function Career() {
                         </ul>
                       </div>
                     </div>
+                    </Slide>
                   ))}
                 </div>
               </div>

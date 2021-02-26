@@ -1190,7 +1190,7 @@ body {
 
 .analytics-thumbnail-section {
   width: 100%;
-  height: 80vh;
+  height: 55vh;
   background: #042c2e;
   background: -webkit-gradient(linear, left top, right top, color-stop(3%, #042c2e), color-stop(100%, #097879), to(#288598));
   background: linear-gradient(90deg, #042c2e 3%, #097879 100%, #288598 100%);
@@ -1210,6 +1210,12 @@ body {
   position: relative;
   letter-spacing: 0.8px;
   overflow: hidden;
+}
+
+@media only screen and (min-width: 991px) {
+  .analytics-thumbnail-section {
+    height: 80vh;
+  }
 }
 
 .analytics-thumbnail-section .analytics-thumbnail-image {
@@ -1247,7 +1253,7 @@ body {
   padding: 20px 10px;
   margin-top: 70px;
   position: absolute;
-  bottom: 3%;
+  bottom: 0%;
   right: 6%;
   letter-spacing: 7px;
   text-align: end;
@@ -1271,7 +1277,7 @@ body {
 }
 
 .analytics-thumbnail-content p {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
 }
 
 @media only screen and (min-width: 991px) {
@@ -1589,7 +1595,8 @@ body {
 }
 
 .analytics-services-card .analytics-services-card-img {
-  width: 100px;
+  width: 120px;
+  height: 120px;
   margin: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1600,13 +1607,13 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-radius: 60px;
+  background-color: white;
 }
 
 .analytics-services-card .analytics-services-card-img img {
-  width: 110px;
-  border-radius: 10px;
-  padding: 5px;
-  background-color: white;
+  height: 100%;
+  padding: 20px;
 }
 
 .analytics-services-card .analytics-services-card-content {
@@ -1632,12 +1639,8 @@ body {
   }
 }
 
-.analytics-services-card:hover .analytics-services-card-img {
-  width: 100px;
-}
-
 .analytics-services-card:hover .analytics-services-card-img img {
-  width: 110px;
+  padding: 18px;
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
 }
@@ -2341,20 +2344,27 @@ body {
   font-family: "Montserrat", sans-serif;
   position: absolute;
   padding-left: 20px;
-  bottom: 10%;
+  bottom: 5%;
   right: 6%;
   z-index: 10;
   color: white;
-  width: 50%;
+  width: 70%;
   font-weight: 500;
-  font-size: calc(14px + 40 * ((53vw + 53vh) - 600px) / 820);
+  font-size: calc(20px + 40 * ((53vw + 53vh) - 600px) / 820);
+}
+
+@media only screen and (min-width: 700px) {
+  .home-content {
+    font-size: calc(16px + 40 * ((53vw + 53vh) - 600px) / 820);
+    width: 70%;
+    bottom: 10%;
+  }
 }
 
 @media only screen and (min-width: 991px) {
   .home-content {
     font-size: calc(8px + 40 * ((53vw + 53vh) - 600px) / 820);
     width: 40%;
-    bottom: 10%;
   }
 }
 
@@ -3175,14 +3185,15 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin: 30px 0;
+  margin: 20px 0;
+  padding: 10px;
 }
 
 @media only screen and (min-width: 991px) {
   .career-adverts .advert {
     height: 33%;
     padding: 30px 10px;
-    margin: 0;
+    margin: 10px 0;
   }
 }
 
@@ -3336,6 +3347,10 @@ body {
 
 .fade, .modal, .show {
   padding: 0;
+}
+
+.fade img, .modal img, .show img {
+  width: 200px;
 }
 
 .modal-dialog {

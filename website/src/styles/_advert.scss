@@ -1,5 +1,9 @@
 .fade, .modal, .show {
     padding: 0;
+
+    img {
+        width: 200px;
+    }
 }
 .modal-dialog {
     max-width: 1300px;

@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import Modal from 'react-bootstrap/Modal';
-import Button from '../components/ContactUs';
+import blackLogo from "../img/logos/rpe_black.jpg";
+
 
 export default function Advert({data, show, setShow}) {
     const handleSend = () => {
@@ -20,7 +21,7 @@ export default function Advert({data, show, setShow}) {
         >
           <Modal.Header closeButton>
             <Modal.Title id="modal">
-              {data.title}
+            <img className="logo-nav" src={blackLogo} alt="RPE Analytics"></img>
             </Modal.Title>
           </Modal.Header>
           <Modal.Body>

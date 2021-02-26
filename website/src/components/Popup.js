@@ -1,9 +1,7 @@
-import React, {useState} from 'react';
-import {Modal,Button} from 'react-bootstrap';
+import React from 'react';
+import {Modal} from 'react-bootstrap';
 
 export default function Popup({active, setActive}) {
-    // const [smShow, setSmShow] = useState(true);
-    // const [lgShow, setLgShow] = useState(false);
   
     return (
       <>
@@ -23,19 +21,6 @@ export default function Popup({active, setActive}) {
             <p>But don't give up. We will open this position soon.</p>
           </Modal.Body>
         </Modal>
-        {/* <Modal
-          size="lg"
-          show={lgShow}
-          onHide={() => setLgShow(false)}
-          aria-labelledby="example-modal-sizes-title-lg"
-        >
-          <Modal.Header closeButton>
-            <Modal.Title id="example-modal-sizes-title-lg">
-              Large Modal
-            </Modal.Title>
-          </Modal.Header>
-          <Modal.Body>...</Modal.Body>
-        </Modal> */}
       </>
     );
 }
