@@ -1,10 +1,7 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Dashboard from "../img/icons/dashboard.svg";
 import DataComplexity from "../img/icons/data-complexity.svg";
 import Data from "../img/icons/data.svg";
-import Vision from "../img/icons/vision.svg";
-import BigData from "../img/big-data.jpg";
-import Artboard from '../img/Artboard.png'
 
 import Management from "../img/icons/management.svg";
 import Business from "../img/icons/business.svg";
@@ -18,10 +15,6 @@ import Slide from "react-reveal/Slide";
 import Jello from "react-reveal/Jello";
 
 export default function Analytics() {
-  const handleClick = () => {
-    window.scrollTo(0, 0);
-  };
-
   const handleScroll = () => {
     window.scroll({
       top: document.body.offsetHeight - 70,
@@ -29,23 +22,19 @@ export default function Analytics() {
       behavior: "smooth",
     });
   };
+
   return (
     <>
       <section className="analyticsWrapper section">
         <div className="analytics-thumbnail-section">
-          <div className="analytics-thumbnail-image">
-            {/* <img src={Artboard}></img> */}
-            {/* <img src="https://s7703.pcdn.co/wp-content/uploads/2013/01/banner-analytics-background.jpg"></img> */}
-          </div>
+          <div className="analytics-thumbnail-image"></div>
           <div className="analytics-thumbnail-content">
             <Fade bottom>
               <h1>
-                <em>A</em>nalytics
+                <span>A</span>nalytics
               </h1>
               <p>Evaluate the entire company data</p>
             </Fade>
-
-            {/* <button>arrow</button> */}
           </div>
           <div className="home-right-line-top absolute">
             <Slide top>
@@ -134,7 +123,8 @@ export default function Analytics() {
                 <div className="analytics-services-card-content">
                   <h1>Strategy</h1>
                   <p>
-                  We will help you with building effective strategy, roadmaps and execution plans.
+                    We will help you with building effective strategy, roadmaps
+                    and execution plans.
                   </p>
                 </div>
               </div>
@@ -148,7 +138,8 @@ export default function Analytics() {
                 <div className="analytics-services-card-content">
                   <h1>Data Extraction</h1>
                   <p>
-                  We perform all ranges of data extraction, data ingestion and transformation.
+                    We perform all ranges of data extraction, data ingestion and
+                    transformation.
                   </p>
                 </div>
               </div>
@@ -162,7 +153,8 @@ export default function Analytics() {
                 <div className="analytics-services-card-content">
                   <h1>Transformation</h1>
                   <p>
-                  We design effective and proved Digital Transformation strategy, tailored for your company.
+                    We design effective and proved Digital Transformation
+                    strategy, tailored for your company.
                   </p>
                 </div>
               </div>
@@ -176,7 +168,8 @@ export default function Analytics() {
                 <div className="analytics-services-card-content">
                   <h1>Vizualizations</h1>
                   <p>
-                  We will  deliver the insight to help you drive the business impact.
+                    We will deliver the insight to help you drive the business
+                    impact.
                   </p>
                 </div>
               </div>
@@ -190,7 +183,8 @@ export default function Analytics() {
                 <div className="analytics-services-card-content">
                   <h1>Auto Reports</h1>
                   <p>
-                  We will help deliver the automated insights right to your device.
+                    We will help deliver the automated insights right to your
+                    device.
                   </p>
                 </div>
               </div>
@@ -204,7 +198,7 @@ export default function Analytics() {
                 <div className="analytics-services-card-content">
                   <h1>Data Management</h1>
                   <p>
-                  We will help you build effective Data Management strategy.
+                    We will help you build effective Data Management strategy.
                   </p>
                 </div>
               </div>

@@ -1,9 +1,6 @@
 import React from "react";
-
 import Fade from 'react-reveal/Fade'
-
 import ContactUs from "../components/ContactUs";
-
 import Image from "./../img/world-map4.png";
 
 export default function Contact() {

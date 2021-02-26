@@ -1286,7 +1286,7 @@ body {
   }
 }
 
-.analytics-thumbnail-content em {
+.analytics-thumbnail-content span {
   color: #d42028;
   font-size: calc(45px + 40 * ((53vw + 53vh) - 600px) / 820);
   font-weight: bold;
