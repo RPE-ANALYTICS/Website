@@ -84,7 +84,7 @@
   position: absolute;
   // letter-spacing: 3px;
   padding-left: 20px;
-  bottom: 5%;
+  bottom: 10%;
   right: 6%;
   z-index: 10;
   color: white;
@@ -100,7 +100,6 @@
   @include mq(991px) {
     font-size: calc(8px + 40 * ((53vw + 53vh) - 600px) / 820);
     width: 40%;
-    // bottom: 10%;
   }
   @include mq(1025px) {
     padding-left: 0px;

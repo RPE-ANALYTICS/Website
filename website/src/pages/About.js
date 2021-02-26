@@ -58,14 +58,12 @@ export default function About() {
             <img src="https://images.pexels.com/photos/3184430/pexels-photo-3184430.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"></img>
           </div>
           <div className="about-thumbnail-content">
-            <Slide right>
+            <Fade bottom>
               <h1>
                 <span>A</span>bout us
               </h1>
-            </Slide>
-            <Slide right>
               <p>We believe in your success.</p>
-            </Slide>
+            </Fade>
           </div>
           <div className="home-right-line-top absolute">
             <Slide top>
@@ -194,7 +192,7 @@ export default function About() {
           <div className="about-who-we-are">
             <div className="wwa-content">
               <div className="wwa-col wwa-col-content">
-                <Fade left cascade>
+                <Fade bottom cascade>
                   <div>
                     <h1>About Our Team</h1>
                     <p>

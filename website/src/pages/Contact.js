@@ -1,5 +1,7 @@
 import React from "react";
 
+import Fade from 'react-reveal/Fade'
+
 import ContactUs from "../components/ContactUs";
 
 import Image from "./../img/world-map4.png";
@@ -23,14 +25,13 @@ export default function Contact() {
           {/* <img src={Image}></img> */}
         </div>
         <div className="contact-content-container">
+          <Fade bottom cascade>
           <div className="contact-container">
             <div className="contact-address-us row">
               <div className="address-content">
                 <ul>
                   <li className="country-name">United States</li>
-                  {/* <li>
-                    <p>RPE</p>
-                  </li> */}
+
                   <li>2701 Cambridge Court</li>
                   <li>Auburn Hills, MI 48326</li>
                   <li>
@@ -51,9 +52,6 @@ export default function Contact() {
               <div className="address-content">
                 <ul>
                   <li className="country-name">Poland</li>
-                  {/* <li>
-                    <p>RPE</p>
-                  </li> */}
                   <li>Legnicka 55f</li>
                   <li>50-204 Wroclaw</li>
                   <li>
@@ -64,6 +62,7 @@ export default function Contact() {
               </div>
             </div>
           </div>
+          </Fade>
         </div>
       </section>
     </>

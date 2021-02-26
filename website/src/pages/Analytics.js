@@ -38,14 +38,12 @@ export default function Analytics() {
             {/* <img src="https://s7703.pcdn.co/wp-content/uploads/2013/01/banner-analytics-background.jpg"></img> */}
           </div>
           <div className="analytics-thumbnail-content">
-            <Slide right>
+            <Fade bottom>
               <h1>
                 <em>A</em>nalytics
               </h1>
-            </Slide>
-            <Slide right>
               <p>Evaluate the entire company data</p>
-            </Slide>
+            </Fade>
 
             {/* <button>arrow</button> */}
           </div>
@@ -73,7 +71,7 @@ export default function Analytics() {
         {/* ====================================CARDS======================================= */}
         <div className="analytics-content-section2">
           <div className="analytics-content-wrapper2">
-            <Slide left cascade>
+            <Fade bottom cascade>
               <div className="title2">
                 <h1>The smart way to transform your company</h1>
                 <p>
@@ -81,7 +79,7 @@ export default function Analytics() {
                   because it's the why behind what we do
                 </p>
               </div>
-            </Slide>
+            </Fade>
             <div className="cards2">
               <Fade left>
                 <div className="card2">
@@ -119,7 +117,7 @@ export default function Analytics() {
         {/* ================================OUR SERVICES================================== */}
         <div className="analytics-services-section">
           <div className="analytics-services-content">
-            <Fade left cascade>
+            <Fade bottom>
               <h1>Our Services</h1>
               <p>
                 RPE team can provide expertise to help your organizations
@@ -225,7 +223,7 @@ export default function Analytics() {
                 </div>
               </div>
               <div className="wwa-col">
-                <Fade right cascade>
+                <Fade bottom cascade>
                   <div>
                     <h1>Industry expertise</h1>
                     <br />
@@ -252,7 +250,7 @@ export default function Analytics() {
           <div className="analytics-roi-wrapper">
             <div className="arw-content">
               <div className="arw-col">
-                <Fade left cascade>
+                <Fade bottom cascade>
                   <div>
                     <h1>ROI</h1>
                     <br />

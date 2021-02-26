@@ -4,7 +4,7 @@ import data from "../data/data.json";
 import Advert from "../components/Advert";
 import Popup from '../components/Popup';
 
-import Slide from "react-reveal/Slide";
+import Fade from "react-reveal/Fade";
 // import image from 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
 
 export default function Career() {
@@ -55,7 +55,7 @@ export default function Career() {
                 </p>
                 <div className="career-adverts">
                   {data.map((d) => (
-                    <Slide left>
+                    <Fade bottom cascade>
                     <div className="advert" key={d.id}>
                       <div className="advert-col-left">
                         {/* <i class="far fa-user"></i> */}
@@ -86,7 +86,7 @@ export default function Career() {
                         </ul>
                       </div>
                     </div>
-                    </Slide>
+                    </Fade>
                   ))}
                 </div>
               </div>

@@ -75,10 +75,7 @@ export default function Home() {
           <div className="c-puzzle absolute"></div>
           <div className="c-puzzle absolute"></div>
           <div className="home-content absolute">
-            <Fade right>
               <p>ACCELERATE YOUR DIGITAL TRANSFORMATION JOURNEY</p>
-            </Fade>
-            {/* <p>Accelerate your digital transformation journey</p> */}
           </div>
           <div className="home-bottom-line absolute">
             <Fade bottom>
@@ -109,9 +106,8 @@ export default function Home() {
         </div>
       </section>
       <section className="homeBanner section fadeIn">
-        {/* <p>OUR SOLUTIONS</p> */}
         <p></p>
-        <Fade left>
+        <Fade bottom>
           <h3 className="banner-title ">
             We deliver business intelligence applications focused on improving
             your business.
@@ -122,7 +118,7 @@ export default function Home() {
       </section>
       <section ref={sectionRef} className="homeCards section">
         <div className="cards-title fadeIn">
-          <Fade left>
+          <Fade bottom>
             <h1>Use our experience</h1>
           </Fade>
         </div>
