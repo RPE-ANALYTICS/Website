@@ -14,6 +14,8 @@ import Fade from "react-reveal/Fade";
 import Slide from "react-reveal/Slide";
 import Jello from "react-reveal/Jello";
 
+import T from "../T";
+
 export default function Analytics() {
   const handleScroll = () => {
     window.scroll({
@@ -31,9 +33,9 @@ export default function Analytics() {
           <div className="analytics-thumbnail-content">
             <Fade bottom>
               <h1>
-                <span>A</span>nalytics
+                <span><T label={"analTitleFL"} /></span><T label={"analTitle"} />
               </h1>
-              <p>Evaluate the entire company data</p>
+              <p><T label={"analSubtitle"} /></p>
             </Fade>
           </div>
           <div className="home-right-line-top absolute">
@@ -62,10 +64,9 @@ export default function Analytics() {
           <div className="analytics-content-wrapper2">
             <Fade bottom cascade>
               <div className="title2">
-                <h1>The smart way to transform your company</h1>
+                <h1><T label={"sec2Title"} /></h1>
                 <p>
-                  There is always a story behind and it is the one that matter
-                  because it's the why behind what we do
+                <T label={"sec2Subtitle"} />
                 </p>
               </div>
             </Fade>
@@ -73,44 +74,40 @@ export default function Analytics() {
               <Fade bottom>
                 <div className="card2">
                   <img src={Management}></img>
-                  <h3>Management</h3>
+                  <h3><T label={"sec2Card1Title"} /></h3>
                   <p>
-                    Leading a successful transformation requires a lot more than
-                    just picking the right moves.
+                  <T label={"sec2Card1Content"} />
                   </p>
                 </div>
               </Fade>
               <Fade bottom>
                 <div className="card2">
                   <img src={Business}></img>
-                  <h3>Business</h3>
+                  <h3>      <T label={"sec2Card2Title"} /></h3>
                   <p>
-                    Think about how technology might become a part of your
-                    processes and practices going forward.
+                  <T label={"sec2Card2Content"} />
                   </p>
                 </div>
               </Fade>
               <Fade bottom>
                 <div className="card2">
                   <img src={IT}></img>
-                  <h3>Technology</h3>
+                  <h3> <T label={"sec2Card3Title"} /></h3>
                   <p>
-                    The tools you choose should offer solutions that streamline
-                    your processes for efficiency and effectiveness.
+                  <T label={"sec2Card3Content"} />
                   </p>
                 </div>
               </Fade>
             </div>
           </div>
         </div>
-        {/* ================================OUR SERVICES================================== */}
+        {/* ============================OUR SERVICES============================ */}
         <div className="analytics-services-section">
           <div className="analytics-services-content">
             <Fade bottom>
-              <h1>Our Services</h1>
+              <h1><T label={"sec3Title"} /></h1>
               <p>
-                RPE team can provide expertise to help your organizations
-                with...
+              <T label={"sec3Subtitle"} />
               </p>
             </Fade>
           </div>
@@ -121,10 +118,9 @@ export default function Analytics() {
                   <img className="services-card-img" src={Strategy}></img>
                 </div>
                 <div className="analytics-services-card-content">
-                  <h1>Strategy</h1>
+                  <h1><T label={"sec3Row1Title"} /></h1>
                   <p>
-                    We will help you with building effective strategy, roadmaps
-                    and execution plans.
+                  <T label={"sec3Row1Content"} />
                   </p>
                 </div>
               </div>
@@ -136,10 +132,9 @@ export default function Analytics() {
                   <img src={Data}></img>
                 </div>
                 <div className="analytics-services-card-content">
-                  <h1>Data Extraction</h1>
+                  <h1> <T label={"sec3Row2Title"} /></h1>
                   <p>
-                    We perform all ranges of data extraction, data ingestion and
-                    transformation.
+                  <T label={"sec3Row2Content"} />
                   </p>
                 </div>
               </div>
@@ -151,10 +146,9 @@ export default function Analytics() {
                   <img src={DataComplexity}></img>
                 </div>
                 <div className="analytics-services-card-content">
-                  <h1>Transformation</h1>
+                  <h1><T label={"sec3Row3Title"} /></h1>
                   <p>
-                    We design effective and proved Digital Transformation
-                    strategy, tailored for your company.
+                  <T label={"sec3Row3Content"} />
                   </p>
                 </div>
               </div>
@@ -166,10 +160,9 @@ export default function Analytics() {
                   <img src={Dashboard}></img>
                 </div>
                 <div className="analytics-services-card-content">
-                  <h1>Vizualizations</h1>
+                  <h1><T label={"sec3Row4Title"} /></h1>
                   <p>
-                    We will deliver the insight to help you drive the business
-                    impact.
+                  <T label={"sec3Row4Content"} />
                   </p>
                 </div>
               </div>
@@ -181,10 +174,9 @@ export default function Analytics() {
                   <img src={Report}></img>
                 </div>
                 <div className="analytics-services-card-content">
-                  <h1>Auto Reports</h1>
+                  <h1><T label={"sec3Row5Title"} /></h1>
                   <p>
-                    We will help deliver the automated insights right to your
-                    device.
+                  <T label={"sec3Row5Content"} />
                   </p>
                 </div>
               </div>
@@ -196,9 +188,9 @@ export default function Analytics() {
                   <img src={DataManagement}></img>
                 </div>
                 <div className="analytics-services-card-content">
-                  <h1>Data Management</h1>
+                  <h1><T label={"sec3Row6Title"} /></h1>
                   <p>
-                    We will help you build effective Data Management strategy.
+                  <T label={"sec3Row6Content"} />
                   </p>
                 </div>
               </div>
@@ -219,19 +211,13 @@ export default function Analytics() {
               <div className="wwa-col">
                 <Fade bottom>
                   <div>
-                    <h1>Industry expertise</h1>
+                    <h1><T label={"sec4Title"} /></h1>
                     <br />
                     <p>
-                      Whether you are OEM, Tier 1 supplier, defense company or a
-                      small medical office, we will deliver you data analytics
-                      solutions that will help you optimize your business.
+                    <T label={"sec4Content1"} />
                     </p>
                     <p>
-                      Whether you are looking for Supply Chain connectivity, to
-                      drive better cost reductions, flawless launches, supplier
-                      performance across quality, delivery, cost reduction,
-                      inventory optimization, sales or cost, we will help you
-                      accelerate to insight.
+                    <T label={"sec4Content2"} />
                     </p>
                   </div>
                 </Fade>
@@ -246,22 +232,16 @@ export default function Analytics() {
               <div className="arw-col">
                 <Fade bottom>
                   <div>
-                    <h1>ROI</h1>
+                    <h1><T label={"sec5Title"} /></h1>
                     <br />
                     <p>
-                      We’ll help you measure the ROI on your analytical
-                      investment. You will start realizing it within the very
-                      first few weeks of engaging our team.
+                    <T label={"sec5Content1"} />
                     </p>
                     <p>
-                      We will enable unprecedented data visibility, which in
-                      turn will lead to significant improvement in data quality.
+                    <T label={"sec5Content2"} />
                     </p>
                     <p>
-                      With easy, governed access to so much of actionable data,
-                      not only your teams will gain improvement in productivity,
-                      they will be able to make more informed, data driven
-                      decisions.
+                    <T label={"sec5Content2"} />
                     </p>
                   </div>
                 </Fade>

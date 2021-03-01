@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { MenuItems } from './MenuItems';
 import { Link } from 'react-router-dom';
 
+import T from "../T";
+
 function Dropdown({closeMobileMenu}) {
   const [click, setClick] = useState(false);
 
@@ -25,7 +27,8 @@ function Dropdown({closeMobileMenu}) {
                 to={item.path}
                 onClick={() => setClick(false)}
               >
-                {item.title}
+                <T label={item.label} />
+                {/* {item.title} */}
               </Link>
             </li>
           );

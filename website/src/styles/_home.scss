@@ -350,7 +350,7 @@
   height: 400px;
   // width: 30%;
   width: 320px;
-  // min-width: 270px;
+  min-width: 310px;
   margin: 15px;
   border-radius: 5px;
   padding: 2rem 1.5rem;
@@ -360,7 +360,7 @@
     @include mq(768px) {
       width: 380px;
       height: 450px;
-      padding: 2rem 1.9rem;
+      padding: 2rem 1.7rem;
     }
 
     @include mq(991px) {
@@ -372,7 +372,7 @@
       width: 320px;
       margin: 0px 30px;
       // min-width: 320px;
-      padding: 2rem 1.9rem;
+      padding: 2rem 1.7rem;
     }
 }
 

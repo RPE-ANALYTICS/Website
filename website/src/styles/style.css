@@ -88,8 +88,8 @@ body {
 .nav-menu {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (auto)[5];
-      grid-template-columns: repeat(5, auto);
+  -ms-grid-columns: (auto)[6];
+      grid-template-columns: repeat(6, auto);
   list-style: none;
   text-align: center;
   width: 100vw;
@@ -221,6 +221,10 @@ body {
     -webkit-transition: 250ms;
     transition: 250ms;
   }
+}
+
+.lang {
+  padding: 2px;
 }
 
 .brandSection {
@@ -2656,6 +2660,7 @@ body {
 .card {
   height: 400px;
   width: 320px;
+  min-width: 310px;
   margin: 15px;
   border-radius: 5px;
   padding: 2rem 1.5rem;
@@ -2667,7 +2672,7 @@ body {
   .card {
     width: 380px;
     height: 450px;
-    padding: 2rem 1.9rem;
+    padding: 2rem 1.7rem;
   }
 }
 
@@ -2683,7 +2688,7 @@ body {
   .card {
     width: 320px;
     margin: 0px 30px;
-    padding: 2rem 1.9rem;
+    padding: 2rem 1.7rem;
   }
 }
 

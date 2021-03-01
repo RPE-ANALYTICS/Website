@@ -15,6 +15,8 @@ import gsap from "gsap";
 // import { ScrollTrigger } from "gsap/ScrollTrigger";
 // gsap.registerPlugin(ScrollTrigger);
 
+import T from "../T";
+
 export default function Home() {
   const sectionRef = useRef(null);
 
@@ -75,7 +77,7 @@ export default function Home() {
           <div className="c-puzzle absolute"></div>
           <div className="c-puzzle absolute"></div>
           <div className="home-content absolute">
-              <p>ACCELERATE YOUR DIGITAL TRANSFORMATION JOURNEY</p>
+              <p><T label={"homeTitle"} /></p>
           </div>
           <div className="home-bottom-line absolute">
             <Fade bottom>
@@ -109,8 +111,7 @@ export default function Home() {
         <p></p>
         <Fade bottom>
           <h3 className="banner-title ">
-            We deliver business intelligence applications focused on improving
-            your business.
+          <T label={"homeBanner"} />
           </h3>
         </Fade>
         <p></p>
@@ -119,7 +120,7 @@ export default function Home() {
       <section ref={sectionRef} className="homeCards section">
         <div className="cards-title fadeIn">
           <Fade bottom>
-            <h1>Use our experience</h1>
+            <h1><T label={"homeExperienceTitle"} /></h1>
           </Fade>
         </div>
         <div className="cards-wrapper">
@@ -130,7 +131,7 @@ export default function Home() {
               </div>
               <div className="info">
                 <h1 className="title">
-                  <span>A</span>nalytics
+                  <span><T label={"homeCard1TitleFL"} /></span><T label={"homeCard1Title"} />
                 </h1>
                 <p>Business Intelligence, Data Management, AI & ML</p>
               </div>
@@ -149,7 +150,7 @@ export default function Home() {
               </div>
               <div className="info">
                 <h1 className="title">
-                  <span>O</span>perations
+                  <span><T label={"homeCard2TitleFL"} /></span><T label={"homeCard2Title"} />
                 </h1>
                 <p>Environment Management, BI Platfrom Operations</p>
               </div>
@@ -168,7 +169,7 @@ export default function Home() {
               </div>
               <div className="info">
                 <h1 className="title">
-                  <span>D</span>igital <span>T</span>ransformation
+                  <span><T label={"homeCard3TitleFL"} /></span><T label={"homeCard3Title1"} /> <span><T label={"homeCard3TitleSL"} /></span><T label={"homeCard3Title2"} />
                 </h1>
                 <p>Transformation Strategy & Roadmaps, Analytics Enablement</p>
               </div>

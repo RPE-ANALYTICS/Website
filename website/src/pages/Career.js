@@ -8,14 +8,9 @@ import Fade from "react-reveal/Fade";
 // import image from 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
 
 export default function Career() {
-  const handleSend = () => {
-    window.open("mailto:fwydra@rp-eng.com?subject=Subject&body=%20");
-  };
-
   const [show, setShow] = useState(false);
   const [active, setActive] = useState(false);
   const [oneAdvert, setOneAdvert] = useState();
-  const [xxx, setXXX] = useState([]);
 
   const handleClick = (id) => {
     data.map((d) => {
@@ -30,14 +25,6 @@ export default function Career() {
       }
     });
   };
-
-  const dataAPI =
-    "https://redpointengineering.sharepoint.com/sites/255PROJECTS/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2F255PROJECTS%2FShared%20Documents%2F20%20IRAD%2F99%20RPE%20Website%2Fdata%2Ejson&parent=%2Fsites%2F255PROJECTS%2FShared%20Documents%2F20%20IRAD%2F99%20RPE%20Website";
-
-  useEffect(() => {
-    axios.get(dataAPI).then((res) => console.log(res));
-  }, []);
-  console.log(xxx);
 
   return (
     <>

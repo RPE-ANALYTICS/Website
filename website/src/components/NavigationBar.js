@@ -95,6 +95,9 @@ import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import Dropdown from "./Dropdown";
 
+import { Consumer } from "../TranslationContext";
+import T from "../T";
+
 function NavigationBar() {
   const [navBackground, setNavBackground] = useState(false);
   const navRef = useRef();
@@ -143,6 +146,7 @@ function NavigationBar() {
       }}
     >
       <nav className="navbar">
+
         <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
           <img className="logo-nav" src={whiteLogo} alt="RPE Analytics"></img>
         </Link>
@@ -152,7 +156,7 @@ function NavigationBar() {
         <ul className={click ? "nav-menu active" : "nav-menu"}>
           <li className="nav-item">
             <Link to="/" className="nav-links" onClick={closeMobileMenu}>
-              Home
+              <T label={"nav1"} />
             </Link>
           </li>
           <li
@@ -166,24 +170,48 @@ function NavigationBar() {
               className="nav-links"
               // onClick={closeMobileMenu}
             >
-              Services <i className="fas fa-caret-down" />
+              <T label={"nav2"} /> <i className="fas fa-caret-down" />
             </Link>
             {dropdown && <Dropdown closeMobileMenu={closeMobileMenu} />}
           </li>
           <li className="nav-item">
             <Link to="/about" className="nav-links" onClick={closeMobileMenu}>
-              About us
+            <T label={"nav3"} />
             </Link>
           </li>
           <li className="nav-item">
             <Link to="/career" className="nav-links" onClick={closeMobileMenu}>
-              Career
+            <T label={"nav4"} />
             </Link>
           </li>
           <li className="nav-item">
             <Link to="/contact" className="nav-links" onClick={closeMobileMenu}>
-              Contact
+            <T label={"nav5"} />
             </Link>
+          </li>
+          <li  className="nav-item">
+          <Consumer>
+        {({ setLanguage, language }) => {
+          return (
+            <>
+              <Link
+                // disabled={language === "en"}
+                onClick={() => setLanguage("en")}
+                className="nav-links lang"
+              >
+                us 
+              </Link>
+              <Link
+                // disabled={language === "pl"}
+                onClick={() => setLanguage("pl")}
+                className="nav-links lang"
+              >
+                pl
+              </Link>
+            </>
+          );
+        }}
+      </Consumer>
           </li>
         </ul>
         {/* <Button /> */}
