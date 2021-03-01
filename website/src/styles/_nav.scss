@@ -188,41 +188,49 @@
   left: 0;
   background-color: rgba(7, 7, 7, 0.3);
   z-index: 1000;
+
+  .navbar {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    width: 100vw;
+    max-width: 1300px;
+    padding: 0 30px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    background-color: transparent;
+
+    .navbar-logo {
+      color: #fff;
+      justify-self: start;
+      // margin-left: 20px;
+      cursor: pointer;
+      text-decoration: none;
+      // font-size: 2rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+    
+      img {
+        height: 80px;
+        padding: 14px;
+      }
+    }
+
+
+  }
 }
 
-.navbar {
-  height: 80px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.2rem;
-  width: 100vw;
-  max-width: 1300px;
-  padding: 0 30px;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 1000;
-  background-color: transparent;
-}
 
-.navbar-logo {
-  color: #fff;
-  justify-self: start;
-  // margin-left: 20px;
-  cursor: pointer;
-  text-decoration: none;
-  // font-size: 2rem;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
 
-.navbar-logo img {
-  height: 80px;
-  padding: 14px;
-}
+
+
+
 
 .fa-firstdraft {
   margin-left: 0.5rem;
@@ -296,7 +304,7 @@
   }
 
   .nav-menu.active {
-    background: #242222;
+    background: rgb(17, 40, 56);
     left: 0;
     opacity: 1;
     transition: all 0.5s ease;
