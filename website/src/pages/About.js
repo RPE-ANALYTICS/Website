@@ -125,7 +125,7 @@ export default function About() {
               </Fade>
             </div>
             <div className="cards-wrapper">
-              <Fade left>
+              <Fade bottom>
                 <div className="card fadeIn">
                   <div className="card-icon">
                     <img src={analytics}></img>
@@ -163,7 +163,7 @@ export default function About() {
                   </div>
                 </div>
               </Fade>
-              <Fade right>
+              <Fade bottom>
                 <div className="card fadeIn">
                   <div className="card-icon">
                     <img src={digital}></img>
@@ -224,7 +224,7 @@ export default function About() {
               <h1>Key Industries We Support</h1>
             </Fade>
             <div className="industry-cards">
-              <Fade left>
+              <Fade bottom>
                 <div className="industry-card">
                   <div className="industry-card-inner">
                     <div className="industry-card-front">
@@ -258,7 +258,7 @@ export default function About() {
                   </div>
                 </div>
               </Fade>
-              <Fade right>
+              <Fade bottom>
                 <div className="industry-card">
                   <div className="industry-card-inner">
                     <div className="industry-card-front">

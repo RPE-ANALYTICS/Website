@@ -70,7 +70,7 @@ export default function Analytics() {
               </div>
             </Fade>
             <div className="cards2">
-              <Fade left>
+              <Fade bottom>
                 <div className="card2">
                   <img src={Management}></img>
                   <h3>Management</h3>
@@ -90,7 +90,7 @@ export default function Analytics() {
                   </p>
                 </div>
               </Fade>
-              <Fade right>
+              <Fade bottom>
                 <div className="card2">
                   <img src={IT}></img>
                   <h3>Technology</h3>
@@ -115,7 +115,7 @@ export default function Analytics() {
             </Fade>
           </div>
           <div className="analytics-services-cards-section">
-            <Fade left>
+            <Fade bottom>
               <div className="analytics-services-card">
                 <div className="analytics-services-card-img">
                   <img className="services-card-img" src={Strategy}></img>
@@ -130,7 +130,7 @@ export default function Analytics() {
               </div>
             </Fade>
 
-            <Fade right>
+            <Fade bottom>
               <div className="analytics-services-card">
                 <div className="analytics-services-card-img">
                   <img src={Data}></img>
@@ -145,7 +145,7 @@ export default function Analytics() {
               </div>
             </Fade>
 
-            <Fade left>
+            <Fade bottom>
               <div className="analytics-services-card">
                 <div className="analytics-services-card-img">
                   <img src={DataComplexity}></img>
@@ -160,7 +160,7 @@ export default function Analytics() {
               </div>
             </Fade>
 
-            <Fade right>
+            <Fade bottom>
               <div className="analytics-services-card">
                 <div className="analytics-services-card-img">
                   <img src={Dashboard}></img>
@@ -175,7 +175,7 @@ export default function Analytics() {
               </div>
             </Fade>
 
-            <Fade left>
+            <Fade bottom>
               <div className="analytics-services-card">
                 <div className="analytics-services-card-img">
                   <img src={Report}></img>
@@ -190,7 +190,7 @@ export default function Analytics() {
               </div>
             </Fade>
 
-            <Fade right>
+            <Fade bottom>
               <div className="analytics-services-card">
                 <div className="analytics-services-card-img">
                   <img src={DataManagement}></img>

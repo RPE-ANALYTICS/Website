@@ -123,7 +123,7 @@ export default function Home() {
           </Fade>
         </div>
         <div className="cards-wrapper">
-          <Fade left>
+          <Fade bottom>
             <div className="card fadeIn">
               <div className="card-icon">
                 <img src={analytics}></img>
@@ -161,7 +161,7 @@ export default function Home() {
               </div>
             </div>
           </Fade>
-          <Fade right>
+          <Fade bottom>
             <div className="card fadeIn">
               <div className="card-icon">
                 <img src={digital}></img>
