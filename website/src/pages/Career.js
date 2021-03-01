@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import data from "../data/data.json";
 import Advert from "../components/Advert";
-import Popup from '../components/Popup';
+import Popup from "../components/Popup";
 
 import Fade from "react-reveal/Fade";
 // import image from 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
@@ -20,22 +20,23 @@ export default function Career() {
   const handleClick = (id) => {
     data.map((d) => {
       if (id === d.id && d.isActive === true) {
-        setActive(false)
+        setActive(false);
         setOneAdvert(d);
         setShow(true);
-      } 
+      }
       if (id === d.id && d.isActive === false) {
-        setShow(false)
-        setActive(true)
+        setShow(false);
+        setActive(true);
       }
     });
   };
 
-  const dataAPI = 'https://redpointengineering.sharepoint.com/sites/255PROJECTS/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2F255PROJECTS%2FShared%20Documents%2F20%20IRAD%2F99%20RPE%20Website%2Fdata%2Ejson&parent=%2Fsites%2F255PROJECTS%2FShared%20Documents%2F20%20IRAD%2F99%20RPE%20Website'
+  const dataAPI =
+    "https://redpointengineering.sharepoint.com/sites/255PROJECTS/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2F255PROJECTS%2FShared%20Documents%2F20%20IRAD%2F99%20RPE%20Website%2Fdata%2Ejson&parent=%2Fsites%2F255PROJECTS%2FShared%20Documents%2F20%20IRAD%2F99%20RPE%20Website";
 
   useEffect(() => {
-    axios.get(dataAPI).then(res => console.log(res))
-  }, [])
+    axios.get(dataAPI).then((res) => console.log(res));
+  }, []);
   console.log(xxx);
 
   return (
@@ -56,36 +57,52 @@ export default function Career() {
                 <div className="career-adverts">
                   {data.map((d) => (
                     <Fade bottom>
-                    <div className="advert" key={d.id}>
-                      <div className="advert-col-left">
-                        {/* <i class="far fa-user"></i> */}
+                      <div className="advert" key={d.id} onClick={() => handleClick(d.id)}>
+                        <div className="advert-col-left"></div>
+                        <div className="advert-col-right">
+                          <ul>
+                            <li id="first">
+                              <h1                             style={{
+                              color:
+                                d.isActive === true ? "#1e2f3b" : "#bbb",
+                            }}>{d.title}</h1>
+                              <h2
+                                style={{
+                                  color:
+                                    d.isActive === true
+                                      ? "rgb(1, 122, 1)"
+                                      : "#bbb",
+                                }}
+                              >
+                                {d.isActive ? "Active" : "Not Active"}
+                              </h2>
+                            </li>
+                            <li id="second">
+                              <p>
+                                <i className="fas fa-map-marker-alt"></i>{" "}
+                                {d.location}
+                              </p>
+                              <p>
+                                <i className="fas fa-desktop"></i> Technologies
+                              </p>
+                              <p>
+                                <i className="far fa-clock"></i> Full-Time
+                              </p>
+                            </li>
+                            <li id="third">
+                              <button
+                                onClick={() => handleClick(d.id)}
+                                style={{
+                                  color:
+                                    d.isActive === true ? "#d42028" : "#bbb",
+                                }}
+                              >
+                                More Details
+                              </button>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
-                      <div className="advert-col-right">
-                        <ul>
-                          <li id="first">
-                            <h1>{d.title}</h1>
-                            <h2>{d.isActive ? "Active" : "Not Active"}</h2>
-                          </li>
-                          <li id="second">
-                            <p>
-                              <i className="fas fa-map-marker-alt"></i>{" "}
-                              {d.location}
-                            </p>
-                            <p>
-                              <i className="fas fa-desktop"></i> Technologies
-                            </p>
-                            <p>
-                              <i className="far fa-clock"></i> Full-Time
-                            </p>
-                          </li>
-                          <li id="third">
-                            <button onClick={() => handleClick(d.id)}>
-                              More Details
-                            </button>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
                     </Fade>
                   ))}
                 </div>
@@ -99,7 +116,7 @@ export default function Career() {
           </div>
         </div>
         {show ? <Advert data={oneAdvert} show={show} setShow={setShow} /> : ""}
-        {active ? <Popup active={active} setActive={setActive} /> : ''}
+        {active ? <Popup active={active} setActive={setActive} /> : ""}
       </section>
     </>
   );

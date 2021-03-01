@@ -221,9 +221,6 @@ body {
     -webkit-transition: 250ms;
     transition: 250ms;
   }
-  button {
-    display: none;
-  }
 }
 
 .brandSection {
@@ -2975,7 +2972,7 @@ body {
   width: 100%;
   text-transform: uppercase;
   letter-spacing: 3px;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-family: "Montserrat", sans-serif;
   color: #1e2f3b;
   text-align: center;
