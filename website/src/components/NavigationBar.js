@@ -91,91 +91,105 @@ import whiteLogo from "../img/logos/rpe_white.png";
 //   );
 // }
 
-import React, { useState } from 'react';
-import { Button } from './Button';
-import { Link } from 'react-router-dom';
-// import './Navbar.css';
-import Dropdown from './Dropdown';
+import React, { useState, useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
+import Dropdown from "./Dropdown";
 
 function NavigationBar() {
+  const [navBackground, setNavBackground] = useState(false);
+  const navRef = useRef();
+  let sectionTwo = 0;
+
+  navRef.current = navBackground;
+  useEffect(() => {
+    const handleScroll = () => {
+      let show = window.scrollY > 20;
+      if (navRef.current !== show) {
+        setNavBackground(show);
+      }
+    };
+    document.addEventListener("scroll", handleScroll);
+    return () => {
+      sectionTwo = document.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   const [click, setClick] = useState(false);
   const [dropdown, setDropdown] = useState(false);
 
   const handleClick = () => setClick(!click);
-  const closeMobileMenu = () => setClick(false);
+  const closeMobileMenu = () => {
+    setClick(false);
+    window.scrollTo(0, 0);
+  };
 
   const onMouseEnter = () => {
-      setDropdown(true);
+    setDropdown(true);
   };
 
   const onMouseLeave = () => {
-      setDropdown(false);
+    setDropdown(false);
   };
 
   return (
-    <>
-      <nav className='navbar'>
-        <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-        <img className="logo-nav" src={whiteLogo} alt="RPE Analytics"></img>
+    <div
+      className="nav-wrapper"
+      style={{
+        transition: "1s ease",
+        backgroundColor: navBackground
+          ? "rgba(17, 40, 56, 0.9)"
+          : "transparent",
+        // height: navBackground ? "70px" : "80px",
+      }}
+    >
+      <nav className="navbar">
+        <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
+          <img className="logo-nav" src={whiteLogo} alt="RPE Analytics"></img>
         </Link>
-        <div className='menu-icon' onClick={handleClick}>
-          <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
+        <div className="menu-icon" onClick={handleClick}>
+          <i className={click ? "fas fa-times" : "fas fa-bars"} />
         </div>
-        <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-          <li className='nav-item'>
-            <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+        <ul className={click ? "nav-menu active" : "nav-menu"}>
+          <li className="nav-item">
+            <Link to="/" className="nav-links" onClick={closeMobileMenu}>
               Home
             </Link>
           </li>
           <li
-            className='nav-item'
-            onMouseEnter={onMouseEnter}
+            className="nav-item"
+            onClick={onMouseEnter}
+            // onClick={onMouseEnter}
             onMouseLeave={onMouseLeave}
           >
             <Link
               // to='/analytics'
-              className='nav-links'
+              className="nav-links"
               // onClick={closeMobileMenu}
             >
-              Services <i className='fas fa-caret-down' />
+              Services <i className="fas fa-caret-down" />
             </Link>
-            {dropdown && <Dropdown />}
+            {dropdown && <Dropdown closeMobileMenu={closeMobileMenu} />}
           </li>
-          <li className='nav-item'>
-            <Link
-              to='/about'
-              className='nav-links'
-              onClick={closeMobileMenu}
-            >
-              About
+          <li className="nav-item">
+            <Link to="/about" className="nav-links" onClick={closeMobileMenu}>
+              About us
             </Link>
           </li>
-          <li className='nav-item'>
-            <Link
-              to='/career'
-              className='nav-links'
-              onClick={closeMobileMenu}
-            >
+          <li className="nav-item">
+            <Link to="/career" className="nav-links" onClick={closeMobileMenu}>
               Career
             </Link>
           </li>
-          <li className='nav-item'>
-            <Link
-              to='/contact'
-              className='nav-links'
-              onClick={closeMobileMenu}
-            >
-              Contact us
+          <li className="nav-item">
+            <Link to="/contact" className="nav-links" onClick={closeMobileMenu}>
+              Contact
             </Link>
           </li>
-
         </ul>
         {/* <Button /> */}
       </nav>
-    </>
+    </div>
   );
 }
 
 export default NavigationBar;
-
-

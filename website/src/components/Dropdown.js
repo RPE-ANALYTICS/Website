@@ -2,10 +2,14 @@ import React, { useState } from 'react';
 import { MenuItems } from './MenuItems';
 import { Link } from 'react-router-dom';
 
-function Dropdown() {
+function Dropdown({closeMobileMenu}) {
   const [click, setClick] = useState(false);
 
-  const handleClick = () => setClick(!click);
+  const handleClick = () => {
+    setClick(!click);
+    closeMobileMenu();
+    window.scrollTo(0, 0);
+  }
 
   return (
     <>
