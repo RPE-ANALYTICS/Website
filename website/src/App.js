@@ -17,116 +17,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import { Provider } from "./TranslationContext";
 
-// import { withRouter } from "react-router";
-// const HeaderWithRouter = withRouter(NavigationBar);
-
 const translation = {
-  pl: {
-    //navbar
-    nav1: "Strona Główna",
-    nav2: "Usługi",
-    nav21: "Analityka",
-    nav22: "Operacje",
-    nav23: "Transformacja Cyfrowa",
-    nav3: "O nas",
-    nav4: "Kariera",
-    nav5: "Kontakt",
-    //Home page
-    homeTitle: "PRZYSPIESZ SWOJĄ PODRÓŻ DO CYFROWEJ TRANSFORMACJI",
-    homeBanner:
-      "Dostarczamy aplikacje Business Intelligence, które pomogą usprawnić Twoją firmę.",
-    homeExperienceTitle: "WYKORZYSTAJ NASZE DOŚWIADCZENIE",
-    homeCard1TitleFL: "A",
-    homeCard1Title: "nalityka",
-    homeCard2TitleFL: "O",
-    homeCard2Title: "peracje",
-    homeCard3TitleFL: "T",
-    homeCard3Title1: "ransformacja",
-    homeCard3TitleSL: "C",
-    homeCard3Title2: "yfrowa",
-    homeCardBtn: "SPRAWDŹ WIĘCEJ",
-    //Analytics
-    analTitleFL: "A",
-    analTitle: "nalityka",
-    analSubtitle: "Evaluate the entire company data",
-    analsec2Title: "Mądry sposób na transformację Twojej firmy",
-    analsec2Subtitle:
-      "Zawsze jest jakaś historia i to ta, która ma znaczenie, ponieważ to ona stoi za tym, co robimy",
-    analsec2Card1Title: "Zarządzanie",
-    analsec2Card1Content:
-      "Prowadzenie udanej transformacji wymaga o wiele więcej niż tylko wybierania właściwych ruchów.",
-    analsec2Card2Title: "Biznes",
-    analsec2Card2Content:
-      "Pomyśl o tym, jak technologia może stać się częścią Twoich przyszłych procesów i praktyk.",
-    analsec2Card3Title: "Technologia",
-    analsec2Card3Content:
-      "Wybrane narzędzia powinny oferować rozwiązania usprawniające procesy pod kątem wydajności i skuteczności.",
-    analsec3Title: "Nasze Usługi",
-    analsec3Subtitle:
-      "Zespół RPE może zapewnić wiedzę, aby pomóc organizacjom w ...",
-    analsec3Row1Title: "Strategia",
-    analsec3Row1Content:
-      "Pomożemy w budowaniu skutecznej strategii, ścieżki rozwoju i planów realizacji.",
-    analsec3Row2Title: "Ekstrakcja danych",
-    analsec3Row2Content:
-      "Wykonujemy wszystkie zakresy ekstrakcji danych, pozyskiwania i transformacji danych.",
-    analsec3Row3Title: "Transformacja",
-    analsec3Row3Content:
-      "Projektujemy skuteczną i sprawdzoną strategię Transformacji Cyfrowej dostosowaną do Twojej firmy.",
-    analsec3Row4Title: "Wizualizacje",
-    analsec3Row4Content:
-      "Dostarczymy wglądu, który pomoże Ci wywierać wpływ na biznes.",
-    analsec3Row5Title: "Zautomatyzowane raporty",
-    analsec3Row5Content:
-      "Pomożemy dostarczyć zautomatyzowane statystyki bezpośrednio na Twoje urządzenie.",
-    analsec3Row6Title: "Zarządzanie danymi",
-    analsec3Row6Content:
-      "Pomożemy Ci zbudować skuteczną strategię zarządzania danymi.",
-    analsec4Title: "Ekspertyza branży",
-    analsec4Content1:
-      "Niezależnie od tego, czy jesteś producentem OEM, dostawcą Tier 1, firmą zbrojeniową czy małym biurem medycznym, dostarczymy Ci rozwiązania do analizy danych, które pomogą Ci zoptymalizować Twój biznes.",
-    analsec4Content2:
-      "Niezależnie od tego, czy szukasz łączności z łańcuchem dostaw, aby uzyskać lepszą redukcję kosztów, bezbłędne uruchomienie, wydajność dostawców w zakresie jakości, dostawy, redukcji kosztów, optymalizacji zapasów, sprzedaży lub kosztów, pomożemy Ci przyspieszyć wgląd.",
-    analsec5Title: "ROI",
-    analsec5Content1:
-      "Pomożemy Ci zmierzyć ROI z inwestycji analitycznej. Zaczniesz to realizować już w ciągu pierwszych kilku tygodni angażowania naszego zespołu.",
-    analsec5Content2:
-      "Umożliwimy bezprecedensową widoczność danych, co z kolei doprowadzi do znacznej poprawy jakości danych.",
-    analsec5Content3:
-      "Dzięki łatwemu, zarządzanemu dostępowi do tak dużej ilości danych, które można wykorzystać, nie tylko Twoje zespoły osiągną poprawę produktywności, ale będą mogły podejmować bardziej świadome, oparte na danych decyzje.",
-          //ABOUT
-    aboutTitleFL: "P",
-    aboutTitle: "oznaj nas",
-    aboutSubtitle: "Głęboko wierzymy w Twój sukces.",
-    aboutWWATitle: "KIM JESTEŚMY ?",
-    aboutWWAContent: "RPE Analytics to butikowa organizacja zajmująca się analizą i automatyzacją. Pomagamy naszym klientom tworzyć rozwiązania maksymalizujące wartość ich danych i zasobów analitycznych oraz automatyzujące kluczowe procesy biznesowe.",
-    aboutWADTitle: "JESTEŚMY INNI",
-    aboutWADSubtitle: "GŁÓWNE DZIEDZINY",
-    aboutWADCard1TitleFL: "A",
-    aboutWADCard1Title: "nalityka",
-    aboutWADCard2TitleFL: "O",
-    aboutWADCard2Title: "peracje",
-    aboutWADCard3TitleFL: "T",
-    aboutWADCard3Title1: "ransformacja",
-    aboutWADCard3TitleSL: "C",
-    aboutWADCard3Title2: "yfrowa",
-    aboutWADCardBtn: "SPRAWDŹ WIĘCEJ",
-    aboutAOTTitle: "O NASZYM ZESPOLE",
-    aboutAOTContent: "Wnosimy głęboką wiedzę w zakresie analityki, zarządzania danymi i automatyzacji procesów biznesowych. Zbiorowe doświadczenie naszego zespołu obejmuje ugruntowane doświadczenie w rozwiązywaniu złożonych problemów biznesowych oraz praktyczne doświadczenie i certyfikaty w zakresie nowych i powstających technologii. Nasi klienci to zarówno małe firmy, jak i firmy z listy Fortune 500 ze wszystkich głównych branż.",
-    aboutKIWSTitle: "KLUCZOWE BRANŻE, KTÓRE WSPIERAMY",
-    aboutKIWSCard1Title: "Przemysł",
-    aboutKIWSCard2Title: "Medycyna",
-    aboutKIWSCard3Title: "Telekomunikacja",
-    aboutOPTitle: "NASI PARTNERZY",
-    aboutOPContent: "RPE nawiązało współpracę technologiczną z czołowymi dostawcami oprogramowania, którzy prowadzą cyfrową transformację. Pomożemy Ci przyspieszyć podróż do cyfrowej transformacji i zmaksymalizować zwrot z inwestycji w technologie.",
-        //CAREER
-        careerTitle: "Czekamy na Ciebie !",
-        careerContent: "RPE zawsze stara się rozwijać nasz zespół dzięki silnym talentom. Inwestujemy w edukację naszych pracowników i zapewniamy naszym nowym pracownikom wszechstronne szkolenia. Będziesz pracować nad rozwijającymi zadaniami.",
-        careerADDBtn: "SPRAWDŹ",
-            //CONTACT
-    contactTitle: "Napisz do nas",
-    contactBtn: "WYŚLIJ MAILA"
-  },
 //=========================ENGLISH VERSION==================================
   en: {
     //navbar
@@ -234,11 +125,125 @@ const translation = {
     contactTitle: "Contact us",
     contactBtn: "SEND EMAIL"
   },
+  //===============POLISH VERSION==================
+  pl: {
+    //navbar
+    nav1: "Strona Główna",
+    nav2: "Usługi",
+    nav21: "Analityka",
+    nav22: "Operacje",
+    nav23: "Transformacja Cyfrowa",
+    nav3: "O nas",
+    nav4: "Kariera",
+    nav5: "Kontakt",
+    //Home page
+    homeTitle: "PRZYSPIESZ SWOJĄ PODRÓŻ DO CYFROWEJ TRANSFORMACJI",
+    homeBanner:
+      "Dostarczamy aplikacje Business Intelligence, które pomogą usprawnić Twoją firmę.",
+    homeExperienceTitle: "WYKORZYSTAJ NASZE DOŚWIADCZENIE",
+    homeCard1TitleFL: "A",
+    homeCard1Title: "nalityka",
+    homeCard2TitleFL: "O",
+    homeCard2Title: "peracje",
+    homeCard3TitleFL: "T",
+    homeCard3Title1: "ransformacja",
+    homeCard3TitleSL: "C",
+    homeCard3Title2: "yfrowa",
+    homeCardBtn: "SPRAWDŹ WIĘCEJ",
+    //Analytics
+    analTitleFL: "A",
+    analTitle: "nalityka",
+    analSubtitle: "Evaluate the entire company data",
+    analsec2Title: "Mądry sposób na transformację Twojej firmy",
+    analsec2Subtitle:
+      "Zawsze jest jakaś historia i to ta, która ma znaczenie, ponieważ to ona stoi za tym, co robimy",
+    analsec2Card1Title: "Zarządzanie",
+    analsec2Card1Content:
+      "Prowadzenie udanej transformacji wymaga o wiele więcej niż tylko wybierania właściwych ruchów.",
+    analsec2Card2Title: "Biznes",
+    analsec2Card2Content:
+      "Pomyśl o tym, jak technologia może stać się częścią Twoich przyszłych procesów i praktyk.",
+    analsec2Card3Title: "Technologia",
+    analsec2Card3Content:
+      "Wybrane narzędzia powinny oferować rozwiązania usprawniające procesy pod kątem wydajności i skuteczności.",
+    analsec3Title: "Nasze Usługi",
+    analsec3Subtitle:
+      "Zespół RPE może zapewnić wiedzę, aby pomóc organizacjom w ...",
+    analsec3Row1Title: "Strategia",
+    analsec3Row1Content:
+      "Pomożemy w budowaniu skutecznej strategii, ścieżki rozwoju i planów realizacji.",
+    analsec3Row2Title: "Ekstrakcja danych",
+    analsec3Row2Content:
+      "Wykonujemy wszystkie zakresy ekstrakcji danych, pozyskiwania i transformacji danych.",
+    analsec3Row3Title: "Transformacja",
+    analsec3Row3Content:
+      "Projektujemy skuteczną i sprawdzoną strategię Transformacji Cyfrowej dostosowaną do Twojej firmy.",
+    analsec3Row4Title: "Wizualizacje",
+    analsec3Row4Content:
+      "Dostarczymy wglądu, który pomoże Ci wywierać wpływ na biznes.",
+    analsec3Row5Title: "Zautomatyzowane raporty",
+    analsec3Row5Content:
+      "Pomożemy dostarczyć zautomatyzowane statystyki bezpośrednio na Twoje urządzenie.",
+    analsec3Row6Title: "Zarządzanie danymi",
+    analsec3Row6Content:
+      "Pomożemy Ci zbudować skuteczną strategię zarządzania danymi.",
+    analsec4Title: "Ekspertyza branży",
+    analsec4Content1:
+      "Niezależnie od tego, czy jesteś producentem OEM, dostawcą Tier 1, firmą zbrojeniową czy małym biurem medycznym, dostarczymy Ci rozwiązania do analizy danych, które pomogą Ci zoptymalizować Twój biznes.",
+    analsec4Content2:
+      "Niezależnie od tego, czy szukasz łączności z łańcuchem dostaw, aby uzyskać lepszą redukcję kosztów, bezbłędne uruchomienie, wydajność dostawców w zakresie jakości, dostawy, redukcji kosztów, optymalizacji zapasów, sprzedaży lub kosztów, pomożemy Ci przyspieszyć wgląd.",
+    analsec5Title: "ROI",
+    analsec5Content1:
+      "Pomożemy Ci zmierzyć ROI z inwestycji analitycznej. Zaczniesz to realizować już w ciągu pierwszych kilku tygodni angażowania naszego zespołu.",
+    analsec5Content2:
+      "Umożliwimy bezprecedensową widoczność danych, co z kolei doprowadzi do znacznej poprawy jakości danych.",
+    analsec5Content3:
+      "Dzięki łatwemu, zarządzanemu dostępowi do tak dużej ilości danych, które można wykorzystać, nie tylko Twoje zespoły osiągną poprawę produktywności, ale będą mogły podejmować bardziej świadome, oparte na danych decyzje.",
+          //ABOUT
+    aboutTitleFL: "P",
+    aboutTitle: "oznaj nas",
+    aboutSubtitle: "Głęboko wierzymy w Twój sukces.",
+    aboutWWATitle: "KIM JESTEŚMY ?",
+    aboutWWAContent: "RPE Analytics to butikowa organizacja zajmująca się analizą i automatyzacją. Pomagamy naszym klientom tworzyć rozwiązania maksymalizujące wartość ich danych i zasobów analitycznych oraz automatyzujące kluczowe procesy biznesowe.",
+    aboutWADTitle: "JESTEŚMY INNI",
+    aboutWADSubtitle: "GŁÓWNE DZIEDZINY",
+    aboutWADCard1TitleFL: "A",
+    aboutWADCard1Title: "nalityka",
+    aboutWADCard2TitleFL: "O",
+    aboutWADCard2Title: "peracje",
+    aboutWADCard3TitleFL: "T",
+    aboutWADCard3Title1: "ransformacja",
+    aboutWADCard3TitleSL: "C",
+    aboutWADCard3Title2: "yfrowa",
+    aboutWADCardBtn: "SPRAWDŹ WIĘCEJ",
+    aboutAOTTitle: "O NASZYM ZESPOLE",
+    aboutAOTContent: "Wnosimy głęboką wiedzę w zakresie analityki, zarządzania danymi i automatyzacji procesów biznesowych. Zbiorowe doświadczenie naszego zespołu obejmuje ugruntowane doświadczenie w rozwiązywaniu złożonych problemów biznesowych oraz praktyczne doświadczenie i certyfikaty w zakresie nowych i powstających technologii. Nasi klienci to zarówno małe firmy, jak i firmy z listy Fortune 500 ze wszystkich głównych branż.",
+    aboutKIWSTitle: "KLUCZOWE BRANŻE, KTÓRE WSPIERAMY",
+    aboutKIWSCard1Title: "Przemysł",
+    aboutKIWSCard2Title: "Medycyna",
+    aboutKIWSCard3Title: "Telekomunikacja",
+    aboutOPTitle: "NASI PARTNERZY",
+    aboutOPContent: "RPE nawiązało współpracę technologiczną z czołowymi dostawcami oprogramowania, którzy prowadzą cyfrową transformację. Pomożemy Ci przyspieszyć podróż do cyfrowej transformacji i zmaksymalizować zwrot z inwestycji w technologie.",
+        //CAREER
+        careerTitle: "Czekamy na Ciebie !",
+        careerContent: "RPE zawsze stara się rozwijać nasz zespół dzięki silnym talentom. Inwestujemy w edukację naszych pracowników i zapewniamy naszym nowym pracownikom wszechstronne szkolenia. Będziesz pracować nad rozwijającymi zadaniami.",
+        careerADDBtn: "SPRAWDŹ",
+            //CONTACT
+    contactTitle: "Napisz do nas",
+    contactBtn: "WYŚLIJ MAILA"
+  },
 };
 
 function App() {
-  const [language, setLanguage] = useState("pl");
 
+  const [language, setLanguage] = useState(() => {
+    if(Intl.DateTimeFormat().resolvedOptions().timeZone == "Europe/Warsaw") {
+      return "pl"
+    } else {
+      return "en"
+    }
+  } );
+  // console.log(Intl.DateTimeFormat().resolvedOptions().timeZone)
   const handleLanguageChange = (language) => setLanguage(language);
 
   return (
