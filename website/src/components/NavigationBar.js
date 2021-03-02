@@ -2,7 +2,6 @@
 // import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 // import { Link, NavLink } from "react-router-dom";
 // import "../styles/style.css";
-import whiteLogo from "../img/logos/rpe_white.png";
 
 // export default function NavigationBar() {
 //   const [navBackground, setNavBackground] = useState(false);
@@ -94,6 +93,11 @@ import whiteLogo from "../img/logos/rpe_white.png";
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import Dropdown from "./Dropdown";
+
+import whiteLogo from "../img/logos/rpe_white.png";
+import usa from "../img/icons/usa.svg";
+import pl from "../img/icons/pl.svg";
+
 
 import { Consumer } from "../TranslationContext";
 import T from "../T";
@@ -200,7 +204,7 @@ function NavigationBar() {
                       onClick={() => setLanguage("en")}
                       className="nav-links lang"
                     >
-                      us
+                      <img src={usa} style={{width: language == "pl" ? "23px" : "20px"}}></img>
                     </Link>
                     <span style={{color: 'white'}}>|</span>
                     <Link
@@ -209,7 +213,7 @@ function NavigationBar() {
                       onClick={() => setLanguage("pl")}
                       className="nav-links lang"
                     >
-                      pl
+                      <img src={pl} style={{width: language == "pl" ? "20px" : "23px"}}></img>
                     </Link>
                   </>
                 );

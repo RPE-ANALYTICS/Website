@@ -66,7 +66,7 @@ export default function Advert({data, show, setShow}) {
                 }
             </ul>
 
-            <p className="align-center">Jeżeli jesteś zainteresowany/a, wyślij swoje CV poprzez przycisk aplikowania.</p>
+            <p className="align-center">If you are interested, send your CV via the apply button.</p>
           </Modal.Body>
           <div className="send-cv-wrapper">
             <button id="send-cv" onClick={handleSend}>Send CV</button>
