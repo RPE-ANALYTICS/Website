@@ -64,9 +64,9 @@ export default function Analytics() {
           <div className="analytics-content-wrapper2">
             <Fade bottom cascade>
               <div className="title2">
-                <h1><T label={"sec2Title"} /></h1>
+                <h1><T label={"analsec2Title"} /></h1>
                 <p>
-                <T label={"sec2Subtitle"} />
+                <T label={"analsec2Subtitle"} />
                 </p>
               </div>
             </Fade>
@@ -74,27 +74,27 @@ export default function Analytics() {
               <Fade bottom>
                 <div className="card2">
                   <img src={Management}></img>
-                  <h3><T label={"sec2Card1Title"} /></h3>
+                  <h3><T label={"analsec2Card1Title"} /></h3>
                   <p>
-                  <T label={"sec2Card1Content"} />
+                  <T label={"analsec2Card1Content"} />
                   </p>
                 </div>
               </Fade>
               <Fade bottom>
                 <div className="card2">
                   <img src={Business}></img>
-                  <h3>      <T label={"sec2Card2Title"} /></h3>
+                  <h3>      <T label={"analsec2Card2Title"} /></h3>
                   <p>
-                  <T label={"sec2Card2Content"} />
+                  <T label={"analsec2Card2Content"} />
                   </p>
                 </div>
               </Fade>
               <Fade bottom>
                 <div className="card2">
                   <img src={IT}></img>
-                  <h3> <T label={"sec2Card3Title"} /></h3>
+                  <h3> <T label={"analsec2Card3Title"} /></h3>
                   <p>
-                  <T label={"sec2Card3Content"} />
+                  <T label={"analsec2Card3Content"} />
                   </p>
                 </div>
               </Fade>
@@ -105,9 +105,9 @@ export default function Analytics() {
         <div className="analytics-services-section">
           <div className="analytics-services-content">
             <Fade bottom>
-              <h1><T label={"sec3Title"} /></h1>
+              <h1><T label={"analsec3Title"} /></h1>
               <p>
-              <T label={"sec3Subtitle"} />
+              <T label={"analsec3Subtitle"} />
               </p>
             </Fade>
           </div>
@@ -118,9 +118,9 @@ export default function Analytics() {
                   <img className="services-card-img" src={Strategy}></img>
                 </div>
                 <div className="analytics-services-card-content">
-                  <h1><T label={"sec3Row1Title"} /></h1>
+                  <h1><T label={"analsec3Row1Title"} /></h1>
                   <p>
-                  <T label={"sec3Row1Content"} />
+                  <T label={"analsec3Row1Content"} />
                   </p>
                 </div>
               </div>
@@ -132,9 +132,9 @@ export default function Analytics() {
                   <img src={Data}></img>
                 </div>
                 <div className="analytics-services-card-content">
-                  <h1> <T label={"sec3Row2Title"} /></h1>
+                  <h1> <T label={"analsec3Row2Title"} /></h1>
                   <p>
-                  <T label={"sec3Row2Content"} />
+                  <T label={"analsec3Row2Content"} />
                   </p>
                 </div>
               </div>
@@ -146,9 +146,9 @@ export default function Analytics() {
                   <img src={DataComplexity}></img>
                 </div>
                 <div className="analytics-services-card-content">
-                  <h1><T label={"sec3Row3Title"} /></h1>
+                  <h1><T label={"analsec3Row3Title"} /></h1>
                   <p>
-                  <T label={"sec3Row3Content"} />
+                  <T label={"analsec3Row3Content"} />
                   </p>
                 </div>
               </div>
@@ -160,9 +160,9 @@ export default function Analytics() {
                   <img src={Dashboard}></img>
                 </div>
                 <div className="analytics-services-card-content">
-                  <h1><T label={"sec3Row4Title"} /></h1>
+                  <h1><T label={"analsec3Row4Title"} /></h1>
                   <p>
-                  <T label={"sec3Row4Content"} />
+                  <T label={"analsec3Row4Content"} />
                   </p>
                 </div>
               </div>
@@ -174,9 +174,9 @@ export default function Analytics() {
                   <img src={Report}></img>
                 </div>
                 <div className="analytics-services-card-content">
-                  <h1><T label={"sec3Row5Title"} /></h1>
+                  <h1><T label={"analsec3Row5Title"} /></h1>
                   <p>
-                  <T label={"sec3Row5Content"} />
+                  <T label={"analsec3Row5Content"} />
                   </p>
                 </div>
               </div>
@@ -188,9 +188,9 @@ export default function Analytics() {
                   <img src={DataManagement}></img>
                 </div>
                 <div className="analytics-services-card-content">
-                  <h1><T label={"sec3Row6Title"} /></h1>
+                  <h1><T label={"analsec3Row6Title"} /></h1>
                   <p>
-                  <T label={"sec3Row6Content"} />
+                  <T label={"analsec3Row6Content"} />
                   </p>
                 </div>
               </div>
@@ -211,13 +211,13 @@ export default function Analytics() {
               <div className="wwa-col">
                 <Fade bottom>
                   <div>
-                    <h1><T label={"sec4Title"} /></h1>
+                    <h1><T label={"analsec4Title"} /></h1>
                     <br />
                     <p>
-                    <T label={"sec4Content1"} />
+                    <T label={"analsec4Content1"} />
                     </p>
                     <p>
-                    <T label={"sec4Content2"} />
+                    <T label={"analsec4Content2"} />
                     </p>
                   </div>
                 </Fade>
@@ -232,16 +232,16 @@ export default function Analytics() {
               <div className="arw-col">
                 <Fade bottom>
                   <div>
-                    <h1><T label={"sec5Title"} /></h1>
+                    <h1><T label={"analsec5Title"} /></h1>
                     <br />
                     <p>
-                    <T label={"sec5Content1"} />
+                    <T label={"analsec5Content1"} />
                     </p>
                     <p>
-                    <T label={"sec5Content2"} />
+                    <T label={"analsec5Content2"} />
                     </p>
                     <p>
-                    <T label={"sec5Content2"} />
+                    <T label={"analsec5Content2"} />
                     </p>
                   </div>
                 </Fade>

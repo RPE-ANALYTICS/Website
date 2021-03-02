@@ -14,6 +14,7 @@ import Slide from "react-reveal/Slide";
 import Jello from "react-reveal/Jello";
 
 import gsap from "gsap";
+import T from "../T";
 
 export default function About() {
   const handleScroll = () => {
@@ -60,9 +61,9 @@ export default function About() {
           <div className="about-thumbnail-content">
             <Fade bottom>
               <h1>
-                <span>A</span>bout us
+                <span><T label={"aboutTitleFL"} /></span><T label={"aboutTitle"} />
               </h1>
-              <p>We believe in your success.</p>
+              <p><T label={"aboutSubtitle"} /></p>
             </Fade>
           </div>
           <div className="home-right-line-top absolute">
@@ -93,12 +94,9 @@ export default function About() {
               <div className="wwa-col wwa-col-content">
                 <Fade bottom cascade>
                   <div>
-                    <h1>Who we are ?</h1>
+                    <h1><T label={"aboutWWATitle"} /></h1>
                     <p>
-                      RPE Analytics is a boutique analytics and automation
-                      organization. We help our clients build solutions to
-                      maximize the value of their data and analytics assets, and
-                      automate key business processes.
+                    <T label={"aboutWWAContent"} />
                     </p>
                   </div>
                 </Fade>
@@ -119,8 +117,8 @@ export default function About() {
             <div className="title3">
               <Fade bottom cascade>
                 <div>
-                  <h1>WE ARE DIFFERENT</h1>
-                  <p>MAIN AREAS OF EXPERTISE</p>
+                  <h1><T label={"aboutWADTitle"} /></h1>
+                  <p><T label={"aboutWADSubtitle"} /></p>
                 </div>
               </Fade>
             </div>
@@ -132,14 +130,14 @@ export default function About() {
                   </div>
                   <div className="info">
                     <h1 className="title">
-                      <span>A</span>nalytics
+                      <span><T label={"aboutWADCard1TitleFL"} /></span><T label={"aboutWADCard1Title"} />
                     </h1>
                     <p>Business Intelligence, Data Management, AI & ML</p>
                   </div>
                   <div className="see-button">
                     <span></span>
                     <Link to="/analytics" onClick={handleClick}>
-                      <button>Learn More</button>
+                      <button><T label={"aboutWADCardBtn"} /></button>
                     </Link>
                   </div>
                 </div>
@@ -151,14 +149,14 @@ export default function About() {
                   </div>
                   <div className="info">
                     <h1 className="title">
-                      <span>O</span>perations
+                      <span><T label={"aboutWADCard2TitleFL"} /></span><T label={"aboutWADCard2Title"} />
                     </h1>
                     <p>Environment Management, BI Platfrom Operations</p>
                   </div>
                   <div className="see-button">
                     <span></span>
                     <Link to="/operations" onClick={handleClick}>
-                      <button>Learn More</button>
+                      <button><T label={"aboutWADCardBtn"} /></button>
                     </Link>
                   </div>
                 </div>
@@ -170,7 +168,7 @@ export default function About() {
                   </div>
                   <div className="info">
                     <h1 className="title">
-                      <span>D</span>igital <span>T</span>ransformation
+                      <span><T label={"aboutWADCard3TitleFL"} /></span><T label={"aboutWADCard3Title1"} /> <span><T label={"aboutWADCard3TitleSL"} /></span><T label={"aboutWADCard3Title2"} />
                     </h1>
                     <p>
                       Transformation Strategy & Roadmaps, Analytics Enablement
@@ -179,7 +177,7 @@ export default function About() {
                   <div className="see-button">
                     <span></span>
                     <Link to="/digital" onClick={handleClick}>
-                      <button>Learn More</button>
+                      <button><T label={"aboutWADCardBtn"} /></button>
                     </Link>
                   </div>
                 </div>
@@ -194,15 +192,9 @@ export default function About() {
               <div className="wwa-col wwa-col-content">
                 <Fade bottom cascade>
                   <div>
-                    <h1>About Our Team</h1>
+                    <h1><T label={"aboutAOTTitle"} /></h1>
                     <p>
-                      We bring deep expertise in analytics, data management, and
-                      business process automation. Our team's collective
-                      experience encompasses established experience in solving
-                      complex business problems, and hands-on experience and
-                      certifications in new and emerging technologies. Our
-                      clients range from small businesses to Fortune 500
-                      companies across all major industries.
+                    <T label={"aboutAOTContent"} />
                     </p>
                   </div>
                 </Fade>
@@ -221,7 +213,7 @@ export default function About() {
         <section className="industriesSection section">
           <div className="industries-wrapper">
             <Fade bottom>
-              <h1>Key Industries We Support</h1>
+              <h1><T label={"aboutKIWSTitle"} /></h1>
             </Fade>
             <div className="industry-cards">
               <Fade bottom>
@@ -230,11 +222,11 @@ export default function About() {
                     <div className="industry-card-front">
                       <img src="https://www.medgadget.com/wp-content/uploads/2020/07/Healthcare9.jpeg"></img>
                       <div>
-                        <h3>Manufacturing</h3>
+                        <h3><T label={"aboutKIWSCard1Title"} /></h3>
                       </div>
                     </div>
                     <div className="industry-card-back">
-                      <h3>Manufacturing</h3>
+                      <h3><T label={"aboutKIWSCard1Title"} /></h3>
                       {/* <p>Architect & Engineer</p> 
                   <p>We love that guy</p> */}
                     </div>
@@ -247,11 +239,11 @@ export default function About() {
                     <div className="industry-card-front">
                       <img src="https://www.medgadget.com/wp-content/uploads/2020/07/Healthcare9.jpeg"></img>
                       <div>
-                        <h3>Medical</h3>
+                        <h3><T label={"aboutKIWSCard2Title"} /></h3>
                       </div>
                     </div>
                     <div className="industry-card-back">
-                      <h3>Medical</h3>
+                      <h3><T label={"aboutKIWSCard2Title"} /></h3>
                       {/* <p>Architect & Engineer</p> 
                   <p>We love that guy</p> */}
                     </div>
@@ -264,11 +256,11 @@ export default function About() {
                     <div className="industry-card-front">
                       <img src="https://www.medgadget.com/wp-content/uploads/2020/07/Healthcare9.jpeg"></img>
                       <div>
-                        <h3>Telecomunication</h3>
+                        <h3><T label={"aboutKIWSCard3Title"} /></h3>
                       </div>
                     </div>
                     <div className="industry-card-back">
-                      <h3>Telecomunication</h3>
+                      <h3><T label={"aboutKIWSCard3Title"} /></h3>
                       {/* <p>Architect & Engineer</p> 
                   <p>We love that guy</p> */}
                     </div>
@@ -282,12 +274,9 @@ export default function About() {
         <div className="about-partners-section">
           <Fade bottom cascade>
             <div className="about-partners-wrapper">
-              <h1>OUR PARTNERS</h1>
+              <h1><T label={"aboutOPTitle"} /></h1>
               <p>
-                RPE has developed technology partnerships with top software
-                vendors that are leading the Digital Transformation. We will
-                help you accelerate your Digital Transformation journey and
-                maximize return on your technology investments.
+              <T label={"aboutOPContent"} />
               </p>
             </div>
           </Fade>

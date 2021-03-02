@@ -3,6 +3,8 @@ import Fade from 'react-reveal/Fade'
 import ContactUs from "../components/ContactUs";
 import Image from "./../img/world-map4.png";
 
+import T from "../T";
+
 export default function Contact() {
   const handleSend = () => {
     window.open(
@@ -40,10 +42,10 @@ export default function Contact() {
             </div>
             <div className="form-container row">
               <h1>
-                <i className="fas fa-minus"></i> Contact us{" "}
+                <i className="fas fa-minus"></i> <T label={"contactTitle"} />{" "}
                 <i className="fas fa-minus"></i>
               </h1>
-              <button onClick={handleSend}>Send email</button>
+              <button onClick={handleSend}><T label={"contactBtn"} /></button>
             </div>
             <div className="contact-address-pl row">
               <div className="address-content">

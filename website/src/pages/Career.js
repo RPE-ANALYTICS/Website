@@ -5,6 +5,8 @@ import Advert from "../components/Advert";
 import Popup from "../components/Popup";
 
 import Fade from "react-reveal/Fade";
+
+import T from "../T";
 // import image from 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
 
 export default function Career() {
@@ -33,13 +35,10 @@ export default function Career() {
           <div className="career-wrapper">
             <div className="career-content">
               <div className="career-col left">
-                <h1 className="career-title">We Are Hiring !</h1>
+                <h1 className="career-title"><T label={"careerTitle"} /></h1>
                 <br />
                 <p>
-                  RPE is always looking to grow our team with the strong talent.
-                  We invest in our employee’s education, and are providing
-                  comprehensive training to our new hires. You will work on
-                  challenging assignments.
+                <T label={"careerContent"} />
                 </p>
                 <div className="career-adverts">
                   {data.map((d) => (
@@ -84,7 +83,7 @@ export default function Career() {
                                     d.isActive === true ? "#d42028" : "#bbb",
                                 }}
                               >
-                                More Details
+                                <T label={"careerADDBtn"} />
                               </button>
                             </li>
                           </ul>

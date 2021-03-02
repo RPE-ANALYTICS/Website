@@ -77,7 +77,9 @@ export default function Home() {
           <div className="c-puzzle absolute"></div>
           <div className="c-puzzle absolute"></div>
           <div className="home-content absolute">
-              <p><T label={"homeTitle"} /></p>
+            <p>
+              <T label={"homeTitle"} />
+            </p>
           </div>
           <div className="home-bottom-line absolute">
             <Fade bottom>
@@ -111,7 +113,7 @@ export default function Home() {
         <p></p>
         <Fade bottom>
           <h3 className="banner-title ">
-          <T label={"homeBanner"} />
+            <T label={"homeBanner"} />
           </h3>
         </Fade>
         <p></p>
@@ -120,7 +122,9 @@ export default function Home() {
       <section ref={sectionRef} className="homeCards section">
         <div className="cards-title fadeIn">
           <Fade bottom>
-            <h1><T label={"homeExperienceTitle"} /></h1>
+            <h1>
+              <T label={"homeExperienceTitle"} />
+            </h1>
           </Fade>
         </div>
         <div className="cards-wrapper">
@@ -131,14 +135,19 @@ export default function Home() {
               </div>
               <div className="info">
                 <h1 className="title">
-                  <span><T label={"homeCard1TitleFL"} /></span><T label={"homeCard1Title"} />
+                  <span>
+                    <T label={"homeCard1TitleFL"} />
+                  </span>
+                  <T label={"homeCard1Title"} />
                 </h1>
                 <p>Business Intelligence, Data Management, AI & ML</p>
               </div>
               <div className="see-button">
                 <span></span>
                 <Link to="/analytics" onClick={handleClick}>
-                  <button>Learn More</button>
+                  <button>
+                    <T label={"homeCardBtn"} />
+                  </button>
                 </Link>
               </div>
             </div>
@@ -150,14 +159,19 @@ export default function Home() {
               </div>
               <div className="info">
                 <h1 className="title">
-                  <span><T label={"homeCard2TitleFL"} /></span><T label={"homeCard2Title"} />
+                  <span>
+                    <T label={"homeCard2TitleFL"} />
+                  </span>
+                  <T label={"homeCard2Title"} />
                 </h1>
                 <p>Environment Management, BI Platfrom Operations</p>
               </div>
               <div className="see-button">
                 <span></span>
                 <Link to="/operations" onClick={handleClick}>
-                  <button>Learn More</button>
+                  <button>
+                    <T label={"homeCardBtn"} />
+                  </button>
                 </Link>
               </div>
             </div>
@@ -169,14 +183,23 @@ export default function Home() {
               </div>
               <div className="info">
                 <h1 className="title">
-                  <span><T label={"homeCard3TitleFL"} /></span><T label={"homeCard3Title1"} /> <span><T label={"homeCard3TitleSL"} /></span><T label={"homeCard3Title2"} />
+                  <span>
+                    <T label={"homeCard3TitleFL"} />
+                  </span>
+                  <T label={"homeCard3Title1"} />{" "}
+                  <span>
+                    <T label={"homeCard3TitleSL"} />
+                  </span>
+                  <T label={"homeCard3Title2"} />
                 </h1>
                 <p>Transformation Strategy & Roadmaps, Analytics Enablement</p>
               </div>
               <div className="see-button">
                 <span></span>
                 <Link to="/digital" onClick={handleClick}>
-                  <button>Learn More</button>
+                  <button>
+                    <T label={"homeCardBtn"} />
+                  </button>
                 </Link>
               </div>
             </div>

@@ -146,7 +146,6 @@ function NavigationBar() {
       }}
     >
       <nav className="navbar">
-
         <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
           <img className="logo-nav" src={whiteLogo} alt="RPE Analytics"></img>
         </Link>
@@ -176,42 +175,43 @@ function NavigationBar() {
           </li>
           <li className="nav-item">
             <Link to="/about" className="nav-links" onClick={closeMobileMenu}>
-            <T label={"nav3"} />
+              <T label={"nav3"} />
             </Link>
           </li>
           <li className="nav-item">
             <Link to="/career" className="nav-links" onClick={closeMobileMenu}>
-            <T label={"nav4"} />
+              <T label={"nav4"} />
             </Link>
           </li>
           <li className="nav-item">
             <Link to="/contact" className="nav-links" onClick={closeMobileMenu}>
-            <T label={"nav5"} />
+              <T label={"nav5"} />
             </Link>
           </li>
-          <li  className="nav-item">
-          <Consumer>
-        {({ setLanguage, language }) => {
-          return (
-            <>
-              <Link
-                // disabled={language === "en"}
-                onClick={() => setLanguage("en")}
-                className="nav-links lang"
-              >
-                us 
-              </Link>
-              <Link
-                // disabled={language === "pl"}
-                onClick={() => setLanguage("pl")}
-                className="nav-links lang"
-              >
-                pl
-              </Link>
-            </>
-          );
-        }}
-      </Consumer>
+          <li className="nav-item">
+            <Consumer>
+              {({ setLanguage, language }) => {
+                return (
+                  <>
+                    <Link
+                      // disabled={language === "en"}
+                      onClick={() => setLanguage("en")}
+                      className="nav-links lang"
+                    >
+                      us
+                    </Link>
+                    <span style={{color: 'white'}}>|</span>
+                    <Link
+                      // disabled={language === "pl"}
+                      onClick={() => setLanguage("pl")}
+                      className="nav-links lang"
+                    >
+                      pl
+                    </Link>
+                  </>
+                );
+              }}
+            </Consumer>
           </li>
         </ul>
         {/* <Button /> */}
