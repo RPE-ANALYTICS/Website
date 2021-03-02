@@ -4,7 +4,7 @@
   background-color: rgb(34, 95, 175);
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url('https://cdn.pixabay.com/photo/2020/06/04/19/56/hill-5260303_960_720.jpg');
+  background-image: url("https://cdn.pixabay.com/photo/2020/06/04/19/56/hill-5260303_960_720.jpg");
   color: white;
   display: flex;
   flex-direction: column;
@@ -13,7 +13,7 @@
   text-align: center;
   text-transform: uppercase;
   font-family: $Fontfamily-serif;
-  
+
   img {
     width: 100%;
     object-fit: cover;

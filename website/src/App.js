@@ -27,7 +27,6 @@ function App() {
       return "en";
     }
   });
-  // console.log(Intl.DateTimeFormat().resolvedOptions().timeZone)
   const handleLanguageChange = (language) => setLanguage(language);
 
   return (
@@ -41,7 +40,6 @@ function App() {
       <div className="mainContainer">
         <Router basename="/">
           <NavigationBar />
-          {/* <HeaderWithRouter /> */}
           <Switch>
             <Route exact path="/" component={Home}></Route>
             <Route exact path="/operations" component={Operations}></Route>

@@ -29,7 +29,6 @@
       margin-left: 20px;
       cursor: pointer;
       text-decoration: none;
-      // font-size: 2rem;
       position: absolute;
       top: 0;
       left: 0;
@@ -50,7 +49,6 @@
 .nav-menu {
   display: grid;
   grid-template-columns: repeat(6, auto);
-  // grid-gap: 10px;
   list-style: none;
   text-align: center;
   width: 100vw;
@@ -135,7 +133,6 @@
   }
 
   .nav-links:hover {
-    // background-color: #1888ff;
     border-radius: 0;
   }
 
@@ -145,7 +142,6 @@
     left: 0;
     width: 200px;
     height: 80px;
-    // transform: translate(25%, 50%);
   }
 
   .navbar-logo img {
@@ -174,7 +170,6 @@
     margin: 2rem auto;
     border-radius: 4px;
     width: 80%;
-    // background: #1888ff;
     text-decoration: none;
     color: #fff;
     font-size: 1.5rem;
