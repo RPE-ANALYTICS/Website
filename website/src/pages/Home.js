@@ -12,8 +12,6 @@ import Slide from "react-reveal/Slide";
 import Jello from "react-reveal/Jello";
 
 import gsap from "gsap";
-// import { ScrollTrigger } from "gsap/ScrollTrigger";
-// gsap.registerPlugin(ScrollTrigger);
 
 import T from "../T";
 
@@ -49,16 +47,6 @@ export default function Home() {
       behavior: "smooth",
     });
   };
-
-  // const handleScroll = () => {
-  //   window.scroll({
-  //     top:
-  //       document.body.offsetHeight -
-  //       document.querySelector(".homeBanner").getBoundingClientRect().height,
-  //     left: 0,
-  //     behavior: "smooth",
-  //   });
-  // };
 
   return (
     <>
@@ -117,7 +105,6 @@ export default function Home() {
           </h3>
         </Fade>
         <p></p>
-        {/* <p>We deliver business intelligence applications focused on improving your business.</p> */}
       </section>
       <section ref={sectionRef} className="homeCards section">
         <div className="cards-title fadeIn">
