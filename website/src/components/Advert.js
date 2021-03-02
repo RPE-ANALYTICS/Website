@@ -31,9 +31,9 @@ export default function Advert({data, show, setShow}) {
             </p>
             <br/> */}
             <h3 className="align-center">{data.title}</h3>
-            <p className="align-center">Miejsce pracy: {data.location}</p>
+            <p className="align-center">Location: {data.location}</p>
             <p>{data.description}</p>
-            <h4>Obowiązki</h4>
+            <h4>Responsibilities</h4>
             <ul>
                 {
                     data.responsibilities.map(d => (
@@ -41,7 +41,7 @@ export default function Advert({data, show, setShow}) {
                     ))
                 }
             </ul>
-            <h4>Wymagania</h4>
+            <h4>Requirenments</h4>
             <ul>
                 {
                     data.skills.map(d => (

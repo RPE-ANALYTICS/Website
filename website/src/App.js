@@ -18,7 +18,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { Provider } from "./TranslationContext";
 
 const translation = {
-//=========================ENGLISH VERSION==================================
+  //=========================ENGLISH VERSION==================================
   en: {
     //navbar
     nav1: "Home",
@@ -97,7 +97,8 @@ const translation = {
     aboutTitle: "bout us",
     aboutSubtitle: "We believe in your success.",
     aboutWWATitle: "WHO WE ARE ?",
-    aboutWWAContent: "RPE Analytics is a boutique analytics and automation organization. We help our clients build solutions to maximize the value of their data and analytics assets, and automate key business processes.",
+    aboutWWAContent:
+      "RPE Analytics is a boutique analytics and automation organization. We help our clients build solutions to maximize the value of their data and analytics assets, and automate key business processes.",
     aboutWADTitle: "WE ARE DIFFERENT",
     aboutWADSubtitle: "MAIN AREAS OF EXPERTISE",
     aboutWADCard1TitleFL: "A",
@@ -110,20 +111,23 @@ const translation = {
     aboutWADCard3Title2: "ransformation",
     aboutWADCardBtn: "LEARN MORE",
     aboutAOTTitle: "ABOUT OUR TEAM",
-    aboutAOTContent: "We bring deep expertise in analytics, data management, and business process automation. Our team's collective experience encompasses established experience in solving complex business problems, and hands-on experience and certifications in new and emerging technologies. Our clients range from small businesses to Fortune 500 companies across all major industries.",
+    aboutAOTContent:
+      "We bring deep expertise in analytics, data management, and business process automation. Our team's collective experience encompasses established experience in solving complex business problems, and hands-on experience and certifications in new and emerging technologies. Our clients range from small businesses to Fortune 500 companies across all major industries.",
     aboutKIWSTitle: "KEY INDUSTRIES WE SUPPORT",
     aboutKIWSCard1Title: "Manufacturing",
     aboutKIWSCard2Title: "Medical",
     aboutKIWSCard3Title: "Telecomunication",
     aboutOPTitle: "OUR PARTNERS",
-    aboutOPContent: "RPE has developed technology partnerships with top software vendors that are leading the Digital Transformation. We will help you accelerate your Digital Transformation journey and maximize return on your technology investments.",
+    aboutOPContent:
+      "RPE has developed technology partnerships with top software vendors that are leading the Digital Transformation. We will help you accelerate your Digital Transformation journey and maximize return on your technology investments.",
     //CAREER
     careerTitle: "We Are Hiring !",
-    careerContent: "RPE is always looking to grow our team with the strong talent. We invest in our employee’s education, and are providing comprehensive training to our new hires. You will work on challenging assignments.",
+    careerContent:
+      "RPE is always looking to grow our team with the strong talent. We invest in our employee’s education, and are providing comprehensive training to our new hires. You will work on challenging assignments.",
     careerADDBtn: "MORE DETAILS",
     //CONTACT
     contactTitle: "Contact us",
-    contactBtn: "SEND EMAIL"
+    contactBtn: "SEND EMAIL",
   },
   //===============POLISH VERSION==================
   pl: {
@@ -153,7 +157,7 @@ const translation = {
     //Analytics
     analTitleFL: "A",
     analTitle: "nalityka",
-    analSubtitle: "Evaluate the entire company data",
+    analSubtitle: "Udoskonal wszystkie dane Twojej firmy",
     analsec2Title: "Mądry sposób na transformację Twojej firmy",
     analsec2Subtitle:
       "Zawsze jest jakaś historia i to ta, która ma znaczenie, ponieważ to ona stoi za tym, co robimy",
@@ -199,12 +203,13 @@ const translation = {
       "Umożliwimy bezprecedensową widoczność danych, co z kolei doprowadzi do znacznej poprawy jakości danych.",
     analsec5Content3:
       "Dzięki łatwemu, zarządzanemu dostępowi do tak dużej ilości danych, które można wykorzystać, nie tylko Twoje zespoły osiągną poprawę produktywności, ale będą mogły podejmować bardziej świadome, oparte na danych decyzje.",
-          //ABOUT
+    //ABOUT
     aboutTitleFL: "P",
     aboutTitle: "oznaj nas",
     aboutSubtitle: "Głęboko wierzymy w Twój sukces.",
     aboutWWATitle: "KIM JESTEŚMY ?",
-    aboutWWAContent: "RPE Analytics to butikowa organizacja zajmująca się analizą i automatyzacją. Pomagamy naszym klientom tworzyć rozwiązania maksymalizujące wartość ich danych i zasobów analitycznych oraz automatyzujące kluczowe procesy biznesowe.",
+    aboutWWAContent:
+      "RPE Analytics to butikowa organizacja zajmująca się analizą i automatyzacją. Pomagamy naszym klientom tworzyć rozwiązania maksymalizujące wartość ich danych i zasobów analitycznych oraz automatyzujące kluczowe procesy biznesowe.",
     aboutWADTitle: "JESTEŚMY INNI",
     aboutWADSubtitle: "GŁÓWNE DZIEDZINY",
     aboutWADCard1TitleFL: "A",
@@ -217,32 +222,34 @@ const translation = {
     aboutWADCard3Title2: "yfrowa",
     aboutWADCardBtn: "SPRAWDŹ WIĘCEJ",
     aboutAOTTitle: "O NASZYM ZESPOLE",
-    aboutAOTContent: "Wnosimy głęboką wiedzę w zakresie analityki, zarządzania danymi i automatyzacji procesów biznesowych. Zbiorowe doświadczenie naszego zespołu obejmuje ugruntowane doświadczenie w rozwiązywaniu złożonych problemów biznesowych oraz praktyczne doświadczenie i certyfikaty w zakresie nowych i powstających technologii. Nasi klienci to zarówno małe firmy, jak i firmy z listy Fortune 500 ze wszystkich głównych branż.",
+    aboutAOTContent:
+      "Wnosimy głęboką wiedzę w zakresie analityki, zarządzania danymi i automatyzacji procesów biznesowych. Zbiorowe doświadczenie naszego zespołu obejmuje ugruntowane doświadczenie w rozwiązywaniu złożonych problemów biznesowych oraz praktyczne doświadczenie i certyfikaty w zakresie nowych i powstających technologii. Nasi klienci to zarówno małe firmy, jak i firmy z listy Fortune 500 ze wszystkich głównych branż.",
     aboutKIWSTitle: "KLUCZOWE BRANŻE, KTÓRE WSPIERAMY",
     aboutKIWSCard1Title: "Przemysł",
     aboutKIWSCard2Title: "Medycyna",
     aboutKIWSCard3Title: "Telekomunikacja",
     aboutOPTitle: "NASI PARTNERZY",
-    aboutOPContent: "RPE nawiązało współpracę technologiczną z czołowymi dostawcami oprogramowania, którzy prowadzą cyfrową transformację. Pomożemy Ci przyspieszyć podróż do cyfrowej transformacji i zmaksymalizować zwrot z inwestycji w technologie.",
-        //CAREER
-        careerTitle: "Czekamy na Ciebie !",
-        careerContent: "RPE zawsze stara się rozwijać nasz zespół dzięki silnym talentom. Inwestujemy w edukację naszych pracowników i zapewniamy naszym nowym pracownikom wszechstronne szkolenia. Będziesz pracować nad rozwijającymi zadaniami.",
-        careerADDBtn: "SPRAWDŹ",
-            //CONTACT
+    aboutOPContent:
+      "RPE nawiązało współpracę technologiczną z czołowymi dostawcami oprogramowania, którzy prowadzą cyfrową transformację. Pomożemy Ci przyspieszyć podróż do cyfrowej transformacji i zmaksymalizować zwrot z inwestycji w technologie.",
+    //CAREER
+    careerTitle: "Czekamy na Ciebie !",
+    careerContent:
+      "RPE zawsze stara się rozwijać nasz zespół dzięki silnym talentom. Inwestujemy w edukację naszych pracowników i zapewniamy naszym nowym pracownikom wszechstronne szkolenia. Będziesz pracować nad rozwijającymi zadaniami.",
+    careerADDBtn: "SPRAWDŹ",
+    //CONTACT
     contactTitle: "Napisz do nas",
-    contactBtn: "WYŚLIJ MAILA"
+    contactBtn: "WYŚLIJ MAILA",
   },
 };
 
 function App() {
-
   const [language, setLanguage] = useState(() => {
-    if(Intl.DateTimeFormat().resolvedOptions().timeZone == "Europe/Warsaw") {
-      return "pl"
+    if (Intl.DateTimeFormat().resolvedOptions().timeZone == "Europe/Warsaw") {
+      return "pl";
     } else {
-      return "en"
+      return "en";
     }
-  } );
+  });
   // console.log(Intl.DateTimeFormat().resolvedOptions().timeZone)
   const handleLanguageChange = (language) => setLanguage(language);
 

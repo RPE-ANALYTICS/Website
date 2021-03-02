@@ -145,6 +145,7 @@ body {
 
 .lang {
   padding: 2px;
+  font-size: 1rem;
 }
 
 @media screen and (max-width: 960px) {
@@ -1098,7 +1099,7 @@ body {
 }
 
 .about-partners-section .about-partners-wrapper {
-  width: 100%;
+  width: 90%;
   max-width: 1300px;
   height: 100%;
   text-align: center;
