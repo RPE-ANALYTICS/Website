@@ -24,7 +24,7 @@ export default function Contact() {
           {/* <img src={Image}></img> */}
         </div>
         <div className="contact-content-container">
-          <Fade bottom cascade>
+          <Fade bottom>
           <div className="contact-container">
             <div className="contact-address-us row">
               <div className="address-content">

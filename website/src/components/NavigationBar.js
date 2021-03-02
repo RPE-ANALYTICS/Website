@@ -191,10 +191,12 @@ function NavigationBar() {
           <li className="nav-item">
             <Consumer>
               {({ setLanguage, language }) => {
+                console.log(language)
                 return (
                   <>
                     <Link
                       // disabled={language === "en"}
+                      id={language == "en" ? "active" : ""}
                       onClick={() => setLanguage("en")}
                       className="nav-links lang"
                     >
@@ -203,6 +205,7 @@ function NavigationBar() {
                     <span style={{color: 'white'}}>|</span>
                     <Link
                       // disabled={language === "pl"}
+                      id={language == "pl" ? "active" : ""}
                       onClick={() => setLanguage("pl")}
                       className="nav-links lang"
                     >

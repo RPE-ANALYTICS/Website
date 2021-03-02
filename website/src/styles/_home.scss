@@ -103,7 +103,7 @@
   }
   @include mq(1025px) {
     padding-left: 0px;
-    font-size: calc(3px + 40 * ((53vw + 53vh) - 600px) / 820);
+    font-size: calc(3px + 38 * ((53vw + 53vh) - 600px) / 820);
   }
 
   p {
