@@ -3,9 +3,6 @@ import { Link } from "react-router-dom";
 import digital from "../img/icons/digital.svg";
 import analytics from "../img/icons/monitor.svg";
 import operations from "../img/icons/operations.svg";
-import BigData from "../img/big-data.jpg";
-
-import CloudStorage from "../img/icons/cloud-storage.svg";
 
 import Brands from "../components/Brands";
 
@@ -24,7 +21,7 @@ export default function About() {
       behavior: "smooth",
     });
   };
-  
+
   const handleClick = () => {
     window.scrollTo(0, 0);
   };
@@ -61,9 +58,14 @@ export default function About() {
           <div className="about-thumbnail-content">
             <Fade bottom>
               <h1>
-                <span><T label={"aboutTitleFL"} /></span><T label={"aboutTitle"} />
+                <span>
+                  <T label={"aboutTitleFL"} />
+                </span>
+                <T label={"aboutTitle"} />
               </h1>
-              <p><T label={"aboutSubtitle"} /></p>
+              <p>
+                <T label={"aboutSubtitle"} />
+              </p>
             </Fade>
           </div>
           <div className="home-right-line-top absolute">
@@ -94,9 +96,11 @@ export default function About() {
               <div className="wwa-col wwa-col-content">
                 <Fade bottom cascade>
                   <div>
-                    <h1><T label={"aboutWWATitle"} /></h1>
+                    <h1>
+                      <T label={"aboutWWATitle"} />
+                    </h1>
                     <p>
-                    <T label={"aboutWWAContent"} />
+                      <T label={"aboutWWAContent"} />
                     </p>
                   </div>
                 </Fade>
@@ -117,8 +121,12 @@ export default function About() {
             <div className="title3">
               <Fade bottom cascade>
                 <div>
-                  <h1><T label={"aboutWADTitle"} /></h1>
-                  <p><T label={"aboutWADSubtitle"} /></p>
+                  <h1>
+                    <T label={"aboutWADTitle"} />
+                  </h1>
+                  <p>
+                    <T label={"aboutWADSubtitle"} />
+                  </p>
                 </div>
               </Fade>
             </div>
@@ -130,14 +138,19 @@ export default function About() {
                   </div>
                   <div className="info">
                     <h1 className="title">
-                      <span><T label={"aboutWADCard1TitleFL"} /></span><T label={"aboutWADCard1Title"} />
+                      <span>
+                        <T label={"aboutWADCard1TitleFL"} />
+                      </span>
+                      <T label={"aboutWADCard1Title"} />
                     </h1>
                     <p>Business Intelligence, Data Management, AI & ML</p>
                   </div>
                   <div className="see-button">
                     <span></span>
                     <Link to="/analytics" onClick={handleClick}>
-                      <button><T label={"aboutWADCardBtn"} /></button>
+                      <button>
+                        <T label={"aboutWADCardBtn"} />
+                      </button>
                     </Link>
                   </div>
                 </div>
@@ -149,14 +162,19 @@ export default function About() {
                   </div>
                   <div className="info">
                     <h1 className="title">
-                      <span><T label={"aboutWADCard2TitleFL"} /></span><T label={"aboutWADCard2Title"} />
+                      <span>
+                        <T label={"aboutWADCard2TitleFL"} />
+                      </span>
+                      <T label={"aboutWADCard2Title"} />
                     </h1>
                     <p>Environment Management, BI Platfrom Operations</p>
                   </div>
                   <div className="see-button">
                     <span></span>
                     <Link to="/operations" onClick={handleClick}>
-                      <button><T label={"aboutWADCardBtn"} /></button>
+                      <button>
+                        <T label={"aboutWADCardBtn"} />
+                      </button>
                     </Link>
                   </div>
                 </div>
@@ -168,7 +186,14 @@ export default function About() {
                   </div>
                   <div className="info">
                     <h1 className="title">
-                      <span><T label={"aboutWADCard3TitleFL"} /></span><T label={"aboutWADCard3Title1"} /> <span><T label={"aboutWADCard3TitleSL"} /></span><T label={"aboutWADCard3Title2"} />
+                      <span>
+                        <T label={"aboutWADCard3TitleFL"} />
+                      </span>
+                      <T label={"aboutWADCard3Title1"} />{" "}
+                      <span>
+                        <T label={"aboutWADCard3TitleSL"} />
+                      </span>
+                      <T label={"aboutWADCard3Title2"} />
                     </h1>
                     <p>
                       Transformation Strategy & Roadmaps, Analytics Enablement
@@ -177,7 +202,9 @@ export default function About() {
                   <div className="see-button">
                     <span></span>
                     <Link to="/digital" onClick={handleClick}>
-                      <button><T label={"aboutWADCardBtn"} /></button>
+                      <button>
+                        <T label={"aboutWADCardBtn"} />
+                      </button>
                     </Link>
                   </div>
                 </div>
@@ -192,9 +219,11 @@ export default function About() {
               <div className="wwa-col wwa-col-content">
                 <Fade bottom cascade>
                   <div>
-                    <h1><T label={"aboutAOTTitle"} /></h1>
+                    <h1>
+                      <T label={"aboutAOTTitle"} />
+                    </h1>
                     <p>
-                    <T label={"aboutAOTContent"} />
+                      <T label={"aboutAOTContent"} />
                     </p>
                   </div>
                 </Fade>
@@ -213,7 +242,9 @@ export default function About() {
         <section className="industriesSection section">
           <div className="industries-wrapper">
             <Fade bottom>
-              <h1><T label={"aboutKIWSTitle"} /></h1>
+              <h1>
+                <T label={"aboutKIWSTitle"} />
+              </h1>
             </Fade>
             <div className="industry-cards">
               <Fade bottom>
@@ -222,13 +253,15 @@ export default function About() {
                     <div className="industry-card-front">
                       <img src="https://www.medgadget.com/wp-content/uploads/2020/07/Healthcare9.jpeg"></img>
                       <div>
-                        <h3><T label={"aboutKIWSCard1Title"} /></h3>
+                        <h3>
+                          <T label={"aboutKIWSCard1Title"} />
+                        </h3>
                       </div>
                     </div>
                     <div className="industry-card-back">
-                      <h3><T label={"aboutKIWSCard1Title"} /></h3>
-                      {/* <p>Architect & Engineer</p> 
-                  <p>We love that guy</p> */}
+                      <h3>
+                        <T label={"aboutKIWSCard1Title"} />
+                      </h3>
                     </div>
                   </div>
                 </div>
@@ -239,13 +272,15 @@ export default function About() {
                     <div className="industry-card-front">
                       <img src="https://www.medgadget.com/wp-content/uploads/2020/07/Healthcare9.jpeg"></img>
                       <div>
-                        <h3><T label={"aboutKIWSCard2Title"} /></h3>
+                        <h3>
+                          <T label={"aboutKIWSCard2Title"} />
+                        </h3>
                       </div>
                     </div>
                     <div className="industry-card-back">
-                      <h3><T label={"aboutKIWSCard2Title"} /></h3>
-                      {/* <p>Architect & Engineer</p> 
-                  <p>We love that guy</p> */}
+                      <h3>
+                        <T label={"aboutKIWSCard2Title"} />
+                      </h3>
                     </div>
                   </div>
                 </div>
@@ -256,13 +291,15 @@ export default function About() {
                     <div className="industry-card-front">
                       <img src="https://www.medgadget.com/wp-content/uploads/2020/07/Healthcare9.jpeg"></img>
                       <div>
-                        <h3><T label={"aboutKIWSCard3Title"} /></h3>
+                        <h3>
+                          <T label={"aboutKIWSCard3Title"} />
+                        </h3>
                       </div>
                     </div>
                     <div className="industry-card-back">
-                      <h3><T label={"aboutKIWSCard3Title"} /></h3>
-                      {/* <p>Architect & Engineer</p> 
-                  <p>We love that guy</p> */}
+                      <h3>
+                        <T label={"aboutKIWSCard3Title"} />
+                      </h3>
                     </div>
                   </div>
                 </div>
@@ -274,9 +311,11 @@ export default function About() {
         <div className="about-partners-section">
           <Fade bottom cascade>
             <div className="about-partners-wrapper">
-              <h1><T label={"aboutOPTitle"} /></h1>
+              <h1>
+                <T label={"aboutOPTitle"} />
+              </h1>
               <p>
-              <T label={"aboutOPContent"} />
+                <T label={"aboutOPContent"} />
               </p>
             </div>
           </Fade>

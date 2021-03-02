@@ -1,9 +1,7 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import jedox from '../img/logos/jedox.png';
-import qlik from '../img/logos/qlik.png';
 import powerbi from '../img/logos/powerbi.jpg';
 import snowflake from '../img/logos/snowflake.png';
-
 
 import Fade from "react-reveal/Fade";
 

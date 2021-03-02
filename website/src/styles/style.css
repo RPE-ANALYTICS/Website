@@ -98,7 +98,7 @@ body {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
-  margin-right: 6%;
+  margin-right: 5%;
 }
 
 .nav-item {
@@ -594,7 +594,8 @@ body {
   }
 }
 
-.about-content-section .about-who-we-are, .about-content-section .about-team-wrapper {
+.about-content-section .about-who-we-are,
+.about-content-section .about-team-wrapper {
   width: 100%;
   height: 100%;
   max-width: 1300px;
@@ -614,7 +615,8 @@ body {
   text-align: justify;
 }
 
-.about-content-section .about-who-we-are h1, .about-content-section .about-team-wrapper h1 {
+.about-content-section .about-who-we-are h1,
+.about-content-section .about-team-wrapper h1 {
   position: relative;
   margin-bottom: 15px;
   text-transform: uppercase;
@@ -626,19 +628,22 @@ body {
 }
 
 @media only screen and (min-width: 700px) {
-  .about-content-section .about-who-we-are h1, .about-content-section .about-team-wrapper h1 {
+  .about-content-section .about-who-we-are h1,
+  .about-content-section .about-team-wrapper h1 {
     font-size: 2rem;
   }
 }
 
 @media only screen and (min-width: 991px) {
-  .about-content-section .about-who-we-are h1, .about-content-section .about-team-wrapper h1 {
+  .about-content-section .about-who-we-are h1,
+  .about-content-section .about-team-wrapper h1 {
     font-size: 2rem;
     text-align: left;
   }
 }
 
-.about-content-section .about-who-we-are h1::before, .about-content-section .about-team-wrapper h1::before {
+.about-content-section .about-who-we-are h1::before,
+.about-content-section .about-team-wrapper h1::before {
   content: "";
   position: absolute;
   bottom: -20px;
@@ -652,45 +657,52 @@ body {
 }
 
 @media only screen and (min-width: 991px) {
-  .about-content-section .about-who-we-are h1::before, .about-content-section .about-team-wrapper h1::before {
+  .about-content-section .about-who-we-are h1::before,
+  .about-content-section .about-team-wrapper h1::before {
     left: 4%;
     width: 7%;
   }
 }
 
-.about-content-section .about-who-we-are p, .about-content-section .about-team-wrapper p {
+.about-content-section .about-who-we-are p,
+.about-content-section .about-team-wrapper p {
   padding-top: 22px;
   font-size: 0.8rem;
 }
 
 @media only screen and (min-width: 700px) {
-  .about-content-section .about-who-we-are p, .about-content-section .about-team-wrapper p {
+  .about-content-section .about-who-we-are p,
+  .about-content-section .about-team-wrapper p {
     font-size: 1.1rem;
   }
 }
 
 @media only screen and (min-width: 991px) {
-  .about-content-section .about-who-we-are p, .about-content-section .about-team-wrapper p {
+  .about-content-section .about-who-we-are p,
+  .about-content-section .about-team-wrapper p {
     font-size: 1.2rem;
     text-align: left;
   }
 }
 
 @media only screen and (min-width: 1025px) {
-  .about-content-section .about-who-we-are p, .about-content-section .about-team-wrapper p {
+  .about-content-section .about-who-we-are p,
+  .about-content-section .about-team-wrapper p {
     font-size: 1rem;
     text-align: left;
   }
 }
 
-.about-content-section .about-who-we-are .wwa-content, .about-content-section .about-team-wrapper .wwa-content {
+.about-content-section .about-who-we-are .wwa-content,
+.about-content-section .about-team-wrapper .wwa-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-top: 0px;
 }
 
-.about-content-section .about-who-we-are .wwa-content .wwa-col, .about-content-section .about-team-wrapper .wwa-content .wwa-col {
+.about-content-section .about-who-we-are .wwa-content .wwa-col,
+.about-content-section .about-team-wrapper .wwa-content .wwa-col {
   width: 100%;
   height: 100%;
   display: -webkit-box;
@@ -705,13 +717,15 @@ body {
 }
 
 @media only screen and (min-width: 991px) {
-  .about-content-section .about-who-we-are .wwa-content .wwa-col, .about-content-section .about-team-wrapper .wwa-content .wwa-col {
+  .about-content-section .about-who-we-are .wwa-content .wwa-col,
+  .about-content-section .about-team-wrapper .wwa-content .wwa-col {
     width: 80%;
     margin-left: 50px;
   }
 }
 
-.about-content-section .about-who-we-are .wwa-content .wwa-col .wwa-col-img, .about-content-section .about-team-wrapper .wwa-content .wwa-col .wwa-col-img {
+.about-content-section .about-who-we-are .wwa-content .wwa-col .wwa-col-img,
+.about-content-section .about-team-wrapper .wwa-content .wwa-col .wwa-col-img {
   position: absolute;
   width: 80%;
   height: 100%;
@@ -722,13 +736,15 @@ body {
 }
 
 @media only screen and (min-width: 991px) {
-  .about-content-section .about-who-we-are .wwa-content .wwa-col .wwa-col-img, .about-content-section .about-team-wrapper .wwa-content .wwa-col .wwa-col-img {
+  .about-content-section .about-who-we-are .wwa-content .wwa-col .wwa-col-img,
+  .about-content-section .about-team-wrapper .wwa-content .wwa-col .wwa-col-img {
     display: block;
     width: 95%;
   }
 }
 
-.about-content-section .about-who-we-are .wwa-content .wwa-col .wwa-col-img img, .about-content-section .about-team-wrapper .wwa-content .wwa-col .wwa-col-img img {
+.about-content-section .about-who-we-are .wwa-content .wwa-col .wwa-col-img img,
+.about-content-section .about-team-wrapper .wwa-content .wwa-col .wwa-col-img img {
   width: 100%;
   min-width: 378px;
   max-height: 110%;
@@ -738,17 +754,20 @@ body {
           box-shadow: 0 10px 10px rgba(56, 56, 56, 0.2), 10px 10px 20px rgba(48, 48, 48, 0.2);
 }
 
-.about-content-section .about-who-we-are .wwa-content .wwa-col-content, .about-content-section .about-team-wrapper .wwa-content .wwa-col-content {
+.about-content-section .about-who-we-are .wwa-content .wwa-col-content,
+.about-content-section .about-team-wrapper .wwa-content .wwa-col-content {
   padding: 30px;
 }
 
-.about-content-section .about-who-we-are .wwa-content .wwa-col-img-wrapper, .about-content-section .about-team-wrapper .wwa-content .wwa-col-img-wrapper {
+.about-content-section .about-who-we-are .wwa-content .wwa-col-img-wrapper,
+.about-content-section .about-team-wrapper .wwa-content .wwa-col-img-wrapper {
   width: 0;
   padding: 0;
 }
 
 @media only screen and (min-width: 991px) {
-  .about-content-section .about-who-we-are .wwa-content .wwa-col-img-wrapper, .about-content-section .about-team-wrapper .wwa-content .wwa-col-img-wrapper {
+  .about-content-section .about-who-we-are .wwa-content .wwa-col-img-wrapper,
+  .about-content-section .about-team-wrapper .wwa-content .wwa-col-img-wrapper {
     width: 50%;
   }
 }

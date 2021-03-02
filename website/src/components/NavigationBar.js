@@ -1,95 +1,3 @@
-// import React, { useState, useRef, useEffect } from "react";
-// import { Navbar, Nav, NavDropdown } from "react-bootstrap";
-// import { Link, NavLink } from "react-router-dom";
-// import "../styles/style.css";
-
-// export default function NavigationBar() {
-//   const [navBackground, setNavBackground] = useState(false);
-//   const navRef = useRef();
-//   let sectionTwo = 0;
-
-//   navRef.current = navBackground;
-//   useEffect(() => {
-//     const handleScroll = () => {
-//       let show = window.scrollY > 20;
-//       if (navRef.current !== show) {
-//         setNavBackground(show);
-//       }
-//     };
-//     document.addEventListener("scroll", handleScroll);
-//     return () => {
-//       sectionTwo = document.removeEventListener("scroll", handleScroll);
-//     };
-//   }, []);
-
-//   const handleClick = () => {
-//     window.scrollTo(0, 0);
-//   };
-
-//   return (
-//     <section
-//       className="navbarWrapper section"
-//       style={{
-//         transition: "1s ease",
-//         backgroundColor: navBackground
-//           ? "rgba(17, 40, 56, 0.9)"
-//           : "transparent",
-//         height: navBackground ? "70px" : "80px",
-//       }}
-//     >
-//       <Navbar variant="dark" collapseOnSelect expand="lg">
-//         <Nav>
-//           <Link className="brandLogo" to="/" onClick={handleClick}>
-//             <img className="logo-nav" src={whiteLogo} alt="RPE Analytics"></img>
-//           </Link>
-//         </Nav>
-//         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-//         <Navbar.Collapse
-//           id="responsive-navbar-nav"
-//           className="justify-content-end"
-//         >
-//           <Nav className="mr-auto"></Nav>
-//           <Nav>
-//             <NavLink id="home" exact to="/" onClick={handleClick}>
-//               Home
-//             </NavLink>
-//             <NavDropdown
-//               id="solutions"
-//               title="Solutions"
-//               id="collasible-nav-dropdown"
-//             >
-//               <NavDropdown.Item>
-//                 <NavLink className="link-hover" to="analytics" onClick={handleClick}>
-//                   Analytics
-//                 </NavLink>
-//               </NavDropdown.Item>
-//               <NavDropdown.Item>
-//                 <NavLink className="link-hover" to="operations" onClick={handleClick}>
-//                   Operations
-//                 </NavLink>
-//               </NavDropdown.Item>
-//               <NavDropdown.Item>
-//                 <NavLink className="link-hover" to="digital" onClick={handleClick}>
-//                   Digital Transformations
-//                 </NavLink>
-//               </NavDropdown.Item>
-//             </NavDropdown>
-//             <NavLink id="about" to="about" onClick={handleClick}>
-//               About us
-//             </NavLink>
-//             <NavLink id="career" to="career" onClick={handleClick}>
-//               Career
-//             </NavLink>
-//             <NavLink id="contact" to="contact" onClick={handleClick}>
-//               Contact
-//             </NavLink>
-//           </Nav>
-//         </Navbar.Collapse>
-//       </Navbar>
-//     </section>
-//   );
-// }
-
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import Dropdown from "./Dropdown";
@@ -97,7 +5,6 @@ import Dropdown from "./Dropdown";
 import whiteLogo from "../img/logos/rpe_white.png";
 import usa from "../img/icons/usa.svg";
 import pl from "../img/icons/pl.svg";
-
 
 import { Consumer } from "../TranslationContext";
 import T from "../T";
@@ -146,7 +53,6 @@ function NavigationBar() {
         backgroundColor: navBackground
           ? "rgba(17, 40, 56, 0.9)"
           : "transparent",
-        // height: navBackground ? "70px" : "80px",
       }}
     >
       <nav className="navbar">
@@ -165,14 +71,9 @@ function NavigationBar() {
           <li
             className="nav-item"
             onClick={onMouseEnter}
-            // onClick={onMouseEnter}
             onMouseLeave={onMouseLeave}
           >
-            <Link
-              // to='/analytics'
-              className="nav-links"
-              // onClick={closeMobileMenu}
-            >
+            <Link className="nav-links">
               <T label={"nav2"} /> <i className="fas fa-caret-down" />
             </Link>
             {dropdown && <Dropdown closeMobileMenu={closeMobileMenu} />}
@@ -195,25 +96,32 @@ function NavigationBar() {
           <li className="nav-item">
             <Consumer>
               {({ setLanguage, language }) => {
-                console.log(language)
+                console.log(language);
                 return (
                   <>
                     <Link
-                      // disabled={language === "en"}
                       id={language == "en" ? "active" : ""}
                       onClick={() => setLanguage("en")}
                       className="nav-links lang"
                     >
-                      <img src={usa} style={{width: language == "pl" ? "23px" : "20px"}}></img>
+                      <img
+                        src={usa}
+                        style={{
+                          width: language == "pl" ? "23px" : "20px",
+                          marginLeft: "15px",
+                        }}
+                      ></img>
                     </Link>
-                    <span style={{color: 'white'}}>|</span>
+                    <span style={{ color: "white" }}>|</span>
                     <Link
-                      // disabled={language === "pl"}
                       id={language == "pl" ? "active" : ""}
                       onClick={() => setLanguage("pl")}
                       className="nav-links lang"
                     >
-                      <img src={pl} style={{width: language == "pl" ? "20px" : "23px"}}></img>
+                      <img
+                        src={pl}
+                        style={{ width: language == "pl" ? "20px" : "23px" }}
+                      ></img>
                     </Link>
                   </>
                 );
@@ -221,7 +129,6 @@ function NavigationBar() {
             </Consumer>
           </li>
         </ul>
-        {/* <Button /> */}
       </nav>
     </div>
   );

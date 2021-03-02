@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from "react";
-import axios from "axios";
+import React, { useState } from "react";
 import data from "../data/data.json";
 import Advert from "../components/Advert";
 import Popup from "../components/Popup";
@@ -7,7 +6,6 @@ import Popup from "../components/Popup";
 import Fade from "react-reveal/Fade";
 
 import T from "../T";
-// import image from 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
 
 export default function Career() {
   const [show, setShow] = useState(false);
@@ -35,23 +33,33 @@ export default function Career() {
           <div className="career-wrapper">
             <div className="career-content">
               <div className="career-col left">
-                <h1 className="career-title"><T label={"careerTitle"} /></h1>
+                <h1 className="career-title">
+                  <T label={"careerTitle"} />
+                </h1>
                 <br />
                 <p>
-                <T label={"careerContent"} />
+                  <T label={"careerContent"} />
                 </p>
                 <div className="career-adverts">
                   {data.map((d) => (
                     <Fade bottom>
-                      <div className="advert" key={d.id} onClick={() => handleClick(d.id)}>
+                      <div
+                        className="advert"
+                        key={d.id}
+                        onClick={() => handleClick(d.id)}
+                      >
                         <div className="advert-col-left"></div>
                         <div className="advert-col-right">
                           <ul>
                             <li id="first">
-                              <h1                             style={{
-                              color:
-                                d.isActive === true ? "#1e2f3b" : "#bbb",
-                            }}>{d.title}</h1>
+                              <h1
+                                style={{
+                                  color:
+                                    d.isActive === true ? "#1e2f3b" : "#bbb",
+                                }}
+                              >
+                                {d.title}
+                              </h1>
                               <h2
                                 style={{
                                   color:
