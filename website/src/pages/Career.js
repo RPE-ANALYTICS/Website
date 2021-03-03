@@ -4,7 +4,10 @@ import Advert from "../components/Advert";
 import Popup from "../components/Popup";
 
 import Fade from "react-reveal/Fade";
-import cv from '../img/test/cv.svg'
+
+import Pin from '../img/icons/pin.svg';
+import Clock from '../img/icons/clock.svg';
+import Monitor from '../img/icons/monitor-small.svg';
 
 import T from "../T";
 
@@ -74,14 +77,19 @@ export default function Career() {
                             </li>
                             <li id="second">
                               <p>
-                                <i className="fas fa-map-marker-alt"></i>{" "}
+                                {/* <i className="fas fa-map-marker-alt"></i>{" "} */}
+                                <img src={Pin} style={{width: "16px", marginRight: "5px", marginBottom: "5px"}}></img>
                                 {d.location}
                               </p>
                               <p>
-                                <i className="fas fa-desktop"></i> Technologies
+                                {/* <i className="fas fa-desktop"></i>  */}
+                                <img src={Monitor} style={{width: "16px", marginRight: "5px", marginBottom: "5px"}}></img>
+                                Technologies
                               </p>
                               <p>
-                                <i className="far fa-clock"></i> Full-Time
+                                {/* <i className="far fa-clock"></i>  */}
+                                <img src={Clock} style={{width: "16px", marginRight: "5px", marginBottom: "5px"}}></img>
+                                Full-Time
                               </p>
                             </li>
                             <li id="third">

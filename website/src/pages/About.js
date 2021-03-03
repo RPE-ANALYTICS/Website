@@ -54,7 +54,8 @@ export default function About() {
             <div className="c-puzzle absolute"></div>
           </div>
           <div className="about-thumbnail-image">
-            <img src="https://images.pexels.com/photos/3184430/pexels-photo-3184430.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"></img>
+            {/* <img src="https://images.pexels.com/photos/3184430/pexels-photo-3184430.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"></img> */}
+            <img src="https://image.freepik.com/darmowe-zdjecie/ludzie-biznesu-ukladanie-rak_53876-90289.jpg"></img>
           </div>
           <div className="about-thumbnail-content">
             <Fade bottom>
@@ -109,7 +110,8 @@ export default function About() {
               <div className="wwa-col wwa-col-img-wrapper">
                 <div className="wwa-col-img">
                   <Fade bottom>
-                    <img src="https://images.pexels.com/photos/3182755/pexels-photo-3182755.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"></img>
+                    {/* <img src="https://images.pexels.com/photos/3182755/pexels-photo-3182755.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"></img> */}
+                    <img src="https://image.freepik.com/darmowe-zdjecie/smiley-koledzy-robia-sobie-selfie-podczas-spotkania_23-2148817038.jpg"></img>
                   </Fade>
                 </div>
               </div>

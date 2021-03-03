@@ -112,8 +112,10 @@
 
   span {
     color: $Fontcolor-main;
-    font-size: calc(45px + 40 * ((53vw + 53vh) - 600px) / 820);
+    font-size: calc(30px + 30 * ((53vw + 53vh) - 600px) / 820);
     font-weight: bold;
+    margin: 0;
+    padding: 0;
   }
 
   p {
@@ -136,7 +138,7 @@
 
   .c-puzzle:nth-of-type(2) {
     background-color: rgba(204, 204, 204, 0.5);
-    background-color: rgba(17, 40, 56, 0.6);
+    background-color: rgba(17, 40, 56, 0.25);
     left: 3%;
     top: 0;
     width: 15%;
@@ -152,7 +154,7 @@
 
   .c-puzzle:nth-of-type(3) {
     background-color: rgba(204, 204, 204, 0.5);
-    background-color: rgba(17, 40, 56, 0.6);
+    background-color: rgba(17, 40, 56, 0.3);
     left: 10%;
     top: 0;
     width: 18%;
@@ -173,7 +175,7 @@
 .about-content-section {
   width: 100%;
   // min-height: 550px;
-  height: 30vh;
+  // min-height: 30vh;
   background-color: rgb(255, 255, 255);
   position: relative;
   display: flex;
@@ -189,10 +191,10 @@
   // }
 
   @include mq(700px) {
-    height: 25vh;
+    // min-height: 25vh;
   }
   @include mq(991px) {
-    height: 30vh;
+    // min-height: 30vh;
     padding: 0;
   }
 
@@ -284,7 +286,7 @@
         letter-spacing: 1.3px;
 
         @include mq(991px) {
-          width: 80%;
+          width: 60%;
           margin-left: 50px;
         }
 
@@ -323,6 +325,7 @@
 
         @include mq(991px) {
           width: 50%;
+          height: auto;
           // padding: 30px;
         }
       }

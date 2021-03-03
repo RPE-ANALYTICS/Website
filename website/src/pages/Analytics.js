@@ -1,7 +1,9 @@
 import React from "react";
-import Dashboard from "../img/icons/dashboard.svg";
+import Dashboard from "../img/icons/visualization.svg";
 import DataComplexity from "../img/icons/data-complexity.svg";
-import Data from "../img/icons/data.svg";
+import Data from "../img/icons/extraction.svg";
+import Industry from '../img/industry-expertise.jpg';
+import Roi from '../img/roi.jpg';
 
 import Management from "../img/icons/management.svg";
 import Business from "../img/icons/business.svg";
@@ -16,6 +18,7 @@ import Jello from "react-reveal/Jello";
 
 import T from "../T";
 
+
 export default function Analytics() {
   const handleScroll = () => {
     window.scroll({
@@ -29,7 +32,9 @@ export default function Analytics() {
     <>
       <section className="analyticsWrapper section">
         <div className="analytics-thumbnail-section">
-          <div className="analytics-thumbnail-image"></div>
+          <div className="analytics-thumbnail-image">
+            {/* <img src={xxx}></img> */}
+          </div>
           <div className="analytics-thumbnail-content">
             <Fade bottom>
               <h1>
@@ -234,7 +239,8 @@ export default function Analytics() {
               <div className="wwa-col wwa-col-img-wrapper">
                 <div className="wwa-col-img">
                   <Fade bottom>
-                  <img src="https://image.freepik.com/darmowe-wektory/zilustrowano-ludzi-analizujacych-wykresy-wzrostu_23-2148865274.jpg"></img>
+                  {/* <img src="https://image.freepik.com/darmowe-wektory/zilustrowano-ludzi-analizujacych-wykresy-wzrostu_23-2148865274.jpg"></img> */}
+                  <img src={Industry}></img>
                   </Fade>
                 </div>
               </div>
@@ -283,7 +289,8 @@ export default function Analytics() {
               <div className="arw-col arw-col-img-wrapper">
                 <div className="arw-col-img">
                   <Fade bottom>
-                    <img src="https://image.freepik.com/darmowe-wektory/startup-managerowie-prezentujacy-i-analizujacy-wykres-wzrostu-sprzedazy-grupa-pracownikow-ze-stosem-gotowki-rakieta-diagramami-slupkowymi-ze-strzalka-i-stosem-pieniedzy_74855-14166.jpg"></img>
+                    {/* <img src="https://image.freepik.com/darmowe-wektory/startup-managerowie-prezentujacy-i-analizujacy-wykres-wzrostu-sprzedazy-grupa-pracownikow-ze-stosem-gotowki-rakieta-diagramami-slupkowymi-ze-strzalka-i-stosem-pieniedzy_74855-14166.jpg"></img> */}
+                    <img src={Roi}></img>
                   </Fade>
                 </div>
               </div>

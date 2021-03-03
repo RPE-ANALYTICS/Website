@@ -433,8 +433,10 @@ body {
 
 .about-thumbnail-content span {
   color: #d42028;
-  font-size: calc(45px + 40 * ((53vw + 53vh) - 600px) / 820);
+  font-size: calc(30px + 30 * ((53vw + 53vh) - 600px) / 820);
   font-weight: bold;
+  margin: 0;
+  padding: 0;
 }
 
 .about-thumbnail-content p {
@@ -459,7 +461,7 @@ body {
 
 .about-puzzles-home .c-puzzle:nth-of-type(2) {
   background-color: rgba(204, 204, 204, 0.5);
-  background-color: rgba(17, 40, 56, 0.6);
+  background-color: rgba(17, 40, 56, 0.25);
   left: 3%;
   top: 0;
   width: 15%;
@@ -478,7 +480,7 @@ body {
 
 .about-puzzles-home .c-puzzle:nth-of-type(3) {
   background-color: rgba(204, 204, 204, 0.5);
-  background-color: rgba(17, 40, 56, 0.6);
+  background-color: rgba(17, 40, 56, 0.3);
   left: 10%;
   top: 0;
   width: 18%;
@@ -500,7 +502,6 @@ body {
 
 .about-content-section {
   width: 100%;
-  height: 30vh;
   background-color: white;
   position: relative;
   display: -webkit-box;
@@ -516,15 +517,8 @@ body {
   margin-bottom: 0px;
 }
 
-@media only screen and (min-width: 700px) {
-  .about-content-section {
-    height: 25vh;
-  }
-}
-
 @media only screen and (min-width: 991px) {
   .about-content-section {
-    height: 30vh;
     padding: 0;
   }
 }
@@ -653,7 +647,7 @@ body {
 @media only screen and (min-width: 991px) {
   .about-content-section .about-who-we-are .wwa-content .wwa-col,
   .about-content-section .about-team-wrapper .wwa-content .wwa-col {
-    width: 80%;
+    width: 60%;
     margin-left: 50px;
   }
 }
@@ -703,6 +697,7 @@ body {
   .about-content-section .about-who-we-are .wwa-content .wwa-col-img-wrapper,
   .about-content-section .about-team-wrapper .wwa-content .wwa-col-img-wrapper {
     width: 50%;
+    height: auto;
   }
 }
 
@@ -1152,9 +1147,9 @@ body {
 .analytics-thumbnail-section {
   width: 100%;
   height: 55vh;
-  background: #042c2e;
-  background: -webkit-gradient(linear, left top, right top, color-stop(3%, #01224d), color-stop(100%, #184fa3), to(#288598));
-  background: linear-gradient(90deg, #01224d 3%, #184fa3 100%, #288598 100%);
+  background: #f7fcff;
+  background: -webkit-gradient(linear, left top, right top, color-stop(3%, #183950), color-stop(60%, #44667e), to(#487a9e));
+  background: linear-gradient(90deg, #183950 3%, #44667e 60%, #487a9e 100%);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1185,17 +1180,15 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   position: relative;
-  background-image: url("https://raw.githubusercontent.com/rpe-eng/rpe-web-graphic/main/img/Artboard2.png?token=ATBXSXOSBIPCV3XLGEI77HTAHZJJI");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .analytics-thumbnail-section .analytics-thumbnail-image img {
-  width: 100vw;
-  height: 100%;
+  height: 80%;
   position: absolute;
-  top: 0;
+  top: 10%;
   left: 0;
   background-repeat: no-repeat;
   z-index: 0;
@@ -1445,6 +1438,7 @@ body {
   background-color: #112838;
   padding-top: 20px;
   color: white;
+  z-index: 100;
 }
 
 .analytics-services-section .analytics-services-content {
@@ -1574,7 +1568,7 @@ body {
 
 .analytics-services-card .analytics-services-card-img img {
   height: 100%;
-  padding: 20px;
+  padding: 24px;
 }
 
 .analytics-services-card .analytics-services-card-content {
@@ -1621,12 +1615,6 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 0px;
-}
-
-@media only screen and (min-width: 991px) {
-  .analytics-content-section {
-    margin-bottom: 30px;
-  }
 }
 
 .analytics-content-section .analytics-industry-expertise {
@@ -1709,8 +1697,8 @@ body {
   position: absolute;
   width: 0;
   height: 100%;
-  top: -7%;
-  right: 10%;
+  top: -15%;
+  right: 5%;
   z-index: 10;
   display: none;
 }
@@ -1723,11 +1711,10 @@ body {
 }
 
 .analytics-content-section .analytics-industry-expertise .wwa-content .wwa-col .wwa-col-img img {
-  width: 100%;
-  max-height: 460px;
-  min-width: 378px;
-  -o-object-fit: fill;
-     object-fit: fill;
+  width: 80%;
+  margin-left: 10%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .analytics-content-section .analytics-industry-expertise .wwa-content .wwa-col-img-wrapper {
@@ -1758,12 +1745,13 @@ body {
           align-items: center;
   padding-bottom: 0px;
   margin-top: 0px;
+  z-index: 100;
 }
 
 @media only screen and (min-width: 991px) {
   .analytics-roi-section {
     padding-bottom: 30px;
-    margin-top: 30px;
+    margin-top: 60px;
   }
 }
 
@@ -1953,7 +1941,7 @@ body {
 }
 
 .contact-image-container .puzzles-contact .c-puzzle:nth-of-type(2) {
-  background-color: rgba(17, 40, 56, 0.6);
+  background-color: rgba(17, 40, 56, 0.25);
   right: 3%;
   top: 0;
   width: 7%;
@@ -1971,7 +1959,7 @@ body {
 }
 
 .contact-image-container .puzzles-contact .c-puzzle:nth-of-type(3) {
-  background-color: rgba(17, 40, 56, 0.6);
+  background-color: rgba(17, 40, 56, 0.25);
   right: 5%;
   top: 0;
   width: 14%;

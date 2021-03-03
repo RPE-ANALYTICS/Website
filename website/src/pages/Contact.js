@@ -2,6 +2,8 @@ import React from "react";
 import Fade from "react-reveal/Fade";
 import T from "../T";
 
+import Mail from '../img/icons/mail.svg';
+
 export default function Contact() {
   const handleSend = () => {
     window.open("mailto:fwydra@rp-eng.com?subject=Subject&body=%20");
@@ -27,7 +29,8 @@ export default function Contact() {
                     <li>2701 Cambridge Court</li>
                     <li>Auburn Hills, MI 48326</li>
                     <li>
-                      <i className="far fa-envelope-open"></i>{" "}
+                      {/* <i className="far fa-envelope-open"></i>{" "} */}
+                      <img src={Mail} style={{width: "18px", marginRight: "5px"}}></img>
                       <span>rpe@rp-eng.com</span>
                     </li>
                   </ul>
@@ -49,7 +52,8 @@ export default function Contact() {
                     <li>Legnicka 55f</li>
                     <li>50-204 Wroclaw</li>
                     <li>
-                      <i className="far fa-envelope-open"></i>{" "}
+                      {/* <i className="far fa-envelope-open"></i>{" "} */}
+                      <img src={Mail} style={{width: "18px", marginRight: "5px"}}></img>
                       <span>rpe@rp-eng.com</span>
                     </li>
                   </ul>
