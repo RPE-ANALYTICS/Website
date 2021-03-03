@@ -603,6 +603,7 @@ body {
 .about-content-section .about-team-wrapper p {
   padding-top: 22px;
   font-size: 0.8rem;
+  text-align: justify;
 }
 
 @media only screen and (min-width: 700px) {
@@ -616,7 +617,6 @@ body {
   .about-content-section .about-who-we-are p,
   .about-content-section .about-team-wrapper p {
     font-size: 1.2rem;
-    text-align: left;
   }
 }
 
@@ -624,7 +624,6 @@ body {
   .about-content-section .about-who-we-are p,
   .about-content-section .about-team-wrapper p {
     font-size: 1rem;
-    text-align: left;
   }
 }
 
@@ -726,6 +725,10 @@ body {
   position: relative;
   background: #f8f8f8;
   background-color: #112838;
+}
+
+.about-content-section3 a {
+  text-decoration: none;
 }
 
 .about-content-section3 .about-content-wrapper3 {
@@ -1087,7 +1090,6 @@ body {
   .about-partners-section .about-partners-wrapper h1 {
     font-size: 2rem;
     padding: 0 30px;
-    text-align: left;
   }
 }
 
@@ -1106,7 +1108,6 @@ body {
 
 @media only screen and (min-width: 991px) {
   .about-partners-section .about-partners-wrapper h1::before {
-    left: 5%;
     width: 5%;
   }
 }
@@ -1116,7 +1117,7 @@ body {
   margin-top: 20px;
   letter-spacing: 0.8px;
   padding: 0 30px;
-  text-align: justify;
+  text-align: center;
   font-size: 1rem;
 }
 
@@ -1129,14 +1130,12 @@ body {
 @media only screen and (min-width: 991px) {
   .about-partners-section .about-partners-wrapper p {
     font-size: 1.2rem;
-    text-align: left;
   }
 }
 
 @media only screen and (min-width: 1025px) {
   .about-partners-section .about-partners-wrapper p {
     font-size: 1rem;
-    text-align: left;
   }
 }
 
@@ -2551,6 +2550,10 @@ body {
           flex-direction: column;
 }
 
+.homeCards a {
+  text-decoration: none;
+}
+
 .cards-title {
   width: 100vw;
   max-width: 1600px;
@@ -3314,11 +3317,15 @@ body {
   }
 }
 
-.fade, .modal, .show {
+.fade,
+.modal,
+.show {
   padding: 0;
 }
 
-.fade img, .modal img, .show img {
+.fade img,
+.modal img,
+.show img {
   width: 200px;
 }
 

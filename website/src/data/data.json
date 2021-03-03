@@ -65,7 +65,7 @@
       "Uznawane na całym świecie certyfikaty, cenione w obszarze BI",
       "Praca z firmami Fortune 500"
     ],
-    "isActive": true
+    "isActive": false
   },
   {
     "id": 3,
@@ -99,7 +99,7 @@
       "Uznawane na całym świecie certyfikaty, cenione w obszarze BI",
       "Praca z firmami Fortune 500"
     ],
-    "isActive": true
+    "isActive": false
   },
   {
     "id": 4,

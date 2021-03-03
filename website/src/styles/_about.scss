@@ -250,17 +250,18 @@
     p {
       padding-top: 22px;
       font-size: 0.8rem;
+      text-align: justify;
 
       @include mq(700px) {
         font-size: 1.1rem;
       }
       @include mq(991px) {
         font-size: 1.2rem;
-        text-align: left;
+        // text-align: left;
       }
       @include mq(1025px) {
         font-size: 1rem;
-        text-align: left;
+        // text-align: left;
       }
     }
 
@@ -344,6 +345,10 @@
   background: $BackgroundColor-main;
   background-color: rgb(17, 40, 56);
   // background-color: #f8f8f8;
+
+  a{
+    text-decoration: none;
+  }
 
   .about-content-wrapper3 {
     width: 100%;
@@ -553,7 +558,6 @@
 //====================KEY INDUSTRIES===========================
 .industriesSection {
   width: 100vw;
-  // min-height: 30vh;
   position: relative;
   background-color: $BackgroundColor-main;
   background-color: #112838;
@@ -578,7 +582,6 @@
       text-transform: uppercase;
       letter-spacing: 1.3px;
       font-family: $Fontfamily-serif;
-      // color: $Fontcolor-second;
       text-align: center;
       font-size: 1.8rem;
 
@@ -601,12 +604,10 @@
 
     .industry-cards {
       width: 100%;
-      // background-color: green;
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
       align-items: center;
-      // margin: 10px 0;
 
       @include mq(991px) {
         flex-direction: row;
@@ -617,16 +618,9 @@
         width: 300px;
         height: 390px;
         perspective: 1000px;
-        // width: 30%;
-        // max-width: 320px;
-        // background-color: rgb(255, 255, 255);
         text-align: center;
         margin: 20px 10px;
         color: #112838;
-
-        @include mq(991px) {
-          // margin: 10px 10px;
-        }
 
         .industry-card-inner {
           position: relative;
@@ -636,7 +630,6 @@
           transition: transform 0.6s;
           transform-style: preserve-3d;
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          // transform: rotateY(180deg);
 
           .industry-card-front,
           .industry-card-back {
@@ -653,9 +646,7 @@
 
             img {
               height: 80%;
-              // width: 300px;
               width: 100%;
-              // margin: 20px;
               object-fit: cover;
             }
             div {
@@ -666,10 +657,6 @@
               align-items: center;
               color: $Fontcolor-second;
               background-color: white;
-              h3 {
-                // height: 100%;
-                // width: 100%;
-              }
             }
           }
 
@@ -696,13 +683,10 @@
   min-height: 202px;
   position: relative;
   background-color: #fff;
-  // background-color: rgb(17, 40, 56);
-  // color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  // border: 1px solid $BackgroundColor-main;
 
   .about-partners-wrapper {
     width: 90%;
@@ -727,7 +711,6 @@
       @include mq(991px) {
         font-size: 2rem;
         padding: 0 30px;
-        text-align: left;
       }
 
       &::before {
@@ -742,31 +725,17 @@
         border-radius: 10px;
 
         @include mq(991px) {
-          left: 5%;
           width: 5%;
         }
       }
     }
-
-    // p {
-    //   width: 100%;
-    //   margin-top: 20px;
-    //   letter-spacing: 0.8px;
-    //   padding: 0 30px;
-    //   text-align: justify;
-    //   font-size: 1rem;
-
-    //   @include mq(991px) {
-    //     font-size: 1rem;
-    //   }
-    // }
 
     p {
       width: 100%;
       margin-top: 20px;
       letter-spacing: 0.8px;
       padding: 0 30px;
-      text-align: justify;
+      text-align: center;
       font-size: 1rem;
 
       @include mq(700px) {
@@ -774,11 +743,9 @@
       }
       @include mq(991px) {
         font-size: 1.2rem;
-        text-align: left;
       }
       @include mq(1025px) {
         font-size: 1rem;
-        text-align: left;
       }
     }
   }

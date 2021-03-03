@@ -43,6 +43,7 @@ export default function About() {
       "-=1"
     );
   }, []);
+
   return (
     <>
       <section className="aboutWrapper section">
@@ -132,82 +133,82 @@ export default function About() {
             </div>
             <div className="cards-wrapper">
               <Fade bottom>
-                <div className="card fadeIn">
-                  <div className="card-icon">
-                    <img src={analytics}></img>
-                  </div>
-                  <div className="info">
-                    <h1 className="title">
-                      <span>
-                        <T label={"aboutWADCard1TitleFL"} />
-                      </span>
-                      <T label={"aboutWADCard1Title"} />
-                    </h1>
-                    <p>Business Intelligence, Data Management, AI & ML</p>
-                  </div>
-                  <div className="see-button">
-                    <span></span>
-                    <Link to="/analytics" onClick={handleClick}>
+                <Link to="/analytics" onClick={handleClick}>
+                  <div className="card fadeIn">
+                    <div className="card-icon">
+                      <img src={analytics}></img>
+                    </div>
+                    <div className="info">
+                      <h1 className="title">
+                        <span>
+                          <T label={"aboutWADCard1TitleFL"} />
+                        </span>
+                        <T label={"aboutWADCard1Title"} />
+                      </h1>
+                      <p>Business Intelligence, Data Management, AI & ML</p>
+                    </div>
+                    <div className="see-button">
+                      <span></span>
                       <button>
                         <T label={"aboutWADCardBtn"} />
                       </button>
-                    </Link>
+                    </div>
                   </div>
-                </div>
+                </Link>
               </Fade>
               <Fade bottom>
-                <div className="card fadeIn">
-                  <div className="card-icon">
-                    <img src={operations}></img>
-                  </div>
-                  <div className="info">
-                    <h1 className="title">
-                      <span>
-                        <T label={"aboutWADCard2TitleFL"} />
-                      </span>
-                      <T label={"aboutWADCard2Title"} />
-                    </h1>
-                    <p>Environment Management, BI Platfrom Operations</p>
-                  </div>
-                  <div className="see-button">
-                    <span></span>
-                    <Link to="/operations" onClick={handleClick}>
+                <Link to="/operations" onClick={handleClick}>
+                  <div className="card fadeIn">
+                    <div className="card-icon">
+                      <img src={operations}></img>
+                    </div>
+                    <div className="info">
+                      <h1 className="title">
+                        <span>
+                          <T label={"aboutWADCard2TitleFL"} />
+                        </span>
+                        <T label={"aboutWADCard2Title"} />
+                      </h1>
+                      <p>Environment Management, BI Platfrom Operations</p>
+                    </div>
+                    <div className="see-button">
+                      <span></span>
                       <button>
                         <T label={"aboutWADCardBtn"} />
                       </button>
-                    </Link>
+                    </div>
                   </div>
-                </div>
+                </Link>
               </Fade>
               <Fade bottom>
-                <div className="card fadeIn">
-                  <div className="card-icon">
-                    <img src={digital}></img>
-                  </div>
-                  <div className="info">
-                    <h1 className="title">
-                      <span>
-                        <T label={"aboutWADCard3TitleFL"} />
-                      </span>
-                      <T label={"aboutWADCard3Title1"} />{" "}
-                      <span>
-                        <T label={"aboutWADCard3TitleSL"} />
-                      </span>
-                      <T label={"aboutWADCard3Title2"} />
-                    </h1>
-                    <p>
-                      Transformation Strategy & Roadmaps, Analytics Enablement
-                    </p>
-                  </div>
-                  <div className="see-button">
-                    <span></span>
-                    <Link to="/digital" onClick={handleClick}>
+                <Link to="/digital" onClick={handleClick}>
+                  <div className="card fadeIn">
+                    <div className="card-icon">
+                      <img src={digital}></img>
+                    </div>
+                    <div className="info">
+                      <h1 className="title">
+                        <span>
+                          <T label={"aboutWADCard3TitleFL"} />
+                        </span>
+                        <T label={"aboutWADCard3Title1"} />{" "}
+                        <span>
+                          <T label={"aboutWADCard3TitleSL"} />
+                        </span>
+                        <T label={"aboutWADCard3Title2"} />
+                      </h1>
+                      <p>
+                        Transformation Strategy & Roadmaps, Analytics Enablement
+                      </p>
+                    </div>
+                    <div className="see-button">
+                      <span></span>
                       <button>
                         <T label={"aboutWADCardBtn"} />
                       </button>
-                    </Link>
+                    </div>
                   </div>
-                </div>
+                </Link>
               </Fade>
             </div>
           </div>
