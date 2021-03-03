@@ -4,6 +4,7 @@ import Advert from "../components/Advert";
 import Popup from "../components/Popup";
 
 import Fade from "react-reveal/Fade";
+import cv from '../img/test/cv.svg'
 
 import T from "../T";
 
@@ -103,7 +104,10 @@ export default function Career() {
               </div>
               <div className="career-col right">
                 <div className="career-col-img">
-                  <img src="https://image.freepik.com/free-photo/business-sucessful-businessman-working-with-laptop-using-computer-smiling-standing_1258-26447.jpg"></img>
+                  {/* <img src="https://image.freepik.com/free-photo/business-sucessful-businessman-working-with-laptop-using-computer-smiling-standing_1258-26447.jpg"></img> */}
+                  {/* <img src={cv}></img> */}
+                  {/* <img src="https://image.freepik.com/darmowe-wektory/lider-zespolu-i-koncepcja-pracy-zespolowej_74855-6671.jpg"></img> */}
+                  <img src="https://image.freepik.com/darmowe-wektory/wizjonerski-biznesmen-patrzac-w-spyglass_87720-4246.jpg"></img>
                 </div>
               </div>
             </div>

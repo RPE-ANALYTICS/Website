@@ -234,7 +234,7 @@ export default function Analytics() {
               <div className="wwa-col wwa-col-img-wrapper">
                 <div className="wwa-col-img">
                   <Fade bottom>
-                    <img src="https://media.istockphoto.com/photos/analysing-data-picture-id872025014?s=612x612"></img>
+                  <img src="https://image.freepik.com/darmowe-wektory/zilustrowano-ludzi-analizujacych-wykresy-wzrostu_23-2148865274.jpg"></img>
                   </Fade>
                 </div>
               </div>
@@ -283,7 +283,7 @@ export default function Analytics() {
               <div className="arw-col arw-col-img-wrapper">
                 <div className="arw-col-img">
                   <Fade bottom>
-                    <img src="https://media.istockphoto.com/vectors/business-people-on-chart-data-vector-id978044314?s=612x612"></img>
+                    <img src="https://image.freepik.com/darmowe-wektory/startup-managerowie-prezentujacy-i-analizujacy-wykres-wzrostu-sprzedazy-grupa-pracownikow-ze-stosem-gotowki-rakieta-diagramami-slupkowymi-ze-strzalka-i-stosem-pieniedzy_74855-14166.jpg"></img>
                   </Fade>
                 </div>
               </div>
