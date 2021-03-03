@@ -1,6 +1,6 @@
 import React from "react";
 import Dashboard from "../img/icons/visualization.svg";
-import DataComplexity from "../img/icons/data-complexity.svg";
+import DataComplexity from "../img/icons/data-management.svg";
 import Data from "../img/icons/extraction.svg";
 import Industry from '../img/industry-expertise.jpg';
 import Roi from '../img/roi.jpg';
