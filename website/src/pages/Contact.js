@@ -6,7 +6,7 @@ import Mail from '../img/icons/mail.svg';
 
 export default function Contact() {
   const handleSend = () => {
-    window.open("mailto:fwydra@rp-eng.com?subject=Subject&body=%20");
+    window.open("mailto:rpe@rp-eng.com?subject=Subject&body=%20");
   };
   return (
     <>

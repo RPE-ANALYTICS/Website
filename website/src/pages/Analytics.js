@@ -1,10 +1,8 @@
 import React from "react";
-import Dashboard from "../img/icons/visualization.svg";
-import DataComplexity from "../img/icons/data-management.svg";
-import Data from "../img/icons/extraction.svg";
-import Industry from '../img/industry-expertise.jpg';
-import Roi from '../img/roi.jpg';
 
+import Dashboard from "../img/icons/visualization.svg";
+import DataComplexity from "../img/icons/transformation.svg";
+import Data from "../img/icons/extraction.svg";
 import Management from "../img/icons/management.svg";
 import Business from "../img/icons/business.svg";
 import IT from "../img/icons/it.svg";
@@ -33,7 +31,6 @@ export default function Analytics() {
       <section className="analyticsWrapper section">
         <div className="analytics-thumbnail-section">
           <div className="analytics-thumbnail-image">
-            {/* <img src={xxx}></img> */}
           </div>
           <div className="analytics-thumbnail-content">
             <Fade bottom>
@@ -240,7 +237,7 @@ export default function Analytics() {
                 <div className="wwa-col-img">
                   <Fade bottom>
                   {/* <img src="https://image.freepik.com/darmowe-wektory/zilustrowano-ludzi-analizujacych-wykresy-wzrostu_23-2148865274.jpg"></img> */}
-                  <img src={Industry}></img>
+                  <img src="https://raw.githubusercontent.com/rpe-eng/rpe-web-graphic/main/img/icons/industry-expertise.jpg"></img>
                   </Fade>
                 </div>
               </div>
@@ -290,7 +287,7 @@ export default function Analytics() {
                 <div className="arw-col-img">
                   <Fade bottom>
                     {/* <img src="https://image.freepik.com/darmowe-wektory/startup-managerowie-prezentujacy-i-analizujacy-wykres-wzrostu-sprzedazy-grupa-pracownikow-ze-stosem-gotowki-rakieta-diagramami-slupkowymi-ze-strzalka-i-stosem-pieniedzy_74855-14166.jpg"></img> */}
-                    <img src={Roi}></img>
+                    <img src="https://raw.githubusercontent.com/rpe-eng/rpe-web-graphic/main/img/icons/roi.jpg"></img>
                   </Fade>
                 </div>
               </div>

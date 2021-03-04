@@ -1,6 +1,5 @@
 import React, { useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
-import video from "../img/video/video3.mp4";
 import digital from "../img/icons/digital.svg";
 import analytics from "../img/icons/analytics.svg";
 import operations from "../img/icons/operations.svg";
@@ -53,7 +52,7 @@ export default function Home() {
       <section className="homeWrapper-home section">
         <div className="video-container-home">
           <video
-            src={video}
+            src="https://github.com/rpe-eng/rpe-web-graphic/blob/main/img/video/video3.mp4?raw=true"
             autoPlay="autoPlay"
             loop="loop"
             playsInline="playsInline"
@@ -70,10 +69,6 @@ export default function Home() {
             </p>
           </div>
           <div className="home-bottom-line absolute">
-            <Fade bottom>
-              {/* <p onClick={handleScroll}>Scroll down</p> */}
-              {/* <span></span> */}
-            </Fade>
           </div>
           <div className="home-right-line-top absolute">
             <Slide top>

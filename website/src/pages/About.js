@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
+
 import digital from "../img/icons/digital.svg";
 import analytics from "../img/icons/analytics.svg";
 import operations from "../img/icons/operations.svg";
@@ -54,8 +55,8 @@ export default function About() {
             <div className="c-puzzle absolute"></div>
           </div>
           <div className="about-thumbnail-image">
-            {/* <img src="https://images.pexels.com/photos/3184430/pexels-photo-3184430.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"></img> */}
-            <img src="https://image.freepik.com/darmowe-zdjecie/ludzie-biznesu-ukladanie-rak_53876-90289.jpg"></img>
+            {/* <img src="https://images.pexels.com/photos/3184430/pexels-photo-3184430.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Photo by fauxels from Pexels"></img> */}
+            <img src="https://raw.githubusercontent.com/rpe-eng/rpe-web-graphic/main/img/about-hands.png" alt="Photo by fauxels from Pexels"></img>
           </div>
           <div className="about-thumbnail-content">
             <Fade bottom>
@@ -110,8 +111,7 @@ export default function About() {
               <div className="wwa-col wwa-col-img-wrapper">
                 <div className="wwa-col-img">
                   <Fade bottom>
-                    {/* <img src="https://images.pexels.com/photos/3182755/pexels-photo-3182755.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"></img> */}
-                    <img src="https://image.freepik.com/darmowe-zdjecie/smiley-koledzy-robia-sobie-selfie-podczas-spotkania_23-2148817038.jpg"></img>
+                    <img src="https://images.pexels.com/photos/3184419/pexels-photo-3184419.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"></img>
                   </Fade>
                 </div>
               </div>
@@ -254,7 +254,7 @@ export default function About() {
                 <div className="industry-card">
                   <div className="industry-card-inner">
                     <div className="industry-card-front">
-                      <img src="https://www.medgadget.com/wp-content/uploads/2020/07/Healthcare9.jpeg"></img>
+                      <img src="https://raw.githubusercontent.com/rpe-eng/rpe-web-graphic/main/img/icons/manufacturing.jpg"></img>
                       <div>
                         <h3>
                           <T label={"aboutKIWSCard1Title"} />
@@ -273,7 +273,7 @@ export default function About() {
                 <div className="industry-card">
                   <div className="industry-card-inner">
                     <div className="industry-card-front">
-                      <img src="https://www.medgadget.com/wp-content/uploads/2020/07/Healthcare9.jpeg"></img>
+                      <img src="https://raw.githubusercontent.com/rpe-eng/rpe-web-graphic/main/img/icons/medical.jpg"></img>
                       <div>
                         <h3>
                           <T label={"aboutKIWSCard2Title"} />
@@ -292,7 +292,7 @@ export default function About() {
                 <div className="industry-card">
                   <div className="industry-card-inner">
                     <div className="industry-card-front">
-                      <img src="https://www.medgadget.com/wp-content/uploads/2020/07/Healthcare9.jpeg"></img>
+                      <img src="https://raw.githubusercontent.com/rpe-eng/rpe-web-graphic/main/img/icons/telecomunication.jpg"></img>
                       <div>
                         <h3>
                           <T label={"aboutKIWSCard3Title"} />

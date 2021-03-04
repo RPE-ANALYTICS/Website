@@ -12,9 +12,9 @@
   background: #f7fcff;
   background: linear-gradient(
     90deg,
-    rgb(24, 57, 80) 3%,
-    rgb(68, 102, 126) 60%,
-    rgb(72, 122, 158) 100%
+    #112838 3%,
+    #44777e 60%,
+    #49bacf 100%
   );
 
   background-position: center;
@@ -37,14 +37,8 @@
     height: 100%;
     box-sizing: border-box;
     position: relative;
-    // background-image: url("https://raw.githubusercontent.com/rpe-eng/rpe-web-graphic/main/img/Artboard2.png?token=ATBXSXOSBIPCV3XLGEI77HTAHZJJI");
-    // background-image: url("../img/test/205.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 
     img {
-      // width: 60%;
       height: 80%;
       position: absolute;
       top: 10%;
@@ -365,10 +359,6 @@
   align-items: center;
   margin-bottom: 0px;
 
-  @include mq(991px) {
-    // margin-bottom: 30px;
-  }
-
   .analytics-industry-expertise {
     width: 100%;
     max-width: 1300px;
@@ -437,12 +427,8 @@
 
           img {
             width: 80%;
-            // min-width: 378px;
-            // max-height: 110%;
             margin-left: 10%;
             object-fit: cover;
-            // box-shadow: 0 10px 10px rgba(56, 56, 56, 0.2),
-            //   10px 10px 20px rgba(48, 48, 48, 0.2);
           }
         }
       }
@@ -463,7 +449,6 @@
 //=====================ROI==========================
 .analytics-roi-section {
   width: 100%;
-  // background-color: $BackgroundColor-main;
   background-color: white;
   position: relative;
   display: flex;
@@ -545,8 +530,6 @@
             min-width: 378px;
             max-height: 110%;
             object-fit: fill;
-            // box-shadow: 0 10px 10px rgba(56, 56, 56, 0.2),
-            //   10px 10px 20px rgba(48, 48, 48, 0.2);
           }
         }
       }
