@@ -654,7 +654,7 @@ body {
 .about-content-section .about-team-wrapper .wwa-content .wwa-col .wwa-col-img {
   position: absolute;
   width: 80%;
-  height: 100%;
+  height: 110%;
   top: -30px;
   right: 5%;
   z-index: 10;
@@ -672,7 +672,6 @@ body {
 .about-content-section .about-who-we-are .wwa-content .wwa-col .wwa-col-img img,
 .about-content-section .about-team-wrapper .wwa-content .wwa-col .wwa-col-img img {
   width: 100%;
-  min-width: 378px;
   max-height: 110%;
   -o-object-fit: cover;
      object-fit: cover;

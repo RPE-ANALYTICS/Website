@@ -4,6 +4,9 @@ import { Link } from "react-router-dom";
 import digital from "../img/icons/digital.svg";
 import analytics from "../img/icons/analytics.svg";
 import operations from "../img/icons/operations.svg";
+import manufacturing from '../img/vector/manufacturing.jpg';
+import medical from '../img/vector/medical.jpg';
+import telecomunication from '../img/vector/telecomunication.jpg';
 
 import Brands from "../components/Brands";
 
@@ -111,7 +114,7 @@ export default function About() {
               <div className="wwa-col wwa-col-img-wrapper">
                 <div className="wwa-col-img">
                   <Fade bottom>
-                    <img src="https://images.pexels.com/photos/3184419/pexels-photo-3184419.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"></img>
+                    <img src="https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"></img>
                   </Fade>
                 </div>
               </div>
@@ -254,7 +257,7 @@ export default function About() {
                 <div className="industry-card">
                   <div className="industry-card-inner">
                     <div className="industry-card-front">
-                      <img src="https://raw.githubusercontent.com/rpe-eng/rpe-web-graphic/main/img/icons/manufacturing.jpg"></img>
+                      <img src={manufacturing}></img>
                       <div>
                         <h3>
                           <T label={"aboutKIWSCard1Title"} />
@@ -273,7 +276,7 @@ export default function About() {
                 <div className="industry-card">
                   <div className="industry-card-inner">
                     <div className="industry-card-front">
-                      <img src="https://raw.githubusercontent.com/rpe-eng/rpe-web-graphic/main/img/icons/medical.jpg"></img>
+                      <img src={medical}></img>
                       <div>
                         <h3>
                           <T label={"aboutKIWSCard2Title"} />
@@ -292,7 +295,7 @@ export default function About() {
                 <div className="industry-card">
                   <div className="industry-card-inner">
                     <div className="industry-card-front">
-                      <img src="https://raw.githubusercontent.com/rpe-eng/rpe-web-graphic/main/img/icons/telecomunication.jpg"></img>
+                      <img src={telecomunication}></img>
                       <div>
                         <h3>
                           <T label={"aboutKIWSCard3Title"} />
