@@ -355,10 +355,10 @@
     padding: 2rem 0.7rem;
   }
 
-  @include mq(1025px) {
+  @include mq(1024px) {
     width: 320px;
-    margin: 0px 30px;
-    padding: 2rem 1.7rem;
+    margin: 0px 10px;
+    padding: 2rem 1.4rem;
   }
 }
 

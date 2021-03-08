@@ -35,35 +35,39 @@
     },
     {
       "id": 2,
-      "title": "Junior BI Developer",
+      "title": "IT Support Specialist",
       "location": "Wroclaw",
-      "description": "Poszukujemy osobę na stanowisko Power BI Developer, który dołączy do naszego zespołu we wrocławskim biurze. Power BI Developer będzie współpracować z zespołem określającym potrzeby raportowania i wymagania dotyczące danych oraz dostarczenia rozwiązań analitycznych.",
+      "description": "We are looking for an IT Support Specialist to join our rapidly growing team in the Wroclaw office. Our clients are companies from the list of Fortune 500, which will provide exciting ś environment for growth. This requires a focus on delivering world-class managed and engineering services to our customers. We are looking for people with a solid approach for systems engineering and problem solving.",
       "responsibilities": [
-        "Projektowanie, budowanie i wdrażanie rozwiązań BI w oparciu o wymagania biznesowe",
-        "Utrzymywanie oraz rozwój procesów ETL",
-        "Analizowanie i wizualizowanie danych z wykorzystaniem narzędzi BI",
-        "Usprawnianie procesów biznesowych",
-        "Sporządzanie dokumentacji funkcjonalnej i technicznej"
+        "Management and security accesses for users",
+        "Handling user requests using ticketing system",
+        "Log analysis and monitoring",
+        "Collaboration with customer teams on platform development and updating",
+        "Creating documentation of implemented solutions",
+        "Administration of analytical platforms (Tableau, Qlik, Power BI, etc.)",
+        "Load and performance analysis and environment optimization",
+        "Installing, configuring and managing software on servers (On-premises / Cloud)"
       ],
       "skills": [
-        "Minimum 3 lata doświadczenia w tworzeniu oraz optymalizowaniu raportów w Power BI",
-        "Bardzo dobra znajomość DAX",
-        "Doświadczenie w pracy z bazami danych SQL / NoSQL",
-        "Znajomość hurtowni danych",
-        "Znajomość i umiejętność stosowania procesu ETL",
-        "Wykształcenie wyższe, najlepiej informatyczne lub ekonomiczne",
-        "Bardzo dobra znajomość języka angielskiego w stopniu umożliwiającym kontakt z klientem (B2/C1)"
+        "Minimum 2 years of professional experience in a similar position",
+        "Experience in system administration (Windows Server), including Active Directory administration",
+        "Knowledge of PowerShell",
+        "Knowledge of computer networks, firewalls, ports",
+        "Good direct communication skills in English (min. B2)",
+        "Good organization of tasks and analytical skills"
       ],
       "extraSkills": [
-        "Doświadczenie z innymi narzędziami do wizualizacji danych (Qlik, Tableau itp.)",
-        "Doświadczenie we wdrażaniu Power BI w wersji Enterprise, tworzenie odpowiedniej strategii i architektury",
-        "Doświadczenie w kontakcie z klientami oraz funkcji lidera w projektach z obszaru Business Intelligence",
-        "Doświadczenie w branży medycznej"
+        "Experience in managing and monitoring analytical platforms (Tableau, Qlik, Power BI, etc.)",
+        "Knowledge of software for monitoring IT infrastructure (Zabbix, OpManager, etc.)",
+        "Knowledge of data platforms in MS / Oracle SQL",
+        "Windows Server Certificates - MCSE / MCSA / MTA",
+        "Administrator certificates (Qlik, Azure, Tableau, etc.)"
       ],
       "benefits": [
-        "Mozliwość stałego rozwoju zawodowego poprzez udział w ciekawych, międzynarodowych projektach",
-        "Uznawane na całym świecie certyfikaty, cenione w obszarze BI",
-        "Praca z firmami Fortune 500"
+        "Working in small teams of a rapidly growing company using modern and advanced technologies",
+        "Participation in interesting, international projects",
+        "Opportunity to develop professional skills and obtain certificates",
+        "Our goal is to equip you with the necessary knowledge and training to become a good consultant. We guarantee a huge amount of valued knowledge and investment in development"
       ],
       "isActive": true
     }

@@ -2644,11 +2644,11 @@ body {
   }
 }
 
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1024px) {
   .card {
     width: 320px;
-    margin: 0px 30px;
-    padding: 2rem 1.7rem;
+    margin: 0px 10px;
+    padding: 2rem 1.4rem;
   }
 }
 
