@@ -4,7 +4,7 @@ import blackLogo from "../img/logos/rpe_black.jpg";
 
 export default function Advert({ data, show, setShow }) {
   const handleSend = () => {
-    window.open(`mailto:hr@rp-eng.com?subject=${data.title} resume&body=%20`);
+    window.open(`mailto:hr@rp-eng.com?subject=${data.title} CV&body=%20`);
   };
 
   return (
