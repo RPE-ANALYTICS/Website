@@ -14,7 +14,7 @@ export default function Footer() {
             <section className="footerWrapper section">
                 <div className="footer-bottom">
                     <div className="copyright">
-                        Copyright <span onClick={handle}>{isActive ? ' villagef' : `©`}</span> {year} RPE Analytics
+                        <span onClick={handle}>{isActive ? ' villagef' : `©`}</span> Copyright  {year} RPE Analytics
                     </div>
                 </div>
             </section>

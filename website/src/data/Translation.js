@@ -57,7 +57,7 @@ const translation = {
       "We will deliver the insight to help you drive the business impact.",
     analsec3Row5Title: "Auto Reports",
     analsec3Row5Content:
-      "we will help deliver the automated insights right to your device.",
+      "We will help deliver the automated insights right to your device.",
     analsec3Row6Title: "Data Management",
     analsec3Row6Content:
       "We will help you build effective Data Management strategy.",
