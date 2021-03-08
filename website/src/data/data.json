@@ -3,7 +3,7 @@
       "id": 1,
       "title": "Power BI Developer",
       "location": "Wroclaw",
-      "description": "We are looking for a Power BI Developer to join our team in the Wrocław office. Power BI Developer will work with a team that determines reporting needs and data requirements, and delivers analytical solutions.",
+      "description": "We are looking for a Power BI Developer to join our team in the Wroclaw office. Power BI Developer will work with a team that determines reporting needs and data requirements, and delivers analytical solutions.",
       "responsibilities": [
         "Designing, building and implementing BI solutions based on business requirements",
         "Maintaining and developing ETL processes",
@@ -70,6 +70,39 @@
         "Our goal is to equip you with the necessary knowledge and training to become a good consultant. We guarantee a huge amount of valued knowledge and investment in development"
       ],
       "isActive": true
-    }
+    },
+    {
+        "id": 3,
+        "title": "Junior BI Developer",
+        "location": "Wroclaw",
+        "description": "We are looking for a Junior BI Developer to join our team in the Wroclaw office. Junior BI Developer will work with a team that determines reporting needs and data requirements, and delivers analytical solutions.",
+        "responsibilities": [
+          "Designing, building and implementing BI solutions based on business requirements",
+          "Maintaining and developing ETL processes",
+          "Analyzing and visualizing data using BI tools",
+          "Streamlining business processes",
+          "Preparation of functional and technical documentation"
+        ],
+        "skills": [
+          "A minimum of 1 year of experience in creating and optimizing reports in BI industry",
+          "Knowledge of DAX",
+          "Experience in working with SQL / NoSQL databases",
+          "Knowledge of the data warehouse",
+          "Knowledge and ability to use the ETL process",
+          "Higher education, preferably IT or economics",
+          "Very good command of the English language sufficient to enable contact with the client (B2 / C1)"
+        ],
+        "extraSkills": [
+          "Experience with other data visualization tools (Qlik, Tableau etc.)",
+          "Experience in contact with clients in the area of Business Intelligence",
+          "Experience in the medical industry"
+        ],
+        "benefits": [
+          "Possibility of constant professional development through participation in interesting, international projects",
+          "Globally recognized certificates, valued in the BI area",
+          "Working with Fortune 500 companies"
+        ],
+        "isActive": true
+      }
   ]
   
