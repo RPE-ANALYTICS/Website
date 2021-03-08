@@ -73,9 +73,9 @@ function NavigationBar() {
             onClick={onMouseEnter}
             onMouseLeave={onMouseLeave}
           >
-            <Link to='' className="nav-links">
+            <div className="nav-links" style={{cursor: 'pointer'}}>
               <T label={"nav2"} /> <i className="fas fa-caret-down" />
-            </Link>
+            </div>
             {dropdown && <Dropdown closeMobileMenu={closeMobileMenu} />}
           </li>
           <li className="nav-item">
@@ -98,8 +98,7 @@ function NavigationBar() {
               {({ setLanguage, language }) => {
                 return (
                   <>
-                    <Link
-                    to=''
+                    <div
                       id={language == "en" ? "active" : ""}
                       onClick={() => setLanguage("en")}
                       className="nav-links lang"
@@ -111,10 +110,9 @@ function NavigationBar() {
                           marginLeft: "15px",
                         }}
                       ></img>
-                    </Link>
+                    </div>
                     <span style={{ color: "white" }}>|</span>
-                    <Link
-                    to=''
+                    <div
                       id={language == "pl" ? "active" : ""}
                       onClick={() => setLanguage("pl")}
                       className="nav-links lang"
@@ -123,7 +121,7 @@ function NavigationBar() {
                         src={pl}
                         style={{ width: language == "pl" ? "20px" : "23px" }}
                       ></img>
-                    </Link>
+                    </div>
                   </>
                 );
               }}
