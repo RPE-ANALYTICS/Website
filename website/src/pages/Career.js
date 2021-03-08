@@ -33,7 +33,6 @@ export default function Career() {
     fetchData();
   }, []);
 
-  console.log(data)
 
   const handleClick = (id) => {
     data.map((d) => {
