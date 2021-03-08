@@ -58,7 +58,6 @@ export default function About() {
             <div className="c-puzzle absolute"></div>
           </div>
           <div className="about-thumbnail-image">
-            {/* <img src="https://images.pexels.com/photos/3184430/pexels-photo-3184430.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Photo by fauxels from Pexels"></img> */}
             <img src="https://raw.githubusercontent.com/rpe-eng/rpe-web-graphic/main/img/about-hands.png" alt="Photo by fauxels from Pexels"></img>
           </div>
           <div className="about-thumbnail-content">
