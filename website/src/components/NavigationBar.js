@@ -73,7 +73,7 @@ function NavigationBar() {
             onClick={onMouseEnter}
             onMouseLeave={onMouseLeave}
           >
-            <Link className="nav-links">
+            <Link to='' className="nav-links">
               <T label={"nav2"} /> <i className="fas fa-caret-down" />
             </Link>
             {dropdown && <Dropdown closeMobileMenu={closeMobileMenu} />}
@@ -96,10 +96,10 @@ function NavigationBar() {
           <li className="nav-item">
             <Consumer>
               {({ setLanguage, language }) => {
-                console.log(language);
                 return (
                   <>
                     <Link
+                    to=''
                       id={language == "en" ? "active" : ""}
                       onClick={() => setLanguage("en")}
                       className="nav-links lang"
@@ -114,6 +114,7 @@ function NavigationBar() {
                     </Link>
                     <span style={{ color: "white" }}>|</span>
                     <Link
+                    to=''
                       id={language == "pl" ? "active" : ""}
                       onClick={() => setLanguage("pl")}
                       className="nav-links lang"

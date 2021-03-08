@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import data from "../data/data.json";
+import React, { useState, useEffect } from "react";
 import Advert from "../components/Advert";
 import Popup from "../components/Popup";
 
@@ -15,6 +14,26 @@ export default function Career() {
   const [show, setShow] = useState(false);
   const [active, setActive] = useState(false);
   const [oneAdvert, setOneAdvert] = useState();
+  const [data, setData] = useState([]);
+  const [isLoaded, setIsLoaded] = useState(true)
+  const url = 'https://raw.githubusercontent.com/rpe-eng/rpe-web-graphic/main/data.json';
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const res = await fetch(url);
+        const json = await res.json();
+        setData(json);
+        setIsLoaded(true)
+      } catch (error) {
+        console.log(error);
+        setIsLoaded(false)
+      }
+    };
+    fetchData();
+  }, []);
+
+  console.log(data)
 
   const handleClick = (id) => {
     data.map((d) => {
@@ -45,11 +64,13 @@ export default function Career() {
                   <T label={"careerContent"} />
                 </p>
                 <div className="career-adverts">
-                  {data.map((d) => (
+                {isLoaded === false && <div className='section' style={{width: '100%', height: '100%', justifyContent: 'center', alignItems: 'center'}}>No data found...</div>}
+                  {data.map((d, i) => (
                     <Fade bottom>
                       <div
                         className="advert"
-                        key={d.id}
+                        key={i}
+                        id={d.id}
                         onClick={() => handleClick(d.id)}
                       >
                         <div className="advert-col-left"></div>
@@ -77,17 +98,14 @@ export default function Career() {
                             </li>
                             <li id="second">
                               <p>
-                                {/* <i className="fas fa-map-marker-alt"></i>{" "} */}
                                 <img src={Pin} style={{width: "16px", marginRight: "5px", marginBottom: "5px"}}></img>
                                 {d.location}
                               </p>
                               <p>
-                                {/* <i className="fas fa-desktop"></i>  */}
                                 <img src={Monitor} style={{width: "16px", marginRight: "5px", marginBottom: "5px"}}></img>
                                 Technologies
                               </p>
                               <p>
-                                {/* <i className="far fa-clock"></i>  */}
                                 <img src={Clock} style={{width: "16px", marginRight: "5px", marginBottom: "5px"}}></img>
                                 Full-Time
                               </p>
@@ -112,8 +130,6 @@ export default function Career() {
               </div>
               <div className="career-col right">
                 <div className="career-col-img">
-                  {/* <img src="https://image.freepik.com/darmowe-wektory/wizjonerski-biznesmen-patrzac-w-spyglass_87720-4246.jpg"></img> */}
-                  {/* <img src="https://raw.githubusercontent.com/rpe-eng/rpe-web-graphic/main/img/icons/career.jpg"></img> */}
                   <img src="https://raw.githubusercontent.com/rpe-eng/rpe-web-graphic/main/img/icons/career.jpg"></img>
                 </div>
               </div>
