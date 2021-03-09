@@ -2049,6 +2049,22 @@ body {
   }
 }
 
+.vemap-tag {
+  position: absolute;
+  bottom: 20px;
+  right: 0;
+  margin: 0;
+  padding-right: 10px;
+  color: #ccc;
+  z-index: 1000;
+  font-size: 0.5rem;
+}
+
+.vemap-tag a {
+  text-decoration: none;
+  color: #ccc;
+}
+
 .contact-container {
   width: 100%;
   max-width: 1300px;

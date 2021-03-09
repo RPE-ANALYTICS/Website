@@ -17,6 +17,7 @@ export default function Contact() {
             <div className="c-puzzle absolute"></div>
             <div className="c-puzzle absolute"></div>
           </div>
+          <p className="vemap-tag"><a href="https://vemaps.com/world/wrld-17">World Map</a> by Vemaps.com</p>
         </div>
         <div className="contact-content-container">
           <Fade bottom>
@@ -29,7 +30,6 @@ export default function Contact() {
                     <li>2701 Cambridge Court</li>
                     <li>Auburn Hills, MI 48326</li>
                     <li>
-                      {/* <i className="far fa-envelope-open"></i>{" "} */}
                       <img src={Mail} style={{width: "18px", marginRight: "5px"}}></img>
                       <span>rpe@rp-eng.com</span>
                     </li>
@@ -52,7 +52,6 @@ export default function Contact() {
                     <li>Legnicka 55f</li>
                     <li>50-204 Wroclaw</li>
                     <li>
-                      {/* <i className="far fa-envelope-open"></i>{" "} */}
                       <img src={Mail} style={{width: "18px", marginRight: "5px"}}></img>
                       <span>rpe@rp-eng.com</span>
                     </li>

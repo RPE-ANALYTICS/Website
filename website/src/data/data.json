@@ -75,29 +75,28 @@
         "id": 3,
         "title": "Junior BI Developer",
         "location": "Wroclaw",
-        "description": "We are looking for a Junior BI Developer to join our team in the Wroclaw office. Junior BI Developer will work with a team that determines reporting needs and data requirements, and delivers analytical solutions.",
+        "description": "If you are a person with little professional experience in the BI industry with basic knowledge of data analysis or you have completed studies in economics or IT, and you can boast of a good command of the English language (at least B2) and would like to develop your career as a consultant BI, this offer is just for you!",
         "responsibilities": [
+          "Preparation of project documentation",
           "Designing, building and implementing BI solutions based on business requirements",
-          "Maintaining and developing ETL processes",
           "Analyzing and visualizing data using BI tools",
-          "Streamlining business processes",
-          "Preparation of functional and technical documentation"
+          "Streamlining business processes"
         ],
         "skills": [
-          "A minimum of 1 year of experience in creating and optimizing reports in BI industry",
-          "Experience in working with SQL / NoSQL databases",
-          "Knowledge of the data warehouse",
-          "Knowledge and ability to use the ETL process",
-          "Higher education, preferably IT or economics",
-          "Very good command of the English language sufficient to enable contact with the client (B2 / C1)"
+          "Good knowledge of Microsoft Excel",
+          "Higher education, preferably IT or economics (graduate)",
+          "Analytical thinking in problem solving",
+          "Satisfactory command of the English language (minimum B2)"
         ],
         "extraSkills": [
-          "Experience with other data visualization tools (Qlik, Tableau etc.)",
-          "Experience in contact with clients in the area of Business Intelligence",
-          "Experience in the medical industry"
+          "Experience with data visualization tools (such as Tableau, Qlik, Power BI etc.)",
+          "Knowledge of SQL / NoSQL databases",
+          "Knowledge of the data warehouse",
+          "Knowledge and ability to apply the ETL process"
         ],
         "benefits": [
-          "Possibility of constant professional development through participation in interesting, international projects",
+          "Opportunity to complete a professional course in BI tools under the supervision of an experienced mentor",
+          "Unique and very valuable knowledge in the area of Business Intelligence, both on the business and development side",
           "Globally recognized certificates, valued in the BI area",
           "Working with Fortune 500 companies"
         ],
