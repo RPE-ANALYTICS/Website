@@ -31,7 +31,7 @@ export default function Advert({ data, show, setShow }) {
               <li>{d}</li>
             ))}
           </ul>
-          <h4>Requirenments</h4>
+          <h4>Requirements</h4>
           <ul>
             {data.skills.map((d) => (
               <li>{d}</li>
@@ -56,7 +56,7 @@ export default function Advert({ data, show, setShow }) {
         </Modal.Body>
         <div className="send-cv-wrapper">
           <button id="send-cv" onClick={handleSend}>
-            Send CV
+            Apply
           </button>
         </div>
       </Modal>
