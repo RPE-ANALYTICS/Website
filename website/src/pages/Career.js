@@ -15,8 +15,8 @@ export default function Career() {
   const [active, setActive] = useState(false);
   const [oneAdvert, setOneAdvert] = useState();
   const [data, setData] = useState([]);
-  const [isLoaded, setIsLoaded] = useState(true)
-  const url = 'https://raw.githubusercontent.com/rpe-eng/rpe-web-graphic/main/data.json';
+  const [isLoaded, setIsLoaded] = useState(true);
+  const url = 'https://raw.githubusercontent.com/rpe-eng/rpe-website-ads/main/data.json';
 
   useEffect(() => {
     const fetchData = async () => {
@@ -24,10 +24,10 @@ export default function Career() {
         const res = await fetch(url);
         const json = await res.json();
         setData(json);
-        setIsLoaded(true)
+        setIsLoaded(true);
       } catch (error) {
         console.log(error);
-        setIsLoaded(false)
+        setIsLoaded(false);
       }
     };
     fetchData();
