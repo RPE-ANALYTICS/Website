@@ -236,8 +236,7 @@ export default function Analytics() {
               <div className="wwa-col wwa-col-img-wrapper">
                 <div className="wwa-col-img">
                   <Fade bottom>
-                  {/* <img src="https://image.freepik.com/darmowe-wektory/zilustrowano-ludzi-analizujacych-wykresy-wzrostu_23-2148865274.jpg"></img> */}
-                  <img src="https://raw.githubusercontent.com/rpe-eng/rpe-web-graphic/main/img/icons/industry-expertise.jpg"></img>
+                  <img src="https://raw.githubusercontent.com/rpe-eng/rpe-web-graphic/main/RPE_Analytics/RPE_Analytics_freepik/industry-expertise.png"></img>
                   </Fade>
                 </div>
               </div>
@@ -286,8 +285,7 @@ export default function Analytics() {
               <div className="arw-col arw-col-img-wrapper">
                 <div className="arw-col-img">
                   <Fade bottom>
-                    {/* <img src="https://image.freepik.com/darmowe-wektory/startup-managerowie-prezentujacy-i-analizujacy-wykres-wzrostu-sprzedazy-grupa-pracownikow-ze-stosem-gotowki-rakieta-diagramami-slupkowymi-ze-strzalka-i-stosem-pieniedzy_74855-14166.jpg"></img> */}
-                    <img src="https://raw.githubusercontent.com/rpe-eng/rpe-web-graphic/main/img/icons/roi.jpg"></img>
+                    <img src="https://raw.githubusercontent.com/rpe-eng/rpe-web-graphic/main/RPE_Analytics/RPE_Analytics_freepik/roi.png"></img>
                   </Fade>
                 </div>
               </div>

@@ -129,7 +129,7 @@ export default function Career() {
               </div>
               <div className="career-col right">
                 <div className="career-col-img">
-                  <img src="https://raw.githubusercontent.com/rpe-eng/rpe-web-graphic/main/img/icons/career.jpg"></img>
+                  <img src="https://raw.githubusercontent.com/rpe-eng/rpe-web-graphic/main/RPE_Analytics/RPE_Analytics_freepik/career.png"></img>
                 </div>
               </div>
             </div>

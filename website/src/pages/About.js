@@ -4,9 +4,6 @@ import { Link } from "react-router-dom";
 import digital from "../img/icons/digital.svg";
 import analytics from "../img/icons/analytics.svg";
 import operations from "../img/icons/operations.svg";
-import manufacturing from '../img/vector/manufacturing.jpg';
-import medical from '../img/vector/medical.jpg';
-import telecomunication from '../img/vector/telecomunication.jpg';
 
 import Brands from "../components/Brands";
 
@@ -256,7 +253,7 @@ export default function About() {
                 <div className="industry-card">
                   <div className="industry-card-inner">
                     <div className="industry-card-front">
-                      <img src={manufacturing}></img>
+                      <img src='https://raw.githubusercontent.com/rpe-eng/rpe-web-graphic/main/RPE_Analytics/RPE_Analytics_freepik/manufacturing.png'></img>
                       <div>
                         <h3>
                           <T label={"aboutKIWSCard1Title"} />
@@ -275,7 +272,7 @@ export default function About() {
                 <div className="industry-card">
                   <div className="industry-card-inner">
                     <div className="industry-card-front">
-                      <img src={medical}></img>
+                      <img src='https://raw.githubusercontent.com/rpe-eng/rpe-web-graphic/main/RPE_Analytics/RPE_Analytics_freepik/medical.png'></img>
                       <div>
                         <h3>
                           <T label={"aboutKIWSCard2Title"} />
@@ -294,7 +291,7 @@ export default function About() {
                 <div className="industry-card">
                   <div className="industry-card-inner">
                     <div className="industry-card-front">
-                      <img src={telecomunication}></img>
+                      <img src='https://raw.githubusercontent.com/rpe-eng/rpe-web-graphic/main/RPE_Analytics/RPE_Analytics_freepik/telecomunication.png'></img>
                       <div>
                         <h3>
                           <T label={"aboutKIWSCard3Title"} />
