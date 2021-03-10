@@ -1,6 +1,6 @@
 import React from "react";
 import Modal from "react-bootstrap/Modal";
-import blackLogo from "../img/logos/rpe_black.jpg";
+import blackLogo from "../img/logos/rpe_black.png";
 
 export default function Advert({ data, show, setShow }) {
   const handleSend = () => {

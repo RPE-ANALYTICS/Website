@@ -31,6 +31,7 @@ export default function Analytics() {
       <section className="analyticsWrapper section">
         <div className="analytics-thumbnail-section">
           <div className="analytics-thumbnail-image">
+            <img src=''></img>
           </div>
           <div className="analytics-thumbnail-content">
             <Fade bottom>

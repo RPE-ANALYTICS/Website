@@ -38,6 +38,7 @@
     box-sizing: border-box;
     position: relative;
 
+
     img {
       height: 80%;
       position: absolute;
@@ -48,6 +49,7 @@
 
       @include mq(991px) {
         object-fit: cover;
+        
       }
     }
   }
