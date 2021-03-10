@@ -1162,8 +1162,8 @@ body {
   width: 100%;
   height: 55vh;
   background: #f7fcff;
-  background: -webkit-gradient(linear, left top, right top, color-stop(3%, #112838), color-stop(60%, #44777e), to(#49bacf));
-  background: linear-gradient(90deg, #112838 3%, #44777e 60%, #49bacf 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(3%, #001727), color-stop(60%, #0c3c70), to(#317197));
+  background: linear-gradient(90deg, #001727 3%, #0c3c70 60%, #317197 100%);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1197,18 +1197,34 @@ body {
 }
 
 .analytics-thumbnail-section .analytics-thumbnail-image img {
-  height: 80%;
+  height: 70%;
   position: absolute;
   top: 10%;
   left: 0;
-  background-repeat: no-repeat;
-  z-index: 0;
+}
+
+@media only screen and (min-width: 500px) {
+  .analytics-thumbnail-section .analytics-thumbnail-image img {
+    height: 90%;
+    position: absolute;
+    top: 5%;
+    left: 0;
+  }
 }
 
 @media only screen and (min-width: 991px) {
   .analytics-thumbnail-section .analytics-thumbnail-image img {
-    -o-object-fit: cover;
-       object-fit: cover;
+    height: 85%;
+    top: 5%;
+    left: -5%;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .analytics-thumbnail-section .analytics-thumbnail-image img {
+    height: 110%;
+    top: -2%;
+    left: 0;
   }
 }
 
