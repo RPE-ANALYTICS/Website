@@ -1,21 +1,107 @@
-.homeWrapper-operations {
+.operationsWrapper {
   width: 100vw;
-  height: 95vh;
-  background-color: rgb(34, 95, 175);
+  overflow: hidden;
+  flex-direction: column;
+  font-family: $Fontfamily-sansSerif-3;
+}
+
+//=======================THUMBNAIL=========================
+.operations-thumbnail-section {
+  width: 100%;
+  height: 55vh;
+  background: linear-gradient(
+    90deg,
+    #012036 3%,
+    #0c3c70 60%,
+    #317197 100%
+  );
+
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("https://images.pexels.com/photos/991422/pexels-photo-991422.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-  color: white;
+  color: rgb(255, 255, 255);
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  text-align: center;
-  text-transform: uppercase;
-  font-family: $Fontfamily-serif;
+  position: relative;
+  letter-spacing: 0.8px;
+  overflow: hidden;
 
-  img {
+  @include mq(991px) {
+    height: 80vh;
+  }
+
+  .operations-thumbnail-image {
     width: 100%;
-    object-fit: cover;
+    height: 100%;
+    box-sizing: border-box;
+    position: relative;
+
+
+    img {
+      height: 70%;
+      position: absolute;
+      top: 10%;
+      left: 0;
+
+      @include mq(500px) {
+        height: 90%;
+        position: absolute;
+        top: 5%;
+        left: 0;
+      }
+
+      @include mq(991px) {
+        height: 85%;
+        top: 5%;
+        left: -5%;
+      }
+
+      @include mq(1025px) {
+        height: 110%;
+        top: -2%;
+        left: 0;
+      }
+
+    }
+  }
+}
+
+.operations-thumbnail-content {
+  width: 90%;
+  height: auto;
+  padding: 20px 10px;
+  margin-top: 70px;
+  position: absolute;
+  bottom: 0%;
+  right: 6%;
+  letter-spacing: 7px;
+  text-align: end;
+
+  @include mq(991px) {
+    width: 50%;
+    bottom: 7%;
+  }
+
+  h1 {
+    font-size: calc(30px + 40 * ((53vw + 53vh) - 600px) / 820);
+
+    @include mq(991px) {
+      font-size: calc(8px + 40 * ((53vw + 53vh) - 600px) / 820);
+    }
+  }
+
+  p {
+    font-size: 0.8rem;
+
+    @include mq(991px) {
+      font-size: 1rem;
+    }
+  }
+
+  span {
+    color: $Fontcolor-main;
+    font-size: calc(45px + 40 * ((53vw + 53vh) - 600px) / 820);
+    font-weight: bold;
   }
 }

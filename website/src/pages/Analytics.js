@@ -14,8 +14,6 @@ import Fade from "react-reveal/Fade";
 import Slide from "react-reveal/Slide";
 import Jello from "react-reveal/Jello";
 
-import laptop from '../img/laptop.png';
-
 import T from "../T";
 
 
@@ -33,7 +31,7 @@ export default function Analytics() {
       <section className="analyticsWrapper section">
         <div className="analytics-thumbnail-section">
           <div className="analytics-thumbnail-image">
-            <img src={laptop}></img>
+            <img src='https://raw.githubusercontent.com/rpe-eng/rpe-web-graphic/main/laptop.png' alt='digital laptop'></img>
           </div>
           <div className="analytics-thumbnail-content">
             <Fade bottom>

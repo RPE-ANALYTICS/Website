@@ -73,7 +73,19 @@ const translation = {
       "We will enable unprecedented data visibility, which in turn will lead to significant improvement in data quality.",
     analsec5Content3:
       "With easy, governed access to so much of actionable data,not only your teams will gain improvement in productivity,they will be able to make more informed, data driven decisions.",
-    //ABOUT
+    //OPERATIONS
+    operationsTitleFL: "O",
+    operationsTitle: "perations",
+    operationsSubtitle: "Evaluate the entire company data",
+    operationsSec2Title: "RPE supports analytics operations",
+    operationsSec2Subtitle: "Platform Administration (we provide full administration  of your analytics platform ranging from data refreshes to software upgrades.) ​",
+    operationsSec2Card1Title: "Alerting & Monitoring",
+    operationsSec2Card1Content: "We offer the necessary alerting & monitoring capabilities around key metrics to ensure stability of your platform.",
+    operationsSec2Card2Title: "Architectural Support",
+    operationsSec2Card2Content: "We design and implement the necessary platform architectures to ensure governance, security, and stability for the data assets.",
+    operationsSec2Card3Title: "Platform Installations & Migrations",
+    operationsSec2Card3Content: "We quickly get you up and running with the latest technologies.",
+      //ABOUT
     aboutTitleFL: "A",
     aboutTitle: "bout us",
     aboutSubtitle: "We believe in your success.",
@@ -184,6 +196,18 @@ const translation = {
       "Umożliwimy bezprecedensową widoczność danych, co z kolei doprowadzi do znacznej poprawy jakości danych.",
     analsec5Content3:
       "Dzięki łatwemu, zarządzanemu dostępowi do tak dużej ilości danych, które można wykorzystać, nie tylko Twoje zespoły osiągną poprawę produktywności, ale będą mogły podejmować bardziej świadome, oparte na danych decyzje.",
+          //OPERATIONS
+    operationsTitleFL: "O",
+    operationsTitle: "peracje",
+    operationsSubtitle: "Oceń wszystkie dane firmy",
+    operationsSec2Title: "RPE obsługuje operacje analityczne",
+    operationsSec2Subtitle: "Administracja platformą (zapewniamy pełną administrację platformą analityczną, od odświeżania danych po aktualizacje oprogramowania).",
+    operationsSec2Card1Title: "Alertowanie & Monitoring",
+    operationsSec2Card1Content: "Oferujemy niezbędne funkcje ostrzegania i monitorowania dotyczące kluczowych wskaźników, aby zapewnić stabilność Twojej platformy.",
+    operationsSec2Card2Title: "Wsparcie architektoniczne",
+    operationsSec2Card2Content: "Projektujemy i wdrażamy niezbędne architektury platform, aby zapewnić zarządzanie, bezpieczeństwo i stabilność zasobów danych.",
+    operationsSec2Card3Title: "Instalacje i migracje platform",
+    operationsSec2Card3Content: "Szybko przygotujemy Cię do pracy z najnowszymi technologiami.",
     //ABOUT
     aboutTitleFL: "P",
     aboutTitle: "oznaj nas",
