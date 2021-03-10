@@ -30,7 +30,7 @@ export default function Contact() {
                     <li>2701 Cambridge Court</li>
                     <li>Auburn Hills, MI 48326</li>
                     <li>
-                      <img src={Mail} style={{width: "18px", marginRight: "5px"}}></img>
+                      <img src={Mail} style={{width: "18px", marginRight: "5px"}} alt='envelope icon'></img>
                       <span>rpe@rp-eng.com</span>
                     </li>
                   </ul>
@@ -52,7 +52,7 @@ export default function Contact() {
                     <li>Legnicka 55f</li>
                     <li>50-204 Wroclaw</li>
                     <li>
-                      <img src={Mail} style={{width: "18px", marginRight: "5px"}}></img>
+                      <img src={Mail} style={{width: "18px", marginRight: "5px"}} alt='envelope icon'></img>
                       <span>rpe@rp-eng.com</span>
                     </li>
                   </ul>

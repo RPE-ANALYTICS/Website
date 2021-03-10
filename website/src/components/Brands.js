@@ -12,16 +12,16 @@ export default function Brands() {
         <div className="brandsWrapper">
             <Fade bottom>
             <div className="brand">
-                <img src={qlik}></img>
+                <img src={qlik} alt='qlik sense logo'></img>
             </div>
             <div className="brand">
-                <img src={jedox}></img>
+                <img src={jedox} alt='jedox logo'></img>
             </div>
             <div className="brand">
-                <img src={powerbi}></img>
+                <img src={powerbi} alt='powerbi logo'></img>
             </div>
             <div className="brand">
-                <img src={snowflake}></img>
+                <img src={snowflake} alt='snowflake logo'></img>
             </div>
             </Fade>
         </div>

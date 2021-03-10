@@ -110,7 +110,7 @@ export default function About() {
               <div className="wwa-col wwa-col-img-wrapper">
                 <div className="wwa-col-img">
                   <Fade bottom>
-                    <img src="https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"></img>
+                    <img src="https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"  alt='team picture'></img>
                   </Fade>
                 </div>
               </div>
@@ -137,7 +137,7 @@ export default function About() {
                 <Link to="/analytics" onClick={handleClick}>
                   <div className="card fadeIn">
                     <div className="card-icon">
-                      <img src={analytics}></img>
+                      <img src={analytics}  alt='monitor icon'></img>
                     </div>
                     <div className="info">
                       <h1 className="title">
@@ -161,7 +161,7 @@ export default function About() {
                 <Link to="/operations" onClick={handleClick}>
                   <div className="card fadeIn">
                     <div className="card-icon">
-                      <img src={operations}></img>
+                      <img src={operations}  alt='operations icon'></img>
                     </div>
                     <div className="info">
                       <h1 className="title">
@@ -185,7 +185,7 @@ export default function About() {
                 <Link to="/digital" onClick={handleClick}>
                   <div className="card fadeIn">
                     <div className="card-icon">
-                      <img src={digital}></img>
+                      <img src={digital} alt='digital icon'></img>
                     </div>
                     <div className="info">
                       <h1 className="title">
@@ -233,7 +233,7 @@ export default function About() {
               <div className="wwa-col wwa-col-img-wrapper">
                 <div className="wwa-col-img">
                   <Fade bottom>
-                    <img src="https://images.pexels.com/photos/3184433/pexels-photo-3184433.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"></img>
+                    <img src="https://images.pexels.com/photos/3184433/pexels-photo-3184433.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"  alt='team photo'></img>
                   </Fade>
                 </div>
               </div>
@@ -253,7 +253,7 @@ export default function About() {
                 <div className="industry-card">
                   <div className="industry-card-inner">
                     <div className="industry-card-front">
-                      <img src='https://raw.githubusercontent.com/rpe-eng/rpe-web-graphic/main/RPE_Analytics/RPE_Analytics_freepik/manufacturing.png'></img>
+                      <img src='https://raw.githubusercontent.com/rpe-eng/rpe-web-graphic/main/RPE_Analytics/RPE_Analytics_freepik/manufacturing.png' alt='manufacturing vector'></img>
                       <div>
                         <h3>
                           <T label={"aboutKIWSCard1Title"} />
@@ -272,7 +272,7 @@ export default function About() {
                 <div className="industry-card">
                   <div className="industry-card-inner">
                     <div className="industry-card-front">
-                      <img src='https://raw.githubusercontent.com/rpe-eng/rpe-web-graphic/main/RPE_Analytics/RPE_Analytics_freepik/medical.png'></img>
+                      <img src='https://raw.githubusercontent.com/rpe-eng/rpe-web-graphic/main/RPE_Analytics/RPE_Analytics_freepik/medical.png' alt='medical vector'></img>
                       <div>
                         <h3>
                           <T label={"aboutKIWSCard2Title"} />
@@ -291,7 +291,7 @@ export default function About() {
                 <div className="industry-card">
                   <div className="industry-card-inner">
                     <div className="industry-card-front">
-                      <img src='https://raw.githubusercontent.com/rpe-eng/rpe-web-graphic/main/RPE_Analytics/RPE_Analytics_freepik/telecomunication.png'></img>
+                      <img src='https://raw.githubusercontent.com/rpe-eng/rpe-web-graphic/main/RPE_Analytics/RPE_Analytics_freepik/telecomunication.png' alt='telecominication vector'></img>
                       <div>
                         <h3>
                           <T label={"aboutKIWSCard3Title"} />

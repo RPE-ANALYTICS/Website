@@ -82,7 +82,7 @@ export default function Analytics() {
             <div className="cards2">
               <Fade bottom>
                 <div className="card2">
-                  <img src={Management}></img>
+                  <img src={Management} alt='management icon'></img>
                   <h3>
                     <T label={"analsec2Card1Title"} />
                   </h3>
@@ -93,7 +93,7 @@ export default function Analytics() {
               </Fade>
               <Fade bottom>
                 <div className="card2">
-                  <img src={Business}></img>
+                  <img src={Business} alt='business icon'></img>
                   <h3>
                     {" "}
                     <T label={"analsec2Card2Title"} />
@@ -105,7 +105,7 @@ export default function Analytics() {
               </Fade>
               <Fade bottom>
                 <div className="card2">
-                  <img src={IT}></img>
+                  <img src={IT}  alt='laptop icon'></img>
                   <h3>
                     {" "}
                     <T label={"analsec2Card3Title"} />
@@ -134,7 +134,7 @@ export default function Analytics() {
             <Fade bottom>
               <div className="analytics-services-card">
                 <div className="analytics-services-card-img">
-                  <img className="services-card-img" src={Strategy}></img>
+                  <img className="services-card-img" src={Strategy} alt='strategy icon'></img>
                 </div>
                 <div className="analytics-services-card-content">
                   <h1>
@@ -150,7 +150,7 @@ export default function Analytics() {
             <Fade bottom>
               <div className="analytics-services-card">
                 <div className="analytics-services-card-img">
-                  <img src={Data}></img>
+                  <img src={Data}  alt='data extraction icon'></img>
                 </div>
                 <div className="analytics-services-card-content">
                   <h1>
@@ -167,7 +167,7 @@ export default function Analytics() {
             <Fade bottom>
               <div className="analytics-services-card">
                 <div className="analytics-services-card-img">
-                  <img src={DataComplexity}></img>
+                  <img src={DataComplexity} alt='data complexity icon'></img>
                 </div>
                 <div className="analytics-services-card-content">
                   <h1>
@@ -183,7 +183,7 @@ export default function Analytics() {
             <Fade bottom>
               <div className="analytics-services-card">
                 <div className="analytics-services-card-img">
-                  <img src={Dashboard}></img>
+                  <img src={Dashboard}  alt='dashboard icon'></img>
                 </div>
                 <div className="analytics-services-card-content">
                   <h1>
@@ -199,7 +199,7 @@ export default function Analytics() {
             <Fade bottom>
               <div className="analytics-services-card">
                 <div className="analytics-services-card-img">
-                  <img src={Report}></img>
+                  <img src={Report} alt='report icon'></img>
                 </div>
                 <div className="analytics-services-card-content">
                   <h1>
@@ -215,7 +215,7 @@ export default function Analytics() {
             <Fade bottom>
               <div className="analytics-services-card">
                 <div className="analytics-services-card-img">
-                  <img src={DataManagement}></img>
+                  <img src={DataManagement} alt='data management icon'></img>
                 </div>
                 <div className="analytics-services-card-content">
                   <h1>
@@ -236,7 +236,7 @@ export default function Analytics() {
               <div className="wwa-col wwa-col-img-wrapper">
                 <div className="wwa-col-img">
                   <Fade bottom>
-                  <img src="https://raw.githubusercontent.com/rpe-eng/rpe-web-graphic/main/RPE_Analytics/RPE_Analytics_freepik/industry-expertise.png"></img>
+                  <img src="https://raw.githubusercontent.com/rpe-eng/rpe-web-graphic/main/RPE_Analytics/RPE_Analytics_freepik/industry-expertise.png" alt='industry expertise vector'></img>
                   </Fade>
                 </div>
               </div>
@@ -285,7 +285,7 @@ export default function Analytics() {
               <div className="arw-col arw-col-img-wrapper">
                 <div className="arw-col-img">
                   <Fade bottom>
-                    <img src="https://raw.githubusercontent.com/rpe-eng/rpe-web-graphic/main/RPE_Analytics/RPE_Analytics_freepik/roi.png"></img>
+                    <img src="https://raw.githubusercontent.com/rpe-eng/rpe-web-graphic/main/RPE_Analytics/RPE_Analytics_freepik/roi.png" alt='roi vector'></img>
                   </Fade>
                 </div>
               </div>

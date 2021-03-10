@@ -97,15 +97,15 @@ export default function Career() {
                             </li>
                             <li id="second">
                               <p>
-                                <img src={Pin} style={{width: "16px", marginRight: "5px", marginBottom: "5px"}}></img>
+                                <img src={Pin} style={{width: "16px", marginRight: "5px", marginBottom: "5px"}} alt='location pin icon'></img>
                                 {d.location}
                               </p>
                               <p>
-                                <img src={Monitor} style={{width: "16px", marginRight: "5px", marginBottom: "5px"}}></img>
+                                <img src={Monitor} style={{width: "16px", marginRight: "5px", marginBottom: "5px"}} alt='monitor icon'></img>
                                 Technologies
                               </p>
                               <p>
-                                <img src={Clock} style={{width: "16px", marginRight: "5px", marginBottom: "5px"}}></img>
+                                <img src={Clock} style={{width: "16px", marginRight: "5px", marginBottom: "5px"}} alt='clock icon'></img>
                                 Full-Time
                               </p>
                             </li>
@@ -129,7 +129,7 @@ export default function Career() {
               </div>
               <div className="career-col right">
                 <div className="career-col-img">
-                  <img src="https://raw.githubusercontent.com/rpe-eng/rpe-web-graphic/main/RPE_Analytics/RPE_Analytics_freepik/career.png"></img>
+                  <img src="https://raw.githubusercontent.com/rpe-eng/rpe-web-graphic/main/RPE_Analytics/RPE_Analytics_freepik/career.png" alt='career photo'></img>
                 </div>
               </div>
             </div>

@@ -57,6 +57,7 @@ export default function Home() {
             loop="loop"
             playsInline="playsInline"
             muted="muted"
+            alt='digital video'
           ></video>
         </div>
         <div className="puzzles-home">
@@ -114,7 +115,7 @@ export default function Home() {
             <Link to="/analytics" onClick={handleClick}>
               <div className="card fadeIn">
                 <div className="card-icon">
-                  <img src={analytics}></img>
+                  <img src={analytics} alt='analytics monitor icon'></img>
                 </div>
                 <div className="info">
                   <h1 className="title">
@@ -138,7 +139,7 @@ export default function Home() {
             <Link to="/operations" onClick={handleClick}>
               <div className="card fadeIn">
                 <div className="card-icon">
-                  <img src={operations}></img>
+                  <img src={operations} alt='operations icon'></img>
                 </div>
                 <div className="info">
                   <h1 className="title">
@@ -162,7 +163,7 @@ export default function Home() {
             <Link to="/digital" onClick={handleClick}>
               <div className="card fadeIn">
                 <div className="card-icon">
-                  <img src={digital}></img>
+                  <img src={digital} alt='digital transformation icon'></img>
                 </div>
                 <div className="info">
                   <h1 className="title">
