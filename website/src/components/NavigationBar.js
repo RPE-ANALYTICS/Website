@@ -57,7 +57,11 @@ function NavigationBar() {
     >
       <nav className="navbar">
         <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-          <img className="logo-nav" src={whiteLogo} alt="RPE Analytics logo"></img>
+          <img
+            className="logo-nav"
+            src={whiteLogo}
+            alt="RPE Analytics logo"
+          ></img>
         </Link>
         <div className="menu-icon" onClick={handleClick}>
           <i className={click ? "fas fa-times" : "fas fa-bars"} />
@@ -73,7 +77,7 @@ function NavigationBar() {
             onClick={onMouseEnter}
             onMouseLeave={onMouseLeave}
           >
-            <div className="nav-links" style={{cursor: 'pointer'}}>
+            <div className="nav-links" style={{ cursor: "pointer" }}>
               <T label={"nav2"} /> <i className="fas fa-caret-down" />
             </div>
             {dropdown && <Dropdown closeMobileMenu={closeMobileMenu} />}
@@ -109,7 +113,7 @@ function NavigationBar() {
                           width: language == "pl" ? "23px" : "20px",
                           marginLeft: "15px",
                         }}
-                        alt='usa flag'
+                        alt="usa flag"
                       ></img>
                     </div>
                     <span style={{ color: "white" }}>|</span>
@@ -121,7 +125,7 @@ function NavigationBar() {
                       <img
                         src={pl}
                         style={{ width: language == "pl" ? "20px" : "23px" }}
-                        alt='pl flag'
+                        alt="pl flag"
                       ></img>
                     </div>
                   </>

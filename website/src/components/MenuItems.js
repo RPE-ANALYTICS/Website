@@ -11,10 +11,10 @@ export const MenuItems = [
       cName: 'dropdown-link',
       label: 'nav22'
     },
-    {
-      title: 'Digital Transformation',
-      path: '/digital',
-      cName: 'dropdown-link',
-      label: 'nav23'
-    }
+    // {
+    //   title: 'Digital Transformation',
+    //   path: '/digital',
+    //   cName: 'dropdown-link',
+    //   label: 'nav23'
+    // }
   ];
