@@ -468,7 +468,7 @@
       flex-direction: column;
       justify-content: space-evenly;
       align-items: center;
-      border-radius: 5px 5px 0 0;
+      border-radius: 10px 10px 0 0;
 
       @include mq(991px) {
         flex-direction: row;
@@ -499,10 +499,10 @@
             height: 100%;
             -webkit-backface-visibility: hidden;
             backface-visibility: hidden;
-            border-radius: 5px;
+            border-radius: 10px;
 
             div {
-              border-radius: 0px 0px 5px 5px;
+              border-radius: 0px 0px 10px 10px;
             }
           }
 

@@ -946,7 +946,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-radius: 5px 5px 0 0;
+  border-radius: 10px 10px 0 0;
 }
 
 @media only screen and (min-width: 991px) {
@@ -991,12 +991,12 @@ body {
   height: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .industriesSection .industries-wrapper .industry-cards .industry-card .industry-card-inner .industry-card-front div,
 .industriesSection .industries-wrapper .industry-cards .industry-card .industry-card-inner .industry-card-back div {
-  border-radius: 0px 0px 5px 5px;
+  border-radius: 0px 0px 10px 10px;
 }
 
 .industriesSection .industries-wrapper .industry-cards .industry-card .industry-card-inner .industry-card-front {
