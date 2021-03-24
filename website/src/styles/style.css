@@ -11,8 +11,7 @@ body {
   overflow-x: hidden !important;
   color: #1e2f3b;
   font-family: "Montserrat", sans-serif;
-  -webkit-transition: all 0.9s ease;
-  transition: all 0.9s ease;
+  overflow-x: hidden;
 }
 
 .mainContainer {
